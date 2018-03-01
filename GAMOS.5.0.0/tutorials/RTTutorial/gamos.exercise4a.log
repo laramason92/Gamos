@@ -1,0 +1,212 @@
+/control/execute exercise4a.in
+/gamos/setParam GmGeometryFromText:FileName ../exercise2/linac.geom
+/gamos/geometry GmGeometryFromText
+/gamos/physicsList GmEMPhysics
+/gamos/generator GmGenerator
+ GmGenUtils::FileInPath ./isotopes.dat in .
+ GmGenUtils::FileInPath /home/arce/gamosnew/GAMOS.5.0.0/data/isotopes.dat in /home/arce/gamosnew/GAMOS.5.0.0/data
+/gamos/setParam RTCutsStudyFilter:PlaneZ 90.*cm
+/gamos/setParam RTCutsStudyFilter:PlaneXDim 100.*cm
+/gamos/setParam RTCutsStudyFilter:PlaneYDim 100.*cm
+/gamos/userAction RTProdCutsStudyUA
+/gamos/geometry/createRegion targetReg target
+/gamos/geometry/createRegion collimatorReg "primary collimator_0"
+/gamos/geometry/createRegion filterReg "flattening filter"
+/gamos/geometry/createRegion monitorReg monitor
+/gamos/geometry/createRegion jawsReg jaws_X jaws_Y
+/run/setCut 0.01
+/gamos/userAction GmCountTracksUA
+/run/initialize
+ GmGenUtils::FileInPath ./../exercise2/linac.geom in .
+GmEMPhysics PhysicsList:DEFAULT = gamma-lowener is registered
+GmEMPhysics PhysicsList: DEFAULT = electron-lowener is registered
+GmEMPhysics PhysicsList: DEFAULT = positron-standard is registered
+GmPhysicsGammaLowEner::ConstructProcess 
+/gamos/userAction GmTimeStudyUA GmClassifierByRegion
+/gamos/classifier energyClassifier GmClassifierByKineticEnergy 1.E-7 1.E1 10.
+/gamos/classifier ClassifierParticleAndKinEnergy GmCompoundClassifier GmClassifierByParticle energyClassifier
+/gamos/userAction GmTimeStudyUA ClassifierParticleAndKinEnergy
+/gamos/generator/addSingleParticleSource source e- 6.*MeV
+/gamos/generator/directionDist source GmGenerDistDirectionConst 0. 0. 1.
+/run/beamOn 200
+
+phot:   for  gamma    SubType= 12
+      LambdaPrime table from 200 keV to 10 TeV in 54 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermorePhElectric :  Emin=        0 eV    Emax=        1 GeV   AngularGenSauterGavrila  FluoActive
+       PhotoElectric :  Emin=        1 GeV   Emax=       10 TeV   AngularGenSauterGavrila  FluoActive
+
+compt:   for  gamma    SubType= 13
+      Lambda table from 100 eV  to 1 MeV in 28 bins, spline: 1
+      LambdaPrime table from 1 MeV to 10 TeV in 49 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+    LivermoreCompton :  Emin=        0 eV    Emax=        1 GeV  FluoActive
+       Klein-Nishina :  Emin=        1 GeV   Emax=       10 TeV
+
+conv:   for  gamma    SubType= 14
+      Lambda table from 1.022 MeV to 10 TeV in 49 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermoreConversion :  Emin=        0 eV    Emax=        1 GeV
+        BetheHeitler :  Emin=        1 GeV   Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=       10 TeV
+
+Rayl:   for  gamma    SubType= 11
+      Lambda table from 100 eV  to 100 keV in 21 bins, spline: 0
+      LambdaPrime table from 100 keV to 10 TeV in 56 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   LivermoreRayleigh :  Emin=        0 eV    Emax=        1 GeV   CullenGenerator
+   LivermoreRayleigh :  Emin=        1 GeV   Emax=       10 TeV   CullenGenerator
+
+msc:   for e-    SubType= 10
+      RangeFactor= 0.04, step limit type: 2, lateralDisplacement: 1, skin= 1, geomFactor= 2.5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 1 region:
+          DefaultRegionForTheWorld
+
+eIoni:   for  e-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       LowEnergyIoni :  Emin=        0 eV    Emax=        1 GeV
+        MollerBhabha :  Emin=        1 GeV   Emax=       10 TeV
+
+eBrem:   for  e-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           LowEnBrem :  Emin=        0 eV    Emax=        1 GeV   AngularGenUrban
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+msc:   for e+    SubType= 10
+      RangeFactor= 0.04, step limit type: 1, lateralDisplacement: 1, skin= 1, geomFactor= 2.5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+eIoni:   for  e+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+annihil:   for  e+    SubType= 5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg :  Emin=        0 eV    Emax=       10 TeV
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_AIR
+ Range cuts        :  gamma  10 um     e-  10 um     e+  10 um  proton 10 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+    collimatorReg
+    monitorReg
+
+Index : 1     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_Cu
+ Range cuts        :  gamma  10 um     e-  10 um     e+  10 um  proton 10 um 
+ Energy thresholds :  gamma  2.15864 keV    e-  61.3176 keV    e+  60.499 keV proton -1 MeV
+ Region(s) which use this couple : 
+    targetReg
+
+Index : 2     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_W
+ Range cuts        :  gamma  10 um     e-  10 um     e+  10 um  proton 10 um 
+ Energy thresholds :  gamma  7.73912 keV    e-  81.8616 keV    e+  80.2277 keV proton -1 MeV
+ Region(s) which use this couple : 
+    collimatorReg
+    jawsReg
+
+Index : 3     used in the geometry : Yes     recalculation needed : No 
+ Material : SiFeMn
+ Range cuts        :  gamma  10 um     e-  10 um     e+  10 um  proton 10 um 
+ Energy thresholds :  gamma  1.7293 keV    e-  60.9069 keV    e+  60.0938 keV proton -1 MeV
+ Region(s) which use this couple : 
+    filterReg
+
+====================================================================
+
+ CreateHisto1D N trackInfos per Track in target = 980091
+ CreateHisto2D trackInfo Region vs trackInfo Region = 980092
+Start Run processing.
+ %%% EVENT 0 NTRACKS 13 TOTAL NTRACKS 13
+ CreateHisto1D GmProdCutsStudyUA: targetReg: gamma: eBrem:  log10(Range) = 1020011
+ CreateHisto1D GmProdCutsStudyUA: targetReg: gamma: eBrem:  log10(Energy) = 1020012
+ CreateHisto2D GmProdCutsStudyUA: targetReg: gamma: eBrem:  Safety-Range vs Range) = 1020013
+Run terminated.
+Run Summary
+  Number of events processed : 200
+  User=1.05s Real=1.1s Sys=0.04s
+ CreateHisto1D GmProdCutsStudyUA: targetReg: gamma: ALL:  log10(Range) = 1020021
+ CreateHisto1D GmProdCutsStudyUA: targetReg: gamma: ALL:  log10(Energy) = 1020022
+ CreateHisto2D GmProdCutsStudyUA: targetReg: gamma: ALL:  Safety-Range vs Range) = 1020023
+
+ %%%%% PRODUCTION CUTS STUDY RESULTS 
+GmProdCutsStudyUA: REGION= targetReg PARTICLE= gamma PROCESS= ALL MIN RANGE= 35.0802
+GmProdCutsStudyUA: REGION= targetReg PARTICLE= gamma PROCESS= eBrem MIN RANGE= 35.0802
+
+ %%%%% RANGE REJECTION STUDY RESULTS (NUMBER OF TRACKS WITH safety > range) 
+RangeRejection: REGION= targetReg PARTICLE= gamma PROCESS= ALL NTRACKS= 0
+RangeRejection: REGION= targetReg PARTICLE= gamma PROCESS= eBrem NTRACKS= 0
+NUMBER OF TRACKS ACCEPTED 6 N ANCESTORS 6
+
+%%%%% TIMING RESULTS for timer GmTimeStudyUA_GmClassifierByRegion
+DefaultRegionForTheWorld:   User=0.1  Real=0.1  Sys=0
+collimatorReg:   User=0.06  Real=0.05  Sys=0
+filterReg:   User=0.01  Real=0.01  Sys=0
+jawsReg:   User=0  Real=0  Sys=0
+monitorReg:   User=0  Real=0  Sys=0
+targetReg:   User=0.65  Real=0.57  Sys=0.04
+
+
+%%%%% TIMING RESULTS for timer GmTimeStudyUA_ClassifierParticleAndKinEnergy
+e+_0.01-0.1:   User=0  Real=0  Sys=0
+e+_0.1-1:   User=0  Real=0  Sys=0
+e-_0.0001-0.001:   User=0  Real=0  Sys=0
+e-_0.001-0.01:   User=0.07  Real=0.06  Sys=0
+e-_0.01-0.1:   User=0.11  Real=0.03  Sys=0
+e-_0.1-1:   User=0.14  Real=0.16  Sys=0
+e-_1-10:   User=0.34  Real=0.32  Sys=0.03
+gamma_0.001-0.01:   User=0.06  Real=0.02  Sys=0.01
+gamma_0.01-0.1:   User=0.03  Real=0.02  Sys=0
+gamma_0.1-1:   User=0.04  Real=0.06  Sys=0
+gamma_1-10:   User=0  Real=0.02  Sys=0
+
+Graphics systems deleted.
+Visualization Manager deleting...
+=== saving histograms in file === prodcuts.root
+%%%%% Compound classifier using indices from 2
+%%%%% Table of indices for GmClassifierByParticle GmClassifierByParticle
+GmClassifierByParticle: gamma = 2
+GmClassifierByParticle: e- = 1
+GmClassifierByParticle: e+ = 3
+%%%%% Table of indices for GmClassifierByRegion GmClassifierByRegion
+GmClassifierByRegion: DefaultRegionForTheWorld = 2
+GmClassifierByRegion: targetReg = 1
+GmClassifierByRegion: collimatorReg = 3
+GmClassifierByRegion: filterReg = 4
+GmClassifierByRegion: monitorReg = 5
+GmClassifierByRegion: jawsReg = 6
+%%%%% Table of indices for GmClassifierByKineticEnergy energyClassifier 9
+energyClassifier: 1e-07-1e-06 = 2
+energyClassifier: 1e-06-1e-05 = 3
+energyClassifier: 1e-05-0.0001 = 4
+energyClassifier: 0.0001-0.001 = 5
+energyClassifier: 0.001-0.01 = 6
+energyClassifier: 0.01-0.1 = 7
+energyClassifier: 0.1-1 = 8
+energyClassifier: 1-10 = 9

@@ -1,0 +1,225 @@
+ GmGenUtils::FileInPath ./deprecatedCommands.lis in .
+ GmGenUtils::FileInPath /home/arce/gamosnew/GAMOS.5.0.0/data/deprecatedCommands.lis in /home/arce/gamosnew/GAMOS.5.0.0/data
+
+*************************************************************
+ Geant4 version Name: geant4-09-06-patch-02    (17-May-2013)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  FukuiRenderer (DAWN)
+  G4HepRep (HepRepXML)
+  G4HepRepFile (HepRepFile)
+  OpenGLImmediateX (OGLI, OGLIX)
+  OpenGLStoredX (OGL, OGLS, OGLSX)
+  RayTracer (RayTracer)
+  VRML1 (VRML1)
+  VRML1FILE (VRML1FILE)
+  VRML2 (VRML2)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByCharge
+  drawByParticleID
+  drawByOriginVolume
+  drawByAttribute
+
+Registered filter factories:
+  chargeFilter
+  particleFilter
+  originVolumeFilter
+  attributeFilter
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+Available colours:
+  black, blue, brown, cyan, gray, green, grey, magenta, red, white, yellow
+
+/control/execute exercise3b.in
+/gamos/setParam GmGeometryFromText:FileName ../exercise2/exercise2.geom
+/gamos/geometry GmGeometryFromText
+/gamos/physicsList GmEMPhysics
+/gamos/generator GmGenerator
+ GmGenUtils::FileInPath ./isotopes.dat in .
+ GmGenUtils::FileInPath /home/arce/gamosnew/GAMOS.5.0.0/data/isotopes.dat in /home/arce/gamosnew/GAMOS.5.0.0/data
+/run/initialize
+ GmGenUtils::FileInPath ./../exercise2/exercise2.geom in .
+Checking overlaps for volume source ... OK! 
+Checking overlaps for volume container ... OK! 
+Checking overlaps for volume detector ... OK! 
+Checking overlaps for volume container ... OK! 
+GmEMPhysics PhysicsList:DEFAULT = gamma-lowener is registered
+GmEMPhysics PhysicsList: DEFAULT = electron-lowener is registered
+GmEMPhysics PhysicsList: DEFAULT = positron-standard is registered
+GmPhysicsGammaLowEner::ConstructProcess 
+/gamos/generator/addSingleParticleSource source gamma 1.*MeV
+/gamos/generator/positionDist source GmGenerDistPositionInG4Volumes source
+/gamos/scoring/createMFDetector collisionDet *
+/gamos/scoring/addScorer2MFD collisionScorer GmG4PSNofCollision collisionDet
+ GmVPrimitiveScorer::SetParameters: no parameters 
+/gamos/classifier processAndVolumeClassifier GmCompoundClassifier GmClassifierByLogicalVolume GmClassifierByProcess
+/gamos/scoring/assignClassifier2Scorer processAndVolumeClassifier collisionScorer
+/run/beamOn 10000
+
+phot:   for  gamma    SubType= 12
+      LambdaPrime table from 200 keV to 10 TeV in 54 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermorePhElectric :  Emin=        0 eV    Emax=        1 GeV   AngularGenSauterGavrila  FluoActive
+       PhotoElectric :  Emin=        1 GeV   Emax=       10 TeV   AngularGenSauterGavrila  FluoActive
+
+compt:   for  gamma    SubType= 13
+      Lambda table from 100 eV  to 1 MeV in 28 bins, spline: 1
+      LambdaPrime table from 1 MeV to 10 TeV in 49 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+    LivermoreCompton :  Emin=        0 eV    Emax=        1 GeV  FluoActive
+       Klein-Nishina :  Emin=        1 GeV   Emax=       10 TeV
+
+conv:   for  gamma    SubType= 14
+      Lambda table from 1.022 MeV to 10 TeV in 49 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermoreConversion :  Emin=        0 eV    Emax=        1 GeV
+        BetheHeitler :  Emin=        1 GeV   Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=       10 TeV
+
+Rayl:   for  gamma    SubType= 11
+      Lambda table from 100 eV  to 100 keV in 21 bins, spline: 0
+      LambdaPrime table from 100 keV to 10 TeV in 56 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   LivermoreRayleigh :  Emin=        0 eV    Emax=        1 GeV   CullenGenerator
+   LivermoreRayleigh :  Emin=        1 GeV   Emax=       10 TeV   CullenGenerator
+
+msc:   for e-    SubType= 10
+      RangeFactor= 0.04, step limit type: 2, lateralDisplacement: 1, skin= 1, geomFactor= 2.5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 1 region:
+          DefaultRegionForTheWorld
+
+eIoni:   for  e-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       LowEnergyIoni :  Emin=        0 eV    Emax=        1 GeV
+        MollerBhabha :  Emin=        1 GeV   Emax=       10 TeV
+
+eBrem:   for  e-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           LowEnBrem :  Emin=        0 eV    Emax=        1 GeV   AngularGenUrban
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+msc:   for e+    SubType= 10
+      RangeFactor= 0.04, step limit type: 1, lateralDisplacement: 1, skin= 1, geomFactor= 2.5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+eIoni:   for  e+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+annihil:   for  e+    SubType= 5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg :  Emin=        0 eV    Emax=       10 TeV
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_AIR
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_WATER
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  1.10981 keV    e-  84.6589 keV    e+  83.5287 keV proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 2     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_Al
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  2.3478 keV    e-  131.031 keV    e+  128.416 keV proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 3     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_Si
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  2.32425 keV    e-  121.694 keV    e+  120.07 keV proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+Start Run processing.
+Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=2.86s Real=2.89s Sys=0s
+
+ MultiFunctionalDet: collisionDet
+ PrimitiveScorer: collisionScorer
+ Number of entries= 14
+  index: container_compt  = 0.0183 +-(REL) 0.0776016  sumV2= 205
+  index: detector_compt  = 0.0266 +-(REL) 0.0765816  sumV2= 422
+  index: source_compt  = 0.0085 +-(REL) 0.110542  sumV2= 89
+  index: world_compt  = 0.0005 +-(REL) 0.447124  sumV2= 5
+  index: container_eBrem  = 0.0012 +-(REL) 0.288516  sumV2= 12
+  index: detector_eBrem  = 0.0015 +-(REL) 0.274705  sumV2= 17
+  index: world_eBrem  = 0.0001 +-(REL) 1  sumV2= 1
+  index: container_phot  = 0.0011 +-(REL) 0.301361  sumV2= 11
+  index: detector_phot  = 0.0012 +-(REL) 0.288516  sumV2= 12
+  index: world_phot  = 0.0001 +-(REL) 1  sumV2= 1
+  index: container_eIoni  = 0.0005 +-(REL) 0.447124  sumV2= 5
+  index: detector_eIoni  = 0.0006 +-(REL) 0.408146  sumV2= 6
+  index: source_eIoni  = 0.0005 +-(REL) 0.529082  sumV2= 7
+  index: world_eIoni  = 0.0048 +-(REL) 0.212234  sumV2= 104
+collisionScorer SUM ALL: 0.0655 +-(REL) 0.0454346 
+Graphics systems deleted.
+Visualization Manager deleting...
+%%%%% Table of indices for GmClassifierByLogicalVolume GmClassifierByLogicalVolume
+GmClassifierByLogicalVolume: world = 4
+GmClassifierByLogicalVolume: source = 3
+GmClassifierByLogicalVolume: container = 1
+GmClassifierByLogicalVolume: detector = 2
+%%%%% Table of indices for GmClassifierByProcess GmClassifierByProcess
+compt = 1
+eBrem = 2
+eIoni = 4
+phot = 3
+%%%%% Compound classifier using indices from 2

@@ -1,0 +1,9 @@
+/control/execute test.in
+/gamos/setParam GmGeometryFromText:FileName isotopes.geom
+/gamos/geometry GmGeometryFromText
+/gamos/physicsList GmEMPhysics
+/gamos/generator GmGenerator
+/gamos/generator/addSingleParticleSource MY_SOURCE e- 1*MeV
+/run/initialize
+
+Session terminated.

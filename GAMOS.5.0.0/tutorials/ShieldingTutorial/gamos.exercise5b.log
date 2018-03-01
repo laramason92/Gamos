@@ -1,0 +1,2057 @@
+/control/execute exercise5b.in
+/gamos/setParam GmGeometryUseMaterials:FileName exercise5.geom
+/gamos/setParam GmGeometryUseMaterials:Materials G4_Fe
+/gamos/geometry GmGeometryUseMaterials
+/gamos/physicsList G4QGSP_BIC_NHP
+<<< Geant4 Physics List simulation engine: QGSP_BIC_NHP 1.3
+
+WARNING: G4QStoppingPhysics is deprecated and will be removed in GEANT4 version 10.0.
+/gamos/setParam GmGeneratorChangeEnergyAndMaterial:nEventsPerRun 10000
+/gamos/setParam GmGeneratorChangeEnergyAndMaterial:minE 1.E-9*MeV
+/gamos/setParam GmGeneratorChangeEnergyAndMaterial:maxE 10.*MeV
+/gamos/setParam GmGeneratorChangeEnergyAndMaterial:nStepsE 11
+/gamos/setParam GmGeneratorChangeEnergyAndMaterial:logE 1
+/gamos/generator GmGeneratorChangeEnergyAndMaterial
+ GmGenUtils::FileInPath ./isotopes.dat in .
+ GmGenUtils::FileInPath /home/arce/gamosnew/GAMOS.5.0.0/data/isotopes.dat in /home/arce/gamosnew/GAMOS.5.0.0/data
+/run/initialize
+ GmGenUtils::FileInPath ./exercise5.geom in .
+0x1e05400TEST  G4ParticleHPChannel UpdateData neutron0x1e05400TEST  G4ParticleHPChannel UpdateData neutron0x1e05400TEST  G4ParticleHPChannel UpdateData neutron0x1e05400TEST  G4ParticleHPChannel UpdateData neutronWARNING: model G4LENeutronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+@@@ G4ParticleHPInelastic instantiated for particle neutron data directory variable is G4NEUTRONHPDATA pointing to /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Inelastic
+0x26dbca0TEST  G4ParticleHPChannel UpdateData neutron0x2093600 0 G4ParticleHPDiscreteTwoBody READ DATA 1.4343e+06 0 2
+0x2093600 1 G4ParticleHPDiscreteTwoBody READ DATA 2e+06 0 9
+0x2093600 2 G4ParticleHPDiscreteTwoBody READ DATA 4e+06 0 10
+0x2093600 3 G4ParticleHPDiscreteTwoBody READ DATA 7e+06 0 10
+0x2093600 4 G4ParticleHPDiscreteTwoBody READ DATA 1e+07 0 11
+0x2093600 5 G4ParticleHPDiscreteTwoBody READ DATA 1.45e+07 0 12
+0x2093600 6 G4ParticleHPDiscreteTwoBody READ DATA 1.75e+07 0 12
+0x2093600 7 G4ParticleHPDiscreteTwoBody READ DATA 2e+07 0 12
+0x2093600 8 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 12
+0x205d200 0 G4ParticleHPDiscreteTwoBody READ DATA 2.5855e+06 0 2
+0x205d200 1 G4ParticleHPDiscreteTwoBody READ DATA 3e+06 0 9
+0x205d200 2 G4ParticleHPDiscreteTwoBody READ DATA 6e+06 0 10
+0x205d200 3 G4ParticleHPDiscreteTwoBody READ DATA 1e+07 0 11
+0x205d200 4 G4ParticleHPDiscreteTwoBody READ DATA 1.45e+07 0 12
+0x205d200 5 G4ParticleHPDiscreteTwoBody READ DATA 1.75e+07 0 12
+0x205d200 6 G4ParticleHPDiscreteTwoBody READ DATA 2e+07 0 12
+0x205d200 7 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 12
+0x2ac3110 0 G4ParticleHPDiscreteTwoBody READ DATA 3.0052e+06 0 2
+0x2ac3110 1 G4ParticleHPDiscreteTwoBody READ DATA 3.5e+06 0 9
+0x2ac3110 2 G4ParticleHPDiscreteTwoBody READ DATA 6e+06 0 10
+0x2ac3110 3 G4ParticleHPDiscreteTwoBody READ DATA 1e+07 0 11
+0x2ac3110 4 G4ParticleHPDiscreteTwoBody READ DATA 1.45e+07 0 12
+0x2ac3110 5 G4ParticleHPDiscreteTwoBody READ DATA 1.75e+07 0 12
+0x2ac3110 6 G4ParticleHPDiscreteTwoBody READ DATA 2e+07 0 12
+0x2ac3110 7 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 12
+0x289c010 0 G4ParticleHPDiscreteTwoBody READ DATA 3.0143e+06 0 2
+0x289c010 1 G4ParticleHPDiscreteTwoBody READ DATA 3.5e+06 0 9
+0x289c010 2 G4ParticleHPDiscreteTwoBody READ DATA 6e+06 0 10
+0x289c010 3 G4ParticleHPDiscreteTwoBody READ DATA 1e+07 0 11
+0x289c010 4 G4ParticleHPDiscreteTwoBody READ DATA 1.45e+07 0 12
+0x289c010 5 G4ParticleHPDiscreteTwoBody READ DATA 1.75e+07 0 12
+0x289c010 6 G4ParticleHPDiscreteTwoBody READ DATA 2e+07 0 12
+0x289c010 7 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 12
+0x2477890 0 G4ParticleHPDiscreteTwoBody READ DATA 3.2252e+06 0 2
+0x2477890 1 G4ParticleHPDiscreteTwoBody READ DATA 4e+06 0 10
+0x2477890 2 G4ParticleHPDiscreteTwoBody READ DATA 7e+06 0 10
+0x2477890 3 G4ParticleHPDiscreteTwoBody READ DATA 1e+07 0 11
+0x2477890 4 G4ParticleHPDiscreteTwoBody READ DATA 1.45e+07 0 12
+0x2477890 5 G4ParticleHPDiscreteTwoBody READ DATA 1.75e+07 0 12
+0x2477890 6 G4ParticleHPDiscreteTwoBody READ DATA 2e+07 0 12
+0x2477890 7 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 12
+0x2477a40 0 G4ParticleHPDiscreteTwoBody READ DATA 3.3566e+06 0 2
+0x2477a40 1 G4ParticleHPDiscreteTwoBody READ DATA 4e+06 0 10
+0x2477a40 2 G4ParticleHPDiscreteTwoBody READ DATA 7e+06 0 10
+0x2477a40 3 G4ParticleHPDiscreteTwoBody READ DATA 1e+07 0 11
+0x2477a40 4 G4ParticleHPDiscreteTwoBody READ DATA 1.45e+07 0 12
+0x2477a40 5 G4ParticleHPDiscreteTwoBody READ DATA 1.75e+07 0 12
+0x2477a40 6 G4ParticleHPDiscreteTwoBody READ DATA 2e+07 0 12
+0x2477a40 7 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 12
+0x26dbca0TEST  G4ParticleHPChannel UpdateData neutron0x26dbca0TEST  G4ParticleHPChannel UpdateData neutron0x26dbca0TEST  G4ParticleHPChannel UpdateData neutron0x2bdf7e0TEST  G4ParticleHPChannel UpdateData neutron0x2bdf7e0TEST  G4ParticleHPChannel UpdateData neutron0x2bdf7e0TEST  G4ParticleHPChannel UpdateData neutron0x2bdf7e0TEST  G4ParticleHPChannel UpdateData neutron0x345d900TEST  G4ParticleHPChannel UpdateData neutron0x345d900TEST  G4ParticleHPChannel UpdateData neutron0x345d900TEST  G4ParticleHPChannel UpdateData neutron0x345d900TEST  G4ParticleHPChannel UpdateData neutron0x346b1e0TEST  G4ParticleHPChannel UpdateData neutron0x346b1e0TEST  G4ParticleHPChannel UpdateData neutron0x346b1e0TEST  G4ParticleHPChannel UpdateData neutron0x346b1e0TEST  G4ParticleHPChannel UpdateData neutron0x34ba670TEST  G4ParticleHPChannel UpdateData neutron0x34ba670TEST  G4ParticleHPChannel UpdateData neutron0x34ba670TEST  G4ParticleHPChannel UpdateData neutron0x34ba670TEST  G4ParticleHPChannel UpdateData neutron0x34ca3f0TEST  G4ParticleHPChannel UpdateData neutron0x34ca3f0TEST  G4ParticleHPChannel UpdateData neutron0x34ca3f0TEST  G4ParticleHPChannel UpdateData neutron0x34ca3f0TEST  G4ParticleHPChannel UpdateData neutron0x352a380TEST  G4ParticleHPChannel UpdateData neutron0x352a380TEST  G4ParticleHPChannel UpdateData neutron0x352a380TEST  G4ParticleHPChannel UpdateData neutron0x352a380TEST  G4ParticleHPChannel UpdateData neutron0x352dd40TEST  G4ParticleHPChannel UpdateData neutron0x352dd40TEST  G4ParticleHPChannel UpdateData neutron0x352dd40TEST  G4ParticleHPChannel UpdateData neutron0x352dd40TEST  G4ParticleHPChannel UpdateData neutron0x3536a10TEST  G4ParticleHPChannel UpdateData neutron0x3536a10TEST  G4ParticleHPChannel UpdateData neutron0x3536a10TEST  G4ParticleHPChannel UpdateData neutron0x3536a10TEST  G4ParticleHPChannel UpdateData neutron0x353f800TEST  G4ParticleHPChannel UpdateData neutron0x353f800TEST  G4ParticleHPChannel UpdateData neutron0x353f800TEST  G4ParticleHPChannel UpdateData neutron0x353f800TEST  G4ParticleHPChannel UpdateData neutron0x353d610TEST  G4ParticleHPChannel UpdateData neutron0x353d610TEST  G4ParticleHPChannel UpdateData neutron0x353d610TEST  G4ParticleHPChannel UpdateData neutron0x353d610TEST  G4ParticleHPChannel UpdateData neutron0x3585110TEST  G4ParticleHPChannel UpdateData neutron0x3585110TEST  G4ParticleHPChannel UpdateData neutron0x3585110TEST  G4ParticleHPChannel UpdateData neutron0x3585110TEST  G4ParticleHPChannel UpdateData neutron0x35cfa80TEST  G4ParticleHPChannel UpdateData neutron0x35cfa80TEST  G4ParticleHPChannel UpdateData neutron0x35cfa80TEST  G4ParticleHPChannel UpdateData neutron0x35cfa80TEST  G4ParticleHPChannel UpdateData neutron0x35d6a30TEST  G4ParticleHPChannel UpdateData neutron0x35d6a30TEST  G4ParticleHPChannel UpdateData neutron0x35d6a30TEST  G4ParticleHPChannel UpdateData neutron0x35d6a30TEST  G4ParticleHPChannel UpdateData neutron0x35c84c0TEST  G4ParticleHPChannel UpdateData neutron0x35c84c0TEST  G4ParticleHPChannel UpdateData neutron0x35c84c0TEST  G4ParticleHPChannel UpdateData neutron0x35c84c0TEST  G4ParticleHPChannel UpdateData neutron0x35da860TEST  G4ParticleHPChannel UpdateData neutron0x35da860TEST  G4ParticleHPChannel UpdateData neutron0x35da860TEST  G4ParticleHPChannel UpdateData neutron0x35da860TEST  G4ParticleHPChannel UpdateData neutron0x360a340TEST  G4ParticleHPChannel UpdateData neutron0x360a340TEST  G4ParticleHPChannel UpdateData neutron0x360a340TEST  G4ParticleHPChannel UpdateData neutron0x360a340TEST  G4ParticleHPChannel UpdateData neutron0x3613940TEST  G4ParticleHPChannel UpdateData neutron0x3613940TEST  G4ParticleHPChannel UpdateData neutron0x3613940TEST  G4ParticleHPChannel UpdateData neutron0x3613940TEST  G4ParticleHPChannel UpdateData neutron0x36388f0TEST  G4ParticleHPChannel UpdateData neutron0x36388f0TEST  G4ParticleHPChannel UpdateData neutron0x36388f0TEST  G4ParticleHPChannel UpdateData neutron0x36388f0TEST  G4ParticleHPChannel UpdateData neutron0x36209f0TEST  G4ParticleHPChannel UpdateData neutron0x36209f0TEST  G4ParticleHPChannel UpdateData neutron0x36209f0TEST  G4ParticleHPChannel UpdateData neutron0x36209f0TEST  G4ParticleHPChannel UpdateData neutron0x3641650TEST  G4ParticleHPChannel UpdateData neutron0x3641650TEST  G4ParticleHPChannel UpdateData neutron0x3641650TEST  G4ParticleHPChannel UpdateData neutron0x3641650TEST  G4ParticleHPChannel UpdateData neutron0x36719f0TEST  G4ParticleHPChannel UpdateData neutron0x36719f0TEST  G4ParticleHPChannel UpdateData neutron0x36719f0TEST  G4ParticleHPChannel UpdateData neutron0x36719f0TEST  G4ParticleHPChannel UpdateData neutron0x365a4c0TEST  G4ParticleHPChannel UpdateData neutron0x365a4c0TEST  G4ParticleHPChannel UpdateData neutron0x365a4c0TEST  G4ParticleHPChannel UpdateData neutron0x365a4c0TEST  G4ParticleHPChannel UpdateData neutron0x3686210TEST  G4ParticleHPChannel UpdateData neutron0x3686210TEST  G4ParticleHPChannel UpdateData neutron0x3686210TEST  G4ParticleHPChannel UpdateData neutron0x3686210TEST  G4ParticleHPChannel UpdateData neutron0x36d3ed0TEST  G4ParticleHPChannel UpdateData neutron0x36d3ed0TEST  G4ParticleHPChannel UpdateData neutron0x36d3ed0TEST  G4ParticleHPChannel UpdateData neutron0x36d3ed0TEST  G4ParticleHPChannel UpdateData neutron0x37b08e0TEST  G4ParticleHPChannel UpdateData neutron0x37b08e0TEST  G4ParticleHPChannel UpdateData neutron0x37b08e0TEST  G4ParticleHPChannel UpdateData neutron0x37b08e0TEST  G4ParticleHPChannel UpdateData neutron0x37dcca0TEST  G4ParticleHPChannel UpdateData neutron0x37dcca0TEST  G4ParticleHPChannel UpdateData neutron0x37dcca0TEST  G4ParticleHPChannel UpdateData neutron0x37dcca0TEST  G4ParticleHPChannel UpdateData neutron0x3810440TEST  G4ParticleHPChannel UpdateData neutron0x3810440TEST  G4ParticleHPChannel UpdateData neutron0x3810440TEST  G4ParticleHPChannel UpdateData neutron0x3810440TEST  G4ParticleHPChannel UpdateData neutron0x3997ab0TEST  G4ParticleHPChannel UpdateData neutron0x3997ab0TEST  G4ParticleHPChannel UpdateData neutron0x3997ab0TEST  G4ParticleHPChannel UpdateData neutron0x3997ab0TEST  G4ParticleHPChannel UpdateData neutron0x39f21d0TEST  G4ParticleHPChannel UpdateData neutron0x39f21d0TEST  G4ParticleHPChannel UpdateData neutron0x39f21d0TEST  G4ParticleHPChannel UpdateData neutron0x39f21d0TEST  G4ParticleHPChannel UpdateData neutron0x39a0c30TEST  G4ParticleHPChannel UpdateData neutron0x39a0c30TEST  G4ParticleHPChannel UpdateData neutron0x39a0c30TEST  G4ParticleHPChannel UpdateData neutron0x39a0c30TEST  G4ParticleHPChannel UpdateData neutron0x39999b0TEST  G4ParticleHPChannel UpdateData neutron0x39999b0TEST  G4ParticleHPChannel UpdateData neutron0x39999b0TEST  G4ParticleHPChannel UpdateData neutron0x39999b0TEST  G4ParticleHPChannel UpdateData neutron0x399dd00TEST  G4ParticleHPChannel UpdateData neutron0x399dd00TEST  G4ParticleHPChannel UpdateData neutron0x399dd00TEST  G4ParticleHPChannel UpdateData neutron0x399dd00TEST  G4ParticleHPChannel UpdateData neutron0x39c0eb0TEST  G4ParticleHPChannel UpdateData neutron0x39c0eb0TEST  G4ParticleHPChannel UpdateData neutron0x39c0eb0TEST  G4ParticleHPChannel UpdateData neutron0x39c0eb0TEST  G4ParticleHPChannel UpdateData neutron0x39c1110TEST  G4ParticleHPChannel UpdateData neutron0x39c1110TEST  G4ParticleHPChannel UpdateData neutron0x39c1110TEST  G4ParticleHPChannel UpdateData neutron0x39c1110TEST  G4ParticleHPChannel UpdateData neutron0x39cae30TEST  G4ParticleHPChannel UpdateData neutron0x39cae30TEST  G4ParticleHPChannel UpdateData neutron0x39cae30TEST  G4ParticleHPChannel UpdateData neutron0x39cae30TEST  G4ParticleHPChannel UpdateData neutron@@@ G4ParticleHPInelasticData instantiated for particle neutron data directory variable is G4NEUTRONHPDATA pointing to /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2
+0x1df4250TEST  G4ParticleHPChannel UpdateData neutron0x1df4250TEST  G4ParticleHPChannel UpdateData neutron0x1df4250TEST  G4ParticleHPChannel UpdateData neutron0x1df4250TEST  G4ParticleHPChannel UpdateData neutronWARNING: model G4LEProtonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEPionPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEPionMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroLInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroSInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiProtonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiProtonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiNeutronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiNeutronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LELambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HELambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiLambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiLambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LESigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HESigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiSigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiSigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LESigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HESigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiSigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiSigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: G4QCaptureAtRest is deprecated and will be removed in GEANT4 version 10.0.
+WARNING: model G4LEDeuteronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LETritonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAlphaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+/gamos/physics/removeProcessesByType Electromagnetic
+/gamos/physics/removeProcessesByName hadElastic
+/gamos/generator/addSingleParticleSource source neutron 1.*MeV
+/gamos/setParam SHGetHadronicChannelXSUA:ParticleYields 1
+/gamos/userAction SHGetHadronicChannelXSUA
+/gamos/userAction GmKillAtStackingActionUA GmSecondaryFilter
+/run/beamOn 100000000
+============================================================================================
+             HADRONIC PROCESSES SUMMARY (verbose level 1)
+
+                                  Hadronic Processes for <GenericIon>
+                                  -----------------------------------
+        ionInelastic  Models:     Binary Light Ion Cascade: Emin(GeV)=    0  Emax(GeV)= 20
+
+        ionInelastic  Crs sctns:          AxenWellischIonH: Emin(GeV)=    0  Emax(GeV)= 100000
+                                                  IonsShen: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <anti_neutron>
+                                  -----------------------------------
+AntiNeutronInelastic  Models:     G4LEAntiNeutronInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+                                  G4HEAntiNeutronInelastic: Emin(GeV)=   20  Emax(GeV)= 100000
+
+AntiNeutronInelastic  Crs sctns:          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <anti_proton>
+                                  -----------------------------------
+ AntiProtonInelastic  Models:      G4LEAntiProtonInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+                                   G4HEAntiProtonInelastic: Emin(GeV)=   20  Emax(GeV)= 100000
+
+ AntiProtonInelastic  Crs sctns:          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <e+>
+                                  -----------------------------------
+     PositronNuclear  Models:      G4ElectroVDNuclearModel: Emin(GeV)=    0  Emax(GeV)= 1e+06
+
+     PositronNuclear  Crs sctns:          ElectroNuclearXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <e->
+                                  -----------------------------------
+      ElectroNuclear  Models:      G4ElectroVDNuclearModel: Emin(GeV)=    0  Emax(GeV)= 1e+06
+
+      ElectroNuclear  Crs sctns:          ElectroNuclearXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <gamma>
+                                  -----------------------------------
+     PhotonInelastic  Models:               BertiniCascade: Emin(GeV)=    0  Emax(GeV)= 3.5
+                                           TheoFSGenerator: Emin(GeV)=    3  Emax(GeV)= 100000
+
+     PhotonInelastic  Crs sctns:            PhotoNuclearXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <kaon+>
+                                  -----------------------------------
+   KaonPlusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                     G4LEKaonPlusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+   KaonPlusInelastic  Crs sctns:  ChipsKaonPlusInelasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <kaon->
+                                  -----------------------------------
+  KaonMinusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                    G4LEKaonMinusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+  KaonMinusInelastic  Crs sctns: ChipsKaonMinusInelasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <lambda>
+                                  -----------------------------------
+     LambdaInelastic  Models:          G4LELambdaInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+                                       G4HELambdaInelastic: Emin(GeV)=   20  Emax(GeV)= 100000
+
+     LambdaInelastic  Crs sctns:          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                     Hadronic Processes for <mu->
+          muMinusCaptureAtRest
+
+                                  Hadronic Processes for <neutron>
+                                  -----------------------------------
+    NeutronInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                      G4LENeutronInelastic: Emin(GeV)=  9.5  Emax(GeV)= 25
+                                            Binary Cascade: Emin(GeV)= 0.0199  Emax(GeV)= 9.9
+                                       ParticleHPInelastic: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+    NeutronInelastic  Crs sctns:      NeutronHPInelasticXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+            nCapture  Models:                   G4LCapture: Emin(GeV)= 0.0199  Emax(GeV)= 20000
+                                          NeutronHPCapture: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+            nCapture  Crs sctns:        NeutronHPCaptureXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                          GheishaCaptureXS: Emin(GeV)=    0  Emax(GeV)= 100000
+
+            nFission  Models:                   G4LFission: Emin(GeV)= 0.0199  Emax(GeV)= 20000
+                                          NeutronHPFission: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+            nFission  Crs sctns:        NeutronHPFissionXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                          GheishaFissionXS: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <pi+>
+                                  -----------------------------------
+   PionPlusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                     G4LEPionPlusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+   PionPlusInelastic  Crs sctns:      G4CrossSectionPairGG: Emin(GeV)=    0  Emax(GeV)= 100000
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <pi->
+                                  -----------------------------------
+  PionMinusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                    G4LEPionMinusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+  PionMinusInelastic  Crs sctns:      G4CrossSectionPairGG: Emin(GeV)=    0  Emax(GeV)= 100000
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <proton>
+                                  -----------------------------------
+     ProtonInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                       G4LEProtonInelastic: Emin(GeV)=  9.5  Emax(GeV)= 25
+                                            Binary Cascade: Emin(GeV)=    0  Emax(GeV)= 9.9
+
+     ProtonInelastic  Crs sctns:       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+============================================================================================
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_Fe
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  17.2183 keV    e-  951.321 keV    e+  901.528 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+Start Run processing.
+0x1825e80 GmGeneratorChangeEnergyAndMaterial::BuildMaterialsFromGe 1
+G4GeometryManager::ReportVoxelStats -- Voxel Statistics
+
+    Total memory consumed for geometry optimisation:   0 kByte
+    Total CPU time elapsed for geometry optimisation: 0 seconds
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_Fe
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  17.2183 keV    e-  951.321 keV    e+  901.528 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_Fe
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  17.2183 keV    e-  951.321 keV    e+  901.528 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+NMATES 1 NPROC 3
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 286000001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 286000002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 286010001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 286010002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 286020001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 286020002
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture TOTAL_XS(macro)= 0.110652 mm-1 TOTAL_XS(micro)= 13.0317 barn
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+ GmGenUtils::FileInPath ./elementsZ.lis in .
+ GmGenUtils::FileInPath /home/arce/gamosnew/GAMOS.5.0.0/data/elementsZ.lis in /home/arce/gamosnew/GAMOS.5.0.0/data
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 1 [Fe54 1 Fe55[0.0] 1  = 350
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 2 [Fe54 1 Fe55[0.0] 1  = 152
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 3 [Fe54 1 Fe55[0.0] 1  = 59
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 4 [Fe54 1 Fe55[0.0] 1  = 20
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 5 [Fe54 1 Fe55[0.0] 1  = 6
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 6 [Fe54 1 Fe55[0.0] 1  = 4
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 1 [Fe56 1 Fe57[0.0] 1  = 4542
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 2 [Fe56 1 Fe57[0.0] 1  = 2401
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 3 [Fe56 1 Fe57[0.0] 1  = 1410
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 4 [Fe56 1 Fe57[0.0] 1  = 601
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 5 [Fe56 1 Fe57[0.0] 1  = 161
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 6 [Fe56 1 Fe57[0.0] 1  = 48
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 7 [Fe56 1 Fe57[0.0] 1  = 10
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 8 [Fe56 1 Fe57[0.0] 1  = 3
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 1 [Fe57 1 Fe58[0.0] 1  = 47
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 2 [Fe57 1 Fe58[0.0] 1  = 49
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 3 [Fe57 1 Fe58[0.0] 1  = 47
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 4 [Fe57 1 Fe58[0.0] 1  = 44
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 5 [Fe57 1 Fe58[0.0] 1  = 19
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 6 [Fe57 1 Fe58[0.0] 1  = 12
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 7 [Fe57 1 Fe58[0.0] 1  = 4
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 1 [Fe58 1 Fe59[0.0] 1  = 4
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 2 [Fe58 1 Fe59[0.0] 1  = 3
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 3 [Fe58 1 Fe59[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 4 [Fe58 1 Fe59[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL gamma 5 [Fe58 1 Fe59[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL_ALL= Fe54(n,)Fe55 = 591/10000 = 0.0591*XS(micro)= 0.770171 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe54(n,)Fe55_NPART = 286000013
+ CreateHisto1D nCapture_G4_Fe_Fe54(n,)Fe55_XSmicro = 286000014
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL_ALL= Fe56(n,)Fe57 = 9176/10000 = 0.9176*XS(micro)= 11.9579 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_NPART = 286002013
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_XSmicro = 286002014
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL_ALL= Fe57(n,)Fe58 = 222/10000 = 0.0222*XS(micro)= 0.289303 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe57(n,)Fe58_NPART = 286004013
+ CreateHisto1D nCapture_G4_Fe_Fe57(n,)Fe58_XSmicro = 286004014
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture CHANNEL_ALL= Fe58(n,)Fe59 = 11/10000 = 0.0011*XS(micro)= 0.0143348 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe58(n,)Fe59_NPART = 286006013
+ CreateHisto1D nCapture_G4_Fe_Fe58(n,)Fe59_XSmicro = 286006014
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture Fe54 PARTICLE_YIELD Fe55[0.0] = 591/10000 = 0.0591 *XS(micro)= 0.770171
+ CreateHisto1D nCapture_G4_Fe_Fe54_Fe55[0.0]_YIELD = 286050015
+ CreateHisto1D nCapture_G4_Fe_Fe54_Fe55[0.0]_YIELD_XSmicro = 286050016
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture Fe54 PARTICLE_YIELD gamma = 965/10000 = 0.0965 *XS(micro)= 1.25756
+ CreateHisto1D nCapture_G4_Fe_Fe54_gamma_YIELD = 286051015
+ CreateHisto1D nCapture_G4_Fe_Fe54_gamma_YIELD_XSmicro = 286051016
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture Fe56 PARTICLE_YIELD Fe57[0.0] = 9176/10000 = 0.9176 *XS(micro)= 11.9579
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD = 286102015
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD_XSmicro = 286102016
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture Fe56 PARTICLE_YIELD gamma = 17165/10000 = 1.7165 *XS(micro)= 22.3688
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD = 286101015
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD_XSmicro = 286101016
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture Fe57 PARTICLE_YIELD Fe58[0.0] = 222/10000 = 0.0222 *XS(micro)= 0.289303
+ CreateHisto1D nCapture_G4_Fe_Fe57_Fe58[0.0]_YIELD = 286153015
+ CreateHisto1D nCapture_G4_Fe_Fe57_Fe58[0.0]_YIELD_XSmicro = 286153016
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture Fe57 PARTICLE_YIELD gamma = 657/10000 = 0.0657 *XS(micro)= 0.85618
+ CreateHisto1D nCapture_G4_Fe_Fe57_gamma_YIELD = 286151015
+ CreateHisto1D nCapture_G4_Fe_Fe57_gamma_YIELD_XSmicro = 286151016
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture Fe58 PARTICLE_YIELD Fe59[0.0] = 11/10000 = 0.0011 *XS(micro)= 0.0143348
+ CreateHisto1D nCapture_G4_Fe_Fe58_Fe59[0.0]_YIELD = 286204015
+ CreateHisto1D nCapture_G4_Fe_Fe58_Fe59[0.0]_YIELD_XSmicro = 286204016
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture Fe58 PARTICLE_YIELD gamma = 26/10000 = 0.0026 *XS(micro)= 0.0338823
+ CreateHisto1D nCapture_G4_Fe_Fe58_gamma_YIELD = 286201015
+ CreateHisto1D nCapture_G4_Fe_Fe58_gamma_YIELD_XSmicro = 286201016
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture TOTAL_PARTICLE_YIELD Fe55[0.0] = 591/10000 = 0.0591 *XS(micro)= 0.770171
+ CreateHisto1D nCapture_G4_Fe_Fe55[0.0]_TOTAL_YIELD = 286000015
+ CreateHisto1D nCapture_G4_Fe_Fe55[0.0]_TOTAL_YIELD_XSmicro = 286000016
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture TOTAL_PARTICLE_YIELD Fe57[0.0] = 9176/10000 = 0.9176 *XS(micro)= 11.9579
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD = 286002015
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD_XSmicro = 286002016
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture TOTAL_PARTICLE_YIELD Fe58[0.0] = 222/10000 = 0.0222 *XS(micro)= 0.289303
+ CreateHisto1D nCapture_G4_Fe_Fe58[0.0]_TOTAL_YIELD = 286003015
+ CreateHisto1D nCapture_G4_Fe_Fe58[0.0]_TOTAL_YIELD_XSmicro = 286003016
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture TOTAL_PARTICLE_YIELD Fe59[0.0] = 11/10000 = 0.0011 *XS(micro)= 0.0143348
+ CreateHisto1D nCapture_G4_Fe_Fe59[0.0]_TOTAL_YIELD = 286004015
+ CreateHisto1D nCapture_G4_Fe_Fe59[0.0]_TOTAL_YIELD_XSmicro = 286004016
+@@SHGetHadronicChannelXSUA G4_Fe 9.99989e-10 MeV nCapture TOTAL_PARTICLE_YIELD gamma = 18813/10000 = 1.8813 *XS(micro)= 24.5165
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD = 286001015
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD_XSmicro = 286001016
+NMATES 1 NPROC 6
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 717000001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 717000002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 717010001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 717010002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 717020001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 717020002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 717030001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 717030002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 717040001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 717040002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 717050001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 717050002
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture TOTAL_XS(macro)= 0.0349989 mm-1 TOTAL_XS(micro)= 4.12186 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture TOTAL_XS(macro)= 0.0349989 mm-1 TOTAL_XS(micro)= 4.12186 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 1 [Fe54 1 Fe55[0.0] 1  = 270
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 2 [Fe54 1 Fe55[0.0] 1  = 132
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 3 [Fe54 1 Fe55[0.0] 1  = 65
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 4 [Fe54 1 Fe55[0.0] 1  = 21
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 5 [Fe54 1 Fe55[0.0] 1  = 6
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 6 [Fe54 1 Fe55[0.0] 1  = 4
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 1 [Fe56 1 Fe57[0.0] 1  = 4588
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 2 [Fe56 1 Fe57[0.0] 1  = 2514
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 3 [Fe56 1 Fe57[0.0] 1  = 1372
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 4 [Fe56 1 Fe57[0.0] 1  = 544
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 5 [Fe56 1 Fe57[0.0] 1  = 184
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 6 [Fe56 1 Fe57[0.0] 1  = 62
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 7 [Fe56 1 Fe57[0.0] 1  = 13
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 8 [Fe56 1 Fe57[0.0] 1  = 5
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 9 [Fe56 1 Fe57[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 10 [Fe56 1 Fe57[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 1 [Fe57 1 Fe58[0.0] 1  = 36
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 2 [Fe57 1 Fe58[0.0] 1  = 42
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 3 [Fe57 1 Fe58[0.0] 1  = 39
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 4 [Fe57 1 Fe58[0.0] 1  = 39
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 5 [Fe57 1 Fe58[0.0] 1  = 29
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 6 [Fe57 1 Fe58[0.0] 1  = 16
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 7 [Fe57 1 Fe58[0.0] 1  = 5
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 8 [Fe57 1 Fe58[0.0] 1  = 3
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 1 [Fe58 1 Fe59[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 2 [Fe58 1 Fe59[0.0] 1  = 4
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 3 [Fe58 1 Fe59[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL gamma 8 [Fe58 1 Fe59[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL_ALL= Fe54(n,)Fe55 = 498/10000 = 0.0498*XS(micro)= 0.205268 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe54(n,)Fe55_NPART = 717000013
+ CreateHisto1D nCapture_G4_Fe_Fe54(n,)Fe55_XSmicro = 717000014
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL_ALL= Fe56(n,)Fe57 = 9285/10000 = 0.9285*XS(micro)= 3.82714 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_NPART = 717002013
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_XSmicro = 717002014
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL_ALL= Fe57(n,)Fe58 = 209/10000 = 0.0209*XS(micro)= 0.0861468 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe57(n,)Fe58_NPART = 717004013
+ CreateHisto1D nCapture_G4_Fe_Fe57(n,)Fe58_XSmicro = 717004014
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture CHANNEL_ALL= Fe58(n,)Fe59 = 8/10000 = 0.0008*XS(micro)= 0.00329748 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe58(n,)Fe59_NPART = 717006013
+ CreateHisto1D nCapture_G4_Fe_Fe58(n,)Fe59_XSmicro = 717006014
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture Fe54 PARTICLE_YIELD Fe55[0.0] = 498/10000 = 0.0498 *XS(micro)= 0.205268
+ CreateHisto1D nCapture_G4_Fe_Fe54_Fe55[0.0]_YIELD = 717050015
+ CreateHisto1D nCapture_G4_Fe_Fe54_Fe55[0.0]_YIELD_XSmicro = 717050016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture Fe54 PARTICLE_YIELD gamma = 867/10000 = 0.0867 *XS(micro)= 0.357365
+ CreateHisto1D nCapture_G4_Fe_Fe54_gamma_YIELD = 717051015
+ CreateHisto1D nCapture_G4_Fe_Fe54_gamma_YIELD_XSmicro = 717051016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture Fe56 PARTICLE_YIELD Fe57[0.0] = 9285/10000 = 0.9285 *XS(micro)= 3.82714
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD = 717102015
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD_XSmicro = 717102016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture Fe56 PARTICLE_YIELD gamma = 17359/10000 = 1.7359 *XS(micro)= 7.15513
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD = 717101015
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD_XSmicro = 717101016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture Fe57 PARTICLE_YIELD Fe58[0.0] = 209/10000 = 0.0209 *XS(micro)= 0.0861468
+ CreateHisto1D nCapture_G4_Fe_Fe57_Fe58[0.0]_YIELD = 717153015
+ CreateHisto1D nCapture_G4_Fe_Fe57_Fe58[0.0]_YIELD_XSmicro = 717153016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture Fe57 PARTICLE_YIELD gamma = 693/10000 = 0.0693 *XS(micro)= 0.285645
+ CreateHisto1D nCapture_G4_Fe_Fe57_gamma_YIELD = 717151015
+ CreateHisto1D nCapture_G4_Fe_Fe57_gamma_YIELD_XSmicro = 717151016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture Fe58 PARTICLE_YIELD Fe59[0.0] = 8/10000 = 0.0008 *XS(micro)= 0.00329748
+ CreateHisto1D nCapture_G4_Fe_Fe58_Fe59[0.0]_YIELD = 717204015
+ CreateHisto1D nCapture_G4_Fe_Fe58_Fe59[0.0]_YIELD_XSmicro = 717204016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture Fe58 PARTICLE_YIELD gamma = 21/10000 = 0.0021 *XS(micro)= 0.0086559
+ CreateHisto1D nCapture_G4_Fe_Fe58_gamma_YIELD = 717201015
+ CreateHisto1D nCapture_G4_Fe_Fe58_gamma_YIELD_XSmicro = 717201016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture TOTAL_PARTICLE_YIELD Fe55[0.0] = 498/10000 = 0.0498 *XS(micro)= 0.205268
+ CreateHisto1D nCapture_G4_Fe_Fe55[0.0]_TOTAL_YIELD = 717000015
+ CreateHisto1D nCapture_G4_Fe_Fe55[0.0]_TOTAL_YIELD_XSmicro = 717000016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture TOTAL_PARTICLE_YIELD Fe57[0.0] = 9285/10000 = 0.9285 *XS(micro)= 3.82714
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD = 717002015
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD_XSmicro = 717002016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture TOTAL_PARTICLE_YIELD Fe58[0.0] = 209/10000 = 0.0209 *XS(micro)= 0.0861468
+ CreateHisto1D nCapture_G4_Fe_Fe58[0.0]_TOTAL_YIELD = 717003015
+ CreateHisto1D nCapture_G4_Fe_Fe58[0.0]_TOTAL_YIELD_XSmicro = 717003016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture TOTAL_PARTICLE_YIELD Fe59[0.0] = 8/10000 = 0.0008 *XS(micro)= 0.00329748
+ CreateHisto1D nCapture_G4_Fe_Fe59[0.0]_TOTAL_YIELD = 717004015
+ CreateHisto1D nCapture_G4_Fe_Fe59[0.0]_TOTAL_YIELD_XSmicro = 717004016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-08 MeV nCapture TOTAL_PARTICLE_YIELD gamma = 18940/10000 = 1.894 *XS(micro)= 7.80679
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD = 717001015
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD_XSmicro = 717001016
+NMATES 1 NPROC 9
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 521000001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 521000002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 521010001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 521010002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 521020001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 521020002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 521030001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 521030002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 521040001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 521040002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 521050001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 521050002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 521060001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 521060002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 521070001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 521070002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 521080001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 521080002
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture TOTAL_XS(macro)= 0.011114 mm-1 TOTAL_XS(micro)= 1.3089 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture TOTAL_XS(macro)= 0.011114 mm-1 TOTAL_XS(micro)= 1.3089 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture TOTAL_XS(macro)= 0.011114 mm-1 TOTAL_XS(micro)= 1.3089 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 1 [Fe54 1 Fe55[0.0] 1  = 313
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 2 [Fe54 1 Fe55[0.0] 1  = 103
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 3 [Fe54 1 Fe55[0.0] 1  = 73
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 4 [Fe54 1 Fe55[0.0] 1  = 22
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 5 [Fe54 1 Fe55[0.0] 1  = 7
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 6 [Fe54 1 Fe55[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 1 [Fe56 1 Fe57[0.0] 1  = 4637
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 2 [Fe56 1 Fe57[0.0] 1  = 2427
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 3 [Fe56 1 Fe57[0.0] 1  = 1386
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 4 [Fe56 1 Fe57[0.0] 1  = 568
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 5 [Fe56 1 Fe57[0.0] 1  = 179
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 6 [Fe56 1 Fe57[0.0] 1  = 58
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 7 [Fe56 1 Fe57[0.0] 1  = 9
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 8 [Fe56 1 Fe57[0.0] 1  = 3
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 1 [Fe57 1 Fe58[0.0] 1  = 37
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 2 [Fe57 1 Fe58[0.0] 1  = 47
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 3 [Fe57 1 Fe58[0.0] 1  = 43
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 4 [Fe57 1 Fe58[0.0] 1  = 41
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 5 [Fe57 1 Fe58[0.0] 1  = 15
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 6 [Fe57 1 Fe58[0.0] 1  = 9
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 7 [Fe57 1 Fe58[0.0] 1  = 9
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 8 [Fe57 1 Fe58[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 1 [Fe58 1 Fe59[0.0] 1  = 7
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 3 [Fe58 1 Fe59[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 4 [Fe58 1 Fe59[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL gamma 5 [Fe58 1 Fe59[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL_ALL= Fe54(n,)Fe55 = 520/10000 = 0.052*XS(micro)= 0.068063 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe54(n,)Fe55_NPART = 521000013
+ CreateHisto1D nCapture_G4_Fe_Fe54(n,)Fe55_XSmicro = 521000014
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL_ALL= Fe56(n,)Fe57 = 9267/10000 = 0.9267*XS(micro)= 1.21296 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_NPART = 521002013
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_XSmicro = 521002014
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL_ALL= Fe57(n,)Fe58 = 202/10000 = 0.0202*XS(micro)= 0.0264398 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe57(n,)Fe58_NPART = 521004013
+ CreateHisto1D nCapture_G4_Fe_Fe57(n,)Fe58_XSmicro = 521004014
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture CHANNEL_ALL= Fe58(n,)Fe59 = 11/10000 = 0.0011*XS(micro)= 0.00143979 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe58(n,)Fe59_NPART = 521006013
+ CreateHisto1D nCapture_G4_Fe_Fe58(n,)Fe59_XSmicro = 521006014
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture Fe54 PARTICLE_YIELD Fe55[0.0] = 520/10000 = 0.052 *XS(micro)= 0.068063
+ CreateHisto1D nCapture_G4_Fe_Fe54_Fe55[0.0]_YIELD = 521050015
+ CreateHisto1D nCapture_G4_Fe_Fe54_Fe55[0.0]_YIELD_XSmicro = 521050016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture Fe54 PARTICLE_YIELD gamma = 873/10000 = 0.0873 *XS(micro)= 0.114267
+ CreateHisto1D nCapture_G4_Fe_Fe54_gamma_YIELD = 521051015
+ CreateHisto1D nCapture_G4_Fe_Fe54_gamma_YIELD_XSmicro = 521051016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture Fe56 PARTICLE_YIELD Fe57[0.0] = 9267/10000 = 0.9267 *XS(micro)= 1.21296
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD = 521102015
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD_XSmicro = 521102016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture Fe56 PARTICLE_YIELD gamma = 17251/10000 = 1.7251 *XS(micro)= 2.25799
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD = 521101015
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD_XSmicro = 521101016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture Fe57 PARTICLE_YIELD Fe58[0.0] = 202/10000 = 0.0202 *XS(micro)= 0.0264398
+ CreateHisto1D nCapture_G4_Fe_Fe57_Fe58[0.0]_YIELD = 521153015
+ CreateHisto1D nCapture_G4_Fe_Fe57_Fe58[0.0]_YIELD_XSmicro = 521153016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture Fe57 PARTICLE_YIELD gamma = 624/10000 = 0.0624 *XS(micro)= 0.0816756
+ CreateHisto1D nCapture_G4_Fe_Fe57_gamma_YIELD = 521151015
+ CreateHisto1D nCapture_G4_Fe_Fe57_gamma_YIELD_XSmicro = 521151016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture Fe58 PARTICLE_YIELD Fe59[0.0] = 11/10000 = 0.0011 *XS(micro)= 0.00143979
+ CreateHisto1D nCapture_G4_Fe_Fe58_Fe59[0.0]_YIELD = 521204015
+ CreateHisto1D nCapture_G4_Fe_Fe58_Fe59[0.0]_YIELD_XSmicro = 521204016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture Fe58 PARTICLE_YIELD gamma = 22/10000 = 0.0022 *XS(micro)= 0.00287959
+ CreateHisto1D nCapture_G4_Fe_Fe58_gamma_YIELD = 521201015
+ CreateHisto1D nCapture_G4_Fe_Fe58_gamma_YIELD_XSmicro = 521201016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture TOTAL_PARTICLE_YIELD Fe55[0.0] = 520/10000 = 0.052 *XS(micro)= 0.068063
+ CreateHisto1D nCapture_G4_Fe_Fe55[0.0]_TOTAL_YIELD = 521000015
+ CreateHisto1D nCapture_G4_Fe_Fe55[0.0]_TOTAL_YIELD_XSmicro = 521000016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture TOTAL_PARTICLE_YIELD Fe57[0.0] = 9267/10000 = 0.9267 *XS(micro)= 1.21296
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD = 521002015
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD_XSmicro = 521002016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture TOTAL_PARTICLE_YIELD Fe58[0.0] = 202/10000 = 0.0202 *XS(micro)= 0.0264398
+ CreateHisto1D nCapture_G4_Fe_Fe58[0.0]_TOTAL_YIELD = 521003015
+ CreateHisto1D nCapture_G4_Fe_Fe58[0.0]_TOTAL_YIELD_XSmicro = 521003016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture TOTAL_PARTICLE_YIELD Fe59[0.0] = 11/10000 = 0.0011 *XS(micro)= 0.00143979
+ CreateHisto1D nCapture_G4_Fe_Fe59[0.0]_TOTAL_YIELD = 521004015
+ CreateHisto1D nCapture_G4_Fe_Fe59[0.0]_TOTAL_YIELD_XSmicro = 521004016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-07 MeV nCapture TOTAL_PARTICLE_YIELD gamma = 18770/10000 = 1.877 *XS(micro)= 2.45681
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD = 521001015
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD_XSmicro = 521001016
+NMATES 1 NPROC 12
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 620000001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 620000002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 620010001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 620010002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 620020001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 620020002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 620030001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 620030002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 620040001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 620040002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 620050001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 620050002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 620060001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 620060002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 620070001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 620070002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 620080001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 620080002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 620090001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 620090002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 620100001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 620100002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 620110001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 620110002
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture TOTAL_XS(macro)= 0.00352339 mm-1 TOTAL_XS(micro)= 0.414953 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture TOTAL_XS(macro)= 0.00352339 mm-1 TOTAL_XS(micro)= 0.414953 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture TOTAL_XS(macro)= 0.00352339 mm-1 TOTAL_XS(micro)= 0.414953 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture TOTAL_XS(macro)= 0.00352339 mm-1 TOTAL_XS(micro)= 0.414953 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 1 [Fe54 1 Fe55[0.0] 1  = 282
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 2 [Fe54 1 Fe55[0.0] 1  = 142
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 3 [Fe54 1 Fe55[0.0] 1  = 65
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 4 [Fe54 1 Fe55[0.0] 1  = 30
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 5 [Fe54 1 Fe55[0.0] 1  = 9
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 6 [Fe54 1 Fe55[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 7 [Fe54 1 Fe55[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 1 [Fe56 1 Fe57[0.0] 1  = 4604
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 2 [Fe56 1 Fe57[0.0] 1  = 2458
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 3 [Fe56 1 Fe57[0.0] 1  = 1357
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 4 [Fe56 1 Fe57[0.0] 1  = 564
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 5 [Fe56 1 Fe57[0.0] 1  = 190
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 6 [Fe56 1 Fe57[0.0] 1  = 50
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 7 [Fe56 1 Fe57[0.0] 1  = 10
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 8 [Fe56 1 Fe57[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 1 [Fe57 1 Fe58[0.0] 1  = 46
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 2 [Fe57 1 Fe58[0.0] 1  = 46
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 3 [Fe57 1 Fe58[0.0] 1  = 51
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 4 [Fe57 1 Fe58[0.0] 1  = 43
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 5 [Fe57 1 Fe58[0.0] 1  = 18
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 6 [Fe57 1 Fe58[0.0] 1  = 10
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 7 [Fe57 1 Fe58[0.0] 1  = 3
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 9 [Fe57 1 Fe58[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 1 [Fe58 1 Fe59[0.0] 1  = 4
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 2 [Fe58 1 Fe59[0.0] 1  = 7
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 3 [Fe58 1 Fe59[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 5 [Fe58 1 Fe59[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL gamma 6 [Fe58 1 Fe59[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL_ALL= Fe54(n,)Fe55 = 531/10000 = 0.0531*XS(micro)= 0.022034 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe54(n,)Fe55_NPART = 620000013
+ CreateHisto1D nCapture_G4_Fe_Fe54(n,)Fe55_XSmicro = 620000014
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL_ALL= Fe56(n,)Fe57 = 9235/10000 = 0.9235*XS(micro)= 0.383209 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_NPART = 620002013
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_XSmicro = 620002014
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL_ALL= Fe57(n,)Fe58 = 218/10000 = 0.0218*XS(micro)= 0.00904598 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe57(n,)Fe58_NPART = 620004013
+ CreateHisto1D nCapture_G4_Fe_Fe57(n,)Fe58_XSmicro = 620004014
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture CHANNEL_ALL= Fe58(n,)Fe59 = 16/10000 = 0.0016*XS(micro)= 0.000663925 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe58(n,)Fe59_NPART = 620006013
+ CreateHisto1D nCapture_G4_Fe_Fe58(n,)Fe59_XSmicro = 620006014
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture Fe54 PARTICLE_YIELD Fe55[0.0] = 531/10000 = 0.0531 *XS(micro)= 0.022034
+ CreateHisto1D nCapture_G4_Fe_Fe54_Fe55[0.0]_YIELD = 620050015
+ CreateHisto1D nCapture_G4_Fe_Fe54_Fe55[0.0]_YIELD_XSmicro = 620050016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture Fe54 PARTICLE_YIELD gamma = 946/10000 = 0.0946 *XS(micro)= 0.0392546
+ CreateHisto1D nCapture_G4_Fe_Fe54_gamma_YIELD = 620051015
+ CreateHisto1D nCapture_G4_Fe_Fe54_gamma_YIELD_XSmicro = 620051016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture Fe56 PARTICLE_YIELD Fe57[0.0] = 9235/10000 = 0.9235 *XS(micro)= 0.383209
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD = 620102015
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD_XSmicro = 620102016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture Fe56 PARTICLE_YIELD gamma = 17183/10000 = 1.7183 *XS(micro)= 0.713014
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD = 620101015
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD_XSmicro = 620101016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture Fe57 PARTICLE_YIELD Fe58[0.0] = 218/10000 = 0.0218 *XS(micro)= 0.00904598
+ CreateHisto1D nCapture_G4_Fe_Fe57_Fe58[0.0]_YIELD = 620153015
+ CreateHisto1D nCapture_G4_Fe_Fe57_Fe58[0.0]_YIELD_XSmicro = 620153016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture Fe57 PARTICLE_YIELD gamma = 643/10000 = 0.0643 *XS(micro)= 0.0266815
+ CreateHisto1D nCapture_G4_Fe_Fe57_gamma_YIELD = 620151015
+ CreateHisto1D nCapture_G4_Fe_Fe57_gamma_YIELD_XSmicro = 620151016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture Fe58 PARTICLE_YIELD Fe59[0.0] = 16/10000 = 0.0016 *XS(micro)= 0.000663925
+ CreateHisto1D nCapture_G4_Fe_Fe58_Fe59[0.0]_YIELD = 620204015
+ CreateHisto1D nCapture_G4_Fe_Fe58_Fe59[0.0]_YIELD_XSmicro = 620204016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture Fe58 PARTICLE_YIELD gamma = 41/10000 = 0.0041 *XS(micro)= 0.00170131
+ CreateHisto1D nCapture_G4_Fe_Fe58_gamma_YIELD = 620201015
+ CreateHisto1D nCapture_G4_Fe_Fe58_gamma_YIELD_XSmicro = 620201016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture TOTAL_PARTICLE_YIELD Fe55[0.0] = 531/10000 = 0.0531 *XS(micro)= 0.022034
+ CreateHisto1D nCapture_G4_Fe_Fe55[0.0]_TOTAL_YIELD = 620000015
+ CreateHisto1D nCapture_G4_Fe_Fe55[0.0]_TOTAL_YIELD_XSmicro = 620000016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture TOTAL_PARTICLE_YIELD Fe57[0.0] = 9235/10000 = 0.9235 *XS(micro)= 0.383209
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD = 620002015
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD_XSmicro = 620002016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture TOTAL_PARTICLE_YIELD Fe58[0.0] = 218/10000 = 0.0218 *XS(micro)= 0.00904598
+ CreateHisto1D nCapture_G4_Fe_Fe58[0.0]_TOTAL_YIELD = 620003015
+ CreateHisto1D nCapture_G4_Fe_Fe58[0.0]_TOTAL_YIELD_XSmicro = 620003016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture TOTAL_PARTICLE_YIELD Fe59[0.0] = 16/10000 = 0.0016 *XS(micro)= 0.000663925
+ CreateHisto1D nCapture_G4_Fe_Fe59[0.0]_TOTAL_YIELD = 620004015
+ CreateHisto1D nCapture_G4_Fe_Fe59[0.0]_TOTAL_YIELD_XSmicro = 620004016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-06 MeV nCapture TOTAL_PARTICLE_YIELD gamma = 18813/10000 = 1.8813 *XS(micro)= 0.780651
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD = 620001015
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD_XSmicro = 620001016
+NMATES 1 NPROC 15
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 269000001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 269000002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 269010001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 269010002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 269020001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 269020002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 269030001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 269030002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 269040001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 269040002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 269050001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 269050002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 269060001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 269060002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 269070001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 269070002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 269080001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 269080002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 269090001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 269090002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 269100001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 269100002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 269110001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 269110002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 269120001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 269120002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 269130001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 269130002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 269140001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 269140002
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture TOTAL_XS(macro)= 0.00110315 mm-1 TOTAL_XS(micro)= 0.129919 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture TOTAL_XS(macro)= 0.00110315 mm-1 TOTAL_XS(micro)= 0.129919 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture TOTAL_XS(macro)= 0.00110315 mm-1 TOTAL_XS(micro)= 0.129919 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture TOTAL_XS(macro)= 0.00110315 mm-1 TOTAL_XS(micro)= 0.129919 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture TOTAL_XS(macro)= 0.00110315 mm-1 TOTAL_XS(micro)= 0.129919 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 1 [Fe54 1 Fe55[0.0] 1  = 269
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 2 [Fe54 1 Fe55[0.0] 1  = 131
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 3 [Fe54 1 Fe55[0.0] 1  = 64
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 4 [Fe54 1 Fe55[0.0] 1  = 24
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 5 [Fe54 1 Fe55[0.0] 1  = 9
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 6 [Fe54 1 Fe55[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 1 [Fe56 1 Fe57[0.0] 1  = 4640
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 2 [Fe56 1 Fe57[0.0] 1  = 2436
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 3 [Fe56 1 Fe57[0.0] 1  = 1356
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 4 [Fe56 1 Fe57[0.0] 1  = 566
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 5 [Fe56 1 Fe57[0.0] 1  = 207
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 6 [Fe56 1 Fe57[0.0] 1  = 50
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 7 [Fe56 1 Fe57[0.0] 1  = 14
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 8 [Fe56 1 Fe57[0.0] 1  = 4
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 9 [Fe56 1 Fe57[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 1 [Fe57 1 Fe58[0.0] 1  = 37
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 2 [Fe57 1 Fe58[0.0] 1  = 50
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 3 [Fe57 1 Fe58[0.0] 1  = 49
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 4 [Fe57 1 Fe58[0.0] 1  = 28
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 5 [Fe57 1 Fe58[0.0] 1  = 27
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 6 [Fe57 1 Fe58[0.0] 1  = 22
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 7 [Fe57 1 Fe58[0.0] 1  = 3
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 8 [Fe57 1 Fe58[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 9 [Fe57 1 Fe58[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 1 [Fe58 1 Fe59[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 2 [Fe58 1 Fe59[0.0] 1  = 3
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 3 [Fe58 1 Fe59[0.0] 1  = 3
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL gamma 5 [Fe58 1 Fe59[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL_ALL= Fe54(n,)Fe55 = 499/10000 = 0.0499*XS(micro)= 0.00648295 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe54(n,)Fe55_NPART = 269000013
+ CreateHisto1D nCapture_G4_Fe_Fe54(n,)Fe55_XSmicro = 269000014
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL_ALL= Fe56(n,)Fe57 = 9274/10000 = 0.9274*XS(micro)= 0.120487 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_NPART = 269002013
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_XSmicro = 269002014
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL_ALL= Fe57(n,)Fe58 = 218/10000 = 0.0218*XS(micro)= 0.00283223 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe57(n,)Fe58_NPART = 269004013
+ CreateHisto1D nCapture_G4_Fe_Fe57(n,)Fe58_XSmicro = 269004014
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture CHANNEL_ALL= Fe58(n,)Fe59 = 9/10000 = 0.0009*XS(micro)= 0.000116927 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe58(n,)Fe59_NPART = 269006013
+ CreateHisto1D nCapture_G4_Fe_Fe58(n,)Fe59_XSmicro = 269006014
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture Fe54 PARTICLE_YIELD Fe55[0.0] = 499/10000 = 0.0499 *XS(micro)= 0.00648295
+ CreateHisto1D nCapture_G4_Fe_Fe54_Fe55[0.0]_YIELD = 269050015
+ CreateHisto1D nCapture_G4_Fe_Fe54_Fe55[0.0]_YIELD_XSmicro = 269050016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture Fe54 PARTICLE_YIELD gamma = 876/10000 = 0.0876 *XS(micro)= 0.0113809
+ CreateHisto1D nCapture_G4_Fe_Fe54_gamma_YIELD = 269051015
+ CreateHisto1D nCapture_G4_Fe_Fe54_gamma_YIELD_XSmicro = 269051016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture Fe56 PARTICLE_YIELD Fe57[0.0] = 9274/10000 = 0.9274 *XS(micro)= 0.120487
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD = 269102015
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD_XSmicro = 269102016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture Fe56 PARTICLE_YIELD gamma = 17318/10000 = 1.7318 *XS(micro)= 0.224993
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD = 269101015
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD_XSmicro = 269101016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture Fe57 PARTICLE_YIELD Fe58[0.0] = 218/10000 = 0.0218 *XS(micro)= 0.00283223
+ CreateHisto1D nCapture_G4_Fe_Fe57_Fe58[0.0]_YIELD = 269153015
+ CreateHisto1D nCapture_G4_Fe_Fe57_Fe58[0.0]_YIELD_XSmicro = 269153016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture Fe57 PARTICLE_YIELD gamma = 701/10000 = 0.0701 *XS(micro)= 0.00910731
+ CreateHisto1D nCapture_G4_Fe_Fe57_gamma_YIELD = 269151015
+ CreateHisto1D nCapture_G4_Fe_Fe57_gamma_YIELD_XSmicro = 269151016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture Fe58 PARTICLE_YIELD Fe59[0.0] = 9/10000 = 0.0009 *XS(micro)= 0.000116927
+ CreateHisto1D nCapture_G4_Fe_Fe58_Fe59[0.0]_YIELD = 269204015
+ CreateHisto1D nCapture_G4_Fe_Fe58_Fe59[0.0]_YIELD_XSmicro = 269204016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture Fe58 PARTICLE_YIELD gamma = 22/10000 = 0.0022 *XS(micro)= 0.000285821
+ CreateHisto1D nCapture_G4_Fe_Fe58_gamma_YIELD = 269201015
+ CreateHisto1D nCapture_G4_Fe_Fe58_gamma_YIELD_XSmicro = 269201016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture TOTAL_PARTICLE_YIELD Fe55[0.0] = 499/10000 = 0.0499 *XS(micro)= 0.00648295
+ CreateHisto1D nCapture_G4_Fe_Fe55[0.0]_TOTAL_YIELD = 269000015
+ CreateHisto1D nCapture_G4_Fe_Fe55[0.0]_TOTAL_YIELD_XSmicro = 269000016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture TOTAL_PARTICLE_YIELD Fe57[0.0] = 9274/10000 = 0.9274 *XS(micro)= 0.120487
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD = 269002015
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD_XSmicro = 269002016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture TOTAL_PARTICLE_YIELD Fe58[0.0] = 218/10000 = 0.0218 *XS(micro)= 0.00283223
+ CreateHisto1D nCapture_G4_Fe_Fe58[0.0]_TOTAL_YIELD = 269003015
+ CreateHisto1D nCapture_G4_Fe_Fe58[0.0]_TOTAL_YIELD_XSmicro = 269003016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture TOTAL_PARTICLE_YIELD Fe59[0.0] = 9/10000 = 0.0009 *XS(micro)= 0.000116927
+ CreateHisto1D nCapture_G4_Fe_Fe59[0.0]_TOTAL_YIELD = 269004015
+ CreateHisto1D nCapture_G4_Fe_Fe59[0.0]_TOTAL_YIELD_XSmicro = 269004016
+@@SHGetHadronicChannelXSUA G4_Fe 1e-05 MeV nCapture TOTAL_PARTICLE_YIELD gamma = 18917/10000 = 1.8917 *XS(micro)= 0.245767
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD = 269001015
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD_XSmicro = 269001016
+NMATES 1 NPROC 18
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 892000001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 892000002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 892010001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 892010002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 892020001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 892020002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 892030001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 892030002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 892040001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 892040002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 892050001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 892050002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 892060001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 892060002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 892070001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 892070002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 892080001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 892080002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 892090001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 892090002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 892100001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 892100002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 892110001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 892110002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 892120001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 892120002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 892130001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 892130002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 892140001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 892140002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 892150001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 892150002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 892160001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 892160002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 892170001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 892170002
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture TOTAL_XS(macro)= 0.000322049 mm-1 TOTAL_XS(micro)= 0.0379281 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture TOTAL_XS(macro)= 0.000322049 mm-1 TOTAL_XS(micro)= 0.0379281 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture TOTAL_XS(macro)= 0.000322049 mm-1 TOTAL_XS(micro)= 0.0379281 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture TOTAL_XS(macro)= 0.000322049 mm-1 TOTAL_XS(micro)= 0.0379281 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture TOTAL_XS(macro)= 0.000322049 mm-1 TOTAL_XS(micro)= 0.0379281 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture TOTAL_XS(macro)= 0.000322049 mm-1 TOTAL_XS(micro)= 0.0379281 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 1 [Fe54 1 Fe55[0.0] 1  = 237
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 2 [Fe54 1 Fe55[0.0] 1  = 145
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 3 [Fe54 1 Fe55[0.0] 1  = 82
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 4 [Fe54 1 Fe55[0.0] 1  = 37
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 5 [Fe54 1 Fe55[0.0] 1  = 8
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 6 [Fe54 1 Fe55[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 1 [Fe56 1 Fe57[0.0] 1  = 4374
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 2 [Fe56 1 Fe57[0.0] 1  = 2471
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 3 [Fe56 1 Fe57[0.0] 1  = 1495
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 4 [Fe56 1 Fe57[0.0] 1  = 645
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 5 [Fe56 1 Fe57[0.0] 1  = 234
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 6 [Fe56 1 Fe57[0.0] 1  = 66
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 7 [Fe56 1 Fe57[0.0] 1  = 18
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 8 [Fe56 1 Fe57[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 9 [Fe56 1 Fe57[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 1 [Fe57 1 Fe58[0.0] 1  = 42
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 2 [Fe57 1 Fe58[0.0] 1  = 35
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 3 [Fe57 1 Fe58[0.0] 1  = 33
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 4 [Fe57 1 Fe58[0.0] 1  = 17
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 5 [Fe57 1 Fe58[0.0] 1  = 25
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 6 [Fe57 1 Fe58[0.0] 1  = 12
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 7 [Fe57 1 Fe58[0.0] 1  = 4
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 9 [Fe57 1 Fe58[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 1 [Fe58 1 Fe59[0.0] 1  = 7
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 2 [Fe58 1 Fe59[0.0] 1  = 5
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 3 [Fe58 1 Fe59[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 4 [Fe58 1 Fe59[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL gamma 7 [Fe58 1 Fe59[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL_ALL= Fe54(n,)Fe55 = 510/10000 = 0.051*XS(micro)= 0.00193433 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe54(n,)Fe55_NPART = 892000013
+ CreateHisto1D nCapture_G4_Fe_Fe54(n,)Fe55_XSmicro = 892000014
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL_ALL= Fe56(n,)Fe57 = 9305/10000 = 0.9305*XS(micro)= 0.0352921 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_NPART = 892002013
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_XSmicro = 892002014
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL_ALL= Fe57(n,)Fe58 = 169/10000 = 0.0169*XS(micro)= 0.000640985 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe57(n,)Fe58_NPART = 892004013
+ CreateHisto1D nCapture_G4_Fe_Fe57(n,)Fe58_XSmicro = 892004014
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture CHANNEL_ALL= Fe58(n,)Fe59 = 16/10000 = 0.0016*XS(micro)= 6.0685e-05 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe58(n,)Fe59_NPART = 892006013
+ CreateHisto1D nCapture_G4_Fe_Fe58(n,)Fe59_XSmicro = 892006014
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture Fe54 PARTICLE_YIELD Fe55[0.0] = 510/10000 = 0.051 *XS(micro)= 0.00193433
+ CreateHisto1D nCapture_G4_Fe_Fe54_Fe55[0.0]_YIELD = 892050015
+ CreateHisto1D nCapture_G4_Fe_Fe54_Fe55[0.0]_YIELD_XSmicro = 892050016
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture Fe54 PARTICLE_YIELD gamma = 967/10000 = 0.0967 *XS(micro)= 0.00366765
+ CreateHisto1D nCapture_G4_Fe_Fe54_gamma_YIELD = 892051015
+ CreateHisto1D nCapture_G4_Fe_Fe54_gamma_YIELD_XSmicro = 892051016
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture Fe56 PARTICLE_YIELD Fe57[0.0] = 9305/10000 = 0.9305 *XS(micro)= 0.0352921
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD = 892102015
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD_XSmicro = 892102016
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture Fe56 PARTICLE_YIELD gamma = 18090/10000 = 1.809 *XS(micro)= 0.0686119
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD = 892101015
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD_XSmicro = 892101016
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture Fe57 PARTICLE_YIELD Fe58[0.0] = 169/10000 = 0.0169 *XS(micro)= 0.000640985
+ CreateHisto1D nCapture_G4_Fe_Fe57_Fe58[0.0]_YIELD = 892153015
+ CreateHisto1D nCapture_G4_Fe_Fe57_Fe58[0.0]_YIELD_XSmicro = 892153016
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture Fe57 PARTICLE_YIELD gamma = 513/10000 = 0.0513 *XS(micro)= 0.00194571
+ CreateHisto1D nCapture_G4_Fe_Fe57_gamma_YIELD = 892151015
+ CreateHisto1D nCapture_G4_Fe_Fe57_gamma_YIELD_XSmicro = 892151016
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture Fe58 PARTICLE_YIELD Fe59[0.0] = 16/10000 = 0.0016 *XS(micro)= 6.0685e-05
+ CreateHisto1D nCapture_G4_Fe_Fe58_Fe59[0.0]_YIELD = 892204015
+ CreateHisto1D nCapture_G4_Fe_Fe58_Fe59[0.0]_YIELD_XSmicro = 892204016
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture Fe58 PARTICLE_YIELD gamma = 34/10000 = 0.0034 *XS(micro)= 0.000128956
+ CreateHisto1D nCapture_G4_Fe_Fe58_gamma_YIELD = 892201015
+ CreateHisto1D nCapture_G4_Fe_Fe58_gamma_YIELD_XSmicro = 892201016
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture TOTAL_PARTICLE_YIELD Fe55[0.0] = 510/10000 = 0.051 *XS(micro)= 0.00193433
+ CreateHisto1D nCapture_G4_Fe_Fe55[0.0]_TOTAL_YIELD = 892000015
+ CreateHisto1D nCapture_G4_Fe_Fe55[0.0]_TOTAL_YIELD_XSmicro = 892000016
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture TOTAL_PARTICLE_YIELD Fe57[0.0] = 9305/10000 = 0.9305 *XS(micro)= 0.0352921
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD = 892002015
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD_XSmicro = 892002016
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture TOTAL_PARTICLE_YIELD Fe58[0.0] = 169/10000 = 0.0169 *XS(micro)= 0.000640985
+ CreateHisto1D nCapture_G4_Fe_Fe58[0.0]_TOTAL_YIELD = 892003015
+ CreateHisto1D nCapture_G4_Fe_Fe58[0.0]_TOTAL_YIELD_XSmicro = 892003016
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture TOTAL_PARTICLE_YIELD Fe59[0.0] = 16/10000 = 0.0016 *XS(micro)= 6.0685e-05
+ CreateHisto1D nCapture_G4_Fe_Fe59[0.0]_TOTAL_YIELD = 892004015
+ CreateHisto1D nCapture_G4_Fe_Fe59[0.0]_TOTAL_YIELD_XSmicro = 892004016
+@@SHGetHadronicChannelXSUA G4_Fe 0.0001 MeV nCapture TOTAL_PARTICLE_YIELD gamma = 19604/10000 = 1.9604 *XS(micro)= 0.0743542
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD = 892001015
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD_XSmicro = 892001016
+NMATES 1 NPROC 21
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 838000001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 838000002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 838010001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 838010002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 838020001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 838020002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 838030001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 838030002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 838040001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 838040002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 838050001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 838050002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 838060001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 838060002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 838070001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 838070002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 838080001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 838080002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 838090001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 838090002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 838100001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 838100002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 838110001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 838110002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 838120001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 838120002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 838130001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 838130002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 838140001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 838140002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 838150001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 838150002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 838160001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 838160002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 838170001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 838170002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 838180001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 838180002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 838190001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 838190002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 838200001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 838200002
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture TOTAL_XS(macro)= 6.99265e-05 mm-1 TOTAL_XS(micro)= 0.00823533 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture TOTAL_XS(macro)= 6.99265e-05 mm-1 TOTAL_XS(micro)= 0.00823533 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture TOTAL_XS(macro)= 6.99265e-05 mm-1 TOTAL_XS(micro)= 0.00823533 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture TOTAL_XS(macro)= 6.99265e-05 mm-1 TOTAL_XS(micro)= 0.00823533 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture TOTAL_XS(macro)= 6.99265e-05 mm-1 TOTAL_XS(micro)= 0.00823533 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture TOTAL_XS(macro)= 6.99265e-05 mm-1 TOTAL_XS(micro)= 0.00823533 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture TOTAL_XS(macro)= 6.99265e-05 mm-1 TOTAL_XS(micro)= 0.00823533 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 1 [Fe54 1 Fe55[0.0] 1  = 164
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 2 [Fe54 1 Fe55[0.0] 1  = 240
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 3 [Fe54 1 Fe55[0.0] 1  = 203
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 4 [Fe54 1 Fe55[0.0] 1  = 157
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 5 [Fe54 1 Fe55[0.0] 1  = 101
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 6 [Fe54 1 Fe55[0.0] 1  = 54
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 7 [Fe54 1 Fe55[0.0] 1  = 30
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 8 [Fe54 1 Fe55[0.0] 1  = 10
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 9 [Fe54 1 Fe55[0.0] 1  = 3
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 1 [Fe56 1 Fe57[0.0] 1  = 2311
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 2 [Fe56 1 Fe57[0.0] 1  = 2248
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 3 [Fe56 1 Fe57[0.0] 1  = 1928
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 4 [Fe56 1 Fe57[0.0] 1  = 1242
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 5 [Fe56 1 Fe57[0.0] 1  = 652
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 6 [Fe56 1 Fe57[0.0] 1  = 282
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 7 [Fe56 1 Fe57[0.0] 1  = 98
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 8 [Fe56 1 Fe57[0.0] 1  = 30
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 9 [Fe56 1 Fe57[0.0] 1  = 4
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 10 [Fe56 1 Fe57[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 11 [Fe56 1 Fe57[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 1 [Fe57 1 Fe58[0.0] 1  = 28
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 2 [Fe57 1 Fe58[0.0] 1  = 39
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 3 [Fe57 1 Fe58[0.0] 1  = 42
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 4 [Fe57 1 Fe58[0.0] 1  = 37
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 5 [Fe57 1 Fe58[0.0] 1  = 33
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 6 [Fe57 1 Fe58[0.0] 1  = 18
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 7 [Fe57 1 Fe58[0.0] 1  = 9
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 8 [Fe57 1 Fe58[0.0] 1  = 3
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 9 [Fe57 1 Fe58[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 1 [Fe58 1 Fe59[0.0] 1  = 12
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 2 [Fe58 1 Fe59[0.0] 1  = 6
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 3 [Fe58 1 Fe59[0.0] 1  = 7
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 4 [Fe58 1 Fe59[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 5 [Fe58 1 Fe59[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL gamma 7 [Fe58 1 Fe59[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL_ALL= Fe54(n,)Fe55 = 962/10000 = 0.0962*XS(micro)= 0.000792238 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe54(n,)Fe55_NPART = 838000013
+ CreateHisto1D nCapture_G4_Fe_Fe54(n,)Fe55_XSmicro = 838000014
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL_ALL= Fe56(n,)Fe57 = 8798/10000 = 0.8798*XS(micro)= 0.00724544 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_NPART = 838002013
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_XSmicro = 838002014
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL_ALL= Fe57(n,)Fe58 = 210/10000 = 0.021*XS(micro)= 0.000172942 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe57(n,)Fe58_NPART = 838004013
+ CreateHisto1D nCapture_G4_Fe_Fe57(n,)Fe58_XSmicro = 838004014
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture CHANNEL_ALL= Fe58(n,)Fe59 = 30/10000 = 0.003*XS(micro)= 2.4706e-05 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe58(n,)Fe59_NPART = 838006013
+ CreateHisto1D nCapture_G4_Fe_Fe58(n,)Fe59_XSmicro = 838006014
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture Fe54 PARTICLE_YIELD Fe55[0.0] = 962/10000 = 0.0962 *XS(micro)= 0.000792238
+ CreateHisto1D nCapture_G4_Fe_Fe54_Fe55[0.0]_YIELD = 838050015
+ CreateHisto1D nCapture_G4_Fe_Fe54_Fe55[0.0]_YIELD_XSmicro = 838050016
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture Fe54 PARTICLE_YIELD gamma = 3027/10000 = 0.3027 *XS(micro)= 0.00249283
+ CreateHisto1D nCapture_G4_Fe_Fe54_gamma_YIELD = 838051015
+ CreateHisto1D nCapture_G4_Fe_Fe54_gamma_YIELD_XSmicro = 838051016
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture Fe56 PARTICLE_YIELD Fe57[0.0] = 8798/10000 = 0.8798 *XS(micro)= 0.00724544
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD = 838102015
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD_XSmicro = 838102016
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture Fe56 PARTICLE_YIELD gamma = 23505/10000 = 2.3505 *XS(micro)= 0.0193571
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD = 838101015
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD_XSmicro = 838101016
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture Fe57 PARTICLE_YIELD Fe58[0.0] = 210/10000 = 0.021 *XS(micro)= 0.000172942
+ CreateHisto1D nCapture_G4_Fe_Fe57_Fe58[0.0]_YIELD = 838153015
+ CreateHisto1D nCapture_G4_Fe_Fe57_Fe58[0.0]_YIELD_XSmicro = 838153016
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture Fe57 PARTICLE_YIELD gamma = 749/10000 = 0.0749 *XS(micro)= 0.000616826
+ CreateHisto1D nCapture_G4_Fe_Fe57_gamma_YIELD = 838151015
+ CreateHisto1D nCapture_G4_Fe_Fe57_gamma_YIELD_XSmicro = 838151016
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture Fe58 PARTICLE_YIELD Fe59[0.0] = 30/10000 = 0.003 *XS(micro)= 2.4706e-05
+ CreateHisto1D nCapture_G4_Fe_Fe58_Fe59[0.0]_YIELD = 838204015
+ CreateHisto1D nCapture_G4_Fe_Fe58_Fe59[0.0]_YIELD_XSmicro = 838204016
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture Fe58 PARTICLE_YIELD gamma = 70/10000 = 0.007 *XS(micro)= 5.76473e-05
+ CreateHisto1D nCapture_G4_Fe_Fe58_gamma_YIELD = 838201015
+ CreateHisto1D nCapture_G4_Fe_Fe58_gamma_YIELD_XSmicro = 838201016
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture TOTAL_PARTICLE_YIELD Fe55[0.0] = 962/10000 = 0.0962 *XS(micro)= 0.000792238
+ CreateHisto1D nCapture_G4_Fe_Fe55[0.0]_TOTAL_YIELD = 838000015
+ CreateHisto1D nCapture_G4_Fe_Fe55[0.0]_TOTAL_YIELD_XSmicro = 838000016
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture TOTAL_PARTICLE_YIELD Fe57[0.0] = 8798/10000 = 0.8798 *XS(micro)= 0.00724544
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD = 838002015
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD_XSmicro = 838002016
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture TOTAL_PARTICLE_YIELD Fe58[0.0] = 210/10000 = 0.021 *XS(micro)= 0.000172942
+ CreateHisto1D nCapture_G4_Fe_Fe58[0.0]_TOTAL_YIELD = 838003015
+ CreateHisto1D nCapture_G4_Fe_Fe58[0.0]_TOTAL_YIELD_XSmicro = 838003016
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture TOTAL_PARTICLE_YIELD Fe59[0.0] = 30/10000 = 0.003 *XS(micro)= 2.4706e-05
+ CreateHisto1D nCapture_G4_Fe_Fe59[0.0]_TOTAL_YIELD = 838004015
+ CreateHisto1D nCapture_G4_Fe_Fe59[0.0]_TOTAL_YIELD_XSmicro = 838004016
+@@SHGetHadronicChannelXSUA G4_Fe 0.001 MeV nCapture TOTAL_PARTICLE_YIELD gamma = 27351/10000 = 2.7351 *XS(micro)= 0.0225244
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD = 838001015
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD_XSmicro = 838001016
+NMATES 1 NPROC 24
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 689000001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 689000002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 689010001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 689010002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 689020001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 689020002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 689030001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 689030002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 689040001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 689040002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 689050001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 689050002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 689060001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 689060002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 689070001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 689070002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 689080001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 689080002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 689090001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 689090002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 689100001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 689100002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 689110001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 689110002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 689120001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 689120002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 689130001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 689130002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 689140001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 689140002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 689150001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 689150002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 689160001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 689160002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 689170001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 689170002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 689180001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 689180002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 689190001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 689190002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 689200001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 689200002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 689210001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 689210002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 689220001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 689220002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 689230001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 689230002
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture TOTAL_XS(macro)= 2.03774e-05 mm-1 TOTAL_XS(micro)= 0.00239987 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture TOTAL_XS(macro)= 2.03774e-05 mm-1 TOTAL_XS(micro)= 0.00239987 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture TOTAL_XS(macro)= 2.03774e-05 mm-1 TOTAL_XS(micro)= 0.00239987 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture TOTAL_XS(macro)= 2.03774e-05 mm-1 TOTAL_XS(micro)= 0.00239987 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture TOTAL_XS(macro)= 2.03774e-05 mm-1 TOTAL_XS(micro)= 0.00239987 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture TOTAL_XS(macro)= 2.03774e-05 mm-1 TOTAL_XS(micro)= 0.00239987 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture TOTAL_XS(macro)= 2.03774e-05 mm-1 TOTAL_XS(micro)= 0.00239987 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV NeutronInelastic TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture TOTAL_XS(macro)= 2.03774e-05 mm-1 TOTAL_XS(micro)= 0.00239987 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 1 [Fe54 1 Fe55[0.0] 1  = 1696
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 2 [Fe54 1 Fe55[0.0] 1  = 1571
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 3 [Fe54 1 Fe55[0.0] 1  = 1424
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 4 [Fe54 1 Fe55[0.0] 1  = 949
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 5 [Fe54 1 Fe55[0.0] 1  = 524
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 6 [Fe54 1 Fe55[0.0] 1  = 204
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 7 [Fe54 1 Fe55[0.0] 1  = 94
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 8 [Fe54 1 Fe55[0.0] 1  = 34
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 9 [Fe54 1 Fe55[0.0] 1  = 5
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 10 [Fe54 1 Fe55[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 1 [Fe56 1 Fe57[0.0] 1  = 597
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 2 [Fe56 1 Fe57[0.0] 1  = 445
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 3 [Fe56 1 Fe57[0.0] 1  = 352
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 4 [Fe56 1 Fe57[0.0] 1  = 190
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 5 [Fe56 1 Fe57[0.0] 1  = 85
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 6 [Fe56 1 Fe57[0.0] 1  = 34
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 7 [Fe56 1 Fe57[0.0] 1  = 8
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 8 [Fe56 1 Fe57[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 9 [Fe56 1 Fe57[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 1 [Fe57 1 Fe58[0.0] 1  = 63
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 2 [Fe57 1 Fe58[0.0] 1  = 68
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 3 [Fe57 1 Fe58[0.0] 1  = 71
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 4 [Fe57 1 Fe58[0.0] 1  = 53
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 5 [Fe57 1 Fe58[0.0] 1  = 30
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 6 [Fe57 1 Fe58[0.0] 1  = 15
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 7 [Fe57 1 Fe58[0.0] 1  = 6
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 8 [Fe57 1 Fe58[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 9 [Fe57 1 Fe58[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 10 [Fe57 1 Fe58[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 1 [Fe58 1 Fe59[0.0] 1  = 622
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 2 [Fe58 1 Fe59[0.0] 1  = 382
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 3 [Fe58 1 Fe59[0.0] 1  = 277
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 4 [Fe58 1 Fe59[0.0] 1  = 133
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 5 [Fe58 1 Fe59[0.0] 1  = 37
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 6 [Fe58 1 Fe59[0.0] 1  = 16
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 7 [Fe58 1 Fe59[0.0] 1  = 5
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL gamma 8 [Fe58 1 Fe59[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL_ALL= Fe54(n,)Fe55 = 6502/10000 = 0.6502*XS(micro)= 0.00156039 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe54(n,)Fe55_NPART = 689000013
+ CreateHisto1D nCapture_G4_Fe_Fe54(n,)Fe55_XSmicro = 689000014
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL_ALL= Fe56(n,)Fe57 = 1715/10000 = 0.1715*XS(micro)= 0.000411577 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_NPART = 689002013
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_XSmicro = 689002014
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL_ALL= Fe57(n,)Fe58 = 310/10000 = 0.031*XS(micro)= 7.43959e-05 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe57(n,)Fe58_NPART = 689004013
+ CreateHisto1D nCapture_G4_Fe_Fe57(n,)Fe58_XSmicro = 689004014
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture CHANNEL_ALL= Fe58(n,)Fe59 = 1473/10000 = 0.1473*XS(micro)= 0.0003535 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe58(n,)Fe59_NPART = 689006013
+ CreateHisto1D nCapture_G4_Fe_Fe58(n,)Fe59_XSmicro = 689006014
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture Fe54 PARTICLE_YIELD Fe55[0.0] = 6502/10000 = 0.6502 *XS(micro)= 0.00156039
+ CreateHisto1D nCapture_G4_Fe_Fe54_Fe55[0.0]_YIELD = 689050015
+ CreateHisto1D nCapture_G4_Fe_Fe54_Fe55[0.0]_YIELD_XSmicro = 689050016
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture Fe54 PARTICLE_YIELD gamma = 17735/10000 = 1.7735 *XS(micro)= 0.00425616
+ CreateHisto1D nCapture_G4_Fe_Fe54_gamma_YIELD = 689051015
+ CreateHisto1D nCapture_G4_Fe_Fe54_gamma_YIELD_XSmicro = 689051016
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture Fe56 PARTICLE_YIELD Fe57[0.0] = 1715/10000 = 0.1715 *XS(micro)= 0.000411577
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD = 689102015
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD_XSmicro = 689102016
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture Fe56 PARTICLE_YIELD gamma = 4022/10000 = 0.4022 *XS(micro)= 0.000965226
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD = 689101015
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD_XSmicro = 689101016
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture Fe57 PARTICLE_YIELD Fe58[0.0] = 310/10000 = 0.031 *XS(micro)= 7.43959e-05
+ CreateHisto1D nCapture_G4_Fe_Fe57_Fe58[0.0]_YIELD = 689153015
+ CreateHisto1D nCapture_G4_Fe_Fe57_Fe58[0.0]_YIELD_XSmicro = 689153016
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture Fe57 PARTICLE_YIELD gamma = 941/10000 = 0.0941 *XS(micro)= 0.000225827
+ CreateHisto1D nCapture_G4_Fe_Fe57_gamma_YIELD = 689151015
+ CreateHisto1D nCapture_G4_Fe_Fe57_gamma_YIELD_XSmicro = 689151016
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture Fe58 PARTICLE_YIELD Fe59[0.0] = 1473/10000 = 0.1473 *XS(micro)= 0.0003535
+ CreateHisto1D nCapture_G4_Fe_Fe58_Fe59[0.0]_YIELD = 689204015
+ CreateHisto1D nCapture_G4_Fe_Fe58_Fe59[0.0]_YIELD_XSmicro = 689204016
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture Fe58 PARTICLE_YIELD gamma = 3073/10000 = 0.3073 *XS(micro)= 0.000737479
+ CreateHisto1D nCapture_G4_Fe_Fe58_gamma_YIELD = 689201015
+ CreateHisto1D nCapture_G4_Fe_Fe58_gamma_YIELD_XSmicro = 689201016
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture TOTAL_PARTICLE_YIELD Fe55[0.0] = 6502/10000 = 0.6502 *XS(micro)= 0.00156039
+ CreateHisto1D nCapture_G4_Fe_Fe55[0.0]_TOTAL_YIELD = 689000015
+ CreateHisto1D nCapture_G4_Fe_Fe55[0.0]_TOTAL_YIELD_XSmicro = 689000016
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture TOTAL_PARTICLE_YIELD Fe57[0.0] = 1715/10000 = 0.1715 *XS(micro)= 0.000411577
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD = 689002015
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD_XSmicro = 689002016
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture TOTAL_PARTICLE_YIELD Fe58[0.0] = 310/10000 = 0.031 *XS(micro)= 7.43959e-05
+ CreateHisto1D nCapture_G4_Fe_Fe58[0.0]_TOTAL_YIELD = 689003015
+ CreateHisto1D nCapture_G4_Fe_Fe58[0.0]_TOTAL_YIELD_XSmicro = 689003016
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture TOTAL_PARTICLE_YIELD Fe59[0.0] = 1473/10000 = 0.1473 *XS(micro)= 0.0003535
+ CreateHisto1D nCapture_G4_Fe_Fe59[0.0]_TOTAL_YIELD = 689004015
+ CreateHisto1D nCapture_G4_Fe_Fe59[0.0]_TOTAL_YIELD_XSmicro = 689004016
+@@SHGetHadronicChannelXSUA G4_Fe 0.01 MeV nCapture TOTAL_PARTICLE_YIELD gamma = 25771/10000 = 2.5771 *XS(micro)= 0.0061847
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD = 689001015
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD_XSmicro = 689001016
+NMATES 1 NPROC 27
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 218000001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 218000002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 218010001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 218010002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 218020001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 218020002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 218030001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 218030002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 218040001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 218040002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 218050001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 218050002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 218060001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 218060002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 218070001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 218070002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 218080001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 218080002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 218090001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 218090002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 218100001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 218100002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 218110001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 218110002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 218120001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 218120002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 218130001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 218130002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 218140001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 218140002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 218150001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 218150002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 218160001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 218160002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 218170001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 218170002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 218180001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 218180002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 218190001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 218190002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 218200001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 218200002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 218210001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 218210002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 218220001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 218220002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 218230001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 218230002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 218240001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 218240002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 218250001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 218250002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 218260001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 218260002
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV NeutronInelastic TOTAL_XS(macro)= 6.77149e-05 mm-1 TOTAL_XS(micro)= 0.00797486 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture TOTAL_XS(macro)= 3.91464e-06 mm-1 TOTAL_XS(micro)= 0.000461031 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV NeutronInelastic TOTAL_XS(macro)= 6.77149e-05 mm-1 TOTAL_XS(micro)= 0.00797486 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture TOTAL_XS(macro)= 3.91464e-06 mm-1 TOTAL_XS(micro)= 0.000461031 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV NeutronInelastic TOTAL_XS(macro)= 6.77149e-05 mm-1 TOTAL_XS(micro)= 0.00797486 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture TOTAL_XS(macro)= 3.91464e-06 mm-1 TOTAL_XS(micro)= 0.000461031 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV NeutronInelastic TOTAL_XS(macro)= 6.77149e-05 mm-1 TOTAL_XS(micro)= 0.00797486 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture TOTAL_XS(macro)= 3.91464e-06 mm-1 TOTAL_XS(micro)= 0.000461031 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV NeutronInelastic TOTAL_XS(macro)= 6.77149e-05 mm-1 TOTAL_XS(micro)= 0.00797486 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture TOTAL_XS(macro)= 3.91464e-06 mm-1 TOTAL_XS(micro)= 0.000461031 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV NeutronInelastic TOTAL_XS(macro)= 6.77149e-05 mm-1 TOTAL_XS(micro)= 0.00797486 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture TOTAL_XS(macro)= 3.91464e-06 mm-1 TOTAL_XS(micro)= 0.000461031 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV NeutronInelastic TOTAL_XS(macro)= 6.77149e-05 mm-1 TOTAL_XS(micro)= 0.00797486 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture TOTAL_XS(macro)= 3.91464e-06 mm-1 TOTAL_XS(micro)= 0.000461031 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV NeutronInelastic TOTAL_XS(macro)= 6.77149e-05 mm-1 TOTAL_XS(micro)= 0.00797486 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture TOTAL_XS(macro)= 3.91464e-06 mm-1 TOTAL_XS(micro)= 0.000461031 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV NeutronInelastic TOTAL_XS(macro)= 6.77149e-05 mm-1 TOTAL_XS(micro)= 0.00797486 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture TOTAL_XS(macro)= 3.91464e-06 mm-1 TOTAL_XS(micro)= 0.000461031 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV NeutronInelastic CHANNEL neutron 1 gamma 1 [Fe57 1 Fe57[0.0] 1  = 9496
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV NeutronInelastic CHANNEL_ALL= Fe57(n,n)Fe57 = 9496/10000 = 0.9496*XS(micro)= 0.00757293 barn 
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57(n,n)Fe57_NPART = 218008003
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57(n,n)Fe57_XSmicro = 218008004
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV NeutronInelastic Fe57 PARTICLE_YIELD Fe57[0.0] = 9496/10000 = 0.9496 *XS(micro)= 0.00757293
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_Fe57[0.0]_YIELD = 218152005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_Fe57[0.0]_YIELD_XSmicro = 218152006
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV NeutronInelastic Fe57 PARTICLE_YIELD gamma = 9496/10000 = 0.9496 *XS(micro)= 0.00757293
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_gamma_YIELD = 218151005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_gamma_YIELD_XSmicro = 218151006
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV NeutronInelastic Fe57 PARTICLE_YIELD neutron = 9496/10000 = 0.9496 *XS(micro)= 0.00757293
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_neutron_YIELD = 218155005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_neutron_YIELD_XSmicro = 218155006
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV NeutronInelastic TOTAL_PARTICLE_YIELD Fe57[0.0] = 9496/10000 = 0.9496 *XS(micro)= 0.00757293
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57[0.0]_TOTAL_YIELD = 218002005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57[0.0]_TOTAL_YIELD_XSmicro = 218002006
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV NeutronInelastic TOTAL_PARTICLE_YIELD gamma = 9496/10000 = 0.9496 *XS(micro)= 0.00757293
+ CreateHisto1D NeutronInelastic_G4_Fe_gamma_TOTAL_YIELD = 218001005
+ CreateHisto1D NeutronInelastic_G4_Fe_gamma_TOTAL_YIELD_XSmicro = 218001006
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV NeutronInelastic TOTAL_PARTICLE_YIELD neutron = 9496/10000 = 0.9496 *XS(micro)= 0.00757293
+ CreateHisto1D NeutronInelastic_G4_Fe_neutron_TOTAL_YIELD = 218005005
+ CreateHisto1D NeutronInelastic_G4_Fe_neutron_TOTAL_YIELD_XSmicro = 218005006
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 1 [Fe54 1 Fe55[0.0] 1  = 54
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 2 [Fe54 1 Fe55[0.0] 1  = 66
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 3 [Fe54 1 Fe55[0.0] 1  = 87
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 4 [Fe54 1 Fe55[0.0] 1  = 80
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 5 [Fe54 1 Fe55[0.0] 1  = 39
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 6 [Fe54 1 Fe55[0.0] 1  = 30
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 7 [Fe54 1 Fe55[0.0] 1  = 14
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 8 [Fe54 1 Fe55[0.0] 1  = 4
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 1 [Fe56 1 Fe57[0.0] 1  = 28
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 2 [Fe56 1 Fe57[0.0] 1  = 25
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 3 [Fe56 1 Fe57[0.0] 1  = 19
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 4 [Fe56 1 Fe57[0.0] 1  = 11
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 5 [Fe56 1 Fe57[0.0] 1  = 5
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 6 [Fe56 1 Fe57[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 7 [Fe56 1 Fe57[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 8 [Fe56 1 Fe57[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 1 [Fe57 1 Fe58[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 3 [Fe57 1 Fe58[0.0] 1  = 5
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 4 [Fe57 1 Fe58[0.0] 1  = 4
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 5 [Fe57 1 Fe58[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 6 [Fe57 1 Fe58[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 1 [Fe58 1 Fe59[0.0] 1  = 9
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 2 [Fe58 1 Fe59[0.0] 1  = 6
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 3 [Fe58 1 Fe59[0.0] 1  = 6
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 4 [Fe58 1 Fe59[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL gamma 5 [Fe58 1 Fe59[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL_ALL= Fe54(n,)Fe55 = 374/10000 = 0.0374*XS(micro)= 1.72426e-05 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe54(n,)Fe55_NPART = 218000013
+ CreateHisto1D nCapture_G4_Fe_Fe54(n,)Fe55_XSmicro = 218000014
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL_ALL= Fe56(n,)Fe57 = 92/10000 = 0.0092*XS(micro)= 4.24149e-06 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_NPART = 218002013
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_XSmicro = 218002014
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL_ALL= Fe57(n,)Fe58 = 14/10000 = 0.0014*XS(micro)= 6.45444e-07 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe57(n,)Fe58_NPART = 218004013
+ CreateHisto1D nCapture_G4_Fe_Fe57(n,)Fe58_XSmicro = 218004014
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture CHANNEL_ALL= Fe58(n,)Fe59 = 24/10000 = 0.0024*XS(micro)= 1.10648e-06 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe58(n,)Fe59_NPART = 218006013
+ CreateHisto1D nCapture_G4_Fe_Fe58(n,)Fe59_XSmicro = 218006014
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture Fe54 PARTICLE_YIELD Fe55[0.0] = 374/10000 = 0.0374 *XS(micro)= 1.72426e-05
+ CreateHisto1D nCapture_G4_Fe_Fe54_Fe55[0.0]_YIELD = 218050015
+ CreateHisto1D nCapture_G4_Fe_Fe54_Fe55[0.0]_YIELD_XSmicro = 218050016
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture Fe54 PARTICLE_YIELD gamma = 1272/10000 = 0.1272 *XS(micro)= 5.86432e-05
+ CreateHisto1D nCapture_G4_Fe_Fe54_gamma_YIELD = 218051015
+ CreateHisto1D nCapture_G4_Fe_Fe54_gamma_YIELD_XSmicro = 218051016
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture Fe56 PARTICLE_YIELD Fe57[0.0] = 92/10000 = 0.0092 *XS(micro)= 4.24149e-06
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD = 218102015
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD_XSmicro = 218102016
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture Fe56 PARTICLE_YIELD gamma = 231/10000 = 0.0231 *XS(micro)= 1.06498e-05
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD = 218101015
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD_XSmicro = 218101016
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture Fe57 PARTICLE_YIELD Fe58[0.0] = 14/10000 = 0.0014 *XS(micro)= 6.45444e-07
+ CreateHisto1D nCapture_G4_Fe_Fe57_Fe58[0.0]_YIELD = 218153015
+ CreateHisto1D nCapture_G4_Fe_Fe57_Fe58[0.0]_YIELD_XSmicro = 218153016
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture Fe57 PARTICLE_YIELD gamma = 54/10000 = 0.0054 *XS(micro)= 2.48957e-06
+ CreateHisto1D nCapture_G4_Fe_Fe57_gamma_YIELD = 218151015
+ CreateHisto1D nCapture_G4_Fe_Fe57_gamma_YIELD_XSmicro = 218151016
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture Fe58 PARTICLE_YIELD Fe59[0.0] = 24/10000 = 0.0024 *XS(micro)= 1.10648e-06
+ CreateHisto1D nCapture_G4_Fe_Fe58_Fe59[0.0]_YIELD = 218204015
+ CreateHisto1D nCapture_G4_Fe_Fe58_Fe59[0.0]_YIELD_XSmicro = 218204016
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture Fe58 PARTICLE_YIELD gamma = 53/10000 = 0.0053 *XS(micro)= 2.44347e-06
+ CreateHisto1D nCapture_G4_Fe_Fe58_gamma_YIELD = 218201015
+ CreateHisto1D nCapture_G4_Fe_Fe58_gamma_YIELD_XSmicro = 218201016
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture TOTAL_PARTICLE_YIELD Fe55[0.0] = 374/10000 = 0.0374 *XS(micro)= 1.72426e-05
+ CreateHisto1D nCapture_G4_Fe_Fe55[0.0]_TOTAL_YIELD = 218000015
+ CreateHisto1D nCapture_G4_Fe_Fe55[0.0]_TOTAL_YIELD_XSmicro = 218000016
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture TOTAL_PARTICLE_YIELD Fe57[0.0] = 92/10000 = 0.0092 *XS(micro)= 4.24149e-06
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD = 218002015
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD_XSmicro = 218002016
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture TOTAL_PARTICLE_YIELD Fe58[0.0] = 14/10000 = 0.0014 *XS(micro)= 6.45444e-07
+ CreateHisto1D nCapture_G4_Fe_Fe58[0.0]_TOTAL_YIELD = 218003015
+ CreateHisto1D nCapture_G4_Fe_Fe58[0.0]_TOTAL_YIELD_XSmicro = 218003016
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture TOTAL_PARTICLE_YIELD Fe59[0.0] = 24/10000 = 0.0024 *XS(micro)= 1.10648e-06
+ CreateHisto1D nCapture_G4_Fe_Fe59[0.0]_TOTAL_YIELD = 218004015
+ CreateHisto1D nCapture_G4_Fe_Fe59[0.0]_TOTAL_YIELD_XSmicro = 218004016
+@@SHGetHadronicChannelXSUA G4_Fe 0.1 MeV nCapture TOTAL_PARTICLE_YIELD gamma = 1610/10000 = 0.161 *XS(micro)= 7.42261e-05
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD = 218001015
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD_XSmicro = 218001016
+NMATES 1 NPROC 30
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 55000001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 55000002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 55010001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 55010002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 55020001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 55020002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 55030001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 55030002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 55040001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 55040002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 55050001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 55050002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 55060001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 55060002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 55070001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 55070002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 55080001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 55080002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 55090001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 55090002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 55100001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 55100002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 55110001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 55110002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 55120001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 55120002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 55130001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 55130002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 55140001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 55140002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 55150001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 55150002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 55160001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 55160002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 55170001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 55170002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 55180001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 55180002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 55190001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 55190002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 55200001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 55200002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 55210001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 55210002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 55220001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 55220002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 55230001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 55230002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 55240001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 55240002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 55250001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 55250002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 55260001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 55260002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 55270001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 55270002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 55280001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 55280002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 55290001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 55290002
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic TOTAL_XS(macro)= 0.00722505 mm-1 TOTAL_XS(micro)= 0.850902 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture TOTAL_XS(macro)= 2.27443e-05 mm-1 TOTAL_XS(micro)= 0.00267862 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic TOTAL_XS(macro)= 0.00722505 mm-1 TOTAL_XS(micro)= 0.850902 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture TOTAL_XS(macro)= 2.27443e-05 mm-1 TOTAL_XS(micro)= 0.00267862 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic TOTAL_XS(macro)= 0.00722505 mm-1 TOTAL_XS(micro)= 0.850902 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture TOTAL_XS(macro)= 2.27443e-05 mm-1 TOTAL_XS(micro)= 0.00267862 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic TOTAL_XS(macro)= 0.00722505 mm-1 TOTAL_XS(micro)= 0.850902 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture TOTAL_XS(macro)= 2.27443e-05 mm-1 TOTAL_XS(micro)= 0.00267862 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic TOTAL_XS(macro)= 0.00722505 mm-1 TOTAL_XS(micro)= 0.850902 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture TOTAL_XS(macro)= 2.27443e-05 mm-1 TOTAL_XS(micro)= 0.00267862 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic TOTAL_XS(macro)= 0.00722505 mm-1 TOTAL_XS(micro)= 0.850902 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture TOTAL_XS(macro)= 2.27443e-05 mm-1 TOTAL_XS(micro)= 0.00267862 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic TOTAL_XS(macro)= 0.00722505 mm-1 TOTAL_XS(micro)= 0.850902 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture TOTAL_XS(macro)= 2.27443e-05 mm-1 TOTAL_XS(micro)= 0.00267862 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic TOTAL_XS(macro)= 0.00722505 mm-1 TOTAL_XS(micro)= 0.850902 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture TOTAL_XS(macro)= 2.27443e-05 mm-1 TOTAL_XS(micro)= 0.00267862 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic TOTAL_XS(macro)= 0.00722505 mm-1 TOTAL_XS(micro)= 0.850902 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture TOTAL_XS(macro)= 2.27443e-05 mm-1 TOTAL_XS(micro)= 0.00267862 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic TOTAL_XS(macro)= 0.00722505 mm-1 TOTAL_XS(micro)= 0.850902 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture TOTAL_XS(macro)= 2.27443e-05 mm-1 TOTAL_XS(micro)= 0.00267862 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic CHANNEL neutron 1 gamma 1 [Fe56 1 Fe56[0.0] 1  = 9690
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic CHANNEL neutron 1 gamma 1 [Fe57 1 Fe57[0.0] 1  = 112
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic CHANNEL neutron 1 gamma 2 [Fe57 1 Fe57[0.0] 1  = 148
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic CHANNEL neutron 1 gamma 3 [Fe57 1 Fe57[0.0] 1  = 6
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic CHANNEL neutron 1 gamma 1 [Fe58 1 Fe58[0.0] 1  = 10
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic CHANNEL_ALL= Fe56(n,n)Fe56 = 9690/10000 = 0.969*XS(micro)= 0.824524 barn 
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56(n,n)Fe56_NPART = 55010003
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56(n,n)Fe56_XSmicro = 55010004
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic CHANNEL_ALL= Fe57(n,n)Fe57 = 266/10000 = 0.0266*XS(micro)= 0.022634 barn 
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57(n,n)Fe57_NPART = 55008003
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57(n,n)Fe57_XSmicro = 55008004
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic CHANNEL_ALL= Fe58(n,n)Fe58 = 10/10000 = 0.001*XS(micro)= 0.000850902 barn 
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe58(n,n)Fe58_NPART = 55012003
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe58(n,n)Fe58_XSmicro = 55012004
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic Fe56 PARTICLE_YIELD Fe56[0.0] = 9690/10000 = 0.969 *XS(micro)= 0.824524
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56_Fe56[0.0]_YIELD = 55106005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56_Fe56[0.0]_YIELD_XSmicro = 55106006
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic Fe56 PARTICLE_YIELD gamma = 9690/10000 = 0.969 *XS(micro)= 0.824524
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56_gamma_YIELD = 55101005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56_gamma_YIELD_XSmicro = 55101006
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic Fe56 PARTICLE_YIELD neutron = 9690/10000 = 0.969 *XS(micro)= 0.824524
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56_neutron_YIELD = 55105005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56_neutron_YIELD_XSmicro = 55105006
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic Fe57 PARTICLE_YIELD Fe57[0.0] = 266/10000 = 0.0266 *XS(micro)= 0.022634
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_Fe57[0.0]_YIELD = 55152005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_Fe57[0.0]_YIELD_XSmicro = 55152006
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic Fe57 PARTICLE_YIELD gamma = 426/10000 = 0.0426 *XS(micro)= 0.0362484
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_gamma_YIELD = 55151005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_gamma_YIELD_XSmicro = 55151006
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic Fe57 PARTICLE_YIELD neutron = 266/10000 = 0.0266 *XS(micro)= 0.022634
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_neutron_YIELD = 55155005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_neutron_YIELD_XSmicro = 55155006
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic Fe58 PARTICLE_YIELD Fe58[0.0] = 10/10000 = 0.001 *XS(micro)= 0.000850902
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe58_Fe58[0.0]_YIELD = 55203005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe58_Fe58[0.0]_YIELD_XSmicro = 55203006
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic Fe58 PARTICLE_YIELD gamma = 10/10000 = 0.001 *XS(micro)= 0.000850902
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe58_gamma_YIELD = 55201005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe58_gamma_YIELD_XSmicro = 55201006
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic Fe58 PARTICLE_YIELD neutron = 10/10000 = 0.001 *XS(micro)= 0.000850902
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe58_neutron_YIELD = 55205005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe58_neutron_YIELD_XSmicro = 55205006
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic TOTAL_PARTICLE_YIELD Fe56[0.0] = 9690/10000 = 0.969 *XS(micro)= 0.824524
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56[0.0]_TOTAL_YIELD = 55006005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56[0.0]_TOTAL_YIELD_XSmicro = 55006006
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic TOTAL_PARTICLE_YIELD Fe57[0.0] = 266/10000 = 0.0266 *XS(micro)= 0.022634
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57[0.0]_TOTAL_YIELD = 55002005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57[0.0]_TOTAL_YIELD_XSmicro = 55002006
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic TOTAL_PARTICLE_YIELD Fe58[0.0] = 10/10000 = 0.001 *XS(micro)= 0.000850902
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe58[0.0]_TOTAL_YIELD = 55003005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe58[0.0]_TOTAL_YIELD_XSmicro = 55003006
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic TOTAL_PARTICLE_YIELD gamma = 10126/10000 = 1.0126 *XS(micro)= 0.861624
+ CreateHisto1D NeutronInelastic_G4_Fe_gamma_TOTAL_YIELD = 55001005
+ CreateHisto1D NeutronInelastic_G4_Fe_gamma_TOTAL_YIELD_XSmicro = 55001006
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV NeutronInelastic TOTAL_PARTICLE_YIELD neutron = 9966/10000 = 0.9966 *XS(micro)= 0.848009
+ CreateHisto1D NeutronInelastic_G4_Fe_neutron_TOTAL_YIELD = 55005005
+ CreateHisto1D NeutronInelastic_G4_Fe_neutron_TOTAL_YIELD_XSmicro = 55005006
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture CHANNEL gamma 1 [Fe54 1 Fe55[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture CHANNEL gamma 2 [Fe54 1 Fe55[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture CHANNEL gamma 4 [Fe54 1 Fe55[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture CHANNEL gamma 1 [Fe56 1 Fe57[0.0] 1  = 5
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture CHANNEL gamma 2 [Fe56 1 Fe57[0.0] 1  = 6
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture CHANNEL gamma 3 [Fe56 1 Fe57[0.0] 1  = 12
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture CHANNEL gamma 4 [Fe56 1 Fe57[0.0] 1  = 5
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture CHANNEL gamma 5 [Fe56 1 Fe57[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture CHANNEL gamma 6 [Fe56 1 Fe57[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture CHANNEL gamma 7 [Fe56 1 Fe57[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture CHANNEL_ALL= Fe54(n,)Fe55 = 3/10000 = 0.0003*XS(micro)= 8.03587e-07 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe54(n,)Fe55_NPART = 55000013
+ CreateHisto1D nCapture_G4_Fe_Fe54(n,)Fe55_XSmicro = 55000014
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture CHANNEL_ALL= Fe56(n,)Fe57 = 31/10000 = 0.0031*XS(micro)= 8.30374e-06 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_NPART = 55002013
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_XSmicro = 55002014
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture Fe54 PARTICLE_YIELD Fe55[0.0] = 3/10000 = 0.0003 *XS(micro)= 8.03587e-07
+ CreateHisto1D nCapture_G4_Fe_Fe54_Fe55[0.0]_YIELD = 55050015
+ CreateHisto1D nCapture_G4_Fe_Fe54_Fe55[0.0]_YIELD_XSmicro = 55050016
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture Fe54 PARTICLE_YIELD gamma = 7/10000 = 0.0007 *XS(micro)= 1.87504e-06
+ CreateHisto1D nCapture_G4_Fe_Fe54_gamma_YIELD = 55051015
+ CreateHisto1D nCapture_G4_Fe_Fe54_gamma_YIELD_XSmicro = 55051016
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture Fe56 PARTICLE_YIELD Fe57[0.0] = 31/10000 = 0.0031 *XS(micro)= 8.30374e-06
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD = 55102015
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD_XSmicro = 55102016
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture Fe56 PARTICLE_YIELD gamma = 91/10000 = 0.0091 *XS(micro)= 2.43755e-05
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD = 55101015
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD_XSmicro = 55101016
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture TOTAL_PARTICLE_YIELD Fe55[0.0] = 3/10000 = 0.0003 *XS(micro)= 8.03587e-07
+ CreateHisto1D nCapture_G4_Fe_Fe55[0.0]_TOTAL_YIELD = 55000015
+ CreateHisto1D nCapture_G4_Fe_Fe55[0.0]_TOTAL_YIELD_XSmicro = 55000016
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture TOTAL_PARTICLE_YIELD Fe57[0.0] = 31/10000 = 0.0031 *XS(micro)= 8.30374e-06
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD = 55002015
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD_XSmicro = 55002016
+@@SHGetHadronicChannelXSUA G4_Fe 1 MeV nCapture TOTAL_PARTICLE_YIELD gamma = 98/10000 = 0.0098 *XS(micro)= 2.62505e-05
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD = 55001015
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD_XSmicro = 55001016
+NMATES 1 NPROC 33
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 987000001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 987000002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 987010001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 987010002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 987020001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 987020002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 987030001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 987030002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 987040001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 987040002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 987050001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 987050002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 987060001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 987060002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 987070001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 987070002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 987080001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 987080002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 987090001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 987090002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 987100001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 987100002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 987110001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 987110002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 987120001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 987120002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 987130001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 987130002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 987140001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 987140002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 987150001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 987150002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 987160001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 987160002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 987170001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 987170002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 987180001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 987180002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 987190001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 987190002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 987200001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 987200002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 987210001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 987210002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 987220001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 987220002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 987230001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 987230002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 987240001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 987240002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 987250001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 987250002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 987260001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 987260002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 987270001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 987270002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 987280001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 987280002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 987290001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 987290002
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmicro = 987300001
+ CreateHisto1D G4_Fe_NeutronInelastic_XSmacro = 987300002
+ CreateHisto1D G4_Fe_nCapture_XSmicro = 987310001
+ CreateHisto1D G4_Fe_nCapture_XSmacro = 987310002
+ CreateHisto1D G4_Fe_nFission_XSmicro = 987320001
+ CreateHisto1D G4_Fe_nFission_XSmacro = 987320002
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_XS(macro)= 0.0119941 mm-1 TOTAL_XS(micro)= 1.41256 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nCapture TOTAL_XS(macro)= 2.91782e-06 mm-1 TOTAL_XS(micro)= 0.000343635 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_XS(macro)= 0.0119941 mm-1 TOTAL_XS(micro)= 1.41256 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nCapture TOTAL_XS(macro)= 2.91782e-06 mm-1 TOTAL_XS(micro)= 0.000343635 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_XS(macro)= 0.0119941 mm-1 TOTAL_XS(micro)= 1.41256 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nCapture TOTAL_XS(macro)= 2.91782e-06 mm-1 TOTAL_XS(micro)= 0.000343635 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_XS(macro)= 0.0119941 mm-1 TOTAL_XS(micro)= 1.41256 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nCapture TOTAL_XS(macro)= 2.91782e-06 mm-1 TOTAL_XS(micro)= 0.000343635 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_XS(macro)= 0.0119941 mm-1 TOTAL_XS(micro)= 1.41256 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nCapture TOTAL_XS(macro)= 2.91782e-06 mm-1 TOTAL_XS(micro)= 0.000343635 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_XS(macro)= 0.0119941 mm-1 TOTAL_XS(micro)= 1.41256 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nCapture TOTAL_XS(macro)= 2.91782e-06 mm-1 TOTAL_XS(micro)= 0.000343635 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_XS(macro)= 0.0119941 mm-1 TOTAL_XS(micro)= 1.41256 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nCapture TOTAL_XS(macro)= 2.91782e-06 mm-1 TOTAL_XS(micro)= 0.000343635 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_XS(macro)= 0.0119941 mm-1 TOTAL_XS(micro)= 1.41256 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nCapture TOTAL_XS(macro)= 2.91782e-06 mm-1 TOTAL_XS(micro)= 0.000343635 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_XS(macro)= 0.0119941 mm-1 TOTAL_XS(micro)= 1.41256 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nCapture TOTAL_XS(macro)= 2.91782e-06 mm-1 TOTAL_XS(micro)= 0.000343635 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_XS(macro)= 0.0119941 mm-1 TOTAL_XS(micro)= 1.41256 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nCapture TOTAL_XS(macro)= 2.91782e-06 mm-1 TOTAL_XS(micro)= 0.000343635 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_XS(macro)= 0.0119941 mm-1 TOTAL_XS(micro)= 1.41256 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nCapture TOTAL_XS(macro)= 2.91782e-06 mm-1 TOTAL_XS(micro)= 0.000343635 barn
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nFission TOTAL_XS(macro)= 0 mm-1 TOTAL_XS(micro)= 0 barn
+Run terminated.
+Run Summary
+  Run Aborted after 110000 events processed.
+  User=128.29s Real=129.51s Sys=0.03s
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL alpha 1 [Fe54 1 Cr51[0.0] 1  = 6
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL gamma 1 alpha 1 [Fe54 1 Cr51[0.0] 1  = 14
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL gamma 2 alpha 1 [Fe54 1 Cr51[0.0] 1  = 8
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL gamma 3 alpha 1 [Fe54 1 Cr51[0.0] 1  = 5
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL gamma 4 alpha 1 [Fe54 1 Cr51[0.0] 1  = 3
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL alpha 1 [Fe56 1 Cr53[0.0] 1  = 41
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL gamma 1 alpha 1 [Fe56 1 Cr53[0.0] 1  = 82
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL gamma 2 alpha 1 [Fe56 1 Cr53[0.0] 1  = 54
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL gamma 3 alpha 1 [Fe56 1 Cr53[0.0] 1  = 30
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL gamma 4 alpha 1 [Fe56 1 Cr53[0.0] 1  = 18
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL gamma 5 alpha 1 [Fe56 1 Cr53[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL gamma 6 alpha 1 [Fe56 1 Cr53[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL gamma 7 alpha 1 [Fe56 1 Cr53[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL gamma 1 alpha 1 [Fe57 1 Cr54[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL gamma 4 alpha 1 [Fe57 1 Cr54[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 1 [Fe54 1 Fe54[0.0] 1  = 71
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 2 [Fe54 1 Fe54[0.0] 1  = 73
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 3 [Fe54 1 Fe54[0.0] 1  = 58
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 4 [Fe54 1 Fe54[0.0] 1  = 66
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 5 [Fe54 1 Fe54[0.0] 1  = 29
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 6 [Fe54 1 Fe54[0.0] 1  = 16
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 7 [Fe54 1 Fe54[0.0] 1  = 5
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 8 [Fe54 1 Fe54[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 [Fe54 1 Fe54[0.0] 1  = 15
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 1 [Fe56 1 Fe56[0.0] 1  = 1573
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 2 [Fe56 1 Fe56[0.0] 1  = 1951
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 3 [Fe56 1 Fe56[0.0] 1  = 1856
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 4 [Fe56 1 Fe56[0.0] 1  = 1321
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 5 [Fe56 1 Fe56[0.0] 1  = 818
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 6 [Fe56 1 Fe56[0.0] 1  = 404
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 7 [Fe56 1 Fe56[0.0] 1  = 195
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 8 [Fe56 1 Fe56[0.0] 1  = 79
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 9 [Fe56 1 Fe56[0.0] 1  = 26
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 10 [Fe56 1 Fe56[0.0] 1  = 10
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 11 [Fe56 1 Fe56[0.0] 1  = 3
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 [Fe56 1 Fe56[0.0] 1  = 305
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 2 gamma 1 [Fe57 1 Fe56[0.0] 1  = 11
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 2 gamma 2 [Fe57 1 Fe56[0.0] 1  = 5
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 2 gamma 4 [Fe57 1 Fe56[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 2 gamma 5 [Fe57 1 Fe56[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 2 [Fe57 1 Fe56[0.0] 1  = 36
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 1 [Fe57 1 Fe57[0.0] 1  = 20
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 2 [Fe57 1 Fe57[0.0] 1  = 25
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 3 [Fe57 1 Fe57[0.0] 1  = 27
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 4 [Fe57 1 Fe57[0.0] 1  = 21
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 5 [Fe57 1 Fe57[0.0] 1  = 21
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 6 [Fe57 1 Fe57[0.0] 1  = 12
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 7 [Fe57 1 Fe57[0.0] 1  = 4
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 8 [Fe57 1 Fe57[0.0] 1  = 3
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 9 [Fe57 1 Fe57[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 11 [Fe57 1 Fe57[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 [Fe57 1 Fe57[0.0] 1  = 4
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 1 [Fe58 1 Fe58[0.0] 1  = 3
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 2 [Fe58 1 Fe58[0.0] 1  = 6
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 3 [Fe58 1 Fe58[0.0] 1  = 5
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 4 [Fe58 1 Fe58[0.0] 1  = 9
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 5 [Fe58 1 Fe58[0.0] 1  = 4
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 6 [Fe58 1 Fe58[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 gamma 9 [Fe58 1 Fe58[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL neutron 1 [Fe58 1 Fe58[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL deuteron 1 [Fe54 1 Mn53[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL proton 1 gamma 1 [Fe54 1 Mn54[0.0] 1  = 52
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL proton 1 gamma 2 [Fe54 1 Mn54[0.0] 1  = 50
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL proton 1 gamma 3 [Fe54 1 Mn54[0.0] 1  = 39
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL proton 1 gamma 4 [Fe54 1 Mn54[0.0] 1  = 19
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL proton 1 gamma 5 [Fe54 1 Mn54[0.0] 1  = 8
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL proton 1 gamma 6 [Fe54 1 Mn54[0.0] 1  = 5
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL proton 1 gamma 7 [Fe54 1 Mn54[0.0] 1  = 3
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL proton 1 [Fe54 1 Mn54[0.0] 1  = 29
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL proton 1 gamma 1 [Fe56 1 Mn56[0.0] 1  = 91
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL proton 1 gamma 2 [Fe56 1 Mn56[0.0] 1  = 110
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL proton 1 gamma 3 [Fe56 1 Mn56[0.0] 1  = 79
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL proton 1 gamma 4 [Fe56 1 Mn56[0.0] 1  = 47
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL proton 1 gamma 5 [Fe56 1 Mn56[0.0] 1  = 27
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL proton 1 gamma 6 [Fe56 1 Mn56[0.0] 1  = 9
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL proton 1 gamma 7 [Fe56 1 Mn56[0.0] 1  = 4
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL proton 1 gamma 11 [Fe56 1 Mn56[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL proton 1 [Fe56 1 Mn56[0.0] 1  = 50
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL proton 1 gamma 1 [Fe57 1 Mn57[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL proton 1 gamma 2 [Fe57 1 Mn57[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL proton 1 gamma 5 [Fe57 1 Mn57[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL proton 1 [Fe57 1 Mn57[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL_ALL= Fe54(n,a)Cr51 = 36/10000 = 0.0036*XS(micro)= 0.00508522 barn 
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54(n,a)Cr51_NPART = 987014003
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54(n,a)Cr51_XSmicro = 987014004
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL_ALL= Fe54(n,d)Mn53 = 1/10000 = 0.0001*XS(micro)= 0.000141256 barn 
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54(n,d)Mn53_NPART = 987016003
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54(n,d)Mn53_XSmicro = 987016004
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL_ALL= Fe54(n,n)Fe54 = 334/10000 = 0.0334*XS(micro)= 0.0471796 barn 
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54(n,n)Fe54_NPART = 987018003
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54(n,n)Fe54_XSmicro = 987018004
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL_ALL= Fe54(n,p)Mn54 = 205/10000 = 0.0205*XS(micro)= 0.0289575 barn 
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54(n,p)Mn54_NPART = 987020003
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54(n,p)Mn54_XSmicro = 987020004
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL_ALL= Fe56(n,a)Cr53 = 230/10000 = 0.023*XS(micro)= 0.0324889 barn 
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56(n,a)Cr53_NPART = 987022003
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56(n,a)Cr53_XSmicro = 987022004
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL_ALL= Fe56(n,n)Fe56 = 8541/10000 = 0.8541*XS(micro)= 1.20647 barn 
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56(n,n)Fe56_NPART = 987010003
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56(n,n)Fe56_XSmicro = 987010004
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL_ALL= Fe56(n,p)Mn56 = 418/10000 = 0.0418*XS(micro)= 0.0590451 barn 
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56(n,p)Mn56_NPART = 987024003
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56(n,p)Mn56_XSmicro = 987024004
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL_ALL= Fe57(n,2n)Fe56 = 54/10000 = 0.0054*XS(micro)= 0.00762784 barn 
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57(n,2n)Fe56_NPART = 987026003
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57(n,2n)Fe56_XSmicro = 987026004
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL_ALL= Fe57(n,a)Cr54 = 4/10000 = 0.0004*XS(micro)= 0.000565025 barn 
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57(n,a)Cr54_NPART = 987028003
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57(n,a)Cr54_XSmicro = 987028004
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL_ALL= Fe57(n,n)Fe57 = 139/10000 = 0.0139*XS(micro)= 0.0196346 barn 
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57(n,n)Fe57_NPART = 987008003
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57(n,n)Fe57_XSmicro = 987008004
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL_ALL= Fe57(n,p)Mn57 = 4/10000 = 0.0004*XS(micro)= 0.000565025 barn 
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57(n,p)Mn57_NPART = 987030003
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57(n,p)Mn57_XSmicro = 987030004
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic CHANNEL_ALL= Fe58(n,n)Fe58 = 31/10000 = 0.0031*XS(micro)= 0.00437894 barn 
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe58(n,n)Fe58_NPART = 987012003
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe58(n,n)Fe58_XSmicro = 987012004
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe54 PARTICLE_YIELD Cr51[0.0] = 36/10000 = 0.0036 *XS(micro)= 0.00508522
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54_Cr51[0.0]_YIELD = 987057005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54_Cr51[0.0]_YIELD_XSmicro = 987057006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe54 PARTICLE_YIELD Fe54[0.0] = 334/10000 = 0.0334 *XS(micro)= 0.0471796
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54_Fe54[0.0]_YIELD = 987058005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54_Fe54[0.0]_YIELD_XSmicro = 987058006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe54 PARTICLE_YIELD Mn53[0.0] = 1/10000 = 0.0001 *XS(micro)= 0.000141256
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54_Mn53[0.0]_YIELD = 987059005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54_Mn53[0.0]_YIELD_XSmicro = 987059006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe54 PARTICLE_YIELD Mn54[0.0] = 205/10000 = 0.0205 *XS(micro)= 0.0289575
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54_Mn54[0.0]_YIELD = 987060005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54_Mn54[0.0]_YIELD_XSmicro = 987060006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe54 PARTICLE_YIELD alpha = 36/10000 = 0.0036 *XS(micro)= 0.00508522
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54_alpha_YIELD = 987061005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54_alpha_YIELD_XSmicro = 987061006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe54 PARTICLE_YIELD deuteron = 1/10000 = 0.0001 *XS(micro)= 0.000141256
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54_deuteron_YIELD = 987062005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54_deuteron_YIELD_XSmicro = 987062006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe54 PARTICLE_YIELD gamma = 1432/10000 = 0.1432 *XS(micro)= 0.202279
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54_gamma_YIELD = 987051005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54_gamma_YIELD_XSmicro = 987051006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe54 PARTICLE_YIELD neutron = 334/10000 = 0.0334 *XS(micro)= 0.0471796
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54_neutron_YIELD = 987055005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54_neutron_YIELD_XSmicro = 987055006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe54 PARTICLE_YIELD proton = 205/10000 = 0.0205 *XS(micro)= 0.0289575
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54_proton_YIELD = 987063005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54_proton_YIELD_XSmicro = 987063006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe56 PARTICLE_YIELD Cr53[0.0] = 230/10000 = 0.023 *XS(micro)= 0.0324889
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56_Cr53[0.0]_YIELD = 987114005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56_Cr53[0.0]_YIELD_XSmicro = 987114006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe56 PARTICLE_YIELD Fe56[0.0] = 8541/10000 = 0.8541 *XS(micro)= 1.20647
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56_Fe56[0.0]_YIELD = 987106005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56_Fe56[0.0]_YIELD_XSmicro = 987106006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe56 PARTICLE_YIELD Mn56[0.0] = 418/10000 = 0.0418 *XS(micro)= 0.0590451
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56_Mn56[0.0]_YIELD = 987115005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56_Mn56[0.0]_YIELD_XSmicro = 987115006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe56 PARTICLE_YIELD alpha = 230/10000 = 0.023 *XS(micro)= 0.0324889
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56_alpha_YIELD = 987111005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56_alpha_YIELD_XSmicro = 987111006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe56 PARTICLE_YIELD gamma = 26550/10000 = 2.655 *XS(micro)= 3.75035
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56_gamma_YIELD = 987101005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56_gamma_YIELD_XSmicro = 987101006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe56 PARTICLE_YIELD neutron = 8541/10000 = 0.8541 *XS(micro)= 1.20647
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56_neutron_YIELD = 987105005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56_neutron_YIELD_XSmicro = 987105006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe56 PARTICLE_YIELD proton = 418/10000 = 0.0418 *XS(micro)= 0.0590451
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56_proton_YIELD = 987113005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56_proton_YIELD_XSmicro = 987113006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe57 PARTICLE_YIELD Cr54[0.0] = 4/10000 = 0.0004 *XS(micro)= 0.000565025
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_Cr54[0.0]_YIELD = 987166005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_Cr54[0.0]_YIELD_XSmicro = 987166006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe57 PARTICLE_YIELD Fe56[0.0] = 54/10000 = 0.0054 *XS(micro)= 0.00762784
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_Fe56[0.0]_YIELD = 987156005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_Fe56[0.0]_YIELD_XSmicro = 987156006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe57 PARTICLE_YIELD Fe57[0.0] = 139/10000 = 0.0139 *XS(micro)= 0.0196346
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_Fe57[0.0]_YIELD = 987152005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_Fe57[0.0]_YIELD_XSmicro = 987152006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe57 PARTICLE_YIELD Mn57[0.0] = 4/10000 = 0.0004 *XS(micro)= 0.000565025
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_Mn57[0.0]_YIELD = 987167005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_Mn57[0.0]_YIELD_XSmicro = 987167006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe57 PARTICLE_YIELD alpha = 4/10000 = 0.0004 *XS(micro)= 0.000565025
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_alpha_YIELD = 987161005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_alpha_YIELD_XSmicro = 987161006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe57 PARTICLE_YIELD gamma = 532/10000 = 0.0532 *XS(micro)= 0.0751483
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_gamma_YIELD = 987151005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_gamma_YIELD_XSmicro = 987151006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe57 PARTICLE_YIELD neutron = 247/10000 = 0.0247 *XS(micro)= 0.0348903
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_neutron_YIELD = 987155005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_neutron_YIELD_XSmicro = 987155006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe57 PARTICLE_YIELD proton = 4/10000 = 0.0004 *XS(micro)= 0.000565025
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_proton_YIELD = 987163005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57_proton_YIELD_XSmicro = 987163006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe58 PARTICLE_YIELD Fe58[0.0] = 31/10000 = 0.0031 *XS(micro)= 0.00437894
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe58_Fe58[0.0]_YIELD = 987203005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe58_Fe58[0.0]_YIELD_XSmicro = 987203006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe58 PARTICLE_YIELD gamma = 107/10000 = 0.0107 *XS(micro)= 0.0151144
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe58_gamma_YIELD = 987201005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe58_gamma_YIELD_XSmicro = 987201006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic Fe58 PARTICLE_YIELD neutron = 31/10000 = 0.0031 *XS(micro)= 0.00437894
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe58_neutron_YIELD = 987205005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe58_neutron_YIELD_XSmicro = 987205006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_PARTICLE_YIELD Cr51[0.0] = 36/10000 = 0.0036 *XS(micro)= 0.00508522
+ CreateHisto1D NeutronInelastic_G4_Fe_Cr51[0.0]_TOTAL_YIELD = 987007005
+ CreateHisto1D NeutronInelastic_G4_Fe_Cr51[0.0]_TOTAL_YIELD_XSmicro = 987007006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_PARTICLE_YIELD Cr53[0.0] = 230/10000 = 0.023 *XS(micro)= 0.0324889
+ CreateHisto1D NeutronInelastic_G4_Fe_Cr53[0.0]_TOTAL_YIELD = 987014005
+ CreateHisto1D NeutronInelastic_G4_Fe_Cr53[0.0]_TOTAL_YIELD_XSmicro = 987014006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_PARTICLE_YIELD Cr54[0.0] = 4/10000 = 0.0004 *XS(micro)= 0.000565025
+ CreateHisto1D NeutronInelastic_G4_Fe_Cr54[0.0]_TOTAL_YIELD = 987016005
+ CreateHisto1D NeutronInelastic_G4_Fe_Cr54[0.0]_TOTAL_YIELD_XSmicro = 987016006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_PARTICLE_YIELD Fe54[0.0] = 334/10000 = 0.0334 *XS(micro)= 0.0471796
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54[0.0]_TOTAL_YIELD = 987008005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe54[0.0]_TOTAL_YIELD_XSmicro = 987008006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_PARTICLE_YIELD Fe56[0.0] = 8595/10000 = 0.8595 *XS(micro)= 1.2141
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56[0.0]_TOTAL_YIELD = 987006005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe56[0.0]_TOTAL_YIELD_XSmicro = 987006006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_PARTICLE_YIELD Fe57[0.0] = 139/10000 = 0.0139 *XS(micro)= 0.0196346
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57[0.0]_TOTAL_YIELD = 987002005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe57[0.0]_TOTAL_YIELD_XSmicro = 987002006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_PARTICLE_YIELD Fe58[0.0] = 31/10000 = 0.0031 *XS(micro)= 0.00437894
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe58[0.0]_TOTAL_YIELD = 987003005
+ CreateHisto1D NeutronInelastic_G4_Fe_Fe58[0.0]_TOTAL_YIELD_XSmicro = 987003006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_PARTICLE_YIELD Mn53[0.0] = 1/10000 = 0.0001 *XS(micro)= 0.000141256
+ CreateHisto1D NeutronInelastic_G4_Fe_Mn53[0.0]_TOTAL_YIELD = 987009005
+ CreateHisto1D NeutronInelastic_G4_Fe_Mn53[0.0]_TOTAL_YIELD_XSmicro = 987009006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_PARTICLE_YIELD Mn54[0.0] = 205/10000 = 0.0205 *XS(micro)= 0.0289575
+ CreateHisto1D NeutronInelastic_G4_Fe_Mn54[0.0]_TOTAL_YIELD = 987010005
+ CreateHisto1D NeutronInelastic_G4_Fe_Mn54[0.0]_TOTAL_YIELD_XSmicro = 987010006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_PARTICLE_YIELD Mn56[0.0] = 418/10000 = 0.0418 *XS(micro)= 0.0590451
+ CreateHisto1D NeutronInelastic_G4_Fe_Mn56[0.0]_TOTAL_YIELD = 987015005
+ CreateHisto1D NeutronInelastic_G4_Fe_Mn56[0.0]_TOTAL_YIELD_XSmicro = 987015006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_PARTICLE_YIELD Mn57[0.0] = 4/10000 = 0.0004 *XS(micro)= 0.000565025
+ CreateHisto1D NeutronInelastic_G4_Fe_Mn57[0.0]_TOTAL_YIELD = 987017005
+ CreateHisto1D NeutronInelastic_G4_Fe_Mn57[0.0]_TOTAL_YIELD_XSmicro = 987017006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_PARTICLE_YIELD alpha = 270/10000 = 0.027 *XS(micro)= 0.0381392
+ CreateHisto1D NeutronInelastic_G4_Fe_alpha_TOTAL_YIELD = 987011005
+ CreateHisto1D NeutronInelastic_G4_Fe_alpha_TOTAL_YIELD_XSmicro = 987011006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_PARTICLE_YIELD deuteron = 1/10000 = 0.0001 *XS(micro)= 0.000141256
+ CreateHisto1D NeutronInelastic_G4_Fe_deuteron_TOTAL_YIELD = 987012005
+ CreateHisto1D NeutronInelastic_G4_Fe_deuteron_TOTAL_YIELD_XSmicro = 987012006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_PARTICLE_YIELD gamma = 28621/10000 = 2.8621 *XS(micro)= 4.04289
+ CreateHisto1D NeutronInelastic_G4_Fe_gamma_TOTAL_YIELD = 987001005
+ CreateHisto1D NeutronInelastic_G4_Fe_gamma_TOTAL_YIELD_XSmicro = 987001006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_PARTICLE_YIELD neutron = 9153/10000 = 0.9153 *XS(micro)= 1.29292
+ CreateHisto1D NeutronInelastic_G4_Fe_neutron_TOTAL_YIELD = 987005005
+ CreateHisto1D NeutronInelastic_G4_Fe_neutron_TOTAL_YIELD_XSmicro = 987005006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV NeutronInelastic TOTAL_PARTICLE_YIELD proton = 627/10000 = 0.0627 *XS(micro)= 0.0885676
+ CreateHisto1D NeutronInelastic_G4_Fe_proton_TOTAL_YIELD = 987013005
+ CreateHisto1D NeutronInelastic_G4_Fe_proton_TOTAL_YIELD_XSmicro = 987013006
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nCapture CHANNEL gamma 2 [Fe56 1 Fe57[0.0] 1  = 1
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nCapture CHANNEL gamma 4 [Fe56 1 Fe57[0.0] 1  = 2
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nCapture CHANNEL_ALL= Fe56(n,)Fe57 = 3/10000 = 0.0003*XS(micro)= 1.0309e-07 barn 
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_NPART = 987002013
+ CreateHisto1D nCapture_G4_Fe_Fe56(n,)Fe57_XSmicro = 987002014
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nCapture Fe56 PARTICLE_YIELD Fe57[0.0] = 3/10000 = 0.0003 *XS(micro)= 1.0309e-07
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD = 987102015
+ CreateHisto1D nCapture_G4_Fe_Fe56_Fe57[0.0]_YIELD_XSmicro = 987102016
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nCapture Fe56 PARTICLE_YIELD gamma = 10/10000 = 0.001 *XS(micro)= 3.43635e-07
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD = 987101015
+ CreateHisto1D nCapture_G4_Fe_Fe56_gamma_YIELD_XSmicro = 987101016
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nCapture TOTAL_PARTICLE_YIELD Fe57[0.0] = 3/10000 = 0.0003 *XS(micro)= 1.0309e-07
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD = 987002015
+ CreateHisto1D nCapture_G4_Fe_Fe57[0.0]_TOTAL_YIELD_XSmicro = 987002016
+@@SHGetHadronicChannelXSUA G4_Fe 10 MeV nCapture TOTAL_PARTICLE_YIELD gamma = 10/10000 = 0.001 *XS(micro)= 3.43635e-07
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD = 987001015
+ CreateHisto1D nCapture_G4_Fe_gamma_TOTAL_YIELD_XSmicro = 987001016
+Graphics systems deleted.
+Visualization Manager deleting...
+=== saving histograms in file === SHGetHadronicChannelXSUA.root

@@ -1,0 +1,11 @@
+Using granular libraries ...  /Users/cristinallorenteherranz/gamos/external/geant4/geant4.9.6.p02.gamos/lib/Darwin-g++/liblist 
+Linking gamos ...
+clang: warning: argument unused during compilation: '-ansi'
+Undefined symbols for architecture x86_64:
+  "G4OpenGLStoredX::G4OpenGLStoredX()", referenced from:
+      G4VisExecutive::RegisterGraphicsSystems() in gamos.o
+  "G4OpenGLImmediateX::G4OpenGLImmediateX()", referenced from:
+      G4VisExecutive::RegisterGraphicsSystems() in gamos.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [/Users/cristinallorenteherranz/gamos/GAMOS.5.0.0/bin/Darwin-g++/gamos] Error 1

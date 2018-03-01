@@ -1,0 +1,6 @@
+# ROOT map file generated automatically by genmap on Fri Nov 13 13:11:19 2015
+
+Library.__pf__@@GmBaseVerbosity: libGamosCore_GamosAnalysis.dylib
+Library.__pf__@@GmUAVerbosity: libGamosCore_GamosAnalysis.dylib
+Library.__pf__@@GmCheckOriginalGamma: libGamosCore_GamosAnalysis.dylib
+Library.__pf__@@GmAnalysisVerbosity: libGamosCore_GamosAnalysis.dylib

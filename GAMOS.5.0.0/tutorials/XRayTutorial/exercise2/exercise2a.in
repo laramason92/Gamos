@@ -1,0 +1,29 @@
+/gamos/setParam GmGeometryFromText:FileName ../exercise1/exercise1.geom
+/gamos/geometry GmGeometryFromText
+/gamos/physicsList GmEMPhysics
+/gamos/generator GmGenerator
+
+/run/initialize
+
+### Generator distributions 
+/gamos/generator/addSingleParticleSource mySource e- 150.*keV
+/gamos/generator/positionDist mySource GmGenerDistPositionInG4Volumes Source
+/gamos/generator/directionDist mySource GmGenerDistDirectionConst 0. 1. 0.
+
+### Faster multiple scattering
+/process/msc/StepLimit Minimal
+
+### Write phase space
+/gamos/setParam RTPhaseSpaceUA:FileName xray
+/gamos/setParam RTPhaseSpaceUA:ZStops 10.*cm
+/gamos/userAction RTPhaseSpaceUA
+
+### Print some info
+/gamos/userAction GmCountProcessesUA
+/gamos/userAction GmCountTracksUA
+
+/gamos/random/setSeeds 2142  22211 
+
+/run/beamOn 1000000
+
+

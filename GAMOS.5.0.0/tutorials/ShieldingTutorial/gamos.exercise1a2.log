@@ -1,0 +1,1785 @@
+/control/execute exercise1a2.in
+/gamos/setParam GmGeometryFromText:FileName exercise1a.geom
+/gamos/geometry GmGeometryFromText
+/gamos/physicsList G4QGSP_BIC_HP
+<<< Geant4 Physics List simulation engine: QGSP_BIC_HP 2.0
+
+/gamos/generator GmGenerator
+ GmGenUtils::FileInPath ./isotopes.dat in .
+ GmGenUtils::FileInPath /home/arce/gamosnew/GAMOS.5.0.0/data/isotopes.dat in /home/arce/gamosnew/GAMOS.5.0.0/data
+/run/initialize
+ GmGenUtils::FileInPath ./exercise1a.geom in .
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Elastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Elastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/8_17_Oxygen
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Inelastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Inelastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Capture file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Elastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Inelastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Inelastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Capture file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/8_17_Oxygen
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Elastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/8_17_Oxygen
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Inelastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Inelastic/CrossSection/8_17_Oxygen
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+WARNING: model G4LENeutronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Capture file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Capture file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/8_17_Oxygen
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+WARNING: model G4LEProtonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEPionPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEPionMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroLInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroSInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiProtonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiProtonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiNeutronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiNeutronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LELambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HELambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiLambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiLambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LESigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HESigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiSigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiSigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LESigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HESigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiSigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiSigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+/gamos/generator/addSingleParticleSource source neutron 1*MeV
+/gamos/generator/directionDist source GmGenerDistDirectionConst 0. 0. 1.
+/gamos/generator/positionDist source GmGenerDistPositionPoint 0. 0. 0.
+/gamos/userAction GmKillAllUA GmSecondaryFilter
+/gamos/classifier ancesC GmClassifierByAncestors 1 1000
+/gamos/filter exitshieldF GmExitLogicalVolumeFilter shield
+/gamos/setParam SHNthValueLayerUA_exitshieldF_ancesC:LayerWidth 1.
+/gamos/setParam SHNthValueLayerUA_exitshieldF_ancesC:Reductions 10.
+/gamos/userAction SHNthValueLayerUA exitshieldF ancesC
+/gamos/setParam GmCountTracksUA:EachNEvent 1000
+/gamos/userAction GmCountTracksUA
+/run/beamOn 10000
+
+phot:   for  gamma    SubType= 12
+      LambdaPrime table from 200 keV to 10 TeV in 54 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       PhotoElectric :  Emin=        0 eV    Emax=       10 TeV   AngularGenSauterGavrila  FluoActive
+
+compt:   for  gamma    SubType= 13
+      Lambda table from 100 eV  to 1 MeV in 28 bins, spline: 1
+      LambdaPrime table from 1 MeV to 10 TeV in 49 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina :  Emin=        0 eV    Emax=       10 TeV
+
+conv:   for  gamma    SubType= 14
+      Lambda table from 1.022 MeV to 10 TeV in 49 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        BetheHeitler :  Emin=        0 eV    Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=       10 TeV
+
+msc:   for e-    SubType= 10
+      RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=      100 MeV  Table with 42 bins Emin=    100 eV    Emax=    100 MeV
+        WentzelVIUni :  Emin=      100 MeV   Emax=       10 TeV  Table with 35 bins Emin=    100 MeV   Emax=     10 TeV
+
+eIoni:   for  e-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+CoulombScat:   for  e-    SubType= 1
+      Lambda table from 100 MeV to 10 TeV in 35 bins, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=      100 MeV   Emax=       10 TeV
+
+msc:   for e+    SubType= 10
+      RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=      100 MeV  Table with 42 bins Emin=    100 eV    Emax=    100 MeV
+        WentzelVIUni :  Emin=      100 MeV   Emax=       10 TeV  Table with 35 bins Emin=    100 MeV   Emax=     10 TeV
+
+eIoni:   for  e+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+annihil:   for  e+    SubType= 5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  e+    SubType= 1
+      Lambda table from 100 MeV to 10 TeV in 35 bins, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=      100 MeV   Emax=       10 TeV
+
+msc:   for proton    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+hBrems:   for  proton    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  proton    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for GenericIon    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV
+
+ionIoni:   for  GenericIon    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.01, dRoverRange= 0.1, integral: 1, fluct: 1, linLossLimit= 0.02
+      Stopping Power data for 17 ion/material pairs 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+msc:   for alpha    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+ionIoni:   for  alpha    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.01, dRoverRange= 0.1, integral: 1, fluct: 1, linLossLimit= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon :  Emin=        0 eV    Emax=   7.9452 MeV
+          BetheBloch :  Emin=   7.9452 MeV   Emax=       10 TeV
+
+msc:   for anti_proton    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  anti_proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+hBrems:   for  anti_proton    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  anti_proton    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for kaon+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  kaon+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=  1.05231 MeV
+          BetheBloch :  Emin=  1.05231 MeV   Emax=       10 TeV
+
+hBrems:   for  kaon+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  kaon+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for kaon-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  kaon-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=  1.05231 MeV
+          BetheBloch :  Emin=  1.05231 MeV   Emax=       10 TeV
+
+hBrems:   for  kaon-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  kaon-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for mu+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+muIoni:   for  mu+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=      200 keV
+          BetheBloch :  Emin=      200 keV   Emax=        1 GeV
+        MuBetheBloch :  Emin=        1 GeV   Emax=       10 TeV
+
+muBrems:   for  mu+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem :  Emin=        0 eV    Emax=       10 TeV
+
+muPairProd:   for  mu+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  mu+    SubType= 1
+      Lambda table from 100 eV  to 10 TeV in 43 bins, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for mu-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+muIoni:   for  mu-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=      200 keV
+          BetheBloch :  Emin=      200 keV   Emax=        1 GeV
+        MuBetheBloch :  Emin=        1 GeV   Emax=       10 TeV
+
+muBrems:   for  mu-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem :  Emin=        0 eV    Emax=       10 TeV
+
+muPairProd:   for  mu-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  mu-    SubType= 1
+      Lambda table from 100 eV  to 10 TeV in 43 bins, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for pi+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  pi+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=  297.505 keV
+          BetheBloch :  Emin=  297.505 keV   Emax=       10 TeV
+
+hBrems:   for  pi+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  pi+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for pi-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  pi-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=  297.505 keV
+          BetheBloch :  Emin=  297.505 keV   Emax=       10 TeV
+
+hBrems:   for  pi-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  pi-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+============================================================================================
+             HADRONIC PROCESSES SUMMARY (verbose level 1)
+
+                                  Hadronic Processes for <GenericIon>
+                                  -----------------------------------
+        ionInelastic  Models:     Binary Light Ion Cascade: Emin(GeV)=    0  Emax(GeV)= 4
+                                                      FTFP: Emin(GeV)=    2  Emax(GeV)= 100000
+
+        ionInelastic  Crs sctns: Glauber-Gribov nucleus nucleus: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <anti_neutron>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+AntiNeutronInelastic  Models:     G4LEAntiNeutronInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+                                  G4HEAntiNeutronInelastic: Emin(GeV)=   20  Emax(GeV)= 100000
+
+AntiNeutronInelastic  Crs sctns:              AntiAGlauber: Emin(GeV)=    0  Emax(GeV)= 1.79769e+305
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <anti_proton>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 0.1
+                                              AntiAElastic: Emin(GeV)=  0.1  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:              AntiAGlauber: Emin(GeV)=    0  Emax(GeV)= 1.79769e+305
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+ AntiProtonInelastic  Models:      G4LEAntiProtonInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+                                   G4HEAntiProtonInelastic: Emin(GeV)=   20  Emax(GeV)= 100000
+
+ AntiProtonInelastic  Crs sctns:              AntiAGlauber: Emin(GeV)=    0  Emax(GeV)= 1.79769e+305
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hFritiofCaptureAtRest
+
+                                  Hadronic Processes for <e+>
+                                  -----------------------------------
+     PositronNuclear  Models:      G4ElectroVDNuclearModel: Emin(GeV)=    0  Emax(GeV)= 1e+06
+
+     PositronNuclear  Crs sctns:          ElectroNuclearXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <e->
+                                  -----------------------------------
+      ElectroNuclear  Models:      G4ElectroVDNuclearModel: Emin(GeV)=    0  Emax(GeV)= 1e+06
+
+      ElectroNuclear  Crs sctns:          ElectroNuclearXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <gamma>
+                                  -----------------------------------
+     PhotonInelastic  Models:               BertiniCascade: Emin(GeV)=    0  Emax(GeV)= 3.5
+                                           TheoFSGenerator: Emin(GeV)=    3  Emax(GeV)= 100000
+
+     PhotonInelastic  Crs sctns:            PhotoNuclearXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <kaon+>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+   KaonPlusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                     G4LEKaonPlusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+   KaonPlusInelastic  Crs sctns:  ChipsKaonPlusInelasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <kaon->
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+  KaonMinusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                    G4LEKaonMinusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+  KaonMinusInelastic  Crs sctns: ChipsKaonMinusInelasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hBertiniCaptureAtRest
+
+                                  Hadronic Processes for <lambda>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+     LambdaInelastic  Models:          G4LELambdaInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+                                       G4HELambdaInelastic: Emin(GeV)=   20  Emax(GeV)= 100000
+
+     LambdaInelastic  Crs sctns:   ChipsHyperonInelasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                     Hadronic Processes for <mu->
+          muMinusCaptureAtRest
+
+                                  Hadronic Processes for <neutron>
+                                  -----------------------------------
+          hadElastic  Models:                hElasticCHIPS: Emin(GeV)= 0.0195  Emax(GeV)= 100000
+                                          NeutronHPElastic: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+          hadElastic  Crs sctns:        NeutronHPElasticXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                     ChipsNeutronElasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+    NeutronInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                      G4LENeutronInelastic: Emin(GeV)=  9.5  Emax(GeV)= 25
+                                            Binary Cascade: Emin(GeV)= 0.0199  Emax(GeV)= 9.9
+                                        NeutronHPInelastic: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+    NeutronInelastic  Crs sctns:      NeutronHPInelasticXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+            nCapture  Models:                   G4LCapture: Emin(GeV)= 0.0199  Emax(GeV)= 20000
+                                          NeutronHPCapture: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+            nCapture  Crs sctns:        NeutronHPCaptureXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                          GheishaCaptureXS: Emin(GeV)=    0  Emax(GeV)= 100000
+
+            nFission  Models:                   G4LFission: Emin(GeV)= 0.0199  Emax(GeV)= 20000
+                                          NeutronHPFission: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+            nFission  Crs sctns:        NeutronHPFissionXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                          GheishaFissionXS: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <pi+>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 1
+                                           hElasticGlauber: Emin(GeV)=    1  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+   PionPlusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                     G4LEPionPlusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+   PionPlusInelastic  Crs sctns:      G4CrossSectionPairGG: Emin(GeV)=    0  Emax(GeV)= 100000
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <pi->
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 1
+                                           hElasticGlauber: Emin(GeV)=    1  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+  PionMinusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                    G4LEPionMinusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+  PionMinusInelastic  Crs sctns:      G4CrossSectionPairGG: Emin(GeV)=    0  Emax(GeV)= 100000
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hBertiniCaptureAtRest
+
+                                  Hadronic Processes for <proton>
+                                  -----------------------------------
+          hadElastic  Models:                hElasticCHIPS: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:      ChipsProtonElasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+     ProtonInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                       G4LEProtonInelastic: Emin(GeV)=  9.5  Emax(GeV)= 25
+                                            Binary Cascade: Emin(GeV)=    0  Emax(GeV)= 9.9
+
+     ProtonInelastic  Crs sctns:       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+============================================================================================
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_Pb
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  94.5861 keV    e-  1.00386 MeV    e+  951.321 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+Start Run processing.
+ %%% EVENT 0 NTRACKS 1 TOTAL NTRACKS 1
+ %%% EVENT 1000 NTRACKS 1 TOTAL NTRACKS 1001
+ %%% EVENT 2000 NTRACKS 1 TOTAL NTRACKS 2001
+ %%% EVENT 3000 NTRACKS 1 TOTAL NTRACKS 3001
+ %%% EVENT 4000 NTRACKS 1 TOTAL NTRACKS 4001
+ %%% EVENT 5000 NTRACKS 1 TOTAL NTRACKS 5001
+ %%% EVENT 6000 NTRACKS 1 TOTAL NTRACKS 6001
+ %%% EVENT 7000 NTRACKS 1 TOTAL NTRACKS 7001
+ %%% EVENT 8000 NTRACKS 1 TOTAL NTRACKS 8001
+ %%% EVENT 9000 NTRACKS 1 TOTAL NTRACKS 9001
+Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=339.45s Real=341.81s Sys=0.01s
+ CreateHisto1D %%% SHNthValueLayerUA_exitshieldF_ancesC: neutron G4_Pb 1 MeV = 91509026
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:0 = 0.9989
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:1 = 0.9932
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:2 = 0.9865
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:3 = 0.9798
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:4 = 0.973
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:5 = 0.9658
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:6 = 0.9602
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:7 = 0.9533
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:8 = 0.9481
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:9 = 0.9426
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:10 = 0.9374
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:11 = 0.9326
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:12 = 0.9271
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:13 = 0.9211
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:14 = 0.9158
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:15 = 0.9112
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:16 = 0.9048
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:17 = 0.8988
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:18 = 0.8924
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:19 = 0.8876
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:20 = 0.8817
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:21 = 0.8765
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:22 = 0.8706
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:23 = 0.8654
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:24 = 0.861
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:25 = 0.8551
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:26 = 0.8499
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:27 = 0.8452
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:28 = 0.8398
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:29 = 0.8334
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:30 = 0.8281
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:31 = 0.8225
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:32 = 0.8175
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:33 = 0.8131
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:34 = 0.8073
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:35 = 0.8032
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:36 = 0.799
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:37 = 0.7943
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:38 = 0.7882
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:39 = 0.7832
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:40 = 0.7784
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:41 = 0.7749
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:42 = 0.7695
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:43 = 0.7647
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:44 = 0.761
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:45 = 0.7564
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:46 = 0.7527
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:47 = 0.7499
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:48 = 0.7456
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:49 = 0.7415
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:50 = 0.7374
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:51 = 0.7329
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:52 = 0.7288
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:53 = 0.7234
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:54 = 0.7196
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:55 = 0.7147
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:56 = 0.7101
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:57 = 0.7057
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:58 = 0.7025
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:59 = 0.698
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:60 = 0.6947
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:61 = 0.6906
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:62 = 0.6866
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:63 = 0.6825
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:64 = 0.6784
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:65 = 0.6751
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:66 = 0.6705
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:67 = 0.6663
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:68 = 0.6629
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:69 = 0.6606
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:70 = 0.6576
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:71 = 0.6539
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:72 = 0.6496
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:73 = 0.6449
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:74 = 0.6416
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:75 = 0.6374
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:76 = 0.6331
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:77 = 0.6298
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:78 = 0.6263
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:79 = 0.6227
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:80 = 0.6191
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:81 = 0.6154
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:82 = 0.6121
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:83 = 0.6085
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:84 = 0.6058
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:85 = 0.602
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:86 = 0.5992
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:87 = 0.5964
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:88 = 0.5931
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:89 = 0.5904
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:90 = 0.5877
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:91 = 0.5863
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:92 = 0.5835
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:93 = 0.5812
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:94 = 0.5792
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:95 = 0.5755
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:96 = 0.5709
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:97 = 0.5687
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:98 = 0.5663
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:99 = 0.5634
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:100 = 0.56
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:101 = 0.5569
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:102 = 0.553
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:103 = 0.5498
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:104 = 0.5466
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:105 = 0.5425
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:106 = 0.5406
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:107 = 0.5377
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:108 = 0.5355
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:109 = 0.5324
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:110 = 0.5299
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:111 = 0.5276
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:112 = 0.5237
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:113 = 0.5207
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:114 = 0.5181
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:115 = 0.5142
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:116 = 0.5119
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:117 = 0.5088
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:118 = 0.5063
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:119 = 0.5025
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:120 = 0.4999
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:121 = 0.4974
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:122 = 0.4946
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:123 = 0.4919
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:124 = 0.4889
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:125 = 0.4876
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:126 = 0.4847
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:127 = 0.4822
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:128 = 0.4801
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:129 = 0.4787
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:130 = 0.4758
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:131 = 0.4737
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:132 = 0.4713
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:133 = 0.4688
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:134 = 0.466
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:135 = 0.4627
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:136 = 0.4608
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:137 = 0.4584
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:138 = 0.4567
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:139 = 0.4548
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:140 = 0.4525
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:141 = 0.4496
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:142 = 0.4479
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:143 = 0.4451
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:144 = 0.4437
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:145 = 0.4421
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:146 = 0.4396
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:147 = 0.4374
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:148 = 0.4353
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:149 = 0.4335
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:150 = 0.4315
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:151 = 0.4302
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:152 = 0.4286
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:153 = 0.427
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:154 = 0.4255
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:155 = 0.423
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:156 = 0.4202
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:157 = 0.4182
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:158 = 0.4163
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:159 = 0.4146
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:160 = 0.4116
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:161 = 0.4106
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:162 = 0.4083
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:163 = 0.4055
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:164 = 0.4032
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:165 = 0.4022
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:166 = 0.3998
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:167 = 0.3981
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:168 = 0.3959
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:169 = 0.3929
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:170 = 0.3915
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:171 = 0.3895
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:172 = 0.388
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:173 = 0.3864
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:174 = 0.3845
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:175 = 0.3827
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:176 = 0.3807
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:177 = 0.3784
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:178 = 0.3762
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:179 = 0.374
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:180 = 0.3725
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:181 = 0.3709
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:182 = 0.369
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:183 = 0.3675
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:184 = 0.3653
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:185 = 0.3638
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:186 = 0.362
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:187 = 0.3607
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:188 = 0.3587
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:189 = 0.3568
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:190 = 0.3546
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:191 = 0.3533
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:192 = 0.3518
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:193 = 0.3498
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:194 = 0.3484
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:195 = 0.3466
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:196 = 0.3457
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:197 = 0.3442
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:198 = 0.3429
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:199 = 0.3413
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:200 = 0.3403
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:201 = 0.3382
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:202 = 0.337
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:203 = 0.3354
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:204 = 0.3339
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:205 = 0.3319
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:206 = 0.3301
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:207 = 0.3281
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:208 = 0.327
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:209 = 0.3258
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:210 = 0.3245
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:211 = 0.3232
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:212 = 0.3211
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:213 = 0.3199
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:214 = 0.3178
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:215 = 0.3163
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:216 = 0.315
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:217 = 0.3127
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:218 = 0.3108
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:219 = 0.3093
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:220 = 0.3074
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:221 = 0.3066
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:222 = 0.3044
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:223 = 0.3033
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:224 = 0.3022
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:225 = 0.3012
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:226 = 0.3001
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:227 = 0.2991
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:228 = 0.297
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:229 = 0.2956
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:230 = 0.2944
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:231 = 0.2931
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:232 = 0.2917
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:233 = 0.2904
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:234 = 0.2887
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:235 = 0.2874
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:236 = 0.286
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:237 = 0.2846
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:238 = 0.2829
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:239 = 0.2817
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:240 = 0.2805
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:241 = 0.2796
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:242 = 0.2776
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:243 = 0.2763
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:244 = 0.275
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:245 = 0.2731
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:246 = 0.2719
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:247 = 0.2706
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:248 = 0.2698
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:249 = 0.2691
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:250 = 0.2679
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:251 = 0.266
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:252 = 0.2642
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:253 = 0.2634
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:254 = 0.2625
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:255 = 0.2612
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:256 = 0.2596
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:257 = 0.2581
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:258 = 0.2562
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:259 = 0.2552
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:260 = 0.2545
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:261 = 0.2535
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:262 = 0.2518
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:263 = 0.2504
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:264 = 0.2492
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:265 = 0.2483
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:266 = 0.2467
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:267 = 0.2457
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:268 = 0.2445
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:269 = 0.2435
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:270 = 0.2427
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:271 = 0.2417
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:272 = 0.2408
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:273 = 0.2396
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:274 = 0.2388
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:275 = 0.2376
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:276 = 0.2368
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:277 = 0.2361
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:278 = 0.2344
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:279 = 0.2334
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:280 = 0.2329
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:281 = 0.2322
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:282 = 0.2312
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:283 = 0.2304
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:284 = 0.2296
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:285 = 0.2283
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:286 = 0.2272
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:287 = 0.2256
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:288 = 0.2243
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:289 = 0.2233
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:290 = 0.2223
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:291 = 0.2215
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:292 = 0.2205
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:293 = 0.2192
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:294 = 0.2183
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:295 = 0.2174
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:296 = 0.2164
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:297 = 0.2156
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:298 = 0.2149
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:299 = 0.2133
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:300 = 0.2121
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:301 = 0.2116
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:302 = 0.2105
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:303 = 0.2093
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:304 = 0.2077
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:305 = 0.2066
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:306 = 0.2058
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:307 = 0.205
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:308 = 0.2037
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:309 = 0.2028
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:310 = 0.2019
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:311 = 0.2006
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:312 = 0.2001
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:313 = 0.1991
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:314 = 0.1978
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:315 = 0.1969
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:316 = 0.196
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:317 = 0.1952
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:318 = 0.1948
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:319 = 0.1937
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:320 = 0.1929
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:321 = 0.1916
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:322 = 0.1907
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:323 = 0.1899
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:324 = 0.1885
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:325 = 0.1875
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:326 = 0.1866
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:327 = 0.1858
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:328 = 0.1854
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:329 = 0.185
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:330 = 0.1839
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:331 = 0.1828
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:332 = 0.1822
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:333 = 0.1814
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:334 = 0.1805
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:335 = 0.1799
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:336 = 0.1784
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:337 = 0.1773
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:338 = 0.177
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:339 = 0.1763
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:340 = 0.1754
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:341 = 0.1749
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:342 = 0.1738
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:343 = 0.1729
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:344 = 0.1723
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:345 = 0.1713
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:346 = 0.1704
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:347 = 0.1699
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:348 = 0.1689
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:349 = 0.1679
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:350 = 0.167
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:351 = 0.1662
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:352 = 0.1647
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:353 = 0.164
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:354 = 0.1634
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:355 = 0.1626
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:356 = 0.162
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:357 = 0.1615
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:358 = 0.1605
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:359 = 0.1596
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:360 = 0.1591
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:361 = 0.1586
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:362 = 0.1577
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:363 = 0.1569
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:364 = 0.1561
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:365 = 0.1557
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:366 = 0.1547
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:367 = 0.1543
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:368 = 0.1535
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:369 = 0.1528
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:370 = 0.152
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:371 = 0.151
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:372 = 0.1508
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:373 = 0.15
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:374 = 0.1494
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:375 = 0.1486
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:376 = 0.1481
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:377 = 0.1476
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:378 = 0.1469
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:379 = 0.1464
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:380 = 0.1454
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:381 = 0.145
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:382 = 0.144
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:383 = 0.1435
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:384 = 0.1424
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:385 = 0.1416
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:386 = 0.1412
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:387 = 0.1406
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:388 = 0.1402
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:389 = 0.1397
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:390 = 0.1389
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:391 = 0.1374
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:392 = 0.1368
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:393 = 0.1361
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:394 = 0.1355
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:395 = 0.1348
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:396 = 0.1343
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:397 = 0.1336
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:398 = 0.1328
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:399 = 0.1321
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:400 = 0.1317
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:401 = 0.1313
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:402 = 0.1306
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:403 = 0.13
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:404 = 0.1296
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:405 = 0.1293
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:406 = 0.1286
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:407 = 0.1282
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:408 = 0.1279
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:409 = 0.1272
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:410 = 0.1265
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:411 = 0.1254
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:412 = 0.1247
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:413 = 0.1239
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:414 = 0.1228
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:415 = 0.1223
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:416 = 0.1214
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:417 = 0.1208
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:418 = 0.1202
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:419 = 0.1197
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:420 = 0.1186
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:421 = 0.118
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:422 = 0.1175
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:423 = 0.1172
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:424 = 0.1167
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:425 = 0.1164
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:426 = 0.1157
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:427 = 0.1148
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:428 = 0.1146
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:429 = 0.1142
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:430 = 0.1136
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:431 = 0.1132
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:432 = 0.1127
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:433 = 0.1124
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:434 = 0.1121
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:435 = 0.1115
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:436 = 0.1113
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:437 = 0.111
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:438 = 0.1104
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:439 = 0.1096
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:440 = 0.1095
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:441 = 0.1089
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:442 = 0.1084
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:443 = 0.108
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:444 = 0.1079
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:445 = 0.1071
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:446 = 0.1067
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:447 = 0.1064
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:448 = 0.106
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:449 = 0.1051
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:450 = 0.1044
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:451 = 0.104
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:452 = 0.1039
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:453 = 0.1032
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:454 = 0.1027
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:455 = 0.1023
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:456 = 0.102
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:457 = 0.1017
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:458 = 0.1005
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:459 = 0.1001
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:460 = 0.0989
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:461 = 0.0981
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:462 = 0.0979
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:463 = 0.0976
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:464 = 0.0968
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:465 = 0.0958
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:466 = 0.0952
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:467 = 0.0944
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:468 = 0.0941
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:469 = 0.0934
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:470 = 0.0928
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:471 = 0.0927
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:472 = 0.0918
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:473 = 0.0918
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:474 = 0.0914
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:475 = 0.091
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:476 = 0.0906
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:477 = 0.0904
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:478 = 0.0899
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:479 = 0.0898
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:480 = 0.0895
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:481 = 0.0892
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:482 = 0.089
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:483 = 0.0888
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:484 = 0.0883
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:485 = 0.088
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:486 = 0.0875
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:487 = 0.0873
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:488 = 0.0871
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:489 = 0.0869
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:490 = 0.0867
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:491 = 0.0864
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:492 = 0.0861
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:493 = 0.0857
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:494 = 0.0854
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:495 = 0.0849
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:496 = 0.0844
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:497 = 0.084
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:498 = 0.0836
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:499 = 0.0834
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:500 = 0.0829
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:501 = 0.0825
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:502 = 0.082
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:503 = 0.0816
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:504 = 0.0812
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:505 = 0.0811
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:506 = 0.0805
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:507 = 0.0804
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:508 = 0.0799
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:509 = 0.0795
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:510 = 0.0787
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:511 = 0.0783
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:512 = 0.078
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:513 = 0.0778
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:514 = 0.0773
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:515 = 0.077
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:516 = 0.077
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:517 = 0.0763
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:518 = 0.076
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:519 = 0.0756
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:520 = 0.0754
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:521 = 0.0751
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:522 = 0.0744
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:523 = 0.0742
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:524 = 0.0738
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:525 = 0.0737
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:526 = 0.0729
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:527 = 0.0724
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:528 = 0.0719
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:529 = 0.0716
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:530 = 0.0711
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:531 = 0.0707
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:532 = 0.0705
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:533 = 0.0703
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:534 = 0.0702
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:535 = 0.07
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:536 = 0.0695
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:537 = 0.0688
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:538 = 0.0681
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:539 = 0.0678
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:540 = 0.0675
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:541 = 0.0673
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:542 = 0.0672
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:543 = 0.0663
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:544 = 0.0657
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:545 = 0.0652
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:546 = 0.0648
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:547 = 0.0645
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:548 = 0.0641
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:549 = 0.0638
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:550 = 0.0632
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:551 = 0.0629
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:552 = 0.0624
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:553 = 0.062
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:554 = 0.0616
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:555 = 0.061
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:556 = 0.0604
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:557 = 0.0601
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:558 = 0.0599
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:559 = 0.0597
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:560 = 0.0594
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:561 = 0.059
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:562 = 0.0584
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:563 = 0.0581
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:564 = 0.0574
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:565 = 0.0571
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:566 = 0.0564
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:567 = 0.0562
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:568 = 0.0561
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:569 = 0.0557
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:570 = 0.0554
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:571 = 0.0551
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:572 = 0.0546
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:573 = 0.0543
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:574 = 0.0537
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:575 = 0.0536
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:576 = 0.0535
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:577 = 0.0533
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:578 = 0.0528
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:579 = 0.0525
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:580 = 0.0525
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:581 = 0.052
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:582 = 0.052
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:583 = 0.0519
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:584 = 0.0518
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:585 = 0.0516
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:586 = 0.051
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:587 = 0.0509
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:588 = 0.0507
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:589 = 0.0502
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:590 = 0.0501
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:591 = 0.05
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:592 = 0.0499
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:593 = 0.0498
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:594 = 0.0497
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:595 = 0.0496
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:596 = 0.0493
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:597 = 0.0491
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:598 = 0.0489
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:599 = 0.0487
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:600 = 0.0486
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:601 = 0.0482
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:602 = 0.0476
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:603 = 0.0474
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:604 = 0.0469
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:605 = 0.0465
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:606 = 0.0464
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:607 = 0.0462
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:608 = 0.046
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:609 = 0.0458
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:610 = 0.0454
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:611 = 0.0452
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:612 = 0.0449
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:613 = 0.0448
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:614 = 0.0444
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:615 = 0.0442
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:616 = 0.0439
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:617 = 0.0436
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:618 = 0.0436
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:619 = 0.0436
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:620 = 0.0432
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:621 = 0.0432
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:622 = 0.043
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:623 = 0.0427
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:624 = 0.0427
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:625 = 0.0419
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:626 = 0.0415
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:627 = 0.0413
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:628 = 0.041
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:629 = 0.0408
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:630 = 0.0406
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:631 = 0.0402
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:632 = 0.0401
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:633 = 0.04
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:634 = 0.04
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:635 = 0.0396
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:636 = 0.0396
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:637 = 0.0394
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:638 = 0.0394
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:639 = 0.0393
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:640 = 0.0389
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:641 = 0.0387
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:642 = 0.0385
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:643 = 0.0383
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:644 = 0.0381
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:645 = 0.0376
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:646 = 0.0373
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:647 = 0.0371
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:648 = 0.0369
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:649 = 0.0368
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:650 = 0.0365
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:651 = 0.0361
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:652 = 0.036
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:653 = 0.0355
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:654 = 0.0352
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:655 = 0.0349
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:656 = 0.0346
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:657 = 0.0344
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:658 = 0.0342
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:659 = 0.0337
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:660 = 0.0336
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:661 = 0.0333
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:662 = 0.0333
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:663 = 0.033
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:664 = 0.0327
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:665 = 0.0326
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:666 = 0.0325
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:667 = 0.0324
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:668 = 0.0323
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:669 = 0.0322
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:670 = 0.032
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:671 = 0.0316
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:672 = 0.0315
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:673 = 0.0311
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:674 = 0.031
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:675 = 0.0303
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:676 = 0.0301
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:677 = 0.03
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:678 = 0.0298
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:679 = 0.0293
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:680 = 0.0292
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:681 = 0.0291
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:682 = 0.029
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:683 = 0.029
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:684 = 0.0288
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:685 = 0.0287
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:686 = 0.0284
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:687 = 0.0281
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:688 = 0.0279
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:689 = 0.0277
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:690 = 0.0275
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:691 = 0.0273
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:692 = 0.0273
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:693 = 0.0272
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:694 = 0.0272
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:695 = 0.027
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:696 = 0.0267
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:697 = 0.0267
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:698 = 0.0264
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:699 = 0.0263
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:700 = 0.0263
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:701 = 0.0261
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:702 = 0.026
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:703 = 0.0259
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:704 = 0.0255
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:705 = 0.0254
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:706 = 0.0254
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:707 = 0.0254
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:708 = 0.0252
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:709 = 0.025
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:710 = 0.0249
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:711 = 0.0247
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:712 = 0.0246
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:713 = 0.0245
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:714 = 0.0245
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:715 = 0.0245
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:716 = 0.0245
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:717 = 0.0242
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:718 = 0.0241
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:719 = 0.024
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:720 = 0.0238
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:721 = 0.0236
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:722 = 0.0233
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:723 = 0.0231
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:724 = 0.023
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:725 = 0.0228
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:726 = 0.0226
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:727 = 0.0226
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:728 = 0.0226
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:729 = 0.0226
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:730 = 0.0224
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:731 = 0.0224
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:732 = 0.0224
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:733 = 0.0224
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:734 = 0.0223
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:735 = 0.0223
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:736 = 0.0222
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:737 = 0.0221
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:738 = 0.022
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:739 = 0.022
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:740 = 0.0219
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:741 = 0.0218
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:742 = 0.0216
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:743 = 0.0216
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:744 = 0.0215
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:745 = 0.0213
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:746 = 0.0212
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:747 = 0.021
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:748 = 0.0209
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:749 = 0.0209
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:750 = 0.0207
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:751 = 0.0206
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:752 = 0.0202
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:753 = 0.0202
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:754 = 0.0201
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:755 = 0.0201
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:756 = 0.0199
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:757 = 0.0195
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:758 = 0.0195
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:759 = 0.0195
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:760 = 0.0195
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:761 = 0.0195
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:762 = 0.0193
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:763 = 0.0193
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:764 = 0.0192
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:765 = 0.019
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:766 = 0.0189
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:767 = 0.0189
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:768 = 0.0188
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:769 = 0.0187
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:770 = 0.0186
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:771 = 0.0184
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:772 = 0.0182
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:773 = 0.0182
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:774 = 0.0182
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:775 = 0.0179
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:776 = 0.0176
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:777 = 0.0176
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:778 = 0.0175
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:779 = 0.0175
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:780 = 0.0175
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:781 = 0.0175
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:782 = 0.0173
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:783 = 0.0172
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:784 = 0.0171
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:785 = 0.0171
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:786 = 0.0171
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:787 = 0.017
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:788 = 0.0168
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:789 = 0.0167
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:790 = 0.0167
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:791 = 0.0167
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:792 = 0.0166
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:793 = 0.0162
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:794 = 0.0162
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:795 = 0.0162
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:796 = 0.0161
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:797 = 0.016
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:798 = 0.016
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:799 = 0.016
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:800 = 0.0159
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:801 = 0.0159
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:802 = 0.0158
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:803 = 0.0157
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:804 = 0.0155
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:805 = 0.0155
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:806 = 0.0154
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:807 = 0.0154
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:808 = 0.0154
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:809 = 0.0153
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:810 = 0.0153
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:811 = 0.0152
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:812 = 0.0148
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:813 = 0.0146
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:814 = 0.0146
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:815 = 0.0146
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:816 = 0.0144
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:817 = 0.0143
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:818 = 0.0143
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:819 = 0.0143
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:820 = 0.0142
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:821 = 0.014
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:822 = 0.014
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:823 = 0.0139
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:824 = 0.0139
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:825 = 0.0139
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:826 = 0.0138
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:827 = 0.0138
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:828 = 0.0138
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:829 = 0.0138
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:830 = 0.0137
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:831 = 0.0137
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:832 = 0.0137
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:833 = 0.0137
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:834 = 0.0136
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:835 = 0.0136
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:836 = 0.0136
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:837 = 0.0136
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:838 = 0.0135
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:839 = 0.0134
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:840 = 0.0134
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:841 = 0.0132
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:842 = 0.0131
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:843 = 0.013
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:844 = 0.0129
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:845 = 0.0129
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:846 = 0.0127
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:847 = 0.0126
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:848 = 0.0126
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:849 = 0.0126
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:850 = 0.0125
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:851 = 0.0125
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:852 = 0.0124
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:853 = 0.0123
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:854 = 0.0123
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:855 = 0.0122
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:856 = 0.0122
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:857 = 0.0121
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:858 = 0.0121
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:859 = 0.0121
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:860 = 0.0121
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:861 = 0.0121
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:862 = 0.0121
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:863 = 0.0121
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:864 = 0.0121
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:865 = 0.0121
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:866 = 0.0121
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:867 = 0.012
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:868 = 0.0119
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:869 = 0.0119
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:870 = 0.0119
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:871 = 0.0119
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:872 = 0.0118
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:873 = 0.0118
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:874 = 0.0116
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:875 = 0.0116
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:876 = 0.0115
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:877 = 0.0114
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:878 = 0.0114
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:879 = 0.0114
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:880 = 0.0113
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:881 = 0.0113
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:882 = 0.0112
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:883 = 0.0112
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:884 = 0.0112
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:885 = 0.0111
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:886 = 0.0111
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:887 = 0.011
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:888 = 0.011
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:889 = 0.0109
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:890 = 0.0109
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:891 = 0.0108
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:892 = 0.0106
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:893 = 0.0106
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:894 = 0.0106
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:895 = 0.0106
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:896 = 0.0106
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:897 = 0.0105
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:898 = 0.0104
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:899 = 0.0103
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:900 = 0.0102
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:901 = 0.0102
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:902 = 0.0101
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:903 = 0.01
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:904 = 0.01
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:905 = 0.01
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:906 = 0.01
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:907 = 0.01
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:908 = 0.0099
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:909 = 0.0096
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:910 = 0.0096
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:911 = 0.0096
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:912 = 0.0095
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:913 = 0.0095
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:914 = 0.0095
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:915 = 0.0095
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:916 = 0.0094
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:917 = 0.0094
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:918 = 0.0094
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:919 = 0.0093
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:920 = 0.0093
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:921 = 0.0092
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:922 = 0.0091
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:923 = 0.0091
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:924 = 0.0091
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:925 = 0.0091
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:926 = 0.0091
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:927 = 0.0091
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:928 = 0.0091
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:929 = 0.0091
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:930 = 0.0091
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:931 = 0.0091
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:932 = 0.0091
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:933 = 0.009
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:934 = 0.0089
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:935 = 0.0089
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:936 = 0.0088
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:937 = 0.0088
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:938 = 0.0088
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:939 = 0.0088
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:940 = 0.0088
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:941 = 0.0088
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:942 = 0.0087
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:943 = 0.0086
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:944 = 0.0086
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:945 = 0.0086
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:946 = 0.0085
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:947 = 0.0085
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:948 = 0.0084
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:949 = 0.0084
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:950 = 0.0084
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:951 = 0.0084
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:952 = 0.0084
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:953 = 0.0084
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:954 = 0.0084
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:955 = 0.0084
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:956 = 0.0083
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:957 = 0.0081
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:958 = 0.008
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:959 = 0.008
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:960 = 0.008
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:961 = 0.008
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:962 = 0.008
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:963 = 0.008
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:964 = 0.008
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:965 = 0.008
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:966 = 0.0079
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:967 = 0.0078
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:968 = 0.0078
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:969 = 0.0077
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:970 = 0.0077
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:971 = 0.0076
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:972 = 0.0075
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:973 = 0.0075
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:974 = 0.0075
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:975 = 0.0075
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:976 = 0.0075
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:977 = 0.0075
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:978 = 0.0075
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:979 = 0.0075
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:980 = 0.0075
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:981 = 0.0074
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:982 = 0.0074
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:983 = 0.0074
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:984 = 0.0074
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:985 = 0.0074
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:986 = 0.0074
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:987 = 0.0074
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:988 = 0.0074
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:989 = 0.0074
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:990 = 0.0074
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:991 = 0.0074
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:992 = 0.0074
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:993 = 0.0074
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:994 = 0.0073
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:995 = 0.0073
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:996 = 0.0073
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:997 = 0.0073
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:998 = 0.0073
+%%% SHNthValueLayerUA_exitshieldF_ancesC NSTEPS: shield:999 = 0.0001
+%%% SHNthValueLayerUA_exitshieldF_ancesC: neutron G4_Pb 1 MeV : FIT chi2= 1749.55 nDoF 996
+%%% SHNthValueLayerUA_exitshieldF_ancesC: neutron G4_Pb 1 MeV : REDUCTION FROM FIT= 10 reached at depth= 460.424 +- 0.369267 mm 
+%%% SHNthValueLayerUA_exitshieldF_ancesC: neutron G4_Pb 1 MeV : REDUCTION FROM SCORES= 10 reached at depth= 459.083 mm
+Graphics systems deleted.
+Visualization Manager deleting...
+=== saving histograms in file === reduction.root

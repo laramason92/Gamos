@@ -1,0 +1,178 @@
+/control/execute exercise4b.Dose.in
+/gamos/setParam GmReadPhantomGeometry:FileName ../exercise3/world.geom
+/gamos/setParam GmSimplePhantomGeometry:MaterialNames G4_WATER G4_LUNG_ICRP G4_BONE_COMPACT_ICRU
+/gamos/setParam GmSimplePhantomGeometry:MaterialZVoxels 10 10 80
+/gamos/setParam GmSimplePhantomGeometry:MaterialDensities 1. 0.3 1.85
+/gamos/setParam GmSimplePhantomGeometry:NVoxels 100 100 100
+/gamos/setParam GmSimplePhantomGeometry:PhantomDims -500 500 -500 500 -500 500
+/gamos/setParam GmReadPhantomGeometry:InitialDisplacement 0. 0. 1400.
+/gamos/setParam GmReadPhantomGeometry:InitialRotAngles 0*deg 0. 0.
+/gamos/geometry GmSimplePhantomGeometry
+/gamos/physicsList GmEMPhysics
+/gamos/setParam RTGeneratorPhaseSpace:FileName testZBS
+/gamos/setParam RTGeneratorPhaseSpace:InitialDisplacement 0. 0. 0.
+/gamos/setParam RTGeneratorPhaseSpace:InitialRotAngles 0. 0. 0.*deg
+/gamos/setParam RTGeneratorPhaseSpace:MaxNReuse 10
+/gamos/generator RTGeneratorPhaseSpace
+/run/initialize
+ GmGenUtils::FileInPath ./../exercise3/world.geom in .
+GmEMPhysics PhysicsList:DEFAULT = gamma-lowener is registered
+GmEMPhysics PhysicsList: DEFAULT = electron-lowener is registered
+GmEMPhysics PhysicsList: DEFAULT = positron-standard is registered
+GmPhysicsGammaLowEner::ConstructProcess 
+/gamos/scoring/createMFDetector doseDet phantom
+/gamos/scoring/addScorer2MFD doseScorer GmG4PSDoseDeposit doseDet
+ GmVPrimitiveScorer::SetParameters: no parameters 
+/gamos/scoring/addPrinter2Scorer RTPSPDoseHistos doseScorer
+phantomContainer GmRegularParamUtils::GetPhantomMotherTranslation (0,0,1400) global (0,0,1400)
+phantomContainer GmRegularParamUtils::GetPhantomMotherRotation 
+   [ (           1             0             0)
+     (           0             1             0)
+     (           0             0             1) ]
+ global 
+   [ (           1             0             0)
+     (           0             1             0)
+     (           0             0             1) ]
+
+ RTPSPDoseHistos nvoxel 100 100 100
+ RTPSPDoseHistos half dim 5 5 5
+ RTPSPDoseHistos translation (0,0,1400)
+ RTPSPDoseHistos rotation 
+   [ (           1             0             0)
+     (           0             1             0)
+     (           0             0             1) ]
+
+ CreateHisto1D RTPSPDoseHistos: Dose = 36201
+ CreateHisto1D RTPSPDoseHistos: Dose-volume = 36202
+/gamos/setParam GmPSPrinterSqdose_doseScorer:FileName sqdoseZBS.out
+/gamos/scoring/addPrinter2Scorer GmPSPrinterSqdose doseScorer
+/run/beamOn 100
+
+phot:   for  gamma    SubType= 12
+      LambdaPrime table from 200 keV to 10 TeV in 54 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermorePhElectric :  Emin=        0 eV    Emax=        1 GeV   AngularGenSauterGavrila  FluoActive
+       PhotoElectric :  Emin=        1 GeV   Emax=       10 TeV   AngularGenSauterGavrila  FluoActive
+
+compt:   for  gamma    SubType= 13
+      Lambda table from 100 eV  to 1 MeV in 28 bins, spline: 1
+      LambdaPrime table from 1 MeV to 10 TeV in 49 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+    LivermoreCompton :  Emin=        0 eV    Emax=        1 GeV  FluoActive
+       Klein-Nishina :  Emin=        1 GeV   Emax=       10 TeV
+
+conv:   for  gamma    SubType= 14
+      Lambda table from 1.022 MeV to 10 TeV in 49 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermoreConversion :  Emin=        0 eV    Emax=        1 GeV
+        BetheHeitler :  Emin=        1 GeV   Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=       10 TeV
+
+Rayl:   for  gamma    SubType= 11
+      Lambda table from 100 eV  to 100 keV in 21 bins, spline: 0
+      LambdaPrime table from 100 keV to 10 TeV in 56 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   LivermoreRayleigh :  Emin=        0 eV    Emax=        1 GeV   CullenGenerator
+   LivermoreRayleigh :  Emin=        1 GeV   Emax=       10 TeV   CullenGenerator
+
+msc:   for e-    SubType= 10
+      RangeFactor= 0.04, step limit type: 2, lateralDisplacement: 1, skin= 1, geomFactor= 2.5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 1 region:
+          DefaultRegionForTheWorld
+
+eIoni:   for  e-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       LowEnergyIoni :  Emin=        0 eV    Emax=        1 GeV
+        MollerBhabha :  Emin=        1 GeV   Emax=       10 TeV
+
+eBrem:   for  e-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           LowEnBrem :  Emin=        0 eV    Emax=        1 GeV   AngularGenUrban
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+msc:   for e+    SubType= 10
+      RangeFactor= 0.04, step limit type: 1, lateralDisplacement: 1, skin= 1, geomFactor= 2.5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+eIoni:   for  e+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+annihil:   for  e+    SubType= 5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg :  Emin=        0 eV    Emax=       10 TeV
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_AIR
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_WATER1
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  1.10981 keV    e-  84.6589 keV    e+  83.5287 keV proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 2     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_LUNG_ICRP0.3
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  990 eV     e-  42.371 keV    e+  42.0872 keV proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 3     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_BONE_COMPACT_ICRU1.85
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  1.63878 keV    e-  116.885 keV    e+  115.325 keV proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+G4RunManagerKernel -- G4ScoreSplittingProcess is appended to all particles.
+Start Run processing.
+Run terminated.
+Run Summary
+  Number of events processed : 100
+  User=0.91s Real=0.92s Sys=0s
+RTPSPDoseHistos MINIMUM DOSE 8.03529e-19 Gy 
+RTPSPDoseHistos MAXIMUM DOSE 4.49844e-14 Gy 
+RTPSPDoseHistos AVERAGE ERROR 20% = 0.957522
+RTPSPDoseHistos AVERAGE ERROR 50% = 0.833502
+RTPSPDoseHistos AVERAGE ERROR 90% = 0.642857
+ CreateHisto1D RTPSPDoseHistos: Dose Profile X_merged = 66301
+ CreateHisto1D RTPSPDoseHistos: Dose Profile Y_merged = 66302
+ CreateHisto1D RTPSPDoseHistos: Dose Profile Z_merged = 66303
+ CreateHisto2D RTPSPDoseHistos: Dose XY_merged = 66304
+ CreateHisto2D RTPSPDoseHistos: Dose XZ_merged = 66305
+ CreateHisto2D RTPSPDoseHistos: Dose YZ_merged = 66306
+ HEADER NEvent 105.116 Nvoxels 100 100 100
+Graphics systems deleted.
+Visualization Manager deleting...
+=== saving histograms in file === dose_RTPSPDoseHistos.root

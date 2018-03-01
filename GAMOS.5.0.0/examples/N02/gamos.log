@@ -1,0 +1,4 @@
+/control/execute exampleN02_GAMOS.in
+/tracking/verbose 1
+/gamos/geometry ExN02DetectorConstruction
+/gamos/physicsList ExN02PhysicsList

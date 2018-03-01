@@ -1,0 +1,20 @@
+# ROOT map file generated automatically by genmap on Fri Nov 13 13:11:20 2015
+
+Library.__pf__@@GmBaseVerbosity: libGamosCore_GamosBase_Classifiers.dylib
+Library.__pf__@@GmClassifierByAncestors: libGamosCore_GamosBase_Classifiers.dylib
+Library.__pf__@@GmClassifierBy1Ancestor: libGamosCore_GamosBase_Classifiers.dylib
+Library.__pf__@@GmClassifierByLogicalVolume: libGamosCore_GamosBase_Classifiers.dylib
+Library.__pf__@@GmClassifierByKineticEnergy: libGamosCore_GamosBase_Classifiers.dylib
+Library.__pf__@@GmClassifierByPhysicalVolume: libGamosCore_GamosBase_Classifiers.dylib
+Library.__pf__@@GmClassifierByPhysicalVolumeReplicated: libGamosCore_GamosBase_Classifiers.dylib
+Library.__pf__@@GmClassifierByRegion: libGamosCore_GamosBase_Classifiers.dylib
+Library.__pf__@@GmClassifierByParticle: libGamosCore_GamosBase_Classifiers.dylib
+Library.__pf__@@GmClassifierByPrimaryParticle: libGamosCore_GamosBase_Classifiers.dylib
+Library.__pf__@@GmClassifierByProcess: libGamosCore_GamosBase_Classifiers.dylib
+Library.__pf__@@GmClassifierByCreatorProcess: libGamosCore_GamosBase_Classifiers.dylib
+Library.__pf__@@GmClassifierByParticleProcess: libGamosCore_GamosBase_Classifiers.dylib
+Library.__pf__@@GmClassifierByMaterial: libGamosCore_GamosBase_Classifiers.dylib
+Library.__pf__@@GmCompoundClassifier: libGamosCore_GamosBase_Classifiers.dylib
+Library.__pf__@@GmClassifierBySecondariesList: libGamosCore_GamosBase_Classifiers.dylib
+Library.__pf__@@GmClassifierBySecondariesListExclude: libGamosCore_GamosBase_Classifiers.dylib
+Library.__pf__@@GmClassifierByHadronicReaction: libGamosCore_GamosBase_Classifiers.dylib

@@ -1,0 +1,661 @@
+ GmGenUtils::FileInPath ./deprecatedCommands.lis in .
+ GmGenUtils::FileInPath /home/arce/gamosnew/GAMOS.5.0.0/data/deprecatedCommands.lis in /home/arce/gamosnew/GAMOS.5.0.0/data
+
+*************************************************************
+ Geant4 version Name: geant4-09-06-patch-02    (17-May-2013)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  FukuiRenderer (DAWN)
+  G4HepRep (HepRepXML)
+  G4HepRepFile (HepRepFile)
+  OpenGLImmediateX (OGLI, OGLIX)
+  OpenGLStoredX (OGL, OGLS, OGLSX)
+  RayTracer (RayTracer)
+  VRML1 (VRML1)
+  VRML1FILE (VRML1FILE)
+  VRML2 (VRML2)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByCharge
+  drawByParticleID
+  drawByOriginVolume
+  drawByAttribute
+
+Registered filter factories:
+  chargeFilter
+  particleFilter
+  originVolumeFilter
+  attributeFilter
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+Available colours:
+  black, blue, brown, cyan, gray, green, grey, magenta, red, white, yellow
+
+/control/execute exercise5d.in
+/gamos/setParam GmGeometryFromText:FileName exercise5.geom
+/gamos/geometry GmGeometryFromText
+/gamos/physicsList G4QGSP_BIC_NHP
+<<< Geant4 Physics List simulation engine: QGSP_BIC_NHP 1.3
+
+WARNING: G4QStoppingPhysics is deprecated and will be removed in GEANT4 version 10.0.
+/gamos/generator GmGenerator
+ GmGenUtils::FileInPath ./isotopes.dat in .
+ GmGenUtils::FileInPath /home/arce/gamosnew/GAMOS.5.0.0/data/isotopes.dat in /home/arce/gamosnew/GAMOS.5.0.0/data
+/run/initialize
+ GmGenUtils::FileInPath ./exercise5.geom in .
+0x2ab7cf0TEST  G4ParticleHPChannel UpdateData neutronWARNING: model G4LENeutronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+@@@ G4ParticleHPInelastic instantiated for particle neutron data directory variable is G4NEUTRONHPDATA pointing to /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Inelastic
+0x30fc4a0TEST  G4ParticleHPChannel UpdateData neutron0x3327c60 0 G4ParticleHPDiscreteTwoBody READ DATA 875292 0 2
+0x3327c60 1 G4ParticleHPDiscreteTwoBody READ DATA 2.01e+06 0 2
+0x3327c60 2 G4ParticleHPDiscreteTwoBody READ DATA 3.01e+06 0 2
+0x3327c60 3 G4ParticleHPDiscreteTwoBody READ DATA 3.5e+06 0 2
+0x3327c60 4 G4ParticleHPDiscreteTwoBody READ DATA 3.99e+06 0 2
+0x3327c60 5 G4ParticleHPDiscreteTwoBody READ DATA 4.2e+06 0 2
+0x3327c60 6 G4ParticleHPDiscreteTwoBody READ DATA 4.5e+06 0 2
+0x3327c60 7 G4ParticleHPDiscreteTwoBody READ DATA 4.81e+06 0 4
+0x3327c60 8 G4ParticleHPDiscreteTwoBody READ DATA 5.44e+06 0 2
+0x3327c60 9 G4ParticleHPDiscreteTwoBody READ DATA 5.96e+06 0 2
+0x3327c60 10 G4ParticleHPDiscreteTwoBody READ DATA 6.44e+06 0 2
+0x3327c60 11 G4ParticleHPDiscreteTwoBody READ DATA 7.02e+06 0 2
+0x3327c60 12 G4ParticleHPDiscreteTwoBody READ DATA 7.54e+06 0 2
+0x3327c60 13 G4ParticleHPDiscreteTwoBody READ DATA 8e+06 0 2
+0x3327c60 14 G4ParticleHPDiscreteTwoBody READ DATA 8.56e+06 0 2
+0x3327c60 15 G4ParticleHPDiscreteTwoBody READ DATA 9e+06 0 2
+0x3327c60 16 G4ParticleHPDiscreteTwoBody READ DATA 1.35e+07 0 4
+0x3327c60 17 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 4
+0x3327e10 0 G4ParticleHPDiscreteTwoBody READ DATA 1.05237e+06 0 2
+0x3327e10 1 G4ParticleHPDiscreteTwoBody READ DATA 2.01e+06 0 2
+0x3327e10 2 G4ParticleHPDiscreteTwoBody READ DATA 3.01e+06 0 2
+0x3327e10 3 G4ParticleHPDiscreteTwoBody READ DATA 3.5e+06 0 2
+0x3327e10 4 G4ParticleHPDiscreteTwoBody READ DATA 3.99e+06 0 2
+0x3327e10 5 G4ParticleHPDiscreteTwoBody READ DATA 4.2e+06 0 2
+0x3327e10 6 G4ParticleHPDiscreteTwoBody READ DATA 4.5e+06 0 2
+0x3327e10 7 G4ParticleHPDiscreteTwoBody READ DATA 4.81e+06 0 4
+0x3327e10 8 G4ParticleHPDiscreteTwoBody READ DATA 5.44e+06 0 2
+0x3327e10 9 G4ParticleHPDiscreteTwoBody READ DATA 5.96e+06 0 2
+0x3327e10 10 G4ParticleHPDiscreteTwoBody READ DATA 6.44e+06 0 2
+0x3327e10 11 G4ParticleHPDiscreteTwoBody READ DATA 7.02e+06 0 2
+0x3327e10 12 G4ParticleHPDiscreteTwoBody READ DATA 7.54e+06 0 2
+0x3327e10 13 G4ParticleHPDiscreteTwoBody READ DATA 8e+06 0 2
+0x3327e10 14 G4ParticleHPDiscreteTwoBody READ DATA 8.56e+06 0 2
+0x3327e10 15 G4ParticleHPDiscreteTwoBody READ DATA 9e+06 0 2
+0x3327e10 16 G4ParticleHPDiscreteTwoBody READ DATA 1.35e+07 0 4
+0x3327e10 17 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 4
+0x31d0850 0 G4ParticleHPDiscreteTwoBody READ DATA 2.29376e+06 0 2
+0x31d0850 1 G4ParticleHPDiscreteTwoBody READ DATA 2.76e+06 0 2
+0x31d0850 2 G4ParticleHPDiscreteTwoBody READ DATA 3.01e+06 0 2
+0x31d0850 3 G4ParticleHPDiscreteTwoBody READ DATA 3.85e+06 0 2
+0x31d0850 4 G4ParticleHPDiscreteTwoBody READ DATA 3.99e+06 0 2
+0x31d0850 5 G4ParticleHPDiscreteTwoBody READ DATA 4.2e+06 0 2
+0x31d0850 6 G4ParticleHPDiscreteTwoBody READ DATA 4.5e+06 0 2
+0x31d0850 7 G4ParticleHPDiscreteTwoBody READ DATA 4.81e+06 0 2
+0x31d0850 8 G4ParticleHPDiscreteTwoBody READ DATA 5.44e+06 0 2
+0x31d0850 9 G4ParticleHPDiscreteTwoBody READ DATA 5.96e+06 0 4
+0x31d0850 10 G4ParticleHPDiscreteTwoBody READ DATA 6.44e+06 0 2
+0x31d0850 11 G4ParticleHPDiscreteTwoBody READ DATA 7.02e+06 0 2
+0x31d0850 12 G4ParticleHPDiscreteTwoBody READ DATA 7.54e+06 0 2
+0x31d0850 13 G4ParticleHPDiscreteTwoBody READ DATA 8.02e+06 0 4
+0x31d0850 14 G4ParticleHPDiscreteTwoBody READ DATA 8.56e+06 0 2
+0x31d0850 15 G4ParticleHPDiscreteTwoBody READ DATA 9e+06 0 4
+0x31d0850 16 G4ParticleHPDiscreteTwoBody READ DATA 1.35e+07 0 4
+0x31d0850 17 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 4
+0x2be0b50 0 G4ParticleHPDiscreteTwoBody READ DATA 2.83704e+06 0 2
+0x2be0b50 1 G4ParticleHPDiscreteTwoBody READ DATA 3.99e+06 0 2
+0x2be0b50 2 G4ParticleHPDiscreteTwoBody READ DATA 4.81e+06 0 4
+0x2be0b50 3 G4ParticleHPDiscreteTwoBody READ DATA 5.96e+06 0 4
+0x2be0b50 4 G4ParticleHPDiscreteTwoBody READ DATA 7.02e+06 0 2
+0x2be0b50 5 G4ParticleHPDiscreteTwoBody READ DATA 9e+06 0 2
+0x2be0b50 6 G4ParticleHPDiscreteTwoBody READ DATA 1.35e+07 0 2
+0x2be0b50 7 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 2
+0x33c1680 0 G4ParticleHPDiscreteTwoBody READ DATA 3.09254e+06 0 2
+0x33c1680 1 G4ParticleHPDiscreteTwoBody READ DATA 3.99e+06 0 2
+0x33c1680 2 G4ParticleHPDiscreteTwoBody READ DATA 4.81e+06 0 2
+0x33c1680 3 G4ParticleHPDiscreteTwoBody READ DATA 5.96e+06 0 4
+0x33c1680 4 G4ParticleHPDiscreteTwoBody READ DATA 7.02e+06 0 2
+0x33c1680 5 G4ParticleHPDiscreteTwoBody READ DATA 7.54e+06 0 2
+0x33c1680 6 G4ParticleHPDiscreteTwoBody READ DATA 8.03e+06 0 2
+0x33c1680 7 G4ParticleHPDiscreteTwoBody READ DATA 8.56e+06 0 2
+0x33c1680 8 G4ParticleHPDiscreteTwoBody READ DATA 9e+06 0 2
+0x33c1680 9 G4ParticleHPDiscreteTwoBody READ DATA 1.35e+07 0 2
+0x33c1680 10 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 2
+0x32baab0 0 G4ParticleHPDiscreteTwoBody READ DATA 3.1163e+06 0 2
+0x32baab0 1 G4ParticleHPDiscreteTwoBody READ DATA 3.99e+06 0 2
+0x32baab0 2 G4ParticleHPDiscreteTwoBody READ DATA 4.81e+06 0 2
+0x32baab0 3 G4ParticleHPDiscreteTwoBody READ DATA 5.96e+06 0 4
+0x32baab0 4 G4ParticleHPDiscreteTwoBody READ DATA 7.02e+06 0 2
+0x32baab0 5 G4ParticleHPDiscreteTwoBody READ DATA 7.54e+06 0 2
+0x32baab0 6 G4ParticleHPDiscreteTwoBody READ DATA 8.03e+06 0 2
+0x32baab0 7 G4ParticleHPDiscreteTwoBody READ DATA 8.56e+06 0 2
+0x32baab0 8 G4ParticleHPDiscreteTwoBody READ DATA 9e+06 0 2
+0x32baab0 9 G4ParticleHPDiscreteTwoBody READ DATA 1.35e+07 0 2
+0x32baab0 10 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 2
+0x2bb1a00 0 G4ParticleHPDiscreteTwoBody READ DATA 3.81768e+06 0 2
+0x2bb1a00 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 2
+0x2bb1bb0 0 G4ParticleHPDiscreteTwoBody READ DATA 4.10472e+06 0 2
+0x2bb1bb0 1 G4ParticleHPDiscreteTwoBody READ DATA 5.96e+06 0 4
+0x2bb1bb0 2 G4ParticleHPDiscreteTwoBody READ DATA 6.44e+06 0 4
+0x2bb1bb0 3 G4ParticleHPDiscreteTwoBody READ DATA 7.02e+06 0 2
+0x2bb1bb0 4 G4ParticleHPDiscreteTwoBody READ DATA 7.54e+06 0 2
+0x2bb1bb0 5 G4ParticleHPDiscreteTwoBody READ DATA 8.03e+06 0 2
+0x2bb1bb0 6 G4ParticleHPDiscreteTwoBody READ DATA 8.56e+06 0 4
+0x2bb1bb0 7 G4ParticleHPDiscreteTwoBody READ DATA 9e+06 0 2
+0x2bb1bb0 8 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 2
+0x30da020 0 G4ParticleHPDiscreteTwoBody READ DATA 4.20586e+06 0 2
+0x30da020 1 G4ParticleHPDiscreteTwoBody READ DATA 5.96e+06 0 4
+0x30da020 2 G4ParticleHPDiscreteTwoBody READ DATA 6.44e+06 0 4
+0x30da020 3 G4ParticleHPDiscreteTwoBody READ DATA 7.02e+06 0 2
+0x30da020 4 G4ParticleHPDiscreteTwoBody READ DATA 7.54e+06 0 2
+0x30da020 5 G4ParticleHPDiscreteTwoBody READ DATA 8.03e+06 0 2
+0x30da020 6 G4ParticleHPDiscreteTwoBody READ DATA 8.56e+06 0 4
+0x30da020 7 G4ParticleHPDiscreteTwoBody READ DATA 9e+06 0 2
+0x30da020 8 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 2
+0x30943d0 0 G4ParticleHPDiscreteTwoBody READ DATA 4.57507e+06 0 2
+0x30943d0 1 G4ParticleHPDiscreteTwoBody READ DATA 5.96e+06 0 2
+0x30943d0 2 G4ParticleHPDiscreteTwoBody READ DATA 6.44e+06 0 2
+0x30943d0 3 G4ParticleHPDiscreteTwoBody READ DATA 7.02e+06 0 2
+0x30943d0 4 G4ParticleHPDiscreteTwoBody READ DATA 7.54e+06 0 2
+0x30943d0 5 G4ParticleHPDiscreteTwoBody READ DATA 8.03e+06 0 2
+0x30943d0 6 G4ParticleHPDiscreteTwoBody READ DATA 9e+06 0 2
+0x30943d0 7 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 2
+0x2ebeb30 0 G4ParticleHPDiscreteTwoBody READ DATA 4.67891e+06 0 2
+0x2ebeb30 1 G4ParticleHPDiscreteTwoBody READ DATA 5.96e+06 0 2
+0x2ebeb30 2 G4ParticleHPDiscreteTwoBody READ DATA 6.44e+06 0 2
+0x2ebeb30 3 G4ParticleHPDiscreteTwoBody READ DATA 7.02e+06 0 2
+0x2ebeb30 4 G4ParticleHPDiscreteTwoBody READ DATA 7.54e+06 0 2
+0x2ebeb30 5 G4ParticleHPDiscreteTwoBody READ DATA 8.03e+06 0 2
+0x2ebeb30 6 G4ParticleHPDiscreteTwoBody READ DATA 9e+06 0 2
+0x2ebeb30 7 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 2
+0x2ec6380 0 G4ParticleHPDiscreteTwoBody READ DATA 4.75122e+06 0 2
+0x2ec6380 1 G4ParticleHPDiscreteTwoBody READ DATA 5.96e+06 0 2
+0x2ec6380 2 G4ParticleHPDiscreteTwoBody READ DATA 6.44e+06 0 2
+0x2ec6380 3 G4ParticleHPDiscreteTwoBody READ DATA 7.02e+06 0 2
+0x2ec6380 4 G4ParticleHPDiscreteTwoBody READ DATA 7.54e+06 0 2
+0x2ec6380 5 G4ParticleHPDiscreteTwoBody READ DATA 8.03e+06 0 2
+0x2ec6380 6 G4ParticleHPDiscreteTwoBody READ DATA 9e+06 0 2
+0x2ec6380 7 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 2
+0x2ec6530 0 G4ParticleHPDiscreteTwoBody READ DATA 4.99158e+06 0 2
+0x2ec6530 1 G4ParticleHPDiscreteTwoBody READ DATA 6.44e+06 0 2
+0x2ec6530 2 G4ParticleHPDiscreteTwoBody READ DATA 7.54e+06 0 2
+0x2ec6530 3 G4ParticleHPDiscreteTwoBody READ DATA 8.03e+06 0 2
+0x2ec6530 4 G4ParticleHPDiscreteTwoBody READ DATA 9e+06 0 2
+0x2ec6530 5 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 2
+0x2edde20 0 G4ParticleHPDiscreteTwoBody READ DATA 5.34906e+06 0 1
+0x2edde20 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x2eddfd0 0 G4ParticleHPDiscreteTwoBody READ DATA 5.4444e+06 0 1
+0x2eddfd0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x32caea0 0 G4ParticleHPDiscreteTwoBody READ DATA 5.62252e+06 0 1
+0x32caea0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x32cb050 0 G4ParticleHPDiscreteTwoBody READ DATA 5.6359e+06 0 1
+0x32cb050 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x2bc1760 0 G4ParticleHPDiscreteTwoBody READ DATA 5.64171e+06 0 1
+0x2bc1760 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x2bc1910 0 G4ParticleHPDiscreteTwoBody READ DATA 5.7054e+06 0 1
+0x2bc1910 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x2d1ada0 0 G4ParticleHPDiscreteTwoBody READ DATA 5.7582e+06 0 1
+0x2d1ada0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x2c06e20 0 G4ParticleHPDiscreteTwoBody READ DATA 5.87885e+06 0 1
+0x2c06e20 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x2c06fd0 0 G4ParticleHPDiscreteTwoBody READ DATA 5.9663e+06 0 1
+0x2c06fd0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x2cd77f0 0 G4ParticleHPDiscreteTwoBody READ DATA 6.04463e+06 0 1
+0x2cd77f0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3098a40 0 G4ParticleHPDiscreteTwoBody READ DATA 6.18239e+06 0 1
+0x3098a40 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x2b533a0 0 G4ParticleHPDiscreteTwoBody READ DATA 6.30729e+06 0 1
+0x2b533a0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x2c45100 0 G4ParticleHPDiscreteTwoBody READ DATA 6.34402e+06 0 1
+0x2c45100 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x314b980 0 G4ParticleHPDiscreteTwoBody READ DATA 6.38945e+06 0 1
+0x314b980 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x314bb30 0 G4ParticleHPDiscreteTwoBody READ DATA 6.52203e+06 0 1
+0x314bb30 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x30e0200 0 G4ParticleHPDiscreteTwoBody READ DATA 6.70565e+06 0 1
+0x30e0200 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x2ed5d50 0 G4ParticleHPDiscreteTwoBody READ DATA 6.71944e+06 0 1
+0x2ed5d50 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x2ed5f00 0 G4ParticleHPDiscreteTwoBody READ DATA 6.75524e+06 0 1
+0x2ed5f00 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x2fbdfb0 0 G4ParticleHPDiscreteTwoBody READ DATA 6.77723e+06 0 1
+0x2fbdfb0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x2fbe160 0 G4ParticleHPDiscreteTwoBody READ DATA 6.85223e+06 0 1
+0x2fbe160 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x2ec8d80 0 G4ParticleHPDiscreteTwoBody READ DATA 6.90016e+06 0 1
+0x2ec8d80 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3335280 0 G4ParticleHPDiscreteTwoBody READ DATA 6.96396e+06 0 1
+0x3335280 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3338560 0 G4ParticleHPDiscreteTwoBody READ DATA 7.0179e+06 0 1
+0x3338560 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x2f33930 0 G4ParticleHPDiscreteTwoBody READ DATA 7.02869e+06 0 1
+0x2f33930 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x2ceeb00 0 G4ParticleHPDiscreteTwoBody READ DATA 7.06894e+06 0 1
+0x2ceeb00 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x2ceecb0 0 G4ParticleHPDiscreteTwoBody READ DATA 7.07496e+06 0 1
+0x2ceecb0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x2ec3fc0TEST  G4ParticleHPChannel UpdateData neutron0x3487fc0TEST  G4ParticleHPChannel UpdateData neutron0x3657d50TEST  G4ParticleHPChannel UpdateData neutron0x365c410TEST  G4ParticleHPChannel UpdateData neutron0x366efc0TEST  G4ParticleHPChannel UpdateData neutron0x366cc90TEST  G4ParticleHPChannel UpdateData neutron0x3693530TEST  G4ParticleHPChannel UpdateData neutron0x368c0d0TEST  G4ParticleHPChannel UpdateData neutron0x368a9b0TEST  G4ParticleHPChannel UpdateData neutron0x368a950TEST  G4ParticleHPChannel UpdateData neutron0x368aa10TEST  G4ParticleHPChannel UpdateData neutron0x36b6d60TEST  G4ParticleHPChannel UpdateData neutron0x36b4fa0TEST  G4ParticleHPChannel UpdateData neutron0x36bf860TEST  G4ParticleHPChannel UpdateData neutron0x36ca270TEST  G4ParticleHPChannel UpdateData neutron0x36d16a0TEST  G4ParticleHPChannel UpdateData neutron0x36d19a0TEST  G4ParticleHPChannel UpdateData neutron0x36cf7e0TEST  G4ParticleHPChannel UpdateData neutron0x36d7640TEST  G4ParticleHPChannel UpdateData neutron0x36d6e80TEST  G4ParticleHPChannel UpdateData neutron0x36e2c20TEST  G4ParticleHPChannel UpdateData neutron0x36ea290TEST  G4ParticleHPChannel UpdateData neutron0x372cd20 0 G4ParticleHPDiscreteTwoBody READ DATA 1.89691e+06 0 1
+0x372cd20 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x372d720 0 G4ParticleHPDiscreteTwoBody READ DATA 2.91838e+06 0 1
+0x372d720 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x372e450 0 G4ParticleHPDiscreteTwoBody READ DATA 3.65838e+06 0 1
+0x372e450 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x372f240 0 G4ParticleHPDiscreteTwoBody READ DATA 3.90943e+06 0 1
+0x372f240 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3730230 0 G4ParticleHPDiscreteTwoBody READ DATA 5.12255e+06 0 1
+0x3730230 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3731380 0 G4ParticleHPDiscreteTwoBody READ DATA 5.45192e+06 0 1
+0x3731380 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3732690 0 G4ParticleHPDiscreteTwoBody READ DATA 5.50213e+06 0 1
+0x3732690 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3733620 0 G4ParticleHPDiscreteTwoBody READ DATA 5.5181e+06 0 1
+0x3733620 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x37345b0 0 G4ParticleHPDiscreteTwoBody READ DATA 5.58916e+06 0 1
+0x37345b0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3735540 0 G4ParticleHPDiscreteTwoBody READ DATA 5.79788e+06 0 1
+0x3735540 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3736850 0 G4ParticleHPDiscreteTwoBody READ DATA 5.82434e+06 0 1
+0x3736850 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x37379a0 0 G4ParticleHPDiscreteTwoBody READ DATA 5.9261e+06 0 1
+0x37379a0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3738e70 0 G4ParticleHPDiscreteTwoBody READ DATA 6.20184e+06 0 1
+0x3738e70 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3739f60 0 G4ParticleHPDiscreteTwoBody READ DATA 6.45953e+06 0 1
+0x3739f60 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x373b5f0 0 G4ParticleHPDiscreteTwoBody READ DATA 6.61991e+06 0 1
+0x373b5f0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x373c980 0 G4ParticleHPDiscreteTwoBody READ DATA 6.85156e+06 0 1
+0x373c980 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x373e010 0 G4ParticleHPDiscreteTwoBody READ DATA 6.90467e+06 0 1
+0x373e010 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x373f480 0 G4ParticleHPDiscreteTwoBody READ DATA 7.07584e+06 0 1
+0x373f480 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3740b90 0 G4ParticleHPDiscreteTwoBody READ DATA 7.11287e+06 0 1
+0x3740b90 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3741f80 0 G4ParticleHPDiscreteTwoBody READ DATA 7.26226e+06 0 1
+0x3741f80 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x36e4c20TEST  G4ParticleHPChannel UpdateData neutron0x377fdd0 0 G4ParticleHPDiscreteTwoBody READ DATA 6.27362e+06 0 1
+0x377fdd0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x37805c0 0 G4ParticleHPDiscreteTwoBody READ DATA 8.14992e+06 0 1
+0x37805c0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x377bde0 0 G4ParticleHPDiscreteTwoBody READ DATA 9.32183e+06 0 1
+0x377bde0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3787e20 0 G4ParticleHPDiscreteTwoBody READ DATA 9.99607e+06 0 1
+0x3787e20 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3788c50 0 G4ParticleHPDiscreteTwoBody READ DATA 1.03614e+07 0 1
+0x3788c50 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3789b80 0 G4ParticleHPDiscreteTwoBody READ DATA 1.07535e+07 0 1
+0x3789b80 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x378a950 0 G4ParticleHPDiscreteTwoBody READ DATA 1.07675e+07 0 1
+0x378a950 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x378b8e0 0 G4ParticleHPDiscreteTwoBody READ DATA 1.0786e+07 0 1
+0x378b8e0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x378c810 0 G4ParticleHPDiscreteTwoBody READ DATA 1.12886e+07 0 1
+0x378c810 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x378d900 0 G4ParticleHPDiscreteTwoBody READ DATA 1.13571e+07 0 1
+0x378d900 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x378e780 0 G4ParticleHPDiscreteTwoBody READ DATA 1.14317e+07 0 1
+0x378e780 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x378f780 0 G4ParticleHPDiscreteTwoBody READ DATA 1.17622e+07 0 1
+0x378f780 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3790710 0 G4ParticleHPDiscreteTwoBody READ DATA 1.19522e+07 0 1
+0x3790710 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3791800 0 G4ParticleHPDiscreteTwoBody READ DATA 1.21764e+07 0 1
+0x3791800 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3792790 0 G4ParticleHPDiscreteTwoBody READ DATA 1.22028e+07 0 1
+0x3792790 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3793a40 0 G4ParticleHPDiscreteTwoBody READ DATA 1.26278e+07 0 1
+0x3793a40 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3794b30 0 G4ParticleHPDiscreteTwoBody READ DATA 1.27635e+07 0 1
+0x3794b30 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3795ba0 0 G4ParticleHPDiscreteTwoBody READ DATA 1.31421e+07 0 1
+0x3795ba0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3796e50 0 G4ParticleHPDiscreteTwoBody READ DATA 1.32697e+07 0 1
+0x3796e50 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3797d80 0 G4ParticleHPDiscreteTwoBody READ DATA 1.34084e+07 0 1
+0x3797d80 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x37658c0TEST  G4ParticleHPChannel UpdateData neutron0x37b7e60 0 G4ParticleHPDiscreteTwoBody READ DATA 1.12898e+07 0 1
+0x37b7e60 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x37b8010 0 G4ParticleHPDiscreteTwoBody READ DATA 1.18967e+07 0 1
+0x37b8010 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x37bae90 0 G4ParticleHPDiscreteTwoBody READ DATA 1.2301e+07 0 1
+0x37bae90 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x37bbc80 0 G4ParticleHPDiscreteTwoBody READ DATA 1.29618e+07 0 1
+0x37bbc80 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x37bca60 0 G4ParticleHPDiscreteTwoBody READ DATA 1.33279e+07 0 1
+0x37bca60 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x37bd9f0 0 G4ParticleHPDiscreteTwoBody READ DATA 1.39494e+07 0 1
+0x37bd9f0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x37be980 0 G4ParticleHPDiscreteTwoBody READ DATA 1.41298e+07 0 1
+0x37be980 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x37bfa70 0 G4ParticleHPDiscreteTwoBody READ DATA 1.41956e+07 0 1
+0x37bfa70 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x37c0b60 0 G4ParticleHPDiscreteTwoBody READ DATA 1.48223e+07 0 1
+0x37c0b60 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x37c1950 0 G4ParticleHPDiscreteTwoBody READ DATA 1.48311e+07 0 1
+0x37c1950 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x37c2940 0 G4ParticleHPDiscreteTwoBody READ DATA 1.53437e+07 0 1
+0x37c2940 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x37a1e50TEST  G4ParticleHPChannel UpdateData neutron0x37a1bd0TEST  G4ParticleHPChannel UpdateData neutron0x37ecd90 0 G4ParticleHPDiscreteTwoBody READ DATA 3.24735e+06 0 1
+0x37ecd90 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x37ecf40 0 G4ParticleHPDiscreteTwoBody READ DATA 3.7373e+06 0 1
+0x37ecf40 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x380a5a0 0 G4ParticleHPDiscreteTwoBody READ DATA 3.8317e+06 0 1
+0x380a5a0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x380a750 0 G4ParticleHPDiscreteTwoBody READ DATA 4.6389e+06 0 1
+0x380a750 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x380f520 0 G4ParticleHPDiscreteTwoBody READ DATA 4.64212e+06 0 1
+0x380f520 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3810410 0 G4ParticleHPDiscreteTwoBody READ DATA 4.64419e+06 0 1
+0x3810410 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x38111e0 0 G4ParticleHPDiscreteTwoBody READ DATA 4.81644e+06 0 1
+0x38111e0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3811f90 0 G4ParticleHPDiscreteTwoBody READ DATA 5.16247e+06 0 1
+0x3811f90 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x38130c0 0 G4ParticleHPDiscreteTwoBody READ DATA 5.20328e+06 0 1
+0x38130c0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3813ff0 0 G4ParticleHPDiscreteTwoBody READ DATA 5.85471e+06 0 1
+0x3813ff0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3814f20 0 G4ParticleHPDiscreteTwoBody READ DATA 5.90565e+06 0 1
+0x3814f20 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3816010 0 G4ParticleHPDiscreteTwoBody READ DATA 6.2596e+06 0 1
+0x3816010 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3817480 0 G4ParticleHPDiscreteTwoBody READ DATA 6.33647e+06 0 1
+0x3817480 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x3818650 0 G4ParticleHPDiscreteTwoBody READ DATA 6.58441e+06 0 1
+0x3818650 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x38195e0 0 G4ParticleHPDiscreteTwoBody READ DATA 6.74531e+06 0 1
+0x38195e0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x381a6d0 0 G4ParticleHPDiscreteTwoBody READ DATA 6.78836e+06 0 1
+0x381a6d0 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x381b820 0 G4ParticleHPDiscreteTwoBody READ DATA 6.97063e+06 0 1
+0x381b820 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x381c830 0 G4ParticleHPDiscreteTwoBody READ DATA 7.0115e+06 0 1
+0x381c830 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x381d840 0 G4ParticleHPDiscreteTwoBody READ DATA 7.04055e+06 0 1
+0x381d840 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x381ed90 0 G4ParticleHPDiscreteTwoBody READ DATA 7.06669e+06 0 1
+0x381ed90 1 G4ParticleHPDiscreteTwoBody READ DATA 1.5e+08 0 1
+0x37d27e0TEST  G4ParticleHPChannel UpdateData neutron0x3836d40TEST  G4ParticleHPChannel UpdateData neutron0x37ceda0TEST  G4ParticleHPChannel UpdateData neutron0x38428c0TEST  G4ParticleHPChannel UpdateData neutron0x3846680TEST  G4ParticleHPChannel UpdateData neutron0x384bdc0TEST  G4ParticleHPChannel UpdateData neutron0x3852170TEST  G4ParticleHPChannel UpdateData neutron0x3856470TEST  G4ParticleHPChannel UpdateData neutron0x3855d70TEST  G4ParticleHPChannel UpdateData neutron@@@ G4ParticleHPInelasticData instantiated for particle neutron data directory variable is G4NEUTRONHPDATA pointing to /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2
+0x38605d0TEST  G4ParticleHPChannel UpdateData neutronWARNING: model G4LEProtonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEPionPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEPionMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroLInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroSInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiProtonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiProtonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiNeutronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiNeutronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LELambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HELambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiLambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiLambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LESigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HESigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiSigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiSigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LESigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HESigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiSigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiSigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: G4QCaptureAtRest is deprecated and will be removed in GEANT4 version 10.0.
+WARNING: model G4LEDeuteronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LETritonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAlphaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+/gamos/physics/removeProcessesByType Electromagnetic
+/gamos/physics/removeProcessesByName hadElastic
+/gamos/generator/addSingleParticleSource source neutron 1.*MeV
+/gamos/userAction GmKillAtSteppingActionUA
+/gamos/setParam secoParticleC:OnSecondary 1
+/gamos/classifier secoParticleC GmClassifierByParticle
+/gamos/setParam GmSecondaryTrackDataHistosUA_secoParticleC:DataList log10(SecoKineticEnergy)
+/gamos/userAction GmSecondaryTrackDataHistosUA secoParticleC
+PluginService: Could not find factory for secoParticleC with signature GmVFilter* (G4String)
+/run/beamOn 100000
+============================================================================================
+             HADRONIC PROCESSES SUMMARY (verbose level 1)
+
+                                  Hadronic Processes for <GenericIon>
+                                  -----------------------------------
+        ionInelastic  Models:     Binary Light Ion Cascade: Emin(GeV)=    0  Emax(GeV)= 20
+
+        ionInelastic  Crs sctns:          AxenWellischIonH: Emin(GeV)=    0  Emax(GeV)= 100000
+                                                  IonsShen: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <anti_neutron>
+                                  -----------------------------------
+AntiNeutronInelastic  Models:     G4LEAntiNeutronInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+                                  G4HEAntiNeutronInelastic: Emin(GeV)=   20  Emax(GeV)= 100000
+
+AntiNeutronInelastic  Crs sctns:          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <anti_proton>
+                                  -----------------------------------
+ AntiProtonInelastic  Models:      G4LEAntiProtonInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+                                   G4HEAntiProtonInelastic: Emin(GeV)=   20  Emax(GeV)= 100000
+
+ AntiProtonInelastic  Crs sctns:          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <e+>
+                                  -----------------------------------
+     PositronNuclear  Models:      G4ElectroVDNuclearModel: Emin(GeV)=    0  Emax(GeV)= 1e+06
+
+     PositronNuclear  Crs sctns:          ElectroNuclearXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <e->
+                                  -----------------------------------
+      ElectroNuclear  Models:      G4ElectroVDNuclearModel: Emin(GeV)=    0  Emax(GeV)= 1e+06
+
+      ElectroNuclear  Crs sctns:          ElectroNuclearXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <gamma>
+                                  -----------------------------------
+     PhotonInelastic  Models:               BertiniCascade: Emin(GeV)=    0  Emax(GeV)= 3.5
+                                           TheoFSGenerator: Emin(GeV)=    3  Emax(GeV)= 100000
+
+     PhotonInelastic  Crs sctns:            PhotoNuclearXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <kaon+>
+                                  -----------------------------------
+   KaonPlusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                     G4LEKaonPlusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+   KaonPlusInelastic  Crs sctns:  ChipsKaonPlusInelasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <kaon->
+                                  -----------------------------------
+  KaonMinusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                    G4LEKaonMinusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+  KaonMinusInelastic  Crs sctns: ChipsKaonMinusInelasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <lambda>
+                                  -----------------------------------
+     LambdaInelastic  Models:          G4LELambdaInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+                                       G4HELambdaInelastic: Emin(GeV)=   20  Emax(GeV)= 100000
+
+     LambdaInelastic  Crs sctns:          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                     Hadronic Processes for <mu->
+          muMinusCaptureAtRest
+
+                                  Hadronic Processes for <neutron>
+                                  -----------------------------------
+    NeutronInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                      G4LENeutronInelastic: Emin(GeV)=  9.5  Emax(GeV)= 25
+                                            Binary Cascade: Emin(GeV)= 0.0199  Emax(GeV)= 9.9
+                                       ParticleHPInelastic: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+    NeutronInelastic  Crs sctns:      NeutronHPInelasticXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+            nCapture  Models:                   G4LCapture: Emin(GeV)= 0.0199  Emax(GeV)= 20000
+                                          NeutronHPCapture: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+            nCapture  Crs sctns:        NeutronHPCaptureXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                          GheishaCaptureXS: Emin(GeV)=    0  Emax(GeV)= 100000
+
+            nFission  Models:                   G4LFission: Emin(GeV)= 0.0199  Emax(GeV)= 20000
+                                          NeutronHPFission: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+            nFission  Crs sctns:        NeutronHPFissionXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                          GheishaFissionXS: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <pi+>
+                                  -----------------------------------
+   PionPlusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                     G4LEPionPlusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+   PionPlusInelastic  Crs sctns:      G4CrossSectionPairGG: Emin(GeV)=    0  Emax(GeV)= 100000
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <pi->
+                                  -----------------------------------
+  PionMinusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                    G4LEPionMinusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+  PionMinusInelastic  Crs sctns:      G4CrossSectionPairGG: Emin(GeV)=    0  Emax(GeV)= 100000
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <proton>
+                                  -----------------------------------
+     ProtonInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                       G4LEProtonInelastic: Emin(GeV)=  9.5  Emax(GeV)= 25
+                                            Binary Cascade: Emin(GeV)=    0  Emax(GeV)= 9.9
+
+     ProtonInelastic  Crs sctns:       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+============================================================================================
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_Al
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  5.85564 keV    e-  460.395 keV    e+  442.201 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+Start Run processing.
+ CreateHisto1D GmSecondaryTrackDataHistosUA_secoParticleC:neutron:log10(SecoKineticEnergy) = 286000101
+ CreateHisto1D GmSecondaryTrackDataHistosUA_secoParticleC:gamma:log10(SecoKineticEnergy) = 286000201
+ CreateHisto1D GmSecondaryTrackDataHistosUA_secoParticleC:Al27[0.0]:log10(SecoKineticEnergy) = 286000301
+ CreateHisto1D GmSecondaryTrackDataHistosUA_secoParticleC:Al28[0.0]:log10(SecoKineticEnergy) = 286000401
+Run terminated.
+Run Summary
+  Number of events processed : 100000
+  User=17.09s Real=17.25s Sys=0s
+Graphics systems deleted.
+Visualization Manager deleting...
+=== saving histograms in file === GmSecondaryTrackDataHistosUA_secoParticleC.root
+%%%%% Table of indices for GmClassifierByParticle secoParticleC
+secoParticleC: gamma = 2
+secoParticleC: neutron = 1
+secoParticleC: Al28[0.0] = 4
+secoParticleC: Al27[0.0] = 3

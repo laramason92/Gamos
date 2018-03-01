@@ -1,0 +1,17 @@
+/tracking/verbose 1
+
+/gamos/geometry ExN02DetectorConstruction
+/gamos/physicsList ExN02PhysicsList
+/gamos/generator ExN02PrimaryGeneratorAction
+
+/gamos/userAction ExN02RunAction
+/gamos/userAction ExN02EventAction
+/gamos/userAction ExN02SteppingAction
+
+/gamos/userAction GmTrackHistosUA GmPrimaryFilter
+/gamos/userAction GmCountProcessesUA
+		  
+/run/initialize
+
+
+/run/beamOn 10

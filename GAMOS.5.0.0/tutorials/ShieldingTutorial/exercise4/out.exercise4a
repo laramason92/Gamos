@@ -1,0 +1,1192 @@
+ GmGenUtils::FileInPath ./deprecatedCommands.lis in .
+ GmGenUtils::FileInPath /home/arce/gamosnew/GAMOS.5.0.0/data/deprecatedCommands.lis in /home/arce/gamosnew/GAMOS.5.0.0/data
+
+*************************************************************
+ Geant4 version Name: geant4-09-06-patch-02    (17-May-2013)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  FukuiRenderer (DAWN)
+  G4HepRep (HepRepXML)
+  G4HepRepFile (HepRepFile)
+  OpenGLImmediateX (OGLI, OGLIX)
+  OpenGLStoredX (OGL, OGLS, OGLSX)
+  RayTracer (RayTracer)
+  VRML1 (VRML1)
+  VRML1FILE (VRML1FILE)
+  VRML2 (VRML2)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByCharge
+  drawByParticleID
+  drawByOriginVolume
+  drawByAttribute
+
+Registered filter factories:
+  chargeFilter
+  particleFilter
+  originVolumeFilter
+  attributeFilter
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+Available colours:
+  black, blue, brown, cyan, gray, green, grey, magenta, red, white, yellow
+
+/control/execute exercise4a.in
+/gamos/setParam GmGeometryFromText:FileName exercise4a.geom
+/gamos/geometry GmGeometryFromText
+/gamos/physicsList G4QGSP_BIC_HP
+<<< Geant4 Physics List simulation engine: QGSP_BIC_HP 2.0
+
+/gamos/generator GmGenerator
+ GmGenUtils::FileInPath ./isotopes.dat in .
+ GmGenUtils::FileInPath /home/arce/gamosnew/GAMOS.5.0.0/data/isotopes.dat in /home/arce/gamosnew/GAMOS.5.0.0/data
+/run/initialize
+ GmGenUtils::FileInPath ./exercise4a.geom in .
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Elastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Elastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/8_17_Oxygen
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Inelastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Inelastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Capture file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Elastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Inelastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Inelastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Capture file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/8_17_Oxygen
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Elastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/8_17_Oxygen
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Inelastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Inelastic/CrossSection/8_17_Oxygen
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+WARNING: model G4LENeutronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+/home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Capture file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Capture file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/8_17_Oxygen
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+WARNING: model G4LEProtonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEPionPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEPionMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroLInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroSInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiProtonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiProtonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiNeutronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiNeutronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LELambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HELambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiLambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiLambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LESigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HESigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiSigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiSigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LESigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HESigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiSigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiSigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+/gamos/physics/addPhysics radioactiveDecay
+/gamos/generator/addSingleParticleSource source neutron 1.*MeV
+/gamos/generator/energyDist source GmGenerDistEnergyIsolethargical 1.E-8 10.
+/gamos/generator/directionDist source GmGenerDistDirectionConst 0. 0. 1.
+/gamos/generator/timeDist source GmGenerDistTimeConstantChange 10.
+    theTimeDistribution->SetParticleSource( this ) 0xa8c6220 0xa86ffe0
+/gamos/filter inTargetF GmInLogicalVolumeFilter target*
+/gamos/setParam SHActivationUA_inTargetF:Times 300. 900.
+/gamos/setParam SHActivationUA_inTargetF:Periods 300. 1
+/gamos/userAction SHActivationUA inTargetF
+PluginService: Declared factory for class SHNthValueLayerUA with signature GmUserAction* (void)
+PluginService: Declared factory for class SHActivationUA with signature GmUserAction* (void)
+PluginService: Declared factory for class SHActivationFromFluxUA with signature GmUserAction* (void)
+PluginService: Declared factory for class SHGetHadronicChannelXSUA with signature GmUserAction* (void)
+PluginService: Declared factory for class SHPrintPHPChannelXSUA with signature GmUserAction* (void)
+PluginService: Declared factory for class SHStudyDecayChannelsUA with signature GmUserAction* (void)
+PluginService: Declared factory for class SHPlotPHPDBSpectraUA with signature GmUserAction* (void)
+PluginService: Declared factory for class SHPrintEMDataUA with signature GmUserAction* (void)
+PluginService: Declared factory for class SHPrintPHPChannelThickYieldUA with signature GmUserAction* (void)
+PluginService: Declared factory for class GmNoUseG4RadDecayTimeUA with signature GmUserAction* (void)
+PluginService: Declared factory for class GmRadDecayGammaAngleCorrelationUA with signature GmUserAction* (void)
+PluginService: Declared factory for class ShieldingVerbosity with signature GmVVerbosity* (void)
+PluginService: Loaded library  /home/arce/gamosnew/GAMOS.5.0.0/lib/Linux-g++/libShielding.so
+/gamos/filter nucleusF GmStringDataFilter ParticleType nucleus
+/gamos/filter instableF GmNumericDataFilter ParticleStable 0 0
+/gamos/filter instableNucleusF GmANDFilter nucleusF instableF
+/gamos/setParam GmTrackDataTextFileUA_inTargetF_instableNucleusF:WriteHeaderData 0
+/gamos/setParam GmTrackDataTextFileUA_inTargetF_instableNucleusF:DataList EventID Particle InitialPosX InitialPosY InitialPosZ InitialMomX InitialMomY InitialMomZ InitialTime InitialWeight
+/gamos/userAction GmTrackDataTextFileUA inTargetF instableNucleusF
+/gamos/filter nucleusF GmStringDataFilter ParticleType nucleus
+/gamos/filter parentNucleusF GmParentFilter nucleusF
+/gamos/userAction GmKillAtStackingActionUA parentNucleusF
+/gamos/userAction GmCountProcessesUA
+/gamos/userAction GmCountTracksUA
+/run/beamOn 10000
+
+phot:   for  gamma    SubType= 12
+      LambdaPrime table from 200 keV to 10 TeV in 54 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       PhotoElectric :  Emin=        0 eV    Emax=       10 TeV   AngularGenSauterGavrila  FluoActive
+
+compt:   for  gamma    SubType= 13
+      Lambda table from 100 eV  to 1 MeV in 28 bins, spline: 1
+      LambdaPrime table from 1 MeV to 10 TeV in 49 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina :  Emin=        0 eV    Emax=       10 TeV
+
+conv:   for  gamma    SubType= 14
+      Lambda table from 1.022 MeV to 10 TeV in 49 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        BetheHeitler :  Emin=        0 eV    Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=       10 TeV
+
+msc:   for e-    SubType= 10
+      RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=      100 MeV  Table with 42 bins Emin=    100 eV    Emax=    100 MeV
+        WentzelVIUni :  Emin=      100 MeV   Emax=       10 TeV  Table with 35 bins Emin=    100 MeV   Emax=     10 TeV
+
+eIoni:   for  e-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+CoulombScat:   for  e-    SubType= 1
+      Lambda table from 100 MeV to 10 TeV in 35 bins, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=      100 MeV   Emax=       10 TeV
+
+msc:   for e+    SubType= 10
+      RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=      100 MeV  Table with 42 bins Emin=    100 eV    Emax=    100 MeV
+        WentzelVIUni :  Emin=      100 MeV   Emax=       10 TeV  Table with 35 bins Emin=    100 MeV   Emax=     10 TeV
+
+eIoni:   for  e+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+annihil:   for  e+    SubType= 5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  e+    SubType= 1
+      Lambda table from 100 MeV to 10 TeV in 35 bins, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=      100 MeV   Emax=       10 TeV
+
+msc:   for proton    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+hBrems:   for  proton    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  proton    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for GenericIon    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV
+
+ionIoni:   for  GenericIon    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.01, dRoverRange= 0.1, integral: 1, fluct: 1, linLossLimit= 0.02
+      Stopping Power data for 17 ion/material pairs 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+msc:   for alpha    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+ionIoni:   for  alpha    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.01, dRoverRange= 0.1, integral: 1, fluct: 1, linLossLimit= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon :  Emin=        0 eV    Emax=   7.9452 MeV
+          BetheBloch :  Emin=   7.9452 MeV   Emax=       10 TeV
+
+msc:   for anti_proton    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  anti_proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+hBrems:   for  anti_proton    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  anti_proton    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for kaon+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  kaon+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=  1.05231 MeV
+          BetheBloch :  Emin=  1.05231 MeV   Emax=       10 TeV
+
+hBrems:   for  kaon+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  kaon+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for kaon-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  kaon-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=  1.05231 MeV
+          BetheBloch :  Emin=  1.05231 MeV   Emax=       10 TeV
+
+hBrems:   for  kaon-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  kaon-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for mu+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+muIoni:   for  mu+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=      200 keV
+          BetheBloch :  Emin=      200 keV   Emax=        1 GeV
+        MuBetheBloch :  Emin=        1 GeV   Emax=       10 TeV
+
+muBrems:   for  mu+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem :  Emin=        0 eV    Emax=       10 TeV
+
+muPairProd:   for  mu+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  mu+    SubType= 1
+      Lambda table from 100 eV  to 10 TeV in 43 bins, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for mu-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+muIoni:   for  mu-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=      200 keV
+          BetheBloch :  Emin=      200 keV   Emax=        1 GeV
+        MuBetheBloch :  Emin=        1 GeV   Emax=       10 TeV
+
+muBrems:   for  mu-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem :  Emin=        0 eV    Emax=       10 TeV
+
+muPairProd:   for  mu-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  mu-    SubType= 1
+      Lambda table from 100 eV  to 10 TeV in 43 bins, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for pi+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  pi+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=  297.505 keV
+          BetheBloch :  Emin=  297.505 keV   Emax=       10 TeV
+
+hBrems:   for  pi+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  pi+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for pi-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  pi-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=  297.505 keV
+          BetheBloch :  Emin=  297.505 keV   Emax=       10 TeV
+
+hBrems:   for  pi-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  pi-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+============================================================================================
+             HADRONIC PROCESSES SUMMARY (verbose level 1)
+
+                                  Hadronic Processes for <GenericIon>
+                                  -----------------------------------
+        ionInelastic  Models:     Binary Light Ion Cascade: Emin(GeV)=    0  Emax(GeV)= 4
+                                                      FTFP: Emin(GeV)=    2  Emax(GeV)= 100000
+
+        ionInelastic  Crs sctns: Glauber-Gribov nucleus nucleus: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <anti_neutron>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+AntiNeutronInelastic  Models:     G4LEAntiNeutronInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+                                  G4HEAntiNeutronInelastic: Emin(GeV)=   20  Emax(GeV)= 100000
+
+AntiNeutronInelastic  Crs sctns:              AntiAGlauber: Emin(GeV)=    0  Emax(GeV)= 1.79769e+305
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <anti_proton>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 0.1
+                                              AntiAElastic: Emin(GeV)=  0.1  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:              AntiAGlauber: Emin(GeV)=    0  Emax(GeV)= 1.79769e+305
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+ AntiProtonInelastic  Models:      G4LEAntiProtonInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+                                   G4HEAntiProtonInelastic: Emin(GeV)=   20  Emax(GeV)= 100000
+
+ AntiProtonInelastic  Crs sctns:              AntiAGlauber: Emin(GeV)=    0  Emax(GeV)= 1.79769e+305
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hFritiofCaptureAtRest
+
+                                  Hadronic Processes for <e+>
+                                  -----------------------------------
+     PositronNuclear  Models:      G4ElectroVDNuclearModel: Emin(GeV)=    0  Emax(GeV)= 1e+06
+
+     PositronNuclear  Crs sctns:          ElectroNuclearXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <e->
+                                  -----------------------------------
+      ElectroNuclear  Models:      G4ElectroVDNuclearModel: Emin(GeV)=    0  Emax(GeV)= 1e+06
+
+      ElectroNuclear  Crs sctns:          ElectroNuclearXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <gamma>
+                                  -----------------------------------
+     PhotonInelastic  Models:               BertiniCascade: Emin(GeV)=    0  Emax(GeV)= 3.5
+                                           TheoFSGenerator: Emin(GeV)=    3  Emax(GeV)= 100000
+
+     PhotonInelastic  Crs sctns:            PhotoNuclearXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <kaon+>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+   KaonPlusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                     G4LEKaonPlusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+   KaonPlusInelastic  Crs sctns:  ChipsKaonPlusInelasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <kaon->
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+  KaonMinusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                    G4LEKaonMinusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+  KaonMinusInelastic  Crs sctns: ChipsKaonMinusInelasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hBertiniCaptureAtRest
+
+                                  Hadronic Processes for <lambda>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+     LambdaInelastic  Models:          G4LELambdaInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+                                       G4HELambdaInelastic: Emin(GeV)=   20  Emax(GeV)= 100000
+
+     LambdaInelastic  Crs sctns:   ChipsHyperonInelasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                     Hadronic Processes for <mu->
+          muMinusCaptureAtRest
+
+                                  Hadronic Processes for <neutron>
+                                  -----------------------------------
+          hadElastic  Models:                hElasticCHIPS: Emin(GeV)= 0.0195  Emax(GeV)= 100000
+                                          NeutronHPElastic: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+          hadElastic  Crs sctns:        NeutronHPElasticXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                     ChipsNeutronElasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+    NeutronInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                      G4LENeutronInelastic: Emin(GeV)=  9.5  Emax(GeV)= 25
+                                            Binary Cascade: Emin(GeV)= 0.0199  Emax(GeV)= 9.9
+                                        NeutronHPInelastic: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+    NeutronInelastic  Crs sctns:      NeutronHPInelasticXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+            nCapture  Models:                   G4LCapture: Emin(GeV)= 0.0199  Emax(GeV)= 20000
+                                          NeutronHPCapture: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+            nCapture  Crs sctns:        NeutronHPCaptureXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                          GheishaCaptureXS: Emin(GeV)=    0  Emax(GeV)= 100000
+
+            nFission  Models:                   G4LFission: Emin(GeV)= 0.0199  Emax(GeV)= 20000
+                                          NeutronHPFission: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+            nFission  Crs sctns:        NeutronHPFissionXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                          GheishaFissionXS: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <pi+>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 1
+                                           hElasticGlauber: Emin(GeV)=    1  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+   PionPlusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                     G4LEPionPlusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+   PionPlusInelastic  Crs sctns:      G4CrossSectionPairGG: Emin(GeV)=    0  Emax(GeV)= 100000
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <pi->
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 1
+                                           hElasticGlauber: Emin(GeV)=    1  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+  PionMinusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                    G4LEPionMinusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+  PionMinusInelastic  Crs sctns:      G4CrossSectionPairGG: Emin(GeV)=    0  Emax(GeV)= 100000
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hBertiniCaptureAtRest
+
+                                  Hadronic Processes for <proton>
+                                  -----------------------------------
+          hadElastic  Models:                hElasticCHIPS: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:      ChipsProtonElasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+     ProtonInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                       G4LEProtonInelastic: Emin(GeV)=  9.5  Emax(GeV)= 25
+                                            Binary Cascade: Emin(GeV)=    0  Emax(GeV)= 9.9
+
+     ProtonInelastic  Crs sctns:       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+============================================================================================
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_STAINLESS-STEEL
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  17.3344 keV    e-  970.695 keV    e+  926.09 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 2     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_Cu
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  20.6438 keV    e-  1.03121 MeV    e+  977.24 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+@@@@@ GmCountProcessesUA GmCountProcessesUA
+Start Run processing.
+ %%% EVENT 0 NTRACKS 1 TOTAL NTRACKS 1
+ %%% EVENT 1000 NTRACKS 1 TOTAL NTRACKS 4683
+ %%% EVENT 2000 NTRACKS 1 TOTAL NTRACKS 9232
+ %%% EVENT 3000 NTRACKS 1 TOTAL NTRACKS 14055
+ %%% EVENT 4000 NTRACKS 1 TOTAL NTRACKS 18750
+ %%% EVENT 5000 NTRACKS 1 TOTAL NTRACKS 23691
+ %%% EVENT 6000 NTRACKS 1 TOTAL NTRACKS 28578
+ %%% EVENT 7000 NTRACKS 1 TOTAL NTRACKS 33929
+ %%% EVENT 8000 NTRACKS 14 TOTAL NTRACKS 38776
+ %%% EVENT 9000 NTRACKS 1 TOTAL NTRACKS 43474
+Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=57.18s Real=58.03s Sys=0.07s
+ SHRadDecayChainSet::AddDaughters 28 64 0xb042350 0xb044800
+ SHRadDecayChainSet::AddDaughters 28 64 0xb042350 0xb044800
+ SHRadDecayChainSet::AddDaughters 28 64 0xb042350 0xb044800
+ SHRadDecayChainSet::AddDaughters 30 66 0xb0e7c90 0xb0e8950
+ SHRadDecayChainSet::AddDaughters 30 66 0xb0e7c90 0xb0eae00
+ SHRadDecayChainSet::AddDaughters 30 66 0xb0e7c90 0xb0e8950
+ SHRadDecayChainSet::AddDaughters 30 66 0xb0e7c90 0xb0eb1d0
+ SHRadDecayChainSet::AddDaughters 30 66 0xb0e7c90 0xb0e8950
+ SHRadDecayChainSet::AddDaughters 30 66 0xb0e7c90 0xb0eae00
+ SHRadDecayChainSet::AddDaughters 30 66 0xb0e7c90 0xb0e8950
+ SHRadDecayChainSet::AddDaughters 23 51 0xb2f5f50 0xb2f8400
+ SHRadDecayChainSet::AddDaughters 23 51 0xb2f5f50 0xb2f8400
+ SHRadDecayChainSet::AddDaughters 23 51 0xb2f5f50 0xb2f8400
+ SHRadDecayChainSet::AddDaughters 25 55 0xb2f4bd0 0xb332ad0
+ SHRadDecayChainSet::AddDaughters 24 54 0xb32eec0 0xb32fad0
+ SHRadDecayChainSet::AddDaughters 24 54 0xb32eec0 0xb32fad0
+ SHRadDecayChainSet::AddDaughters 24 54 0xb32eec0 0xb32fad0
+ SHRadDecayChainSet::AddDaughters 25 55 0xb2f4bd0 0xb333960
+ SHRadDecayChainSet::AddDaughters 25 55 0xb2f4bd0 0xb332ad0
+ SHRadDecayChainSet::AddDaughters 25 55 0xb2f4bd0 0xb334d10
+ SHRadDecayChainSet::AddDaughters 25 55 0xb2f4bd0 0xb335820
+ SHRadDecayChainSet::AddDaughters 25 55 0xb2f4bd0 0xb332ad0
+ SHRadDecayChainSet::AddDaughters 25 55 0xb2f4bd0 0xb3350c0
+ SHRadDecayChainSet::AddDaughters 25 55 0xb2f4bd0 0xb333960
+ SHRadDecayChainSet::AddDaughters 25 55 0xb2f4bd0 0xb332ad0
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3c1160
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3b7e50
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3c0af0
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3b7e50
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3c14f0
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3b7e50
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3c0af0
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3b7e50
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3c2050
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3c0af0
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3b7e50
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3b7e50
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3c1160
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3b7e50
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3c0af0
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3b7e50
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3c1ca0
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3b7e50
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3c2fa0
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3b7e50
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3c26b0
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3b7e50
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3c1160
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3b7e50
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3c0af0
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3b7e50
+ SHRadDecayChainSet::AddDaughters 24 52 0xb3b80b0 0xb3b7e50
+ SHRadDecayChainSet::AddDaughters 26 58 0xb3bd360 0xb3bd880
+ SHRadDecayChainSet::AddDaughters 26 58 0xb3bd360 0xb3bd880
+ SHRadDecayChainSet::AddDaughters 26 58 0xb3bd360 0xb3bd880
+ SHRadDecayChainSet::AddDaughters 26 58 0xb3bd360 0xb3bdc30
+ SHRadDecayChainSet::AddDaughters 26 58 0xb3bd360 0xb3bd880
+ SHRadDecayChainSet::AddDaughters 26 58 0xb3bd360 0xb3bdc30
+ SHRadDecayChainSet::AddDaughters 26 58 0xb3bd360 0xb3bd880
+ SHRadDecayChainSet::AddDaughters 26 58 0xb3bd360 0xb3bdc30
+ SHRadDecayChainSet::AddDaughters 26 58 0xb3bd360 0xb3bd880
+ SHRadDecayChainSet::AddDaughters 26 58 0xb3bd360 0xb3bd880
+ SHRadDecayChainSet::AddDaughters 27 59 0xb3d2590 0xb3e77a0
+ SHRadDecayChainSet::AddDaughters 27 59 0xb3d2590 0xb3e7140
+ SHRadDecayChainSet::AddDaughters 27 59 0xb3d2590 0xb3e7b60
+ SHRadDecayChainSet::AddDaughters 27 59 0xb3d2590 0xb3e7140
+ SHRadDecayChainSet::AddDaughters 27 59 0xb3d2590 0xb3e77a0
+ SHRadDecayChainSet::AddDaughters 27 59 0xb3d2590 0xb3e7140
+ SHRadDecayChainSet::AddDaughters 27 59 0xb3d2590 0xb3e82f0
+ SHRadDecayChainSet::AddDaughters 27 59 0xb3d2590 0xb3e7140
+ SHRadDecayChainSet::AddDaughters 27 59 0xb3d2590 0xb3e77a0
+ SHRadDecayChainSet::AddDaughters 27 59 0xb3d2590 0xb3e7140
+ SHRadDecayChainSet::AddDaughters 27 59 0xb3d2590 0xb3e73d0
+ SHRadDecayChainSet::AddDaughters 27 59 0xb3d2590 0xb3e7140
+ SHRadDecayChainSet::AddDaughters 28 60 0xb3e3fa0 0xb3e4440
+ SHRadDecayChainSet::AddDaughters 28 60 0xb3e3fa0 0xb405cb0
+ SHRadDecayChainSet::AddDaughters 28 60 0xb3e3fa0 0xb3e4440
+ SHRadDecayChainSet::AddDaughters 28 60 0xb3e3fa0 0xb3e47f0
+ SHRadDecayChainSet::AddDaughters 28 60 0xb3e3fa0 0xb3e4440
+ SHRadDecayChainSet::AddDaughters 24 50 0xb403800 0xb41fb30
+ SHRadDecayChainSet::AddDaughters 22 50 0xb41d280 0xb41eab0
+ SHRadDecayChainSet::AddDaughters 22 50 0xb41d280 0xb41eab0
+ SHRadDecayChainSet::AddDaughters 22 50 0xb41d280 0xb41eab0
+%%%%%% SHActivationUA_inTargetF  NUMBER_OF_EVENTS_PER_SECOND= 1.0001e+08 = 10000 events in 99990 nanoseconds 
+%%%%%% SHActivationUA_inTargetF  PERIODS: 3e-07 1 6e-07 0
+%%% SHActivationUA_inTargetF  TIME= 3e-07 sec Co58[0.0]  ACTIVITY= 2.3790722e-09 decays/sec  HALFLIFE= 6119001.6 sec  NATOMS_IN_JOB= 7 NATOMS= 0.0210021
+%%% SHActivationUA_inTargetF  TIME= 3e-07 sec Co60[0.0]  ACTIVITY= 1.249789e-11 decays/sec  HALFLIFE= 1.6640004e+08 sec  NATOMS_IN_JOB= 1 NATOMS= 0.0030003
+%%% SHActivationUA_inTargetF  TIME= 3e-07 sec Cr50[0.0]  ACTIVITY= 2.1968123e-27 decays/sec  HALFLIFE= 5.6800015e+24 sec  NATOMS_IN_JOB= 6 NATOMS= 0.0180018
+%%% SHActivationUA_inTargetF  TIME= 3e-07 sec Cr51[0.0]  ACTIVITY= 2.9547875e-08 decays/sec  HALFLIFE= 2393000.6 sec  NATOMS_IN_JOB= 34 NATOMS= 0.1020102
+%%% SHActivationUA_inTargetF  TIME= 3e-07 sec Cr55[0.0]  ACTIVITY= 1.9825062e-05 decays/sec  HALFLIFE= 209.80005 sec  NATOMS_IN_JOB= 2 NATOMS= 0.0060006001
+%%% SHActivationUA_inTargetF  TIME= 3e-07 sec Cu64[0.0]  ACTIVITY= 4.8716186e-05 decays/sec  HALFLIFE= 45720.012 sec  NATOMS_IN_JOB= 1071 NATOMS= 3.2133213
+%%% SHActivationUA_inTargetF  TIME= 3e-07 sec Cu66[0.0]  ACTIVITY= 0.0018460035 decays/sec  HALFLIFE= 305.30008 sec  NATOMS_IN_JOB= 271 NATOMS= 0.81308131
+%%% SHActivationUA_inTargetF  TIME= 3e-07 sec Fe55[0.0]  ACTIVITY= 6.5177623e-10 decays/sec  HALFLIFE= 86150022 sec  NATOMS_IN_JOB= 27 NATOMS= 0.081008101
+%%% SHActivationUA_inTargetF  TIME= 3e-07 sec Fe59[0.0]  ACTIVITY= 1.622613e-09 decays/sec  HALFLIFE= 3845001 sec  NATOMS_IN_JOB= 3 NATOMS= 0.0090009001
+%%% SHActivationUA_inTargetF  TIME= 3e-07 sec Mn54[0.0]  ACTIVITY= 5.3956793e-10 decays/sec  HALFLIFE= 26980007 sec  NATOMS_IN_JOB= 7 NATOMS= 0.0210021
+%%% SHActivationUA_inTargetF  TIME= 3e-07 sec Ni59[0.0]  ACTIVITY= 5.2034586e-14 decays/sec  HALFLIFE= 2.3980006e+12 sec  NATOMS_IN_JOB= 60 NATOMS= 0.180018
+%%% SHActivationUA_inTargetF  TIME= 3e-07 sec Ni63[0.0]  ACTIVITY= 1.3166502e-11 decays/sec  HALFLIFE= 3.1590008e+09 sec  NATOMS_IN_JOB= 20 NATOMS= 0.060006001
+%%% SHActivationUA_inTargetF  TIME= 3e-07 sec V50[0.0]  ACTIVITY= 4.7072181e-28 decays/sec  HALFLIFE= 4.4180012e+24 sec  NATOMS_IN_JOB= 1 NATOMS= 0.0030003
+%%% SHActivationUA_inTargetF  TIME= 3e-07 sec V50[0.0]->Cr50[0.0]  ACTIVITY= 3.601656e-28 decays/sec  HALFLIFE= 4.4180012e+24 sec  NATOMS_IN_JOB= 1 NATOMS= 0.0022956337
+%%% SHActivationUA_inTargetF  TIME= 3e-07 sec V52[0.0]  ACTIVITY= 9.2593453e-06 decays/sec  HALFLIFE= 224.60006 sec  NATOMS_IN_JOB= 1 NATOMS= 0.0030003
+%%% SHActivationUA_inTargetF  TIME= 9e-07 sec Co58[0.0]  ACTIVITY= 2.3790722e-09 decays/sec  HALFLIFE= 6119001.6 sec  NATOMS_IN_JOB= 7 NATOMS= 0.0210021
+%%% SHActivationUA_inTargetF  TIME= 9e-07 sec Co60[0.0]  ACTIVITY= 1.249789e-11 decays/sec  HALFLIFE= 1.6640004e+08 sec  NATOMS_IN_JOB= 1 NATOMS= 0.0030003
+%%% SHActivationUA_inTargetF  TIME= 9e-07 sec Cr50[0.0]  ACTIVITY= 2.1968123e-27 decays/sec  HALFLIFE= 5.6800015e+24 sec  NATOMS_IN_JOB= 6 NATOMS= 0.0180018
+%%% SHActivationUA_inTargetF  TIME= 9e-07 sec Cr51[0.0]  ACTIVITY= 2.9547875e-08 decays/sec  HALFLIFE= 2393000.6 sec  NATOMS_IN_JOB= 34 NATOMS= 0.1020102
+%%% SHActivationUA_inTargetF  TIME= 9e-07 sec Cr55[0.0]  ACTIVITY= 1.9825062e-05 decays/sec  HALFLIFE= 209.80005 sec  NATOMS_IN_JOB= 2 NATOMS= 0.0060006001
+%%% SHActivationUA_inTargetF  TIME= 9e-07 sec Cu64[0.0]  ACTIVITY= 4.8716186e-05 decays/sec  HALFLIFE= 45720.012 sec  NATOMS_IN_JOB= 1071 NATOMS= 3.2133213
+%%% SHActivationUA_inTargetF  TIME= 9e-07 sec Cu66[0.0]  ACTIVITY= 0.0018460035 decays/sec  HALFLIFE= 305.30008 sec  NATOMS_IN_JOB= 271 NATOMS= 0.81308131
+%%% SHActivationUA_inTargetF  TIME= 9e-07 sec Fe55[0.0]  ACTIVITY= 6.5177623e-10 decays/sec  HALFLIFE= 86150022 sec  NATOMS_IN_JOB= 27 NATOMS= 0.081008101
+%%% SHActivationUA_inTargetF  TIME= 9e-07 sec Fe59[0.0]  ACTIVITY= 1.622613e-09 decays/sec  HALFLIFE= 3845001 sec  NATOMS_IN_JOB= 3 NATOMS= 0.0090009001
+%%% SHActivationUA_inTargetF  TIME= 9e-07 sec Mn54[0.0]  ACTIVITY= 5.3956793e-10 decays/sec  HALFLIFE= 26980007 sec  NATOMS_IN_JOB= 7 NATOMS= 0.0210021
+%%% SHActivationUA_inTargetF  TIME= 9e-07 sec Ni59[0.0]  ACTIVITY= 5.2034586e-14 decays/sec  HALFLIFE= 2.3980006e+12 sec  NATOMS_IN_JOB= 60 NATOMS= 0.180018
+%%% SHActivationUA_inTargetF  TIME= 9e-07 sec Ni63[0.0]  ACTIVITY= 1.3166502e-11 decays/sec  HALFLIFE= 3.1590008e+09 sec  NATOMS_IN_JOB= 20 NATOMS= 0.060006001
+%%% SHActivationUA_inTargetF  TIME= 9e-07 sec V50[0.0]  ACTIVITY= 4.7072181e-28 decays/sec  HALFLIFE= 4.4180012e+24 sec  NATOMS_IN_JOB= 1 NATOMS= 0.0030003
+%%% SHActivationUA_inTargetF  TIME= 9e-07 sec V50[0.0]->Cr50[0.0]  ACTIVITY= 3.601656e-28 decays/sec  HALFLIFE= 4.4180012e+24 sec  NATOMS_IN_JOB= 1 NATOMS= 0.0022956337
+%%% SHActivationUA_inTargetF  TIME= 9e-07 sec V52[0.0]  ACTIVITY= 9.2593453e-06 decays/sec  HALFLIFE= 224.60006 sec  NATOMS_IN_JOB= 1 NATOMS= 0.0030003
+@@@@@ GmCountProcessesUA 
+PART_COUNT: Co58[0.0] = 7
+PART_COUNT: Co60[0.0] = 1
+PART_COUNT: Cr50[0.0] = 6
+PART_COUNT: Cr51[0.0] = 34
+PART_COUNT: Cr52[0.0] = 107
+PART_COUNT: Cr53[0.0] = 66
+PART_COUNT: Cr54[0.0] = 92
+PART_COUNT: Cr55[0.0] = 2
+PART_COUNT: Cu63[0.0] = 237
+PART_COUNT: Cu64[0.0] = 1071
+PART_COUNT: Cu65[0.0] = 124
+PART_COUNT: Cu66[0.0] = 271
+PART_COUNT: Fe54[0.0] = 29
+PART_COUNT: Fe55[0.0] = 27
+PART_COUNT: Fe56[0.0] = 556
+PART_COUNT: Fe57[0.0] = 468
+PART_COUNT: Fe58[0.0] = 17
+PART_COUNT: Fe59[0.0] = 3
+PART_COUNT: Mn54[0.0] = 7
+PART_COUNT: N14[0.0] = 1
+PART_COUNT: Ni58[0.0] = 26
+PART_COUNT: Ni59[0.0] = 60
+PART_COUNT: Ni60[0.0] = 16
+PART_COUNT: Ni61[0.0] = 16
+PART_COUNT: Ni62[0.0] = 5
+PART_COUNT: Ni63[0.0] = 20
+PART_COUNT: Ni64[0.0] = 1
+PART_COUNT: V50[0.0] = 1
+PART_COUNT: V52[0.0] = 1
+PART_COUNT: alpha = 5
+PART_COUNT: e+ = 763
+PART_COUNT: e- = 23751
+PART_COUNT: gamma = 9972
+PART_COUNT: neutron = 10794
+PART_COUNT: proton = 24
+PROC_COUNT Co58[0.0] : RadioactiveDecay = 7
+PROC_COUNT Co58[0.0] : ionIoni_NoSeco = 7
+PROC_COUNT Co58[0.0] : ALL = 14
+PROC_COUNT Co60[0.0] : RadioactiveDecay = 1
+PROC_COUNT Co60[0.0] : ionIoni_NoSeco = 1
+PROC_COUNT Co60[0.0] : ALL = 2
+PROC_COUNT Cr50[0.0] : RadioactiveDecay = 6
+PROC_COUNT Cr50[0.0] : ionIoni_NoSeco = 6
+PROC_COUNT Cr50[0.0] : ALL = 12
+PROC_COUNT Cr51[0.0] : RadioactiveDecay = 34
+PROC_COUNT Cr51[0.0] : ionIoni_NoSeco = 34
+PROC_COUNT Cr51[0.0] : ALL = 68
+PROC_COUNT Cr52[0.0] : RadioactiveDecay = 107
+PROC_COUNT Cr52[0.0] : ionIoni_NoSeco = 107
+PROC_COUNT Cr52[0.0] : ALL = 214
+PROC_COUNT Cr53[0.0] : RadioactiveDecay = 66
+PROC_COUNT Cr53[0.0] : ionIoni_NoSeco = 66
+PROC_COUNT Cr53[0.0] : ALL = 132
+PROC_COUNT Cr54[0.0] : RadioactiveDecay = 92
+PROC_COUNT Cr54[0.0] : ionIoni_NoSeco = 92
+PROC_COUNT Cr54[0.0] : ALL = 184
+PROC_COUNT Cr55[0.0] : RadioactiveDecay = 2
+PROC_COUNT Cr55[0.0] : ionIoni_NoSeco = 2
+PROC_COUNT Cr55[0.0] : ALL = 4
+PROC_COUNT Cu63[0.0] : RadioactiveDecay = 237
+PROC_COUNT Cu63[0.0] : ionIoni_NoSeco = 237
+PROC_COUNT Cu63[0.0] : ALL = 474
+PROC_COUNT Cu64[0.0] : RadioactiveDecay = 1071
+PROC_COUNT Cu64[0.0] : ionIoni_NoSeco = 1071
+PROC_COUNT Cu64[0.0] : ALL = 2142
+PROC_COUNT Cu65[0.0] : RadioactiveDecay = 124
+PROC_COUNT Cu65[0.0] : ionIoni_NoSeco = 124
+PROC_COUNT Cu65[0.0] : ALL = 248
+PROC_COUNT Cu66[0.0] : RadioactiveDecay = 271
+PROC_COUNT Cu66[0.0] : ionIoni_NoSeco = 271
+PROC_COUNT Cu66[0.0] : ALL = 542
+PROC_COUNT Fe54[0.0] : RadioactiveDecay = 29
+PROC_COUNT Fe54[0.0] : ionIoni_NoSeco = 29
+PROC_COUNT Fe54[0.0] : ALL = 58
+PROC_COUNT Fe55[0.0] : RadioactiveDecay = 27
+PROC_COUNT Fe55[0.0] : ionIoni_NoSeco = 27
+PROC_COUNT Fe55[0.0] : ALL = 54
+PROC_COUNT Fe56[0.0] : RadioactiveDecay = 556
+PROC_COUNT Fe56[0.0] : ionIoni_NoSeco = 556
+PROC_COUNT Fe56[0.0] : ALL = 1112
+PROC_COUNT Fe57[0.0] : RadioactiveDecay = 468
+PROC_COUNT Fe57[0.0] : ionIoni_NoSeco = 468
+PROC_COUNT Fe57[0.0] : ALL = 936
+PROC_COUNT Fe58[0.0] : RadioactiveDecay = 17
+PROC_COUNT Fe58[0.0] : ionIoni_NoSeco = 17
+PROC_COUNT Fe58[0.0] : ALL = 34
+PROC_COUNT Fe59[0.0] : RadioactiveDecay = 3
+PROC_COUNT Fe59[0.0] : ionIoni_NoSeco = 3
+PROC_COUNT Fe59[0.0] : ALL = 6
+PROC_COUNT Mn54[0.0] : RadioactiveDecay = 7
+PROC_COUNT Mn54[0.0] : ionIoni_NoSeco = 7
+PROC_COUNT Mn54[0.0] : ALL = 14
+PROC_COUNT N14[0.0] : RadioactiveDecay = 1
+PROC_COUNT N14[0.0] : ionIoni_NoSeco = 15
+PROC_COUNT N14[0.0] : ALL = 16
+PROC_COUNT Ni58[0.0] : RadioactiveDecay = 26
+PROC_COUNT Ni58[0.0] : ionIoni_NoSeco = 26
+PROC_COUNT Ni58[0.0] : ALL = 52
+PROC_COUNT Ni59[0.0] : RadioactiveDecay = 60
+PROC_COUNT Ni59[0.0] : ionIoni_NoSeco = 60
+PROC_COUNT Ni59[0.0] : ALL = 120
+PROC_COUNT Ni60[0.0] : RadioactiveDecay = 16
+PROC_COUNT Ni60[0.0] : ionIoni_NoSeco = 16
+PROC_COUNT Ni60[0.0] : ALL = 32
+PROC_COUNT Ni61[0.0] : RadioactiveDecay = 16
+PROC_COUNT Ni61[0.0] : ionIoni_NoSeco = 16
+PROC_COUNT Ni61[0.0] : ALL = 32
+PROC_COUNT Ni62[0.0] : RadioactiveDecay = 5
+PROC_COUNT Ni62[0.0] : ionIoni_NoSeco = 5
+PROC_COUNT Ni62[0.0] : ALL = 10
+PROC_COUNT Ni63[0.0] : RadioactiveDecay = 20
+PROC_COUNT Ni63[0.0] : ionIoni_NoSeco = 20
+PROC_COUNT Ni63[0.0] : ALL = 40
+PROC_COUNT Ni64[0.0] : RadioactiveDecay = 1
+PROC_COUNT Ni64[0.0] : ionIoni_NoSeco = 1
+PROC_COUNT Ni64[0.0] : ALL = 2
+PROC_COUNT V50[0.0] : RadioactiveDecay = 1
+PROC_COUNT V50[0.0] : ionIoni_NoSeco = 1
+PROC_COUNT V50[0.0] : ALL = 2
+PROC_COUNT V52[0.0] : RadioactiveDecay = 1
+PROC_COUNT V52[0.0] : ionIoni_NoSeco = 1
+PROC_COUNT V52[0.0] : ALL = 2
+PROC_COUNT alpha : ionIoni_NoSeco = 10
+PROC_COUNT alpha : ALL = 10
+PROC_COUNT e+ : Transportation = 37
+PROC_COUNT e+ : annihil = 756
+PROC_COUNT e+ : eBrem = 478
+PROC_COUNT e+ : eBrem_NoSeco = 65
+PROC_COUNT e+ : eIoni = 26
+PROC_COUNT e+ : eIoni_NoSeco = 1183
+PROC_COUNT e+ : msc = 952
+PROC_COUNT e+ : ALL = 3497
+PROC_COUNT e- : Transportation = 191
+PROC_COUNT e- : eBrem = 2112
+PROC_COUNT e- : eBrem_NoSeco = 202
+PROC_COUNT e- : eIoni = 166
+PROC_COUNT e- : eIoni_NoSeco = 25455
+PROC_COUNT e- : msc = 4543
+PROC_COUNT e- : ALL = 32669
+PROC_COUNT gamma : Transportation = 9593
+PROC_COUNT gamma : compt = 17201
+PROC_COUNT gamma : conv = 763
+PROC_COUNT gamma : phot = 5595
+PROC_COUNT gamma : ALL = 33152
+PROC_COUNT neutron : NeutronInelastic = 822
+PROC_COUNT neutron : Transportation = 25262
+PROC_COUNT neutron : hadElastic = 59062
+PROC_COUNT neutron : nCapture = 2081
+PROC_COUNT neutron : ALL = 87227
+PROC_COUNT proton : hIoni_NoSeco = 37
+PROC_COUNT proton : ALL = 37
+PROC_CREATOR_COUNT Co58[0.0] : NeutronInelastic = 7
+PROC_CREATOR_COUNT Co60[0.0] : NeutronInelastic = 1
+PROC_CREATOR_COUNT Cr50[0.0] : NeutronInelastic = 6
+PROC_CREATOR_COUNT Cr51[0.0] : nCapture = 34
+PROC_CREATOR_COUNT Cr52[0.0] : NeutronInelastic = 56
+PROC_CREATOR_COUNT Cr52[0.0] : hadElastic = 51
+PROC_CREATOR_COUNT Cr53[0.0] : NeutronInelastic = 20
+PROC_CREATOR_COUNT Cr53[0.0] : hadElastic = 5
+PROC_CREATOR_COUNT Cr53[0.0] : nCapture = 41
+PROC_CREATOR_COUNT Cr54[0.0] : nCapture = 92
+PROC_CREATOR_COUNT Cr55[0.0] : nCapture = 2
+PROC_CREATOR_COUNT Cu63[0.0] : NeutronInelastic = 168
+PROC_CREATOR_COUNT Cu63[0.0] : hadElastic = 69
+PROC_CREATOR_COUNT Cu64[0.0] : nCapture = 1071
+PROC_CREATOR_COUNT Cu65[0.0] : NeutronInelastic = 100
+PROC_CREATOR_COUNT Cu65[0.0] : hadElastic = 24
+PROC_CREATOR_COUNT Cu66[0.0] : nCapture = 271
+PROC_CREATOR_COUNT Fe54[0.0] : NeutronInelastic = 12
+PROC_CREATOR_COUNT Fe54[0.0] : hadElastic = 17
+PROC_CREATOR_COUNT Fe55[0.0] : NeutronInelastic = 2
+PROC_CREATOR_COUNT Fe55[0.0] : nCapture = 25
+PROC_CREATOR_COUNT Fe56[0.0] : NeutronInelastic = 382
+PROC_CREATOR_COUNT Fe56[0.0] : hadElastic = 174
+PROC_CREATOR_COUNT Fe57[0.0] : NeutronInelastic = 29
+PROC_CREATOR_COUNT Fe57[0.0] : nCapture = 439
+PROC_CREATOR_COUNT Fe58[0.0] : hadElastic = 2
+PROC_CREATOR_COUNT Fe58[0.0] : nCapture = 15
+PROC_CREATOR_COUNT Fe59[0.0] : nCapture = 3
+PROC_CREATOR_COUNT Mn54[0.0] : NeutronInelastic = 7
+PROC_CREATOR_COUNT N14[0.0] : hadElastic = 1
+PROC_CREATOR_COUNT Ni58[0.0] : NeutronInelastic = 10
+PROC_CREATOR_COUNT Ni58[0.0] : hadElastic = 16
+PROC_CREATOR_COUNT Ni59[0.0] : nCapture = 60
+PROC_CREATOR_COUNT Ni60[0.0] : NeutronInelastic = 8
+PROC_CREATOR_COUNT Ni60[0.0] : hadElastic = 8
+PROC_CREATOR_COUNT Ni61[0.0] : NeutronInelastic = 1
+PROC_CREATOR_COUNT Ni61[0.0] : hadElastic = 1
+PROC_CREATOR_COUNT Ni61[0.0] : nCapture = 14
+PROC_CREATOR_COUNT Ni62[0.0] : NeutronInelastic = 4
+PROC_CREATOR_COUNT Ni62[0.0] : nCapture = 1
+PROC_CREATOR_COUNT Ni63[0.0] : NeutronInelastic = 7
+PROC_CREATOR_COUNT Ni63[0.0] : nCapture = 13
+PROC_CREATOR_COUNT Ni64[0.0] : hadElastic = 1
+PROC_CREATOR_COUNT V50[0.0] : NeutronInelastic = 1
+PROC_CREATOR_COUNT V52[0.0] : NeutronInelastic = 1
+PROC_CREATOR_COUNT alpha : NeutronInelastic = 5
+PROC_CREATOR_COUNT e+ : conv = 763
+PROC_CREATOR_COUNT e- : compt = 17201
+PROC_CREATOR_COUNT e- : conv = 763
+PROC_CREATOR_COUNT e- : eIoni = 192
+PROC_CREATOR_COUNT e- : phot = 5595
+PROC_CREATOR_COUNT gamma : NeutronInelastic = 1278
+PROC_CREATOR_COUNT gamma : annihil = 1512
+PROC_CREATOR_COUNT gamma : eBrem = 2590
+PROC_CREATOR_COUNT gamma : nCapture = 4592
+PROC_CREATOR_COUNT neutron : NeutronInelastic = 794
+PROC_CREATOR_COUNT neutron : Primary = 10000
+PROC_CREATOR_COUNT proton : NeutronInelastic = 24
+Graphics systems deleted.
+Visualization Manager deleting...

@@ -1,0 +1,16 @@
+# ROOT map file generated automatically by genmap on Fri Nov 13 13:11:20 2015
+
+Library.__pf__@@GmBaseVerbosity: libGamosCore_GamosData_Distributions.dylib
+Library.__pf__@@GmUAVerbosity: libGamosCore_GamosData_Distributions.dylib
+Library.__pf__@@GmDataVerbosity: libGamosCore_GamosData_Distributions.dylib
+Library.__pf__@@GmStringDistribution: libGamosCore_GamosData_Distributions.dylib
+Library.__pf__@@GmGeometricalBiasingDistribution: libGamosCore_GamosData_Distributions.dylib
+Library.__pf__@@GmNumericDistributionLinLin: libGamosCore_GamosData_Distributions.dylib
+Library.__pf__@@GmNumericDistributionLinLog: libGamosCore_GamosData_Distributions.dylib
+Library.__pf__@@GmNumericDistributionLogLin: libGamosCore_GamosData_Distributions.dylib
+Library.__pf__@@GmNumericDistributionLogLog: libGamosCore_GamosData_Distributions.dylib
+Library.__pf__@@GmNumericDistributionUpper: libGamosCore_GamosData_Distributions.dylib
+Library.__pf__@@GmNumericDistributionLower: libGamosCore_GamosData_Distributions.dylib
+Library.__pf__@@GmDistributionRatio: libGamosCore_GamosData_Distributions.dylib
+Library.__pf__@@GmGaussianDistribution: libGamosCore_GamosData_Distributions.dylib
+Library.__pf__@@GmDistributionVerbosity: libGamosCore_GamosData_Distributions.dylib

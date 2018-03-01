@@ -1,0 +1,135 @@
+// ------------
+// Scintillator data from scintillator.lbl.gov
+// CZT and CdTe data from www.evproducts.com
+// ------------
+
+// Text geometry file MUST ALSO INCLUDE NIST_elements.txt
+
+:MIXT BaF2 4.88 2
+   Barium   0.78328
+   Fluorine 0.21672
+
+:MIXT BaI2 5.15 2
+   Barium 0.351098
+   Iodine 0.648902
+
+:MIXT BGO 7.13 3
+   Bismuth   0.67097
+   Germanium 0.17492
+   Oxygen    0.15411
+
+:MIXT CdTe 5.85 2
+   Cadmium   0.468355
+   Tellurium 0.531645
+
+:MIXT CdWO4 7.9 3 
+   Cadmium  0.31204
+   Tungsten 0.51031
+   Oxygen   0.17765
+
+:MIXT CZT 5.78 3
+   Cadmium   0.42994
+   Zinc      0.02780
+   Tellurium 0.54226
+
+:MIXT CeBr3 5.2 2
+   Cerium  0.36889
+   Bromine 0.63111
+
+:MIXT CeCl3 3.9 2
+   Cerium   0.56848
+   Chlorine 0.43152
+
+:MIXT CsI 4.51 2
+   Cesium 0.488451
+   Iodine 0.511549
+
+:MIXT GaAs 5.31 2
+   Gallium 0.48203
+   Arsenic 0.51797
+
+:MIXT Gd2O2S 7.44 3
+   Gadolinium 0.830782
+   Oxygen     0.084528
+   Sulfur     0.084690
+
+:MIXT GSO 6.71 3
+   Gadolinium 0.74423
+   Silicon    0.06646
+   Oxygen     0.18931
+
+:MIXT HgI2 6.36 2
+   Mercury 0.44144
+   Iodine  0.55856
+
+:MIXT LaBr3 5.1 2
+   Lanthanum 0.36688
+   Bromine   0.63312
+
+:MIXT LaCl3 3.8 2
+   Lanthanum 0.56635
+   Chlorine  0.43365
+
+:MIXT LiF 2.635 2
+   Lithium  0.267585
+   Fluorine 0.732415
+
+:MIXT Li2B4O7 2.44 3
+   Lithium 0.082081
+   Boron   0.255715
+   Oxygen  0.662204
+
+:MIXT LSO 7.4 3
+   Lutetium 0.76402
+   Silicon  0.06132
+   Oxygen   0.17466
+
+:MIXT LYSO 7.1 4
+   Lutetium 0.714468
+   Yttrium  0.040338
+   Silicon  0.063714
+   Oxygen   0.18148
+
+:MIXT LuAG 6.7 3
+   Lutetium 0.61622
+   Aluminum 0.15838
+   Oxygen   0.22540
+
+:MIXT LuAP 8.34 3
+   Lutetium 0.70002
+   Aluminum 0.10795
+   Oxygen   0.19203
+
+:MIXT LuYAP 7.1 4
+   Lutetium 0.54646
+   Yttrium  0.11900
+   Aluminum 0.12038
+   Oxygen   0.21416
+
+:MIXT LuI3 5.6 2
+   Lutetium 0.31487
+   Iodine   0.68513
+
+:MIXT NaI 3.67 2
+   Sodium 0.15337
+   Iodine 0.84663
+
+:MIXT PbWO4 8.28 3
+   Lead     0.45535
+   Tungsten 0.40401
+   Oxygen   0.14064
+
+:MIXT SrI2 4.6 2
+   Strontium 0.25663
+   Iodine    0.74337
+
+:MIXT YAG 4.55 3
+   Yttrium  0.44931
+   Aluminum 0.22726
+   Oxygen   0.32343
+
+:MIXT YAP 5.35 3
+   Yttrium  0.54249
+   Aluminum 0.16464
+   Oxygen   0.29287
+

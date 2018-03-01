@@ -1,0 +1,1405 @@
+ GmGenUtils::FileInPath ./deprecatedCommands.lis in .
+ GmGenUtils::FileInPath /home/arce/gamosnew/GAMOS.5.0.0/data/deprecatedCommands.lis in /home/arce/gamosnew/GAMOS.5.0.0/data
+
+*************************************************************
+ Geant4 version Name: geant4-09-06-patch-02    (17-May-2013)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  FukuiRenderer (DAWN)
+  G4HepRep (HepRepXML)
+  G4HepRepFile (HepRepFile)
+  OpenGLImmediateX (OGLI, OGLIX)
+  OpenGLStoredX (OGL, OGLS, OGLSX)
+  RayTracer (RayTracer)
+  VRML1 (VRML1)
+  VRML1FILE (VRML1FILE)
+  VRML2 (VRML2)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByCharge
+  drawByParticleID
+  drawByOriginVolume
+  drawByAttribute
+
+Registered filter factories:
+  chargeFilter
+  particleFilter
+  originVolumeFilter
+  attributeFilter
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+Available colours:
+  black, blue, brown, cyan, gray, green, grey, magenta, red, white, yellow
+
+/control/execute exercise3b.in
+/gamos/setParam GmGeometryFromText:FileName exercise3.geom
+/gamos/geometry GmGeometryFromText
+/gamos/physicsList G4QGSP_BIC_HP
+<<< Geant4 Physics List simulation engine: QGSP_BIC_HP 2.0
+
+/gamos/generator GmGenerator
+ GmGenUtils::FileInPath ./isotopes.dat in .
+ GmGenUtils::FileInPath /home/arce/gamosnew/GAMOS.5.0.0/data/isotopes.dat in /home/arce/gamosnew/GAMOS.5.0.0/data
+/geometry/textInput/verbose 0
+/gamos/setParam GmCountTracksUA:EachNEvent 100
+/gamos/userAction GmCountTracksUA
+/gamos/userAction GmCountProcessesUA
+/run/setCut 10. mm
+/run/initialize
+ GmGenUtils::FileInPath ./exercise3.geom in .
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Elastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Elastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/8_17_Oxygen
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Inelastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Inelastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Capture file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Elastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Inelastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Inelastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Capture file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/8_17_Oxygen
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Elastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/8_17_Oxygen
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Inelastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Inelastic/CrossSection/8_17_Oxygen
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+WARNING: model G4LENeutronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+/home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Capture file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Capture file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/8_17_Oxygen
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+WARNING: model G4LEProtonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEPionPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEPionMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroLInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroSInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiProtonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiProtonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiNeutronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiNeutronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LELambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HELambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiLambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiLambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LESigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HESigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiSigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiSigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LESigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HESigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiSigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiSigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+/gamos/generator/addSingleParticleSource source neutron 1.*MeV
+/gamos/generator/energyDist source GmGenerDistEnergyFromFile Cf.energy.lis interpolate_log
+ GmGenUtils::FileInPath ./Cf.energy.lis in .
+ GmGenUtils::FileInPath /home/arce/gamosnew/GAMOS.5.0.0/data/Cf.energy.lis in /home/arce/gamosnew/GAMOS.5.0.0/data
+GmGenerDistEnergyFromFile::ReadEnergyDist probabilities do not sum up to 1., but to 1.00274 They will be normalized to 1. 
+/gamos/generator/timeDist source GmGenerDistTimeDecay 1.E-2*Ci
+    theTimeDistribution->SetParticleSource( this ) 0xe74a1f0 0xedafff0
+/gamos/setParam GmPDS:ScoreNeutrons 0
+/gamos/setParam GmPDS:ScoreGammas 1
+/gamos/setParam GmPDS:DetectorName PDS_detector
+/gamos/setParam GmPDS:AngleDeviationFileName angleDeviation.gammaALL.root
+/gamos/setParam GmPDS:ExclusionRadius 5*mm
+/gamos/setParam GmPDS:UseVRMaximumDistance 0
+/gamos/setParam GmPDS:MaximumDistance 1000.
+/gamos/setParam GmPDS:MaximumDistanceRRFactor 100
+/gamos/setParam GmPDS:UseVRSplitting 0
+/gamos/setParam GmPDS:MinimumGeantinoWeight 1.E-100
+/gamos/setParam GmPDS:MinimumGeantinoWeightRRFactor 100.
+/gamos/setParam GmPDS:UseVRMinimumGeantinoWeight 0
+/gamos/setParam GmPDS:MinimumWeightForSplitting 1.E-30
+/gamos/setParam GmPDS:MaximumWeightForSplitting 1.E-5
+/gamos/setParam GmPDS:MaximumSplitting 100.
+/gamos/setParam GmPDS:PrintHstar 1
+/gamos/setParam GmPDS:PrintHp0 0
+/gamos/setParam GmPDS:PrintHp15 0
+/gamos/setParam GmPDS:PrintHp30 0
+/gamos/setParam GmPDS:PrintHp45 0
+/gamos/setParam GmPDS:PrintHp60 0
+/gamos/setParam GmPDS:PrintHp75 0
+/gamos/setParam GmPDS:HistosFileName pds
+/gamos/userAction GmPDSUA GmClassifierByProcess
+PluginService: Could not find factory for GmClassifierByProcess with signature GmVFilter* (G4String)
+/gamos/random/setSeeds 1111 1212
+Gamos Random: initializing seeds from table at position 1111 and throwing 1212+1 numbers
+ GamosRandom: sees before nTries 37855840 1111 1212
+Gamos Random: First random number is 0.895771
+
+/run/beamOn 1000
+
+phot:   for  gamma    SubType= 12
+      LambdaPrime table from 200 keV to 10 TeV in 54 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       PhotoElectric :  Emin=        0 eV    Emax=       10 TeV   AngularGenSauterGavrila  FluoActive
+
+compt:   for  gamma    SubType= 13
+      Lambda table from 100 eV  to 1 MeV in 28 bins, spline: 1
+      LambdaPrime table from 1 MeV to 10 TeV in 49 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina :  Emin=        0 eV    Emax=       10 TeV
+
+conv:   for  gamma    SubType= 14
+      Lambda table from 1.022 MeV to 10 TeV in 49 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        BetheHeitler :  Emin=        0 eV    Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=       10 TeV
+
+msc:   for e-    SubType= 10
+      RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=      100 MeV  Table with 42 bins Emin=    100 eV    Emax=    100 MeV
+        WentzelVIUni :  Emin=      100 MeV   Emax=       10 TeV  Table with 35 bins Emin=    100 MeV   Emax=     10 TeV
+
+eIoni:   for  e-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+CoulombScat:   for  e-    SubType= 1
+      Lambda table from 100 MeV to 10 TeV in 35 bins, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=      100 MeV   Emax=       10 TeV
+
+msc:   for e+    SubType= 10
+      RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=      100 MeV  Table with 42 bins Emin=    100 eV    Emax=    100 MeV
+        WentzelVIUni :  Emin=      100 MeV   Emax=       10 TeV  Table with 35 bins Emin=    100 MeV   Emax=     10 TeV
+
+eIoni:   for  e+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+annihil:   for  e+    SubType= 5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  e+    SubType= 1
+      Lambda table from 100 MeV to 10 TeV in 35 bins, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=      100 MeV   Emax=       10 TeV
+
+msc:   for proton    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+hBrems:   for  proton    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  proton    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for GenericIon    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV
+
+ionIoni:   for  GenericIon    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.01, dRoverRange= 0.1, integral: 1, fluct: 1, linLossLimit= 0.02
+      Stopping Power data for 17 ion/material pairs 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+msc:   for alpha    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+ionIoni:   for  alpha    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.01, dRoverRange= 0.1, integral: 1, fluct: 1, linLossLimit= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon :  Emin=        0 eV    Emax=   7.9452 MeV
+          BetheBloch :  Emin=   7.9452 MeV   Emax=       10 TeV
+
+msc:   for anti_proton    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  anti_proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+hBrems:   for  anti_proton    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  anti_proton    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for kaon+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  kaon+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=  1.05231 MeV
+          BetheBloch :  Emin=  1.05231 MeV   Emax=       10 TeV
+
+hBrems:   for  kaon+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  kaon+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for kaon-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  kaon-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=  1.05231 MeV
+          BetheBloch :  Emin=  1.05231 MeV   Emax=       10 TeV
+
+hBrems:   for  kaon-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  kaon-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for mu+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+muIoni:   for  mu+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=      200 keV
+          BetheBloch :  Emin=      200 keV   Emax=        1 GeV
+        MuBetheBloch :  Emin=        1 GeV   Emax=       10 TeV
+
+muBrems:   for  mu+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem :  Emin=        0 eV    Emax=       10 TeV
+
+muPairProd:   for  mu+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  mu+    SubType= 1
+      Lambda table from 100 eV  to 10 TeV in 43 bins, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for mu-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+muIoni:   for  mu-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=      200 keV
+          BetheBloch :  Emin=      200 keV   Emax=        1 GeV
+        MuBetheBloch :  Emin=        1 GeV   Emax=       10 TeV
+
+muBrems:   for  mu-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem :  Emin=        0 eV    Emax=       10 TeV
+
+muPairProd:   for  mu-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  mu-    SubType= 1
+      Lambda table from 100 eV  to 10 TeV in 43 bins, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for pi+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  pi+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=  297.505 keV
+          BetheBloch :  Emin=  297.505 keV   Emax=       10 TeV
+
+hBrems:   for  pi+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  pi+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for pi-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  pi-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=  297.505 keV
+          BetheBloch :  Emin=  297.505 keV   Emax=       10 TeV
+
+hBrems:   for  pi-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  pi-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+============================================================================================
+             HADRONIC PROCESSES SUMMARY (verbose level 1)
+
+                                  Hadronic Processes for <GenericIon>
+                                  -----------------------------------
+        ionInelastic  Models:     Binary Light Ion Cascade: Emin(GeV)=    0  Emax(GeV)= 4
+                                                      FTFP: Emin(GeV)=    2  Emax(GeV)= 100000
+
+        ionInelastic  Crs sctns: Glauber-Gribov nucleus nucleus: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <anti_neutron>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+AntiNeutronInelastic  Models:     G4LEAntiNeutronInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+                                  G4HEAntiNeutronInelastic: Emin(GeV)=   20  Emax(GeV)= 100000
+
+AntiNeutronInelastic  Crs sctns:              AntiAGlauber: Emin(GeV)=    0  Emax(GeV)= 1.79769e+305
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <anti_proton>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 0.1
+                                              AntiAElastic: Emin(GeV)=  0.1  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:              AntiAGlauber: Emin(GeV)=    0  Emax(GeV)= 1.79769e+305
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+ AntiProtonInelastic  Models:      G4LEAntiProtonInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+                                   G4HEAntiProtonInelastic: Emin(GeV)=   20  Emax(GeV)= 100000
+
+ AntiProtonInelastic  Crs sctns:              AntiAGlauber: Emin(GeV)=    0  Emax(GeV)= 1.79769e+305
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hFritiofCaptureAtRest
+
+                                  Hadronic Processes for <e+>
+                                  -----------------------------------
+     PositronNuclear  Models:      G4ElectroVDNuclearModel: Emin(GeV)=    0  Emax(GeV)= 1e+06
+
+     PositronNuclear  Crs sctns:          ElectroNuclearXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <e->
+                                  -----------------------------------
+      ElectroNuclear  Models:      G4ElectroVDNuclearModel: Emin(GeV)=    0  Emax(GeV)= 1e+06
+
+      ElectroNuclear  Crs sctns:          ElectroNuclearXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <gamma>
+                                  -----------------------------------
+     PhotonInelastic  Models:               BertiniCascade: Emin(GeV)=    0  Emax(GeV)= 3.5
+                                           TheoFSGenerator: Emin(GeV)=    3  Emax(GeV)= 100000
+
+     PhotonInelastic  Crs sctns:            PhotoNuclearXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <kaon+>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+   KaonPlusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                     G4LEKaonPlusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+   KaonPlusInelastic  Crs sctns:  ChipsKaonPlusInelasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <kaon->
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+  KaonMinusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                    G4LEKaonMinusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+  KaonMinusInelastic  Crs sctns: ChipsKaonMinusInelasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hBertiniCaptureAtRest
+
+                                  Hadronic Processes for <lambda>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+     LambdaInelastic  Models:          G4LELambdaInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+                                       G4HELambdaInelastic: Emin(GeV)=   20  Emax(GeV)= 100000
+
+     LambdaInelastic  Crs sctns:   ChipsHyperonInelasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                     Hadronic Processes for <mu->
+          muMinusCaptureAtRest
+
+                                  Hadronic Processes for <neutron>
+                                  -----------------------------------
+          hadElastic  Models:                hElasticCHIPS: Emin(GeV)= 0.0195  Emax(GeV)= 100000
+                                          NeutronHPElastic: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+          hadElastic  Crs sctns:        NeutronHPElasticXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                     ChipsNeutronElasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+    NeutronInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                      G4LENeutronInelastic: Emin(GeV)=  9.5  Emax(GeV)= 25
+                                            Binary Cascade: Emin(GeV)= 0.0199  Emax(GeV)= 9.9
+                                        NeutronHPInelastic: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+    NeutronInelastic  Crs sctns:      NeutronHPInelasticXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+            nCapture  Models:                   G4LCapture: Emin(GeV)= 0.0199  Emax(GeV)= 20000
+                                          NeutronHPCapture: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+            nCapture  Crs sctns:        NeutronHPCaptureXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                          GheishaCaptureXS: Emin(GeV)=    0  Emax(GeV)= 100000
+
+            nFission  Models:                   G4LFission: Emin(GeV)= 0.0199  Emax(GeV)= 20000
+                                          NeutronHPFission: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+            nFission  Crs sctns:        NeutronHPFissionXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                          GheishaFissionXS: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <pi+>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 1
+                                           hElasticGlauber: Emin(GeV)=    1  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+   PionPlusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                     G4LEPionPlusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+   PionPlusInelastic  Crs sctns:      G4CrossSectionPairGG: Emin(GeV)=    0  Emax(GeV)= 100000
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <pi->
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 1
+                                           hElasticGlauber: Emin(GeV)=    1  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+  PionMinusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                    G4LEPionMinusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+  PionMinusInelastic  Crs sctns:      G4CrossSectionPairGG: Emin(GeV)=    0  Emax(GeV)= 100000
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hBertiniCaptureAtRest
+
+                                  Hadronic Processes for <proton>
+                                  -----------------------------------
+          hadElastic  Models:                hElasticCHIPS: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:      ChipsProtonElasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+     ProtonInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                       G4LEProtonInelastic: Emin(GeV)=  9.5  Emax(GeV)= 25
+                                            Binary Cascade: Emin(GeV)=    0  Emax(GeV)= 9.9
+
+     ProtonInelastic  Crs sctns:       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+============================================================================================
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_AIR
+ Range cuts        :  gamma  1 cm     e-  1 cm     e+  1 cm  proton 1 cm 
+ Energy thresholds :  gamma  990 eV     e-  15.919 keV    e+  15.479 keV proton 1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes     recalculation needed : No 
+ Material : CONCRETE
+ Range cuts        :  gamma  1 cm     e-  1 cm     e+  1 cm  proton 1 cm 
+ Energy thresholds :  gamma  18.5394 keV    e-  4.06181 MeV    e+  3.79783 MeV proton 1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 2     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_POLYETHYLENE
+ Range cuts        :  gamma  1 cm     e-  1 cm     e+  1 cm  proton 1 cm 
+ Energy thresholds :  gamma  5.38386 keV    e-  2.13081 MeV    e+  2.01928 MeV proton 1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+@@@@@ GmCountProcessesUA GmCountProcessesUA
+ GmGenUtils::FileInPath ./Flux2Dose.gamma.ICRU57.lis in .
+ GmGenUtils::FileInPath /home/arce/gamosnew/GAMOS.5.0.0/data/Flux2Dose.gamma.ICRU57.lis in /home/arce/gamosnew/GAMOS.5.0.0/data
+GmPDSProcessHelper::BookHistos -1 1
+ CreateHisto1D ALL: ALL: gamma:  interaction log Energy (MeV) = 815900090
+ CreateHisto1D ALL: ALL: gamma:  PD1: interaction dist to detector (mm) = 815900191
+ CreateHisto2D ALL: ALL: gamma:  PD1: interaction dist to detector (mm) vs weight = 815900192
+ CreateHisto2D ALL: ALL: gamma:  PD1: interaction dist to detector (mm) weighted by Hstar = 815900193
+ CreateHisto1D ALL: ALL: gamma: PD1: ALL: At detector : geantino : log10(energy) (MeV) = 815900001
+ CreateHisto1D ALL: ALL: gamma: PD1: ALL: At detector : geantino : log10(energy) no weighted (MeV) = 815900002
+ CreateHisto1D ALL: ALL: gamma: PD1: ALL: At detector : geantino : log10(energy) weighted by Hstar = 815900003
+ CreateHisto1D ALL: ALL: gamma: PD1: ALL: At detector : geantino : log10(weight) = 815900011
+ CreateHisto1D ALL: ALL: gamma: PD1: ALL: At detector : geantino : log10(weight) weighted by Hstar = 815900012
+ CreateHisto2D ALL: ALL: gamma: PD1: ALL: At detector : geantino : log10(energy) vs log10(weight) = 815900021
+ CreateHisto1D ALL: ALL: gamma: PD1: ALL: At detector : gamma : log10(energy) (MeV) = 815950001
+ CreateHisto1D ALL: ALL: gamma: PD1: ALL: At detector : gamma : log10(energy) no weighted (MeV) = 815950002
+ CreateHisto1D ALL: ALL: gamma: PD1: ALL: At detector : gamma : log10(energy) weighted by Hstar = 815950003
+ CreateHisto1D ALL: ALL: gamma: PD1: ALL: At detector : gamma : log10(weight) = 815950011
+ CreateHisto1D ALL: ALL: gamma: PD1: ALL: At detector : gamma : log10(weight) weighted by Hstar = 815950012
+ CreateHisto2D ALL: ALL: gamma: PD1: ALL: At detector : gamma : log10(energy) vs log10(weight) = 815950021
+Start Run processing.
+GmPDSProcessHelper::BookHistos 1 1
+ CreateHisto1D ALL: nCapture: gamma:  interaction log Energy (MeV) = 816100090
+ CreateHisto1D ALL: nCapture: gamma:  PD1: interaction dist to detector (mm) = 816100191
+ CreateHisto2D ALL: nCapture: gamma:  PD1: interaction dist to detector (mm) vs weight = 816100192
+ CreateHisto2D ALL: nCapture: gamma:  PD1: interaction dist to detector (mm) weighted by Hstar = 816100193
+ CreateHisto1D ALL: nCapture: gamma: PD1: ALL: At detector : geantino : log10(energy) (MeV) = 816100101
+ CreateHisto1D ALL: nCapture: gamma: PD1: ALL: At detector : geantino : log10(energy) no weighted (MeV) = 816100102
+ CreateHisto1D ALL: nCapture: gamma: PD1: ALL: At detector : geantino : log10(energy) weighted by Hstar = 816100103
+ CreateHisto1D ALL: nCapture: gamma: PD1: ALL: At detector : geantino : log10(weight) = 816100111
+ CreateHisto1D ALL: nCapture: gamma: PD1: ALL: At detector : geantino : log10(weight) weighted by Hstar = 816100112
+ CreateHisto2D ALL: nCapture: gamma: PD1: ALL: At detector : geantino : log10(energy) vs log10(weight) = 816100121
+ CreateHisto1D ALL: nCapture: gamma: PD1: ALL: At detector : gamma : log10(energy) (MeV) = 816150101
+ CreateHisto1D ALL: nCapture: gamma: PD1: ALL: At detector : gamma : log10(energy) no weighted (MeV) = 816150102
+ CreateHisto1D ALL: nCapture: gamma: PD1: ALL: At detector : gamma : log10(energy) weighted by Hstar = 816150103
+ CreateHisto1D ALL: nCapture: gamma: PD1: ALL: At detector : gamma : log10(weight) = 816150111
+ CreateHisto1D ALL: nCapture: gamma: PD1: ALL: At detector : gamma : log10(weight) weighted by Hstar = 816150112
+ CreateHisto2D ALL: nCapture: gamma: PD1: ALL: At detector : gamma : log10(energy) vs log10(weight) = 816150121
+GmPDSProcessHelper::BookHistos 2 1
+ CreateHisto1D ALL: compt: gamma:  interaction log Energy (MeV) = 816200090
+ CreateHisto1D ALL: compt: gamma:  PD1: interaction dist to detector (mm) = 816200191
+ CreateHisto2D ALL: compt: gamma:  PD1: interaction dist to detector (mm) vs weight = 816200192
+ CreateHisto2D ALL: compt: gamma:  PD1: interaction dist to detector (mm) weighted by Hstar = 816200193
+ CreateHisto1D ALL: compt: gamma: PD1: ALL: At detector : geantino : log10(energy) (MeV) = 816200201
+ CreateHisto1D ALL: compt: gamma: PD1: ALL: At detector : geantino : log10(energy) no weighted (MeV) = 816200202
+ CreateHisto1D ALL: compt: gamma: PD1: ALL: At detector : geantino : log10(energy) weighted by Hstar = 816200203
+ CreateHisto1D ALL: compt: gamma: PD1: ALL: At detector : geantino : log10(weight) = 816200211
+ CreateHisto1D ALL: compt: gamma: PD1: ALL: At detector : geantino : log10(weight) weighted by Hstar = 816200212
+ CreateHisto2D ALL: compt: gamma: PD1: ALL: At detector : geantino : log10(energy) vs log10(weight) = 816200221
+ CreateHisto1D ALL: compt: gamma: PD1: ALL: At detector : gamma : log10(energy) (MeV) = 816250201
+ CreateHisto1D ALL: compt: gamma: PD1: ALL: At detector : gamma : log10(energy) no weighted (MeV) = 816250202
+ CreateHisto1D ALL: compt: gamma: PD1: ALL: At detector : gamma : log10(energy) weighted by Hstar = 816250203
+ CreateHisto1D ALL: compt: gamma: PD1: ALL: At detector : gamma : log10(weight) = 816250211
+ CreateHisto1D ALL: compt: gamma: PD1: ALL: At detector : gamma : log10(weight) weighted by Hstar = 816250212
+ CreateHisto2D ALL: compt: gamma: PD1: ALL: At detector : gamma : log10(energy) vs log10(weight) = 816250221
+GmPDSProcessHelper::BookHistos 3 1
+ CreateHisto1D ALL: Transportation: gamma:  interaction log Energy (MeV) = 816300090
+ CreateHisto1D ALL: Transportation: gamma:  PD1: interaction dist to detector (mm) = 816300191
+ CreateHisto2D ALL: Transportation: gamma:  PD1: interaction dist to detector (mm) vs weight = 816300192
+ CreateHisto2D ALL: Transportation: gamma:  PD1: interaction dist to detector (mm) weighted by Hstar = 816300193
+ CreateHisto1D ALL: Transportation: gamma: PD1: ALL: At detector : geantino : log10(energy) (MeV) = 816300301
+ CreateHisto1D ALL: Transportation: gamma: PD1: ALL: At detector : geantino : log10(energy) no weighted (MeV) = 816300302
+ CreateHisto1D ALL: Transportation: gamma: PD1: ALL: At detector : geantino : log10(energy) weighted by Hstar = 816300303
+ CreateHisto1D ALL: Transportation: gamma: PD1: ALL: At detector : geantino : log10(weight) = 816300311
+ CreateHisto1D ALL: Transportation: gamma: PD1: ALL: At detector : geantino : log10(weight) weighted by Hstar = 816300312
+ CreateHisto2D ALL: Transportation: gamma: PD1: ALL: At detector : geantino : log10(energy) vs log10(weight) = 816300321
+ CreateHisto1D ALL: Transportation: gamma: PD1: ALL: At detector : gamma : log10(energy) (MeV) = 816350301
+ CreateHisto1D ALL: Transportation: gamma: PD1: ALL: At detector : gamma : log10(energy) no weighted (MeV) = 816350302
+ CreateHisto1D ALL: Transportation: gamma: PD1: ALL: At detector : gamma : log10(energy) weighted by Hstar = 816350303
+ CreateHisto1D ALL: Transportation: gamma: PD1: ALL: At detector : gamma : log10(weight) = 816350311
+ CreateHisto1D ALL: Transportation: gamma: PD1: ALL: At detector : gamma : log10(weight) weighted by Hstar = 816350312
+ CreateHisto2D ALL: Transportation: gamma: PD1: ALL: At detector : gamma : log10(energy) vs log10(weight) = 816350321
+GmPDSProcessHelper::BookHistos 4 1
+ CreateHisto1D ALL: phot: gamma:  interaction log Energy (MeV) = 816400090
+ CreateHisto1D ALL: phot: gamma:  PD1: interaction dist to detector (mm) = 816400191
+ CreateHisto2D ALL: phot: gamma:  PD1: interaction dist to detector (mm) vs weight = 816400192
+ CreateHisto2D ALL: phot: gamma:  PD1: interaction dist to detector (mm) weighted by Hstar = 816400193
+ CreateHisto1D ALL: phot: gamma: PD1: ALL: At detector : geantino : log10(energy) (MeV) = 816400401
+ CreateHisto1D ALL: phot: gamma: PD1: ALL: At detector : geantino : log10(energy) no weighted (MeV) = 816400402
+ CreateHisto1D ALL: phot: gamma: PD1: ALL: At detector : geantino : log10(energy) weighted by Hstar = 816400403
+ CreateHisto1D ALL: phot: gamma: PD1: ALL: At detector : geantino : log10(weight) = 816400411
+ CreateHisto1D ALL: phot: gamma: PD1: ALL: At detector : geantino : log10(weight) weighted by Hstar = 816400412
+ CreateHisto2D ALL: phot: gamma: PD1: ALL: At detector : geantino : log10(energy) vs log10(weight) = 816400421
+ CreateHisto1D ALL: phot: gamma: PD1: ALL: At detector : gamma : log10(energy) (MeV) = 816450401
+ CreateHisto1D ALL: phot: gamma: PD1: ALL: At detector : gamma : log10(energy) no weighted (MeV) = 816450402
+ CreateHisto1D ALL: phot: gamma: PD1: ALL: At detector : gamma : log10(energy) weighted by Hstar = 816450403
+ CreateHisto1D ALL: phot: gamma: PD1: ALL: At detector : gamma : log10(weight) = 816450411
+ CreateHisto1D ALL: phot: gamma: PD1: ALL: At detector : gamma : log10(weight) weighted by Hstar = 816450412
+ CreateHisto2D ALL: phot: gamma: PD1: ALL: At detector : gamma : log10(energy) vs log10(weight) = 816450421
+ %%% EVENT 0 NTRACKS 41 TOTAL NTRACKS 41
+GmPDSProcessHelper::BookHistos 5 1
+ CreateHisto1D ALL: eBrem: gamma:  interaction log Energy (MeV) = 816500090
+ CreateHisto1D ALL: eBrem: gamma:  PD1: interaction dist to detector (mm) = 816500191
+ CreateHisto2D ALL: eBrem: gamma:  PD1: interaction dist to detector (mm) vs weight = 816500192
+ CreateHisto2D ALL: eBrem: gamma:  PD1: interaction dist to detector (mm) weighted by Hstar = 816500193
+ CreateHisto1D ALL: eBrem: gamma: PD1: ALL: At detector : geantino : log10(energy) (MeV) = 816500501
+ CreateHisto1D ALL: eBrem: gamma: PD1: ALL: At detector : geantino : log10(energy) no weighted (MeV) = 816500502
+ CreateHisto1D ALL: eBrem: gamma: PD1: ALL: At detector : geantino : log10(energy) weighted by Hstar = 816500503
+ CreateHisto1D ALL: eBrem: gamma: PD1: ALL: At detector : geantino : log10(weight) = 816500511
+ CreateHisto1D ALL: eBrem: gamma: PD1: ALL: At detector : geantino : log10(weight) weighted by Hstar = 816500512
+ CreateHisto2D ALL: eBrem: gamma: PD1: ALL: At detector : geantino : log10(energy) vs log10(weight) = 816500521
+ CreateHisto1D ALL: eBrem: gamma: PD1: ALL: At detector : gamma : log10(energy) (MeV) = 816550501
+ CreateHisto1D ALL: eBrem: gamma: PD1: ALL: At detector : gamma : log10(energy) no weighted (MeV) = 816550502
+ CreateHisto1D ALL: eBrem: gamma: PD1: ALL: At detector : gamma : log10(energy) weighted by Hstar = 816550503
+ CreateHisto1D ALL: eBrem: gamma: PD1: ALL: At detector : gamma : log10(weight) = 816550511
+ CreateHisto1D ALL: eBrem: gamma: PD1: ALL: At detector : gamma : log10(weight) weighted by Hstar = 816550512
+ CreateHisto2D ALL: eBrem: gamma: PD1: ALL: At detector : gamma : log10(energy) vs log10(weight) = 816550521
+ %%% EVENT 100 NTRACKS 27 TOTAL NTRACKS 2906
+GmPDSProcessHelper::BookHistos 6 1
+ CreateHisto1D ALL: conv: gamma:  interaction log Energy (MeV) = 816600090
+ CreateHisto1D ALL: conv: gamma:  PD1: interaction dist to detector (mm) = 816600191
+ CreateHisto2D ALL: conv: gamma:  PD1: interaction dist to detector (mm) vs weight = 816600192
+ CreateHisto2D ALL: conv: gamma:  PD1: interaction dist to detector (mm) weighted by Hstar = 816600193
+ CreateHisto1D ALL: conv: gamma: PD1: ALL: At detector : geantino : log10(energy) (MeV) = 816600601
+ CreateHisto1D ALL: conv: gamma: PD1: ALL: At detector : geantino : log10(energy) no weighted (MeV) = 816600602
+ CreateHisto1D ALL: conv: gamma: PD1: ALL: At detector : geantino : log10(energy) weighted by Hstar = 816600603
+ CreateHisto1D ALL: conv: gamma: PD1: ALL: At detector : geantino : log10(weight) = 816600611
+ CreateHisto1D ALL: conv: gamma: PD1: ALL: At detector : geantino : log10(weight) weighted by Hstar = 816600612
+ CreateHisto2D ALL: conv: gamma: PD1: ALL: At detector : geantino : log10(energy) vs log10(weight) = 816600621
+ CreateHisto1D ALL: conv: gamma: PD1: ALL: At detector : gamma : log10(energy) (MeV) = 816650601
+ CreateHisto1D ALL: conv: gamma: PD1: ALL: At detector : gamma : log10(energy) no weighted (MeV) = 816650602
+ CreateHisto1D ALL: conv: gamma: PD1: ALL: At detector : gamma : log10(energy) weighted by Hstar = 816650603
+ CreateHisto1D ALL: conv: gamma: PD1: ALL: At detector : gamma : log10(weight) = 816650611
+ CreateHisto1D ALL: conv: gamma: PD1: ALL: At detector : gamma : log10(weight) weighted by Hstar = 816650612
+ CreateHisto2D ALL: conv: gamma: PD1: ALL: At detector : gamma : log10(energy) vs log10(weight) = 816650621
+ %%% EVENT 200 NTRACKS 44 TOTAL NTRACKS 5935
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : energy out of bounds
+      issued by : GmPDSGeantinoProcess::PostStepDoIt
+Energy=10.8333 bigger than biggest energy in Flux2Dose coefficients10
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+GmPDSProcessHelper::BookHistos 7 1
+ CreateHisto1D ALL: NeutronInelastic: gamma:  interaction log Energy (MeV) = 816700090
+ CreateHisto1D ALL: NeutronInelastic: gamma:  PD1: interaction dist to detector (mm) = 816700191
+ CreateHisto2D ALL: NeutronInelastic: gamma:  PD1: interaction dist to detector (mm) vs weight = 816700192
+ CreateHisto2D ALL: NeutronInelastic: gamma:  PD1: interaction dist to detector (mm) weighted by Hstar = 816700193
+ CreateHisto1D ALL: NeutronInelastic: gamma: PD1: ALL: At detector : geantino : log10(energy) (MeV) = 816700701
+ CreateHisto1D ALL: NeutronInelastic: gamma: PD1: ALL: At detector : geantino : log10(energy) no weighted (MeV) = 816700702
+ CreateHisto1D ALL: NeutronInelastic: gamma: PD1: ALL: At detector : geantino : log10(energy) weighted by Hstar = 816700703
+ CreateHisto1D ALL: NeutronInelastic: gamma: PD1: ALL: At detector : geantino : log10(weight) = 816700711
+ CreateHisto1D ALL: NeutronInelastic: gamma: PD1: ALL: At detector : geantino : log10(weight) weighted by Hstar = 816700712
+ CreateHisto2D ALL: NeutronInelastic: gamma: PD1: ALL: At detector : geantino : log10(energy) vs log10(weight) = 816700721
+ CreateHisto1D ALL: NeutronInelastic: gamma: PD1: ALL: At detector : gamma : log10(energy) (MeV) = 816750701
+ CreateHisto1D ALL: NeutronInelastic: gamma: PD1: ALL: At detector : gamma : log10(energy) no weighted (MeV) = 816750702
+ CreateHisto1D ALL: NeutronInelastic: gamma: PD1: ALL: At detector : gamma : log10(energy) weighted by Hstar = 816750703
+ CreateHisto1D ALL: NeutronInelastic: gamma: PD1: ALL: At detector : gamma : log10(weight) = 816750711
+ CreateHisto1D ALL: NeutronInelastic: gamma: PD1: ALL: At detector : gamma : log10(weight) weighted by Hstar = 816750712
+ CreateHisto2D ALL: NeutronInelastic: gamma: PD1: ALL: At detector : gamma : log10(energy) vs log10(weight) = 816750721
+ %%% EVENT 300 NTRACKS 18 TOTAL NTRACKS 9240
+ %%% EVENT 400 NTRACKS 37 TOTAL NTRACKS 12160
+ %%% EVENT 500 NTRACKS 14 TOTAL NTRACKS 15151
+ %%% EVENT 600 NTRACKS 17 TOTAL NTRACKS 18449
+ %%% EVENT 700 NTRACKS 15 TOTAL NTRACKS 21554
+ %%% EVENT 800 NTRACKS 27 TOTAL NTRACKS 24717
+ %%% EVENT 900 NTRACKS 34 TOTAL NTRACKS 27894
+Run terminated.
+Run Summary
+  Number of events processed : 1000
+  User=99.29s Real=100.18s Sys=0.15s
+@@@@@ GmCountProcessesUA 
+PART_COUNT: Al27[0.0] = 1
+PART_COUNT: Al28[0.0] = 1
+PART_COUNT: Ar40[0.0] = 1
+PART_COUNT: Be9[0.0] = 1
+PART_COUNT: C12[0.0] = 23
+PART_COUNT: C13[0.0] = 10
+PART_COUNT: C14[0.0] = 44
+PART_COUNT: Ca41[0.0] = 4
+PART_COUNT: Cl36[0.0] = 11
+PART_COUNT: Fe57[0.0] = 1
+PART_COUNT: K40[0.0] = 2
+PART_COUNT: N14[0.0] = 2
+PART_COUNT: N15[0.0] = 1
+PART_COUNT: Na24[0.0] = 2
+PART_COUNT: O16[0.0] = 1
+PART_COUNT: Si28[0.0] = 3
+PART_COUNT: Si29[0.0] = 6
+PART_COUNT: alpha = 2
+PART_COUNT: deuteron = 915
+PART_COUNT: e+ = 19
+PART_COUNT: e- = 13753
+PART_COUNT: gamma = 1185
+PART_COUNT: geantino = 13694
+PART_COUNT: neutron = 1008
+PART_COUNT: proton = 565
+PROC_COUNT Al27[0.0] : ionIoni_NoSeco = 1
+PROC_COUNT Al27[0.0] : ALL = 1
+PROC_COUNT Al28[0.0] : ionIoni_NoSeco = 1
+PROC_COUNT Al28[0.0] : ALL = 1
+PROC_COUNT Ar40[0.0] : ionIoni_NoSeco = 23
+PROC_COUNT Ar40[0.0] : ALL = 23
+PROC_COUNT Be9[0.0] : ionIoni_NoSeco = 1
+PROC_COUNT Be9[0.0] : ALL = 1
+PROC_COUNT C12[0.0] : ionIoni_NoSeco = 23
+PROC_COUNT C12[0.0] : ALL = 23
+PROC_COUNT C13[0.0] : ionIoni_NoSeco = 10
+PROC_COUNT C13[0.0] : ALL = 10
+PROC_COUNT C14[0.0] : ionIoni_NoSeco = 661
+PROC_COUNT C14[0.0] : ALL = 661
+PROC_COUNT Ca41[0.0] : ionIoni_NoSeco = 4
+PROC_COUNT Ca41[0.0] : ALL = 4
+PROC_COUNT Cl36[0.0] : ionIoni_NoSeco = 11
+PROC_COUNT Cl36[0.0] : ALL = 11
+PROC_COUNT Fe57[0.0] : ionIoni_NoSeco = 1
+PROC_COUNT Fe57[0.0] : ALL = 1
+PROC_COUNT K40[0.0] : ionIoni_NoSeco = 2
+PROC_COUNT K40[0.0] : ALL = 2
+PROC_COUNT N14[0.0] : ionIoni_NoSeco = 63
+PROC_COUNT N14[0.0] : ALL = 63
+PROC_COUNT N15[0.0] : ionIoni_NoSeco = 1
+PROC_COUNT N15[0.0] : ALL = 1
+PROC_COUNT Na24[0.0] : ionIoni_NoSeco = 2
+PROC_COUNT Na24[0.0] : ALL = 2
+PROC_COUNT O16[0.0] : ionIoni_NoSeco = 1
+PROC_COUNT O16[0.0] : ALL = 1
+PROC_COUNT Si28[0.0] : ionIoni_NoSeco = 3
+PROC_COUNT Si28[0.0] : ALL = 3
+PROC_COUNT Si29[0.0] : ionIoni_NoSeco = 6
+PROC_COUNT Si29[0.0] : ALL = 6
+PROC_COUNT alpha : ionIoni_NoSeco = 2
+PROC_COUNT alpha : ALL = 2
+PROC_COUNT deuteron : hIoni_NoSeco = 915
+PROC_COUNT deuteron : ALL = 915
+PROC_COUNT e+ : annihil = 19
+PROC_COUNT e+ : eBrem = 3
+PROC_COUNT e+ : eIoni_NoSeco = 54
+PROC_COUNT e+ : msc = 12
+PROC_COUNT e+ : ALL = 88
+PROC_COUNT e- : Transportation = 37
+PROC_COUNT e- : eBrem = 129
+PROC_COUNT e- : eBrem_NoSeco = 6
+PROC_COUNT e- : eIoni = 31
+PROC_COUNT e- : eIoni_NoSeco = 17275
+PROC_COUNT e- : msc = 362
+PROC_COUNT e- : ALL = 17840
+PROC_COUNT gamma : Transportation = 3096
+PROC_COUNT gamma : compt = 12549
+PROC_COUNT gamma : conv = 19
+PROC_COUNT gamma : phot = 1154
+PROC_COUNT gamma : ALL = 16818
+PROC_COUNT geantino : Transportation = 80054
+PROC_COUNT geantino : ALL = 80054
+PROC_COUNT neutron : NeutronInelastic = 54
+PROC_COUNT neutron : Transportation = 4117
+PROC_COUNT neutron : hadElastic = 115167
+PROC_COUNT neutron : nCapture = 952
+PROC_COUNT neutron : ALL = 120290
+PROC_COUNT proton : Transportation = 1
+PROC_COUNT proton : hIoni_NoSeco = 1703
+PROC_COUNT proton : ALL = 1704
+PROC_CREATOR_COUNT Al27[0.0] : NeutronInelastic = 1
+PROC_CREATOR_COUNT Al28[0.0] : nCapture = 1
+PROC_CREATOR_COUNT Ar40[0.0] : NeutronInelastic = 1
+PROC_CREATOR_COUNT Be9[0.0] : NeutronInelastic = 1
+PROC_CREATOR_COUNT C12[0.0] : NeutronInelastic = 2
+PROC_CREATOR_COUNT C12[0.0] : hadElastic = 21
+PROC_CREATOR_COUNT C13[0.0] : NeutronInelastic = 1
+PROC_CREATOR_COUNT C13[0.0] : nCapture = 9
+PROC_CREATOR_COUNT C14[0.0] : NeutronInelastic = 44
+PROC_CREATOR_COUNT Ca41[0.0] : nCapture = 4
+PROC_CREATOR_COUNT Cl36[0.0] : nCapture = 11
+PROC_CREATOR_COUNT Fe57[0.0] : nCapture = 1
+PROC_CREATOR_COUNT K40[0.0] : nCapture = 2
+PROC_CREATOR_COUNT N14[0.0] : NeutronInelastic = 1
+PROC_CREATOR_COUNT N14[0.0] : hadElastic = 1
+PROC_CREATOR_COUNT N15[0.0] : nCapture = 1
+PROC_CREATOR_COUNT Na24[0.0] : nCapture = 2
+PROC_CREATOR_COUNT O16[0.0] : hadElastic = 1
+PROC_CREATOR_COUNT Si28[0.0] : NeutronInelastic = 3
+PROC_CREATOR_COUNT Si29[0.0] : nCapture = 6
+PROC_CREATOR_COUNT alpha : NeutronInelastic = 2
+PROC_CREATOR_COUNT deuteron : nCapture = 915
+PROC_CREATOR_COUNT e+ : conv = 19
+PROC_CREATOR_COUNT e- : compt = 12549
+PROC_CREATOR_COUNT e- : conv = 19
+PROC_CREATOR_COUNT e- : eIoni = 31
+PROC_CREATOR_COUNT e- : phot = 1154
+PROC_CREATOR_COUNT gamma : NeutronInelastic = 12
+PROC_CREATOR_COUNT gamma : annihil = 38
+PROC_CREATOR_COUNT gamma : eBrem = 132
+PROC_CREATOR_COUNT gamma : nCapture = 1003
+PROC_CREATOR_COUNT geantino : GmPDSGammaProcess = 13694
+PROC_CREATOR_COUNT neutron : NeutronInelastic = 8
+PROC_CREATOR_COUNT neutron : Primary = 1000
+PROC_CREATOR_COUNT proton : NeutronInelastic = 44
+PROC_CREATOR_COUNT proton : hadElastic = 521
+%%%%%% SCORE IN POINT DETECTOR FOR set ALL: ALL: gamma: PD1: ALL: at (4800,0,0) NEVENTS= 1000
+ MultiFunctionalDet: PDS_detector
+ PrimitiveScorer: PointDetector ALL: ALL: gamma: PD1: ALL:
+ Number of entries= 25
+ index:  0-0.0122474 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 23
+ index: 0.0122474-0.0173205 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 9
+ index: 0.0173205-0.0244949 = 1.59256e-123 +-(REL) 0.99992 sumW2 2.53585e-240 sumW3 0 sumW4 0  N 107
+ index: 0.0244949-0.034641 = 8.37851e-55 +-(REL) 0.538526 sumW2 2.04084e-103 sumW3 6.29327e-155 sumW4 2.14488e-206  N 747
+ index: 0.034641-0.0447214 = 3.29479e-36 +-(REL) 0.560506 sumW2 3.41794e-66 sumW3 5.52448e-99 sumW4 9.55443e-132  N 954
+ index: 0.0447214-0.0547723 = 4.81198e-28 +-(REL) 0.559203 sumW2 7.25673e-50 sumW3 1.6281e-74 sumW4 3.96072e-99  N 976
+ index: 0.0547723-0.069282 = 1.2002e-22 +-(REL) 0.93973 sumW2 1.27225e-38 sumW3 1.43444e-57 sumW4 1.61774e-76  N 1322
+ index: 0.069282-0.0894427 = 2.64855e-18 +-(REL) 0.681594 sumW2 3.26263e-30 sumW3 4.87469e-45 sumW4 7.81577e-60  N 1466
+ index: 0.0894427-0.122474 = 3.80434e-16 +-(REL) 0.9368 sumW2 1.27032e-25 sumW3 4.5069e-38 sumW4 1.60353e-50  N 1671
+ index: 0.122474-0.173205 = 2.81614e-15 +-(REL) 0.706806 sumW2 3.96591e-24 sumW3 6.28414e-36 sumW4 1.04543e-47  N 1457
+ index: 0.173205-0.244949 = 5.20946e-14 +-(REL) 0.946106 sumW2 2.42949e-21 sumW3 1.19437e-31 sumW4 5.88142e-42  N 1150
+ index: 0.244949-0.34641 = 8.6951e-15 +-(REL) 0.600808 sumW2 2.73394e-23 sumW3 1.11e-34 sumW4 4.88255e-46  N 827
+ index: 0.34641-0.447214 = 2.01242e-15 +-(REL) 0.161657 sumW2 1.09779e-25 sumW3 9.93392e-39 sumW4 1.12736e-51  N 432
+ index: 0.447214-0.547723 = 1.78975e-13 +-(REL) 0.974382 sumW2 3.04136e-20 sumW3 5.30371e-30 sumW4 9.24924e-40  N 321
+ index: 0.547723-0.69282 = 5.20324e-14 +-(REL) 0.510913 sumW2 7.0871e-22 sumW3 1.34712e-32 sumW4 2.6338e-43  N 280
+ index: 0.69282-0.894427 = 1.79445e-11 +-(REL) 0.957151 sumW2 2.95026e-16 sumW3 5.0545e-24 sumW4 8.67354e-32  N 226
+ index: 0.894427-1.07238 = 2.97256e-13 +-(REL) 0.629132 sumW2 3.50275e-20 sumW3 6.41404e-30 sumW4 1.19097e-39  N 146
+ index: 1.07238-1.51658 = 5.34097e-12 +-(REL) 0.696321 sumW2 1.38459e-17 sumW3 4.15748e-26 sumW4 1.31081e-34  N 287
+ index: 1.51658-2.44949 = 6.12798e-12 +-(REL) 0.350234 sumW2 4.63924e-18 sumW3 5.34018e-27 sumW4 6.47019e-36  N 1214
+ index: 2.44949-3.4641 = 8.55258e-15 +-(REL) 0.86073 sumW2 5.42101e-23 sumW3 3.92228e-34 sumW4 2.86679e-45  N 19
+ index: 3.4641-4.47214 = 9.55611e-13 +-(REL) 0.985445 sumW2 8.86829e-19 sumW3 8.35047e-28 sumW4 7.86347e-37  N 21
+ index: 4.47214-5.47723 = 7.50231e-13 +-(REL) 0.989057 sumW2 5.50608e-19 sumW3 4.0855e-28 sumW4 3.03152e-37  N 19
+ index: 5.47723-6.9282 = 9.04298e-17 +-(REL) 0.58644 sumW2 2.81772e-27 sumW3 1.15752e-40 sumW4 5.24873e-54  N 9
+ index: 6.9282-8.94427 = 4.57452e-16 +-(REL) 0.952279 sumW2 1.89786e-25 sumW3 8.25134e-38 sumW4 3.59204e-50  N 10
+ index: 8.94427-10 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ALL: ALL: gamma: PD1: ALL: SUM ALL: 3.17226e-11 +-(REL) 0.559432 cm-2   N 13693
+ALL: ALL: gamma: PD1: ALL: Hstar= 8.25686e+106 pSv/particle 
+%%%%%% SCORE IN POINT DETECTOR FOR set ALL: NeutronInelastic: gamma: PD1: ALL: at (4800,0,0) NEVENTS= 1000
+ MultiFunctionalDet: PDS_detector
+ PrimitiveScorer: PointDetector ALL: NeutronInelastic: gamma: PD1: ALL:
+ Number of entries= 25
+ index:  0-0.0122474 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0122474-0.0173205 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0173205-0.0244949 = 1.1414e-127 +-(REL) 1 sumW2 1.30279e-248 sumW3 0 sumW4 0  N 1
+ index: 0.0244949-0.034641 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.034641-0.0447214 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0447214-0.0547723 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0547723-0.069282 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.069282-0.0894427 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0894427-0.122474 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.122474-0.173205 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.173205-0.244949 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.244949-0.34641 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.34641-0.447214 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.447214-0.547723 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.547723-0.69282 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.69282-0.894427 = 8.78486e-19 +-(REL) 1 sumW2 7.71737e-31 sumW3 6.7796e-46 sumW4 5.95578e-61  N 1
+ index: 0.894427-1.07238 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 1.07238-1.51658 = 1.92564e-14 +-(REL) 1 sumW2 3.7081e-22 sumW3 7.14048e-33 sumW4 1.375e-43  N 2
+ index: 1.51658-2.44949 = 3.59794e-17 +-(REL) 0.989141 sumW2 1.26659e-27 sumW3 4.50686e-41 sumW4 1.60385e-54  N 3
+ index: 2.44949-3.4641 = 7.31704e-15 +-(REL) 1 sumW2 5.3539e-23 sumW3 3.91747e-34 sumW4 2.86643e-45  N 2
+ index: 3.4641-4.47214 = 5.51978e-15 +-(REL) 1 sumW2 3.04679e-23 sumW3 1.68176e-34 sumW4 9.28295e-46  N 2
+ index: 4.47214-5.47723 = 2.58815e-15 +-(REL) 1 sumW2 6.6985e-24 sumW3 1.73367e-35 sumW4 4.48698e-47  N 1
+ index: 5.47723-6.9282 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 6.9282-8.94427 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 8.94427-10 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ALL: NeutronInelastic: gamma: PD1: ALL: SUM ALL: 3.47182e-14 +-(REL) 0.61878 cm-2   N 12
+ALL: NeutronInelastic: gamma: PD1: ALL: Hstar= 3.91892e-14 pSv/particle 
+%%%%%% SCORE IN POINT DETECTOR FOR set ALL: Transportation: gamma: PD1: ALL: at (4800,0,0) NEVENTS= 1000
+ MultiFunctionalDet: PDS_detector
+ PrimitiveScorer: PointDetector ALL: Transportation: gamma: PD1: ALL:
+ Number of entries= 25
+ index:  0-0.0122474 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0122474-0.0173205 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0173205-0.0244949 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0244949-0.034641 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.034641-0.0447214 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0447214-0.0547723 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0547723-0.069282 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.069282-0.0894427 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0894427-0.122474 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.122474-0.173205 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.173205-0.244949 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.244949-0.34641 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.34641-0.447214 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.447214-0.547723 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.547723-0.69282 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.69282-0.894427 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.894427-1.07238 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 1.07238-1.51658 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 1.51658-2.44949 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 2.44949-3.4641 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 3.4641-4.47214 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 4.47214-5.47723 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 5.47723-6.9282 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 6.9282-8.94427 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 8.94427-10 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ALL: Transportation: gamma: PD1: ALL: SUM ALL: 0 +-(REL) 0 cm-2   N 0
+ALL: Transportation: gamma: PD1: ALL: Hstar= 0 pSv/particle 
+%%%%%% SCORE IN POINT DETECTOR FOR set ALL: compt: gamma: PD1: ALL: at (4800,0,0) NEVENTS= 1000
+ MultiFunctionalDet: PDS_detector
+ PrimitiveScorer: PointDetector ALL: compt: gamma: PD1: ALL:
+ Number of entries= 25
+ index:  0-0.0122474 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0122474-0.0173205 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 2
+ index: 0.0173205-0.0244949 = 1.59245e-123 +-(REL) 0.999992 sumW2 2.53585e-240 sumW3 0 sumW4 0  N 90
+ index: 0.0244949-0.034641 = 8.37851e-55 +-(REL) 0.538526 sumW2 2.04084e-103 sumW3 6.29327e-155 sumW4 2.14488e-206  N 737
+ index: 0.034641-0.0447214 = 3.29479e-36 +-(REL) 0.560506 sumW2 3.41794e-66 sumW3 5.52448e-99 sumW4 9.55443e-132  N 944
+ index: 0.0447214-0.0547723 = 4.81198e-28 +-(REL) 0.559203 sumW2 7.25673e-50 sumW3 1.6281e-74 sumW4 3.96072e-99  N 968
+ index: 0.0547723-0.069282 = 1.2002e-22 +-(REL) 0.939734 sumW2 1.27225e-38 sumW3 1.43444e-57 sumW4 1.61774e-76  N 1312
+ index: 0.069282-0.0894427 = 2.64832e-18 +-(REL) 0.681653 sumW2 3.26263e-30 sumW3 4.87469e-45 sumW4 7.81577e-60  N 1457
+ index: 0.0894427-0.122474 = 3.80434e-16 +-(REL) 0.9368 sumW2 1.27032e-25 sumW3 4.5069e-38 sumW4 1.60353e-50  N 1661
+ index: 0.122474-0.173205 = 2.81613e-15 +-(REL) 0.706807 sumW2 3.96591e-24 sumW3 6.28414e-36 sumW4 1.04543e-47  N 1453
+ index: 0.173205-0.244949 = 5.20945e-14 +-(REL) 0.946106 sumW2 2.42949e-21 sumW3 1.19437e-31 sumW4 5.88142e-42  N 1144
+ index: 0.244949-0.34641 = 8.68665e-15 +-(REL) 0.601393 sumW2 2.73393e-23 sumW3 1.11e-34 sumW4 4.88255e-46  N 816
+ index: 0.34641-0.447214 = 1.99986e-15 +-(REL) 0.162262 sumW2 1.09195e-25 sumW3 9.90996e-39 sumW4 1.12647e-51  N 428
+ index: 0.447214-0.547723 = 1.7873e-13 +-(REL) 0.975719 sumW2 3.04134e-20 sumW3 5.30371e-30 sumW4 9.24924e-40  N 313
+ index: 0.547723-0.69282 = 5.20324e-14 +-(REL) 0.510913 sumW2 7.0871e-22 sumW3 1.34712e-32 sumW4 2.6338e-43  N 279
+ index: 0.69282-0.894427 = 1.79445e-11 +-(REL) 0.957151 sumW2 2.95026e-16 sumW3 5.0545e-24 sumW4 8.67354e-32  N 224
+ index: 0.894427-1.07238 = 2.97256e-13 +-(REL) 0.629132 sumW2 3.50275e-20 sumW3 6.41404e-30 sumW4 1.19097e-39  N 146
+ index: 1.07238-1.51658 = 5.31866e-12 +-(REL) 0.699234 sumW2 1.38453e-17 sumW3 4.15748e-26 sumW4 1.31081e-34  N 272
+ index: 1.51658-2.44949 = 1.16099e-12 +-(REL) 0.545426 sumW2 4.01934e-19 sumW3 2.19158e-28 sumW4 1.27298e-37  N 285
+ index: 2.44949-3.4641 = 2.25357e-16 +-(REL) 0.962334 sumW2 4.70357e-26 sumW3 1.01944e-38 sumW4 2.21045e-51  N 9
+ index: 3.4641-4.47214 = 1.5841e-15 +-(REL) 0.956011 sumW2 2.29366e-24 sumW3 3.46849e-36 sumW4 5.25017e-48  N 5
+ index: 4.47214-5.47723 = 9.13406e-19 +-(REL) 1 sumW2 8.34311e-31 sumW3 7.62065e-46 sumW4 6.96075e-61  N 3
+ index: 5.47723-6.9282 = 2.82039e-20 +-(REL) 1 sumW2 7.95459e-34 sumW3 2.2435e-50 sumW4 6.32754e-67  N 1
+ index: 6.9282-8.94427 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 8.94427-10 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ALL: compt: gamma: PD1: ALL: SUM ALL: 2.50199e-11 +-(REL) 0.702917 cm-2   N 12549
+ALL: compt: gamma: PD1: ALL: Hstar= 2.92743e-11 pSv/particle 
+%%%%%% SCORE IN POINT DETECTOR FOR set ALL: conv: gamma: PD1: ALL: at (4800,0,0) NEVENTS= 1000
+ MultiFunctionalDet: PDS_detector
+ PrimitiveScorer: PointDetector ALL: conv: gamma: PD1: ALL:
+ Number of entries= 25
+ index:  0-0.0122474 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0122474-0.0173205 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0173205-0.0244949 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0244949-0.034641 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.034641-0.0447214 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0447214-0.0547723 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0547723-0.069282 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.069282-0.0894427 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0894427-0.122474 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.122474-0.173205 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.173205-0.244949 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.244949-0.34641 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.34641-0.447214 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.447214-0.547723 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.547723-0.69282 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.69282-0.894427 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.894427-1.07238 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 1.07238-1.51658 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 1.51658-2.44949 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 2.44949-3.4641 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 3.4641-4.47214 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 4.47214-5.47723 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 5.47723-6.9282 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 6.9282-8.94427 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 8.94427-10 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ALL: conv: gamma: PD1: ALL: SUM ALL: 0 +-(REL) 0 cm-2   N 0
+ALL: conv: gamma: PD1: ALL: Hstar= 0 pSv/particle 
+%%%%%% SCORE IN POINT DETECTOR FOR set ALL: eBrem: gamma: PD1: ALL: at (4800,0,0) NEVENTS= 1000
+ MultiFunctionalDet: PDS_detector
+ PrimitiveScorer: PointDetector ALL: eBrem: gamma: PD1: ALL:
+ Number of entries= 25
+ index:  0-0.0122474 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 21
+ index: 0.0122474-0.0173205 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 7
+ index: 0.0173205-0.0244949 = 9.03613e-183 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 16
+ index: 0.0244949-0.034641 = 4.2176e-110 +-(REL) 0.999431 sumW2 1.7768e-213 sumW3 7.48954e-320 sumW4 0  N 9
+ index: 0.034641-0.0447214 = 5.39948e-48 +-(REL) 0.964644 sumW2 2.71313e-89 sumW3 1.41046e-133 sumW4 7.34156e-178  N 10
+ index: 0.0447214-0.0547723 = 1.27197e-36 +-(REL) 0.893827 sumW2 1.29291e-66 sumW3 1.43785e-99 sumW4 1.61881e-132  N 8
+ index: 0.0547723-0.069282 = 5.00679e-28 +-(REL) 0.93297 sumW2 2.18232e-49 sumW3 1.01207e-73 sumW4 4.71425e-98  N 10
+ index: 0.069282-0.0894427 = 2.27494e-22 +-(REL) 0.947259 sumW2 4.64439e-38 sumW3 9.96174e-57 sumW4 2.14294e-75  N 9
+ index: 0.0894427-0.122474 = 2.5023e-25 +-(REL) 0.851957 sumW2 4.5465e-44 sumW3 9.25523e-66 sumW4 1.92809e-87  N 9
+ index: 0.122474-0.173205 = 5.08501e-21 +-(REL) 0.663322 sumW2 1.13916e-35 sumW3 2.99275e-53 sumW4 8.46687e-71  N 4
+ index: 0.173205-0.244949 = 1.71878e-20 +-(REL) 0.966319 sumW2 2.75873e-34 sumW3 4.5758e-51 sumW4 7.59639e-68  N 6
+ index: 0.244949-0.34641 = 8.44837e-18 +-(REL) 0.652361 sumW2 3.04164e-29 sumW3 1.24958e-43 sumW4 5.47944e-58  N 9
+ index: 0.34641-0.447214 = 1.25653e-17 +-(REL) 0.851245 sumW2 1.14451e-28 sumW3 1.16524e-42 sumW4 1.2156e-56  N 3
+ index: 0.447214-0.547723 = 2.45532e-16 +-(REL) 0.996047 sumW2 5.98106e-26 sumW3 1.46272e-38 sumW4 3.57724e-51  N 5
+ index: 0.547723-0.69282 = 6.14327e-21 +-(REL) 1 sumW2 3.77398e-35 sumW3 2.31846e-52 sumW4 1.42429e-69  N 1
+ index: 0.69282-0.894427 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.894427-1.07238 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 1.07238-1.51658 = 4.94596e-17 +-(REL) 0.818194 sumW2 1.63843e-27 sumW3 6.10588e-41 sumW4 2.35817e-54  N 2
+ index: 1.51658-2.44949 = 7.11157e-16 +-(REL) 1 sumW2 5.05745e-25 sumW3 3.59664e-37 sumW4 2.55778e-49  N 1
+ index: 2.44949-3.4641 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 3.4641-4.47214 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 4.47214-5.47723 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 5.47723-6.9282 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 6.9282-8.94427 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 8.94427-10 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ALL: eBrem: gamma: PD1: ALL: SUM ALL: 1.02719e-15 +-(REL) 0.733279 cm-2   N 130
+ALL: eBrem: gamma: PD1: ALL: Hstar= 1.19148e-15 pSv/particle 
+%%%%%% SCORE IN POINT DETECTOR FOR set ALL: nCapture: gamma: PD1: ALL: at (4800,0,0) NEVENTS= 1000
+ MultiFunctionalDet: PDS_detector
+ PrimitiveScorer: PointDetector ALL: nCapture: gamma: PD1: ALL:
+ Number of entries= 25
+ index:  0-0.0122474 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 2
+ index: 0.0122474-0.0173205 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0173205-0.0244949 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0244949-0.034641 = 4.84062e-121 +-(REL) 1 sumW2 2.34316e-235 sumW3 0 sumW4 0  N 1
+ index: 0.034641-0.0447214 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0447214-0.0547723 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0547723-0.069282 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.069282-0.0894427 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0894427-0.122474 = 1.84936e-24 +-(REL) 1 sumW2 3.42012e-42 sumW3 6.32503e-63 sumW4 1.16972e-83  N 1
+ index: 0.122474-0.173205 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.173205-0.244949 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.244949-0.34641 = 1.32009e-21 +-(REL) 0.898824 sumW2 1.40818e-36 sumW3 1.63817e-54 sumW4 1.92704e-72  N 2
+ index: 0.34641-0.447214 = 2.78118e-21 +-(REL) 1 sumW2 7.73498e-36 sumW3 2.15124e-53 sumW4 5.98299e-71  N 1
+ index: 0.447214-0.547723 = 3.58393e-20 +-(REL) 0.999999 sumW2 1.28446e-33 sumW3 4.6034e-50 sumW4 1.64983e-66  N 3
+ index: 0.547723-0.69282 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.69282-0.894427 = 5.41633e-29 +-(REL) 1 sumW2 2.93366e-51 sumW3 1.58897e-76 sumW4 8.60638e-102  N 1
+ index: 0.894427-1.07238 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 1.07238-1.51658 = 3.00037e-15 +-(REL) 0.544785 sumW2 2.6781e-24 sumW3 2.62301e-36 sumW4 2.64601e-48  N 11
+ index: 1.51658-2.44949 = 4.96624e-12 +-(REL) 0.351849 sumW2 3.07491e-18 sumW3 2.75903e-27 sumW4 2.52834e-36  N 925
+ index: 2.44949-3.4641 = 1.01018e-15 +-(REL) 0.78139 sumW2 6.23464e-25 sumW3 4.71062e-37 sumW4 3.64659e-49  N 8
+ index: 3.4641-4.47214 = 9.48507e-13 +-(REL) 0.992805 sumW2 8.8678e-19 sumW3 8.35047e-28 sumW4 7.86347e-37  N 14
+ index: 4.47214-5.47723 = 7.47642e-13 +-(REL) 0.99248 sumW2 5.50601e-19 sumW3 4.0855e-28 sumW4 3.03152e-37  N 15
+ index: 5.47723-6.9282 = 9.04016e-17 +-(REL) 0.586623 sumW2 2.81772e-27 sumW3 1.15752e-40 sumW4 5.24873e-54  N 8
+ index: 6.9282-8.94427 = 4.57452e-16 +-(REL) 0.952279 sumW2 1.89786e-25 sumW3 8.25134e-38 sumW4 3.59204e-50  N 10
+ index: 8.94427-10 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ALL: nCapture: gamma: PD1: ALL: SUM ALL: 6.66695e-12 +-(REL) 0.317854 cm-2   N 1002
+ALL: nCapture: gamma: PD1: ALL: Hstar= 8.25686e+106 pSv/particle 
+%%%%%% SCORE IN POINT DETECTOR FOR set ALL: phot: gamma: PD1: ALL: at (4800,0,0) NEVENTS= 1000
+ MultiFunctionalDet: PDS_detector
+ PrimitiveScorer: PointDetector ALL: phot: gamma: PD1: ALL:
+ Number of entries= 25
+ index:  0-0.0122474 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0122474-0.0173205 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0173205-0.0244949 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0244949-0.034641 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.034641-0.0447214 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0447214-0.0547723 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0547723-0.069282 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.069282-0.0894427 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.0894427-0.122474 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.122474-0.173205 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.173205-0.244949 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.244949-0.34641 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.34641-0.447214 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.447214-0.547723 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.547723-0.69282 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.69282-0.894427 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 0.894427-1.07238 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 1.07238-1.51658 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 1.51658-2.44949 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 2.44949-3.4641 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 3.4641-4.47214 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 4.47214-5.47723 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 5.47723-6.9282 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 6.9282-8.94427 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ index: 8.94427-10 = 0 +-(REL) 0 sumW2 0 sumW3 0 sumW4 0  N 0
+ALL: phot: gamma: PD1: ALL: SUM ALL: 0 +-(REL) 0 cm-2   N 0
+ALL: phot: gamma: PD1: ALL: Hstar= 0 pSv/particle 
+Graphics systems deleted.
+Visualization Manager deleting...
+=== saving histograms in file === pds.root
+%%%%% Table of indices for GmClassifierByProcess GmClassifierByProcess
+NeutronInelastic = 7
+Transportation = 3
+compt = 2
+conv = 6
+eBrem = 5
+nCapture = 1
+phot = 4

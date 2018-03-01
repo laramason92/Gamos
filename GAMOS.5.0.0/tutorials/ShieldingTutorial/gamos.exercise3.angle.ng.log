@@ -1,0 +1,2721 @@
+/control/execute exercise3.angle.ng.in
+/gamos/setParam GmGeometryFromText:FileName exercise3.geom
+/gamos/geometry GmGeometryFromText
+/gamos/physicsList G4QGSP_BIC_HP
+<<< Geant4 Physics List simulation engine: QGSP_BIC_HP 2.0
+
+/gamos/setParam GmGeneratorChangeEnergyAndMaterial:nEventsPerRun 10000
+/gamos/setParam GmGeneratorChangeEnergyAndMaterial:minE 1.E-9*MeV
+/gamos/setParam GmGeneratorChangeEnergyAndMaterial:maxE 1.E+1*MeV
+/gamos/setParam GmGeneratorChangeEnergyAndMaterial:nStepsE 31
+/gamos/setParam GmGeneratorChangeEnergyAndMaterial:logE 1
+/gamos/generator GmGeneratorChangeEnergyAndMaterial
+ GmGenUtils::FileInPath ./isotopes.dat in .
+ GmGenUtils::FileInPath /home/arce/gamosnew/GAMOS.5.0.0/data/isotopes.dat in /home/arce/gamosnew/GAMOS.5.0.0/data
+/gamos/setParam GmCountTracksUA:EachNEvent 1000
+/gamos/userAction GmCountTracksUA
+/run/initialize
+ GmGenUtils::FileInPath ./exercise3.geom in .
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Elastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Elastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/8_17_Oxygen
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Inelastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Inelastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Capture file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Elastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Inelastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Inelastic/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Capture file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/8_17_Oxygen
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Elastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Elastic/CrossSection/8_17_Oxygen
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Inelastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Inelastic/CrossSection/8_17_Oxygen
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+WARNING: model G4LENeutronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Capture file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/6_nat_Carbon
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+NeutronHP: /Capture file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamosnew/external/geant4/geant4.9.6.p02.gamos/../data/G4NDL4.2/Capture/CrossSection/8_17_Oxygen
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : 
+      issued by : G4NeutronHPNames
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+WARNING: model G4LEProtonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEPionPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEPionMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroLInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiKaonZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEKaonZeroSInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiProtonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiProtonInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiNeutronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiNeutronInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LELambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HELambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiLambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiLambdaInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LESigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HESigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiSigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiSigmaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LESigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HESigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiSigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiSigmaPlusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiXiMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiXiZeroInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4LEAntiOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+WARNING: model G4HEAntiOmegaMinusInelastic is being deprecated and will
+disappear in Geant4 version 10.0
+/gamos/generator/addSingleParticleSource source neutron 1.*MeV
+/gamos/setParam GmPDSCreateAngleTablesUA:SecondaryParticleName gamma
+/gamos/setParam GmPDSCreateAngleTablesUA:HistoFileName angleDeviation.neutron.gamma
+/gamos/userAction GmPDSCreateAngleTablesUA
+/gamos/userAction GmKillAtStackingActionUA GmSecondaryFilter
+/run/beamOn 10000000
+
+phot:   for  gamma    SubType= 12
+      LambdaPrime table from 200 keV to 10 TeV in 54 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       PhotoElectric :  Emin=        0 eV    Emax=       10 TeV   AngularGenSauterGavrila  FluoActive
+
+compt:   for  gamma    SubType= 13
+      Lambda table from 100 eV  to 1 MeV in 28 bins, spline: 1
+      LambdaPrime table from 1 MeV to 10 TeV in 49 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina :  Emin=        0 eV    Emax=       10 TeV
+
+conv:   for  gamma    SubType= 14
+      Lambda table from 1.022 MeV to 10 TeV in 49 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        BetheHeitler :  Emin=        0 eV    Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=       10 TeV
+
+msc:   for e-    SubType= 10
+      RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=      100 MeV  Table with 42 bins Emin=    100 eV    Emax=    100 MeV
+        WentzelVIUni :  Emin=      100 MeV   Emax=       10 TeV  Table with 35 bins Emin=    100 MeV   Emax=     10 TeV
+
+eIoni:   for  e-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+CoulombScat:   for  e-    SubType= 1
+      Lambda table from 100 MeV to 10 TeV in 35 bins, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=      100 MeV   Emax=       10 TeV
+
+msc:   for e+    SubType= 10
+      RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=      100 MeV  Table with 42 bins Emin=    100 eV    Emax=    100 MeV
+        WentzelVIUni :  Emin=      100 MeV   Emax=       10 TeV  Table with 35 bins Emin=    100 MeV   Emax=     10 TeV
+
+eIoni:   for  e+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+annihil:   for  e+    SubType= 5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  e+    SubType= 1
+      Lambda table from 100 MeV to 10 TeV in 35 bins, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=      100 MeV   Emax=       10 TeV
+
+msc:   for proton    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+hBrems:   for  proton    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  proton    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for GenericIon    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV
+
+ionIoni:   for  GenericIon    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.01, dRoverRange= 0.1, integral: 1, fluct: 1, linLossLimit= 0.02
+      Stopping Power data for 17 ion/material pairs 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+msc:   for alpha    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+ionIoni:   for  alpha    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.01, dRoverRange= 0.1, integral: 1, fluct: 1, linLossLimit= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon :  Emin=        0 eV    Emax=   7.9452 MeV
+          BetheBloch :  Emin=   7.9452 MeV   Emax=       10 TeV
+
+msc:   for anti_proton    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  anti_proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+hBrems:   for  anti_proton    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  anti_proton    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for kaon+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  kaon+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=  1.05231 MeV
+          BetheBloch :  Emin=  1.05231 MeV   Emax=       10 TeV
+
+hBrems:   for  kaon+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  kaon+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for kaon-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  kaon-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=  1.05231 MeV
+          BetheBloch :  Emin=  1.05231 MeV   Emax=       10 TeV
+
+hBrems:   for  kaon-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  kaon-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for mu+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+muIoni:   for  mu+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=      200 keV
+          BetheBloch :  Emin=      200 keV   Emax=        1 GeV
+        MuBetheBloch :  Emin=        1 GeV   Emax=       10 TeV
+
+muBrems:   for  mu+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem :  Emin=        0 eV    Emax=       10 TeV
+
+muPairProd:   for  mu+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  mu+    SubType= 1
+      Lambda table from 100 eV  to 10 TeV in 43 bins, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for mu-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+muIoni:   for  mu-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=      200 keV
+          BetheBloch :  Emin=      200 keV   Emax=        1 GeV
+        MuBetheBloch :  Emin=        1 GeV   Emax=       10 TeV
+
+muBrems:   for  mu-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem :  Emin=        0 eV    Emax=       10 TeV
+
+muPairProd:   for  mu-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  mu-    SubType= 1
+      Lambda table from 100 eV  to 10 TeV in 43 bins, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for pi+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  pi+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=  297.505 keV
+          BetheBloch :  Emin=  297.505 keV   Emax=       10 TeV
+
+hBrems:   for  pi+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  pi+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for pi-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  pi-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=  297.505 keV
+          BetheBloch :  Emin=  297.505 keV   Emax=       10 TeV
+
+hBrems:   for  pi-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  pi-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+============================================================================================
+             HADRONIC PROCESSES SUMMARY (verbose level 1)
+
+                                  Hadronic Processes for <GenericIon>
+                                  -----------------------------------
+        ionInelastic  Models:     Binary Light Ion Cascade: Emin(GeV)=    0  Emax(GeV)= 4
+                                                      FTFP: Emin(GeV)=    2  Emax(GeV)= 100000
+
+        ionInelastic  Crs sctns: Glauber-Gribov nucleus nucleus: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <anti_neutron>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+AntiNeutronInelastic  Models:     G4LEAntiNeutronInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+                                  G4HEAntiNeutronInelastic: Emin(GeV)=   20  Emax(GeV)= 100000
+
+AntiNeutronInelastic  Crs sctns:              AntiAGlauber: Emin(GeV)=    0  Emax(GeV)= 1.79769e+305
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <anti_proton>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 0.1
+                                              AntiAElastic: Emin(GeV)=  0.1  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:              AntiAGlauber: Emin(GeV)=    0  Emax(GeV)= 1.79769e+305
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+ AntiProtonInelastic  Models:      G4LEAntiProtonInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+                                   G4HEAntiProtonInelastic: Emin(GeV)=   20  Emax(GeV)= 100000
+
+ AntiProtonInelastic  Crs sctns:              AntiAGlauber: Emin(GeV)=    0  Emax(GeV)= 1.79769e+305
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hFritiofCaptureAtRest
+
+                                  Hadronic Processes for <e+>
+                                  -----------------------------------
+     PositronNuclear  Models:      G4ElectroVDNuclearModel: Emin(GeV)=    0  Emax(GeV)= 1e+06
+
+     PositronNuclear  Crs sctns:          ElectroNuclearXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <e->
+                                  -----------------------------------
+      ElectroNuclear  Models:      G4ElectroVDNuclearModel: Emin(GeV)=    0  Emax(GeV)= 1e+06
+
+      ElectroNuclear  Crs sctns:          ElectroNuclearXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <gamma>
+                                  -----------------------------------
+     PhotonInelastic  Models:               BertiniCascade: Emin(GeV)=    0  Emax(GeV)= 3.5
+                                           TheoFSGenerator: Emin(GeV)=    3  Emax(GeV)= 100000
+
+     PhotonInelastic  Crs sctns:            PhotoNuclearXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <kaon+>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+   KaonPlusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                     G4LEKaonPlusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+   KaonPlusInelastic  Crs sctns:  ChipsKaonPlusInelasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <kaon->
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+  KaonMinusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                    G4LEKaonMinusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+  KaonMinusInelastic  Crs sctns: ChipsKaonMinusInelasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hBertiniCaptureAtRest
+
+                                  Hadronic Processes for <lambda>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+     LambdaInelastic  Models:          G4LELambdaInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+                                       G4HELambdaInelastic: Emin(GeV)=   20  Emax(GeV)= 100000
+
+     LambdaInelastic  Crs sctns:   ChipsHyperonInelasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                     Hadronic Processes for <mu->
+          muMinusCaptureAtRest
+
+                                  Hadronic Processes for <neutron>
+                                  -----------------------------------
+          hadElastic  Models:                hElasticCHIPS: Emin(GeV)= 0.0195  Emax(GeV)= 100000
+                                          NeutronHPElastic: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+          hadElastic  Crs sctns:        NeutronHPElasticXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                     ChipsNeutronElasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+    NeutronInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                      G4LENeutronInelastic: Emin(GeV)=  9.5  Emax(GeV)= 25
+                                            Binary Cascade: Emin(GeV)= 0.0199  Emax(GeV)= 9.9
+                                        NeutronHPInelastic: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+    NeutronInelastic  Crs sctns:      NeutronHPInelasticXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+            nCapture  Models:                   G4LCapture: Emin(GeV)= 0.0199  Emax(GeV)= 20000
+                                          NeutronHPCapture: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+            nCapture  Crs sctns:        NeutronHPCaptureXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                          GheishaCaptureXS: Emin(GeV)=    0  Emax(GeV)= 100000
+
+            nFission  Models:                   G4LFission: Emin(GeV)= 0.0199  Emax(GeV)= 20000
+                                          NeutronHPFission: Emin(GeV)=    0  Emax(GeV)= 0.02
+
+            nFission  Crs sctns:        NeutronHPFissionXS: Emin(GeV)=    0  Emax(GeV)= 0.02
+                                          GheishaFissionXS: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <pi+>
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 1
+                                           hElasticGlauber: Emin(GeV)=    1  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+   PionPlusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                     G4LEPionPlusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+   PionPlusInelastic  Crs sctns:      G4CrossSectionPairGG: Emin(GeV)=    0  Emax(GeV)= 100000
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+
+                                  Hadronic Processes for <pi->
+                                  -----------------------------------
+          hadElastic  Models:                 hElasticLHEP: Emin(GeV)=    0  Emax(GeV)= 1
+                                           hElasticGlauber: Emin(GeV)=    1  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+  PionMinusInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                    G4LEPionMinusInelastic: Emin(GeV)=    0  Emax(GeV)= 25
+
+  PionMinusInelastic  Crs sctns:      G4CrossSectionPairGG: Emin(GeV)=    0  Emax(GeV)= 100000
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hBertiniCaptureAtRest
+
+                                  Hadronic Processes for <proton>
+                                  -----------------------------------
+          hadElastic  Models:                hElasticCHIPS: Emin(GeV)=    0  Emax(GeV)= 100000
+
+          hadElastic  Crs sctns:      ChipsProtonElasticXS: Emin(GeV)=    0  Emax(GeV)= 100000
+                                            GheishaElastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+     ProtonInelastic  Models:                         QGSP: Emin(GeV)=   12  Emax(GeV)= 100000
+                                       G4LEProtonInelastic: Emin(GeV)=  9.5  Emax(GeV)= 25
+                                            Binary Cascade: Emin(GeV)=    0  Emax(GeV)= 9.9
+
+     ProtonInelastic  Crs sctns:       Barashenkov-Glauber: Emin(GeV)=    0  Emax(GeV)= 100000
+                                          GheishaInelastic: Emin(GeV)=    0  Emax(GeV)= 100000
+
+============================================================================================
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes     recalculation needed : No 
+ Material : CONCRETE
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  5.13646 keV    e-  427.59 keV    e+  413.461 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 2     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_POLYETHYLENE
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  1.97806 keV    e-  276.265 keV    e+  272.577 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+Start Run processing.
+0x24e5f30 GmGeneratorChangeEnergyAndMaterial::BuildMaterialsFromGe 3
+G4GeometryManager::ReportVoxelStats -- Voxel Statistics
+
+    Total memory consumed for geometry optimisation:   0 kByte
+    Total CPU time elapsed for geometry optimisation: 0 seconds
+
+    Voxelisation: top CPU users:
+    Percent   Total CPU    System CPU       Memory  Volume
+    -------   ----------   ----------     --------  ----------
+       0.00         0.00         0.00            0k world
+
+    Voxelisation: top memory users:
+    Percent     Memory      Heads    Nodes   Pointers    Total CPU    Volume
+    -------   --------     ------   ------   --------   ----------    ----------
+     100.00          0k         1        2          4         0.00    world
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : No      recalculation needed : No 
+ Material : CONCRETE
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  5.13646 keV    e-  427.59 keV    e+  413.461 keV proton 70 keV
+
+Index : 2     used in the geometry : No      recalculation needed : No 
+ Material : G4_POLYETHYLENE
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  1.97806 keV    e-  276.265 keV    e+  272.577 keV proton 70 keV
+
+====================================================================
+
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : No      recalculation needed : No 
+ Material : CONCRETE
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  5.13646 keV    e-  427.59 keV    e+  413.461 keV proton 70 keV
+
+Index : 2     used in the geometry : No      recalculation needed : No 
+ Material : G4_POLYETHYLENE
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  1.97806 keV    e-  276.265 keV    e+  272.577 keV proton 70 keV
+
+====================================================================
+
+ GmPDSCreateAngleTablesUA::BookHistos 9.9999E-10 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 9.9999E-10 : cos Deviation Angle = 5200001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 9.9999E-10 : log10 Interaction Distance (cm) = 5200002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 9.9999E-10 : cos Deviation Angle = 5300001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 9.9999E-10 : log10 Interaction Distance (cm) = 5300002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 9.9999E-10 : cos Deviation Angle = 5400001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 9.9999E-10 : log10 Interaction Distance (cm) = 5400002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 9.9999E-10 : cos Deviation Angle = 5500001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 9.9999E-10 : log10 Interaction Distance (cm) = 5500002
+ %%% EVENT 0 NTRACKS 1 TOTAL NTRACKS 1
+ %%% EVENT 1000 NTRACKS 1 TOTAL NTRACKS 1001
+ %%% EVENT 2000 NTRACKS 1 TOTAL NTRACKS 2001
+ %%% EVENT 3000 NTRACKS 1 TOTAL NTRACKS 3001
+ %%% EVENT 4000 NTRACKS 1 TOTAL NTRACKS 4001
+ %%% EVENT 5000 NTRACKS 1 TOTAL NTRACKS 5001
+ %%% EVENT 6000 NTRACKS 1 TOTAL NTRACKS 6001
+ %%% EVENT 7000 NTRACKS 1 TOTAL NTRACKS 7001
+ %%% EVENT 8000 NTRACKS 1 TOTAL NTRACKS 8001
+ %%% EVENT 9000 NTRACKS 1 TOTAL NTRACKS 9001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-9 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 2.1544E-9 : cos Deviation Angle = 5201001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 2.1544E-9 : log10 Interaction Distance (cm) = 5201002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 2.1544E-9 : cos Deviation Angle = 5301001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 2.1544E-9 : log10 Interaction Distance (cm) = 5301002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 2.1544E-9 : cos Deviation Angle = 5401001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 2.1544E-9 : log10 Interaction Distance (cm) = 5401002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 2.1544E-9 : cos Deviation Angle = 5501001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 2.1544E-9 : log10 Interaction Distance (cm) = 5501002
+ %%% EVENT 10000 NTRACKS 1 TOTAL NTRACKS 10001
+ %%% EVENT 11000 NTRACKS 1 TOTAL NTRACKS 11001
+ %%% EVENT 12000 NTRACKS 1 TOTAL NTRACKS 12001
+ %%% EVENT 13000 NTRACKS 1 TOTAL NTRACKS 13001
+ %%% EVENT 14000 NTRACKS 1 TOTAL NTRACKS 14001
+ %%% EVENT 15000 NTRACKS 1 TOTAL NTRACKS 15001
+ %%% EVENT 16000 NTRACKS 1 TOTAL NTRACKS 16001
+ %%% EVENT 17000 NTRACKS 1 TOTAL NTRACKS 17001
+ %%% EVENT 18000 NTRACKS 1 TOTAL NTRACKS 18001
+ %%% EVENT 19000 NTRACKS 1 TOTAL NTRACKS 19001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6416E-9 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 4.6416E-9 : cos Deviation Angle = 5202001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 4.6416E-9 : log10 Interaction Distance (cm) = 5202002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 4.6416E-9 : cos Deviation Angle = 5302001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 4.6416E-9 : log10 Interaction Distance (cm) = 5302002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 4.6416E-9 : cos Deviation Angle = 5402001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 4.6416E-9 : log10 Interaction Distance (cm) = 5402002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 4.6416E-9 : cos Deviation Angle = 5502001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 4.6416E-9 : log10 Interaction Distance (cm) = 5502002
+ %%% EVENT 20000 NTRACKS 1 TOTAL NTRACKS 20001
+ %%% EVENT 21000 NTRACKS 1 TOTAL NTRACKS 21001
+ %%% EVENT 22000 NTRACKS 1 TOTAL NTRACKS 22001
+ %%% EVENT 23000 NTRACKS 1 TOTAL NTRACKS 23001
+ %%% EVENT 24000 NTRACKS 1 TOTAL NTRACKS 24001
+ %%% EVENT 25000 NTRACKS 1 TOTAL NTRACKS 25001
+ %%% EVENT 26000 NTRACKS 1 TOTAL NTRACKS 26001
+ %%% EVENT 27000 NTRACKS 1 TOTAL NTRACKS 27001
+ %%% EVENT 28000 NTRACKS 1 TOTAL NTRACKS 28001
+ %%% EVENT 29000 NTRACKS 1 TOTAL NTRACKS 29001
+ GmPDSCreateAngleTablesUA::BookHistos 1E-8 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 1E-8 : cos Deviation Angle = 5203001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 1E-8 : log10 Interaction Distance (cm) = 5203002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 1E-8 : cos Deviation Angle = 5303001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 1E-8 : log10 Interaction Distance (cm) = 5303002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 1E-8 : cos Deviation Angle = 5403001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 1E-8 : log10 Interaction Distance (cm) = 5403002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 1E-8 : cos Deviation Angle = 5503001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 1E-8 : log10 Interaction Distance (cm) = 5503002
+ %%% EVENT 30000 NTRACKS 1 TOTAL NTRACKS 30001
+ %%% EVENT 31000 NTRACKS 1 TOTAL NTRACKS 31001
+ %%% EVENT 32000 NTRACKS 1 TOTAL NTRACKS 32001
+ %%% EVENT 33000 NTRACKS 1 TOTAL NTRACKS 33001
+ %%% EVENT 34000 NTRACKS 1 TOTAL NTRACKS 34001
+ %%% EVENT 35000 NTRACKS 1 TOTAL NTRACKS 35001
+ %%% EVENT 36000 NTRACKS 1 TOTAL NTRACKS 36001
+ %%% EVENT 37000 NTRACKS 1 TOTAL NTRACKS 37001
+ %%% EVENT 38000 NTRACKS 1 TOTAL NTRACKS 38001
+ %%% EVENT 39000 NTRACKS 1 TOTAL NTRACKS 39001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-8 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 2.1544E-8 : cos Deviation Angle = 5204001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 2.1544E-8 : log10 Interaction Distance (cm) = 5204002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 2.1544E-8 : cos Deviation Angle = 5304001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 2.1544E-8 : log10 Interaction Distance (cm) = 5304002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 2.1544E-8 : cos Deviation Angle = 5404001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 2.1544E-8 : log10 Interaction Distance (cm) = 5404002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 2.1544E-8 : cos Deviation Angle = 5504001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 2.1544E-8 : log10 Interaction Distance (cm) = 5504002
+ %%% EVENT 40000 NTRACKS 1 TOTAL NTRACKS 40001
+ %%% EVENT 41000 NTRACKS 1 TOTAL NTRACKS 41001
+ %%% EVENT 42000 NTRACKS 1 TOTAL NTRACKS 42001
+ %%% EVENT 43000 NTRACKS 1 TOTAL NTRACKS 43001
+ %%% EVENT 44000 NTRACKS 1 TOTAL NTRACKS 44001
+ %%% EVENT 45000 NTRACKS 1 TOTAL NTRACKS 45001
+ %%% EVENT 46000 NTRACKS 1 TOTAL NTRACKS 46001
+ %%% EVENT 47000 NTRACKS 1 TOTAL NTRACKS 47001
+ %%% EVENT 48000 NTRACKS 1 TOTAL NTRACKS 48001
+ %%% EVENT 49000 NTRACKS 1 TOTAL NTRACKS 49001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E-8 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 4.6415E-8 : cos Deviation Angle = 5205001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 4.6415E-8 : log10 Interaction Distance (cm) = 5205002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 4.6415E-8 : cos Deviation Angle = 5305001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 4.6415E-8 : log10 Interaction Distance (cm) = 5305002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 4.6415E-8 : cos Deviation Angle = 5405001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 4.6415E-8 : log10 Interaction Distance (cm) = 5405002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 4.6415E-8 : cos Deviation Angle = 5505001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 4.6415E-8 : log10 Interaction Distance (cm) = 5505002
+ %%% EVENT 50000 NTRACKS 1 TOTAL NTRACKS 50001
+ %%% EVENT 51000 NTRACKS 1 TOTAL NTRACKS 51001
+ %%% EVENT 52000 NTRACKS 1 TOTAL NTRACKS 52001
+ %%% EVENT 53000 NTRACKS 1 TOTAL NTRACKS 53001
+ %%% EVENT 54000 NTRACKS 1 TOTAL NTRACKS 54001
+ %%% EVENT 55000 NTRACKS 1 TOTAL NTRACKS 55001
+ %%% EVENT 56000 NTRACKS 1 TOTAL NTRACKS 56001
+ %%% EVENT 57000 NTRACKS 1 TOTAL NTRACKS 57001
+ %%% EVENT 58000 NTRACKS 1 TOTAL NTRACKS 58001
+ %%% EVENT 59000 NTRACKS 1 TOTAL NTRACKS 59001
+ GmPDSCreateAngleTablesUA::BookHistos 1E-7 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 1E-7 : cos Deviation Angle = 5206001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 1E-7 : log10 Interaction Distance (cm) = 5206002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 1E-7 : cos Deviation Angle = 5306001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 1E-7 : log10 Interaction Distance (cm) = 5306002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 1E-7 : cos Deviation Angle = 5406001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 1E-7 : log10 Interaction Distance (cm) = 5406002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 1E-7 : cos Deviation Angle = 5506001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 1E-7 : log10 Interaction Distance (cm) = 5506002
+ %%% EVENT 60000 NTRACKS 1 TOTAL NTRACKS 60001
+ %%% EVENT 61000 NTRACKS 1 TOTAL NTRACKS 61001
+ %%% EVENT 62000 NTRACKS 1 TOTAL NTRACKS 62001
+ %%% EVENT 63000 NTRACKS 1 TOTAL NTRACKS 63001
+ %%% EVENT 64000 NTRACKS 1 TOTAL NTRACKS 64001
+ %%% EVENT 65000 NTRACKS 1 TOTAL NTRACKS 65001
+ %%% EVENT 66000 NTRACKS 1 TOTAL NTRACKS 66001
+ %%% EVENT 67000 NTRACKS 1 TOTAL NTRACKS 67001
+ %%% EVENT 68000 NTRACKS 1 TOTAL NTRACKS 68001
+ %%% EVENT 69000 NTRACKS 1 TOTAL NTRACKS 69001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-7 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 2.1544E-7 : cos Deviation Angle = 5207001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 2.1544E-7 : log10 Interaction Distance (cm) = 5207002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 2.1544E-7 : cos Deviation Angle = 5307001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 2.1544E-7 : log10 Interaction Distance (cm) = 5307002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 2.1544E-7 : cos Deviation Angle = 5407001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 2.1544E-7 : log10 Interaction Distance (cm) = 5407002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 2.1544E-7 : cos Deviation Angle = 5507001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 2.1544E-7 : log10 Interaction Distance (cm) = 5507002
+ %%% EVENT 70000 NTRACKS 1 TOTAL NTRACKS 70001
+ %%% EVENT 71000 NTRACKS 1 TOTAL NTRACKS 71001
+ %%% EVENT 72000 NTRACKS 1 TOTAL NTRACKS 72001
+ %%% EVENT 73000 NTRACKS 1 TOTAL NTRACKS 73001
+ %%% EVENT 74000 NTRACKS 1 TOTAL NTRACKS 74001
+ %%% EVENT 75000 NTRACKS 1 TOTAL NTRACKS 75001
+ %%% EVENT 76000 NTRACKS 1 TOTAL NTRACKS 76001
+ %%% EVENT 77000 NTRACKS 1 TOTAL NTRACKS 77001
+ %%% EVENT 78000 NTRACKS 1 TOTAL NTRACKS 78001
+ %%% EVENT 79000 NTRACKS 1 TOTAL NTRACKS 79001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E-7 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 4.6415E-7 : cos Deviation Angle = 5208001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 4.6415E-7 : log10 Interaction Distance (cm) = 5208002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 4.6415E-7 : cos Deviation Angle = 5308001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 4.6415E-7 : log10 Interaction Distance (cm) = 5308002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 4.6415E-7 : cos Deviation Angle = 5408001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 4.6415E-7 : log10 Interaction Distance (cm) = 5408002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 4.6415E-7 : cos Deviation Angle = 5508001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 4.6415E-7 : log10 Interaction Distance (cm) = 5508002
+ %%% EVENT 80000 NTRACKS 1 TOTAL NTRACKS 80001
+ %%% EVENT 81000 NTRACKS 1 TOTAL NTRACKS 81001
+ %%% EVENT 82000 NTRACKS 1 TOTAL NTRACKS 82001
+ %%% EVENT 83000 NTRACKS 1 TOTAL NTRACKS 83001
+ %%% EVENT 84000 NTRACKS 1 TOTAL NTRACKS 84001
+ %%% EVENT 85000 NTRACKS 1 TOTAL NTRACKS 85001
+ %%% EVENT 86000 NTRACKS 1 TOTAL NTRACKS 86001
+ %%% EVENT 87000 NTRACKS 1 TOTAL NTRACKS 87001
+ %%% EVENT 88000 NTRACKS 1 TOTAL NTRACKS 88001
+ %%% EVENT 89000 NTRACKS 1 TOTAL NTRACKS 89001
+ GmPDSCreateAngleTablesUA::BookHistos 1E-6 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 1E-6 : cos Deviation Angle = 5209001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 1E-6 : log10 Interaction Distance (cm) = 5209002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 1E-6 : cos Deviation Angle = 5309001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 1E-6 : log10 Interaction Distance (cm) = 5309002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 1E-6 : cos Deviation Angle = 5409001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 1E-6 : log10 Interaction Distance (cm) = 5409002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 1E-6 : cos Deviation Angle = 5509001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 1E-6 : log10 Interaction Distance (cm) = 5509002
+ %%% EVENT 90000 NTRACKS 1 TOTAL NTRACKS 90001
+ %%% EVENT 91000 NTRACKS 1 TOTAL NTRACKS 91001
+ %%% EVENT 92000 NTRACKS 1 TOTAL NTRACKS 92001
+ %%% EVENT 93000 NTRACKS 1 TOTAL NTRACKS 93001
+ %%% EVENT 94000 NTRACKS 1 TOTAL NTRACKS 94001
+ %%% EVENT 95000 NTRACKS 1 TOTAL NTRACKS 95001
+ %%% EVENT 96000 NTRACKS 1 TOTAL NTRACKS 96001
+ %%% EVENT 97000 NTRACKS 1 TOTAL NTRACKS 97001
+ %%% EVENT 98000 NTRACKS 1 TOTAL NTRACKS 98001
+ %%% EVENT 99000 NTRACKS 1 TOTAL NTRACKS 99001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-6 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 2.1544E-6 : cos Deviation Angle = 5210001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 2.1544E-6 : log10 Interaction Distance (cm) = 5210002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 2.1544E-6 : cos Deviation Angle = 5310001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 2.1544E-6 : log10 Interaction Distance (cm) = 5310002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 2.1544E-6 : cos Deviation Angle = 5410001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 2.1544E-6 : log10 Interaction Distance (cm) = 5410002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 2.1544E-6 : cos Deviation Angle = 5510001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 2.1544E-6 : log10 Interaction Distance (cm) = 5510002
+ %%% EVENT 100000 NTRACKS 1 TOTAL NTRACKS 100001
+ %%% EVENT 101000 NTRACKS 1 TOTAL NTRACKS 101001
+ %%% EVENT 102000 NTRACKS 1 TOTAL NTRACKS 102001
+ %%% EVENT 103000 NTRACKS 1 TOTAL NTRACKS 103001
+ %%% EVENT 104000 NTRACKS 1 TOTAL NTRACKS 104001
+ %%% EVENT 105000 NTRACKS 1 TOTAL NTRACKS 105001
+ %%% EVENT 106000 NTRACKS 1 TOTAL NTRACKS 106001
+ %%% EVENT 107000 NTRACKS 1 TOTAL NTRACKS 107001
+ %%% EVENT 108000 NTRACKS 1 TOTAL NTRACKS 108001
+ %%% EVENT 109000 NTRACKS 1 TOTAL NTRACKS 109001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E-6 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 4.6415E-6 : cos Deviation Angle = 5211001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 4.6415E-6 : log10 Interaction Distance (cm) = 5211002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 4.6415E-6 : cos Deviation Angle = 5311001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 4.6415E-6 : log10 Interaction Distance (cm) = 5311002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 4.6415E-6 : cos Deviation Angle = 5411001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 4.6415E-6 : log10 Interaction Distance (cm) = 5411002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 4.6415E-6 : cos Deviation Angle = 5511001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 4.6415E-6 : log10 Interaction Distance (cm) = 5511002
+ %%% EVENT 110000 NTRACKS 1 TOTAL NTRACKS 110001
+ %%% EVENT 111000 NTRACKS 1 TOTAL NTRACKS 111001
+ %%% EVENT 112000 NTRACKS 1 TOTAL NTRACKS 112001
+ %%% EVENT 113000 NTRACKS 1 TOTAL NTRACKS 113001
+ %%% EVENT 114000 NTRACKS 1 TOTAL NTRACKS 114001
+ %%% EVENT 115000 NTRACKS 1 TOTAL NTRACKS 115001
+ %%% EVENT 116000 NTRACKS 1 TOTAL NTRACKS 116001
+ %%% EVENT 117000 NTRACKS 1 TOTAL NTRACKS 117001
+ %%% EVENT 118000 NTRACKS 1 TOTAL NTRACKS 118001
+ %%% EVENT 119000 NTRACKS 1 TOTAL NTRACKS 119001
+ GmPDSCreateAngleTablesUA::BookHistos 1E-5 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 1E-5 : cos Deviation Angle = 5212001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 1E-5 : log10 Interaction Distance (cm) = 5212002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 1E-5 : cos Deviation Angle = 5312001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 1E-5 : log10 Interaction Distance (cm) = 5312002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 1E-5 : cos Deviation Angle = 5412001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 1E-5 : log10 Interaction Distance (cm) = 5412002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 1E-5 : cos Deviation Angle = 5512001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 1E-5 : log10 Interaction Distance (cm) = 5512002
+ %%% EVENT 120000 NTRACKS 1 TOTAL NTRACKS 120001
+ %%% EVENT 121000 NTRACKS 1 TOTAL NTRACKS 121001
+ %%% EVENT 122000 NTRACKS 1 TOTAL NTRACKS 122001
+ %%% EVENT 123000 NTRACKS 1 TOTAL NTRACKS 123001
+ %%% EVENT 124000 NTRACKS 1 TOTAL NTRACKS 124001
+ %%% EVENT 125000 NTRACKS 1 TOTAL NTRACKS 125001
+ %%% EVENT 126000 NTRACKS 1 TOTAL NTRACKS 126001
+ %%% EVENT 127000 NTRACKS 1 TOTAL NTRACKS 127001
+ %%% EVENT 128000 NTRACKS 1 TOTAL NTRACKS 128001
+ %%% EVENT 129000 NTRACKS 1 TOTAL NTRACKS 129001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-5 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 2.1544E-5 : cos Deviation Angle = 5213001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 2.1544E-5 : log10 Interaction Distance (cm) = 5213002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 2.1544E-5 : cos Deviation Angle = 5313001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 2.1544E-5 : log10 Interaction Distance (cm) = 5313002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 2.1544E-5 : cos Deviation Angle = 5413001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 2.1544E-5 : log10 Interaction Distance (cm) = 5413002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 2.1544E-5 : cos Deviation Angle = 5513001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 2.1544E-5 : log10 Interaction Distance (cm) = 5513002
+ %%% EVENT 130000 NTRACKS 1 TOTAL NTRACKS 130001
+ %%% EVENT 131000 NTRACKS 1 TOTAL NTRACKS 131001
+ %%% EVENT 132000 NTRACKS 1 TOTAL NTRACKS 132001
+ %%% EVENT 133000 NTRACKS 1 TOTAL NTRACKS 133001
+ %%% EVENT 134000 NTRACKS 1 TOTAL NTRACKS 134001
+ %%% EVENT 135000 NTRACKS 1 TOTAL NTRACKS 135001
+ %%% EVENT 136000 NTRACKS 1 TOTAL NTRACKS 136001
+ %%% EVENT 137000 NTRACKS 1 TOTAL NTRACKS 137001
+ %%% EVENT 138000 NTRACKS 1 TOTAL NTRACKS 138001
+ %%% EVENT 139000 NTRACKS 1 TOTAL NTRACKS 139001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E-5 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 4.6415E-5 : cos Deviation Angle = 5214001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 4.6415E-5 : log10 Interaction Distance (cm) = 5214002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 4.6415E-5 : cos Deviation Angle = 5314001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 4.6415E-5 : log10 Interaction Distance (cm) = 5314002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 4.6415E-5 : cos Deviation Angle = 5414001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 4.6415E-5 : log10 Interaction Distance (cm) = 5414002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 4.6415E-5 : cos Deviation Angle = 5514001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 4.6415E-5 : log10 Interaction Distance (cm) = 5514002
+ %%% EVENT 140000 NTRACKS 1 TOTAL NTRACKS 140001
+ %%% EVENT 141000 NTRACKS 1 TOTAL NTRACKS 141001
+ %%% EVENT 142000 NTRACKS 1 TOTAL NTRACKS 142001
+ %%% EVENT 143000 NTRACKS 1 TOTAL NTRACKS 143001
+ %%% EVENT 144000 NTRACKS 1 TOTAL NTRACKS 144001
+ %%% EVENT 145000 NTRACKS 1 TOTAL NTRACKS 145001
+ %%% EVENT 146000 NTRACKS 1 TOTAL NTRACKS 146001
+ %%% EVENT 147000 NTRACKS 1 TOTAL NTRACKS 147001
+ %%% EVENT 148000 NTRACKS 1 TOTAL NTRACKS 148001
+ %%% EVENT 149000 NTRACKS 1 TOTAL NTRACKS 149001
+ GmPDSCreateAngleTablesUA::BookHistos 1E-4 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 1E-4 : cos Deviation Angle = 5215001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 1E-4 : log10 Interaction Distance (cm) = 5215002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 1E-4 : cos Deviation Angle = 5315001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 1E-4 : log10 Interaction Distance (cm) = 5315002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 1E-4 : cos Deviation Angle = 5415001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 1E-4 : log10 Interaction Distance (cm) = 5415002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 1E-4 : cos Deviation Angle = 5515001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 1E-4 : log10 Interaction Distance (cm) = 5515002
+ %%% EVENT 150000 NTRACKS 1 TOTAL NTRACKS 150001
+ %%% EVENT 151000 NTRACKS 1 TOTAL NTRACKS 151001
+ %%% EVENT 152000 NTRACKS 1 TOTAL NTRACKS 152001
+ %%% EVENT 153000 NTRACKS 1 TOTAL NTRACKS 153001
+ %%% EVENT 154000 NTRACKS 1 TOTAL NTRACKS 154001
+ %%% EVENT 155000 NTRACKS 1 TOTAL NTRACKS 155001
+ %%% EVENT 156000 NTRACKS 1 TOTAL NTRACKS 156001
+ %%% EVENT 157000 NTRACKS 1 TOTAL NTRACKS 157001
+ %%% EVENT 158000 NTRACKS 1 TOTAL NTRACKS 158001
+ %%% EVENT 159000 NTRACKS 1 TOTAL NTRACKS 159001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-4 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 2.1544E-4 : cos Deviation Angle = 5216001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 2.1544E-4 : log10 Interaction Distance (cm) = 5216002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 2.1544E-4 : cos Deviation Angle = 5316001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 2.1544E-4 : log10 Interaction Distance (cm) = 5316002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 2.1544E-4 : cos Deviation Angle = 5416001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 2.1544E-4 : log10 Interaction Distance (cm) = 5416002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 2.1544E-4 : cos Deviation Angle = 5516001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 2.1544E-4 : log10 Interaction Distance (cm) = 5516002
+ %%% EVENT 160000 NTRACKS 1 TOTAL NTRACKS 160001
+ %%% EVENT 161000 NTRACKS 1 TOTAL NTRACKS 161001
+ %%% EVENT 162000 NTRACKS 1 TOTAL NTRACKS 162001
+ %%% EVENT 163000 NTRACKS 1 TOTAL NTRACKS 163001
+ %%% EVENT 164000 NTRACKS 1 TOTAL NTRACKS 164001
+ %%% EVENT 165000 NTRACKS 1 TOTAL NTRACKS 165001
+ %%% EVENT 166000 NTRACKS 1 TOTAL NTRACKS 166001
+ %%% EVENT 167000 NTRACKS 1 TOTAL NTRACKS 167001
+ %%% EVENT 168000 NTRACKS 1 TOTAL NTRACKS 168001
+ %%% EVENT 169000 NTRACKS 1 TOTAL NTRACKS 169001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E-4 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 4.6415E-4 : cos Deviation Angle = 5217001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 4.6415E-4 : log10 Interaction Distance (cm) = 5217002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 4.6415E-4 : cos Deviation Angle = 5317001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 4.6415E-4 : log10 Interaction Distance (cm) = 5317002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 4.6415E-4 : cos Deviation Angle = 5417001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 4.6415E-4 : log10 Interaction Distance (cm) = 5417002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 4.6415E-4 : cos Deviation Angle = 5517001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 4.6415E-4 : log10 Interaction Distance (cm) = 5517002
+ %%% EVENT 170000 NTRACKS 1 TOTAL NTRACKS 170001
+ %%% EVENT 171000 NTRACKS 1 TOTAL NTRACKS 171001
+ %%% EVENT 172000 NTRACKS 1 TOTAL NTRACKS 172001
+ %%% EVENT 173000 NTRACKS 1 TOTAL NTRACKS 173001
+ %%% EVENT 174000 NTRACKS 1 TOTAL NTRACKS 174001
+ %%% EVENT 175000 NTRACKS 1 TOTAL NTRACKS 175001
+ %%% EVENT 176000 NTRACKS 1 TOTAL NTRACKS 176001
+ %%% EVENT 177000 NTRACKS 1 TOTAL NTRACKS 177001
+ %%% EVENT 178000 NTRACKS 1 TOTAL NTRACKS 178001
+ %%% EVENT 179000 NTRACKS 1 TOTAL NTRACKS 179001
+ GmPDSCreateAngleTablesUA::BookHistos 1E-3 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 1E-3 : cos Deviation Angle = 5218001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 1E-3 : log10 Interaction Distance (cm) = 5218002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 1E-3 : cos Deviation Angle = 5318001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 1E-3 : log10 Interaction Distance (cm) = 5318002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 1E-3 : cos Deviation Angle = 5418001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 1E-3 : log10 Interaction Distance (cm) = 5418002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 1E-3 : cos Deviation Angle = 5518001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 1E-3 : log10 Interaction Distance (cm) = 5518002
+ %%% EVENT 180000 NTRACKS 1 TOTAL NTRACKS 180001
+ %%% EVENT 181000 NTRACKS 1 TOTAL NTRACKS 181001
+ %%% EVENT 182000 NTRACKS 1 TOTAL NTRACKS 182001
+ %%% EVENT 183000 NTRACKS 1 TOTAL NTRACKS 183001
+ %%% EVENT 184000 NTRACKS 1 TOTAL NTRACKS 184001
+ %%% EVENT 185000 NTRACKS 1 TOTAL NTRACKS 185001
+ %%% EVENT 186000 NTRACKS 1 TOTAL NTRACKS 186001
+ %%% EVENT 187000 NTRACKS 1 TOTAL NTRACKS 187001
+ %%% EVENT 188000 NTRACKS 1 TOTAL NTRACKS 188001
+ %%% EVENT 189000 NTRACKS 1 TOTAL NTRACKS 189001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-3 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 2.1544E-3 : cos Deviation Angle = 5219001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 2.1544E-3 : log10 Interaction Distance (cm) = 5219002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 2.1544E-3 : cos Deviation Angle = 5319001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 2.1544E-3 : log10 Interaction Distance (cm) = 5319002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 2.1544E-3 : cos Deviation Angle = 5419001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 2.1544E-3 : log10 Interaction Distance (cm) = 5419002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 2.1544E-3 : cos Deviation Angle = 5519001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 2.1544E-3 : log10 Interaction Distance (cm) = 5519002
+ %%% EVENT 190000 NTRACKS 1 TOTAL NTRACKS 190001
+ %%% EVENT 191000 NTRACKS 1 TOTAL NTRACKS 191001
+ %%% EVENT 192000 NTRACKS 1 TOTAL NTRACKS 192001
+ %%% EVENT 193000 NTRACKS 1 TOTAL NTRACKS 193001
+ %%% EVENT 194000 NTRACKS 1 TOTAL NTRACKS 194001
+ %%% EVENT 195000 NTRACKS 1 TOTAL NTRACKS 195001
+ %%% EVENT 196000 NTRACKS 1 TOTAL NTRACKS 196001
+ %%% EVENT 197000 NTRACKS 1 TOTAL NTRACKS 197001
+ %%% EVENT 198000 NTRACKS 1 TOTAL NTRACKS 198001
+ %%% EVENT 199000 NTRACKS 1 TOTAL NTRACKS 199001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E-3 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 4.6415E-3 : cos Deviation Angle = 5220001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 4.6415E-3 : log10 Interaction Distance (cm) = 5220002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 4.6415E-3 : cos Deviation Angle = 5320001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 4.6415E-3 : log10 Interaction Distance (cm) = 5320002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 4.6415E-3 : cos Deviation Angle = 5420001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 4.6415E-3 : log10 Interaction Distance (cm) = 5420002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 4.6415E-3 : cos Deviation Angle = 5520001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 4.6415E-3 : log10 Interaction Distance (cm) = 5520002
+ %%% EVENT 200000 NTRACKS 1 TOTAL NTRACKS 200001
+ %%% EVENT 201000 NTRACKS 1 TOTAL NTRACKS 201001
+ %%% EVENT 202000 NTRACKS 1 TOTAL NTRACKS 202001
+ %%% EVENT 203000 NTRACKS 1 TOTAL NTRACKS 203001
+ %%% EVENT 204000 NTRACKS 1 TOTAL NTRACKS 204001
+ %%% EVENT 205000 NTRACKS 1 TOTAL NTRACKS 205001
+ %%% EVENT 206000 NTRACKS 1 TOTAL NTRACKS 206001
+ %%% EVENT 207000 NTRACKS 1 TOTAL NTRACKS 207001
+ %%% EVENT 208000 NTRACKS 1 TOTAL NTRACKS 208001
+ %%% EVENT 209000 NTRACKS 1 TOTAL NTRACKS 209001
+ GmPDSCreateAngleTablesUA::BookHistos 1E-2 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 1E-2 : cos Deviation Angle = 5221001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 1E-2 : log10 Interaction Distance (cm) = 5221002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 1E-2 : cos Deviation Angle = 5321001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 1E-2 : log10 Interaction Distance (cm) = 5321002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 1E-2 : cos Deviation Angle = 5421001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 1E-2 : log10 Interaction Distance (cm) = 5421002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 1E-2 : cos Deviation Angle = 5521001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 1E-2 : log10 Interaction Distance (cm) = 5521002
+ %%% EVENT 210000 NTRACKS 1 TOTAL NTRACKS 210001
+ %%% EVENT 211000 NTRACKS 1 TOTAL NTRACKS 211001
+ %%% EVENT 212000 NTRACKS 1 TOTAL NTRACKS 212001
+ %%% EVENT 213000 NTRACKS 1 TOTAL NTRACKS 213001
+ %%% EVENT 214000 NTRACKS 1 TOTAL NTRACKS 214001
+ %%% EVENT 215000 NTRACKS 1 TOTAL NTRACKS 215001
+ %%% EVENT 216000 NTRACKS 1 TOTAL NTRACKS 216001
+ %%% EVENT 217000 NTRACKS 1 TOTAL NTRACKS 217001
+ %%% EVENT 218000 NTRACKS 1 TOTAL NTRACKS 218001
+ %%% EVENT 219000 NTRACKS 1 TOTAL NTRACKS 219001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-2 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 2.1544E-2 : cos Deviation Angle = 5222001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 2.1544E-2 : log10 Interaction Distance (cm) = 5222002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 2.1544E-2 : cos Deviation Angle = 5322001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 2.1544E-2 : log10 Interaction Distance (cm) = 5322002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 2.1544E-2 : cos Deviation Angle = 5422001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 2.1544E-2 : log10 Interaction Distance (cm) = 5422002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 2.1544E-2 : cos Deviation Angle = 5522001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 2.1544E-2 : log10 Interaction Distance (cm) = 5522002
+ %%% EVENT 220000 NTRACKS 1 TOTAL NTRACKS 220001
+ %%% EVENT 221000 NTRACKS 1 TOTAL NTRACKS 221001
+ %%% EVENT 222000 NTRACKS 1 TOTAL NTRACKS 222001
+ %%% EVENT 223000 NTRACKS 1 TOTAL NTRACKS 223001
+ %%% EVENT 224000 NTRACKS 1 TOTAL NTRACKS 224001
+ %%% EVENT 225000 NTRACKS 1 TOTAL NTRACKS 225001
+ %%% EVENT 226000 NTRACKS 1 TOTAL NTRACKS 226001
+ %%% EVENT 227000 NTRACKS 1 TOTAL NTRACKS 227001
+ %%% EVENT 228000 NTRACKS 1 TOTAL NTRACKS 228001
+ %%% EVENT 229000 NTRACKS 1 TOTAL NTRACKS 229001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E-2 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 4.6415E-2 : cos Deviation Angle = 5223001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 4.6415E-2 : log10 Interaction Distance (cm) = 5223002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 4.6415E-2 : cos Deviation Angle = 5323001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 4.6415E-2 : log10 Interaction Distance (cm) = 5323002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 4.6415E-2 : cos Deviation Angle = 5423001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 4.6415E-2 : log10 Interaction Distance (cm) = 5423002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 4.6415E-2 : cos Deviation Angle = 5523001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 4.6415E-2 : log10 Interaction Distance (cm) = 5523002
+ %%% EVENT 230000 NTRACKS 1 TOTAL NTRACKS 230001
+ %%% EVENT 231000 NTRACKS 1 TOTAL NTRACKS 231001
+ %%% EVENT 232000 NTRACKS 1 TOTAL NTRACKS 232001
+ %%% EVENT 233000 NTRACKS 1 TOTAL NTRACKS 233001
+ %%% EVENT 234000 NTRACKS 1 TOTAL NTRACKS 234001
+ %%% EVENT 235000 NTRACKS 1 TOTAL NTRACKS 235001
+ %%% EVENT 236000 NTRACKS 1 TOTAL NTRACKS 236001
+ %%% EVENT 237000 NTRACKS 1 TOTAL NTRACKS 237001
+ %%% EVENT 238000 NTRACKS 1 TOTAL NTRACKS 238001
+ %%% EVENT 239000 NTRACKS 1 TOTAL NTRACKS 239001
+ GmPDSCreateAngleTablesUA::BookHistos 0.1E0 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 0.1E0 : cos Deviation Angle = 5224001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 0.1E0 : log10 Interaction Distance (cm) = 5224002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 0.1E0 : cos Deviation Angle = 5324001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 0.1E0 : log10 Interaction Distance (cm) = 5324002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 0.1E0 : cos Deviation Angle = 5424001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 0.1E0 : log10 Interaction Distance (cm) = 5424002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 0.1E0 : cos Deviation Angle = 5524001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 0.1E0 : log10 Interaction Distance (cm) = 5524002
+ %%% EVENT 240000 NTRACKS 1 TOTAL NTRACKS 240001
+ %%% EVENT 241000 NTRACKS 1 TOTAL NTRACKS 241001
+ %%% EVENT 242000 NTRACKS 1 TOTAL NTRACKS 242001
+ %%% EVENT 243000 NTRACKS 1 TOTAL NTRACKS 243001
+ %%% EVENT 244000 NTRACKS 1 TOTAL NTRACKS 244001
+ %%% EVENT 245000 NTRACKS 1 TOTAL NTRACKS 245001
+ %%% EVENT 246000 NTRACKS 1 TOTAL NTRACKS 246001
+ %%% EVENT 247000 NTRACKS 1 TOTAL NTRACKS 247001
+ %%% EVENT 248000 NTRACKS 1 TOTAL NTRACKS 248001
+ %%% EVENT 249000 NTRACKS 1 TOTAL NTRACKS 249001
+ GmPDSCreateAngleTablesUA::BookHistos 0.2154E0 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 0.2154E0 : cos Deviation Angle = 5225001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 0.2154E0 : log10 Interaction Distance (cm) = 5225002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 0.2154E0 : cos Deviation Angle = 5325001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 0.2154E0 : log10 Interaction Distance (cm) = 5325002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 0.2154E0 : cos Deviation Angle = 5425001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 0.2154E0 : log10 Interaction Distance (cm) = 5425002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 0.2154E0 : cos Deviation Angle = 5525001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 0.2154E0 : log10 Interaction Distance (cm) = 5525002
+ %%% EVENT 250000 NTRACKS 1 TOTAL NTRACKS 250001
+ %%% EVENT 251000 NTRACKS 1 TOTAL NTRACKS 251001
+ %%% EVENT 252000 NTRACKS 1 TOTAL NTRACKS 252001
+ %%% EVENT 253000 NTRACKS 1 TOTAL NTRACKS 253001
+ %%% EVENT 254000 NTRACKS 1 TOTAL NTRACKS 254001
+ %%% EVENT 255000 NTRACKS 1 TOTAL NTRACKS 255001
+ %%% EVENT 256000 NTRACKS 1 TOTAL NTRACKS 256001
+ %%% EVENT 257000 NTRACKS 1 TOTAL NTRACKS 257001
+ %%% EVENT 258000 NTRACKS 1 TOTAL NTRACKS 258001
+ %%% EVENT 259000 NTRACKS 1 TOTAL NTRACKS 259001
+ GmPDSCreateAngleTablesUA::BookHistos 0.4641E0 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 0.4641E0 : cos Deviation Angle = 5226001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 0.4641E0 : log10 Interaction Distance (cm) = 5226002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 0.4641E0 : cos Deviation Angle = 5326001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 0.4641E0 : log10 Interaction Distance (cm) = 5326002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 0.4641E0 : cos Deviation Angle = 5426001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 0.4641E0 : log10 Interaction Distance (cm) = 5426002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 0.4641E0 : cos Deviation Angle = 5526001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 0.4641E0 : log10 Interaction Distance (cm) = 5526002
+ %%% EVENT 260000 NTRACKS 1 TOTAL NTRACKS 260001
+ %%% EVENT 261000 NTRACKS 1 TOTAL NTRACKS 261001
+ %%% EVENT 262000 NTRACKS 1 TOTAL NTRACKS 262001
+ %%% EVENT 263000 NTRACKS 1 TOTAL NTRACKS 263001
+ %%% EVENT 264000 NTRACKS 1 TOTAL NTRACKS 264001
+ %%% EVENT 265000 NTRACKS 1 TOTAL NTRACKS 265001
+ %%% EVENT 266000 NTRACKS 1 TOTAL NTRACKS 266001
+ %%% EVENT 267000 NTRACKS 1 TOTAL NTRACKS 267001
+ %%% EVENT 268000 NTRACKS 1 TOTAL NTRACKS 268001
+ %%% EVENT 269000 NTRACKS 1 TOTAL NTRACKS 269001
+ GmPDSCreateAngleTablesUA::BookHistos 1E0 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 1E0 : cos Deviation Angle = 5227001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 1E0 : log10 Interaction Distance (cm) = 5227002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 1E0 : cos Deviation Angle = 5327001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 1E0 : log10 Interaction Distance (cm) = 5327002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 1E0 : cos Deviation Angle = 5427001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 1E0 : log10 Interaction Distance (cm) = 5427002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 1E0 : cos Deviation Angle = 5527001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 1E0 : log10 Interaction Distance (cm) = 5527002
+ %%% EVENT 270000 NTRACKS 1 TOTAL NTRACKS 270001
+ %%% EVENT 271000 NTRACKS 1 TOTAL NTRACKS 271001
+ %%% EVENT 272000 NTRACKS 1 TOTAL NTRACKS 272001
+ %%% EVENT 273000 NTRACKS 1 TOTAL NTRACKS 273001
+ %%% EVENT 274000 NTRACKS 1 TOTAL NTRACKS 274001
+ %%% EVENT 275000 NTRACKS 1 TOTAL NTRACKS 275001
+ %%% EVENT 276000 NTRACKS 1 TOTAL NTRACKS 276001
+ %%% EVENT 277000 NTRACKS 1 TOTAL NTRACKS 277001
+ %%% EVENT 278000 NTRACKS 1 TOTAL NTRACKS 278001
+ %%% EVENT 279000 NTRACKS 1 TOTAL NTRACKS 279001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E0 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 2.1544E0 : cos Deviation Angle = 5228001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 2.1544E0 : log10 Interaction Distance (cm) = 5228002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 2.1544E0 : cos Deviation Angle = 5328001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 2.1544E0 : log10 Interaction Distance (cm) = 5328002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 2.1544E0 : cos Deviation Angle = 5428001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 2.1544E0 : log10 Interaction Distance (cm) = 5428002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 2.1544E0 : cos Deviation Angle = 5528001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 2.1544E0 : log10 Interaction Distance (cm) = 5528002
+ %%% EVENT 280000 NTRACKS 1 TOTAL NTRACKS 280001
+ %%% EVENT 281000 NTRACKS 1 TOTAL NTRACKS 281001
+ %%% EVENT 282000 NTRACKS 1 TOTAL NTRACKS 282001
+ %%% EVENT 283000 NTRACKS 1 TOTAL NTRACKS 283001
+ %%% EVENT 284000 NTRACKS 1 TOTAL NTRACKS 284001
+ %%% EVENT 285000 NTRACKS 1 TOTAL NTRACKS 285001
+ %%% EVENT 286000 NTRACKS 1 TOTAL NTRACKS 286001
+ %%% EVENT 287000 NTRACKS 1 TOTAL NTRACKS 287001
+ %%% EVENT 288000 NTRACKS 1 TOTAL NTRACKS 288001
+ %%% EVENT 289000 NTRACKS 1 TOTAL NTRACKS 289001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E0 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 4.6415E0 : cos Deviation Angle = 5229001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 4.6415E0 : log10 Interaction Distance (cm) = 5229002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 4.6415E0 : cos Deviation Angle = 5329001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 4.6415E0 : log10 Interaction Distance (cm) = 5329002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 4.6415E0 : cos Deviation Angle = 5429001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 4.6415E0 : log10 Interaction Distance (cm) = 5429002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 4.6415E0 : cos Deviation Angle = 5529001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 4.6415E0 : log10 Interaction Distance (cm) = 5529002
+ %%% EVENT 290000 NTRACKS 1 TOTAL NTRACKS 290001
+ %%% EVENT 291000 NTRACKS 1 TOTAL NTRACKS 291001
+ %%% EVENT 292000 NTRACKS 1 TOTAL NTRACKS 292001
+ %%% EVENT 293000 NTRACKS 1 TOTAL NTRACKS 293001
+ %%% EVENT 294000 NTRACKS 1 TOTAL NTRACKS 294001
+ %%% EVENT 295000 NTRACKS 1 TOTAL NTRACKS 295001
+ %%% EVENT 296000 NTRACKS 1 TOTAL NTRACKS 296001
+ %%% EVENT 297000 NTRACKS 1 TOTAL NTRACKS 297001
+ %%% EVENT 298000 NTRACKS 1 TOTAL NTRACKS 298001
+ %%% EVENT 299000 NTRACKS 1 TOTAL NTRACKS 299001
+ GmPDSCreateAngleTablesUA::BookHistos 1E1 G4_AIR
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 1E1 : cos Deviation Angle = 5230001
+ CreateHisto1D neutron - gamma : hadElastic : G4_AIR : 1E1 : log10 Interaction Distance (cm) = 5230002
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 1E1 : cos Deviation Angle = 5330001
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_AIR : 1E1 : log10 Interaction Distance (cm) = 5330002
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 1E1 : cos Deviation Angle = 5430001
+ CreateHisto1D neutron - gamma : nCapture : G4_AIR : 1E1 : log10 Interaction Distance (cm) = 5430002
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 1E1 : cos Deviation Angle = 5530001
+ CreateHisto1D neutron - gamma : nFission : G4_AIR : 1E1 : log10 Interaction Distance (cm) = 5530002
+ %%% EVENT 300000 NTRACKS 1 TOTAL NTRACKS 300001
+ %%% EVENT 301000 NTRACKS 1 TOTAL NTRACKS 301001
+ %%% EVENT 302000 NTRACKS 1 TOTAL NTRACKS 302001
+ %%% EVENT 303000 NTRACKS 1 TOTAL NTRACKS 303001
+ %%% EVENT 304000 NTRACKS 1 TOTAL NTRACKS 304001
+ %%% EVENT 305000 NTRACKS 1 TOTAL NTRACKS 305001
+ %%% EVENT 306000 NTRACKS 1 TOTAL NTRACKS 306001
+ %%% EVENT 307000 NTRACKS 1 TOTAL NTRACKS 307001
+ %%% EVENT 308000 NTRACKS 1 TOTAL NTRACKS 308001
+ %%% EVENT 309000 NTRACKS 1 TOTAL NTRACKS 309001
+G4GeometryManager::ReportVoxelStats -- Voxel Statistics
+
+    Total memory consumed for geometry optimisation:   0 kByte
+    Total CPU time elapsed for geometry optimisation: 0 seconds
+
+    Voxelisation: top CPU users:
+    Percent   Total CPU    System CPU       Memory  Volume
+    -------   ----------   ----------     --------  ----------
+       0.00         0.00         0.00            0k world
+
+    Voxelisation: top memory users:
+    Percent     Memory      Heads    Nodes   Pointers    Total CPU    Volume
+    -------   --------     ------   ------   --------   ----------    ----------
+     100.00          0k         1        2          4         0.00    world
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : No      recalculation needed : No 
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+
+Index : 1     used in the geometry : Yes     recalculation needed : No 
+ Material : CONCRETE
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  5.13646 keV    e-  427.59 keV    e+  413.461 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 2     used in the geometry : No      recalculation needed : No 
+ Material : G4_POLYETHYLENE
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  1.97806 keV    e-  276.265 keV    e+  272.577 keV proton 70 keV
+
+====================================================================
+
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : No      recalculation needed : No 
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+
+Index : 1     used in the geometry : Yes     recalculation needed : No 
+ Material : CONCRETE
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  5.13646 keV    e-  427.59 keV    e+  413.461 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 2     used in the geometry : No      recalculation needed : No 
+ Material : G4_POLYETHYLENE
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  1.97806 keV    e-  276.265 keV    e+  272.577 keV proton 70 keV
+
+====================================================================
+
+ GmPDSCreateAngleTablesUA::BookHistos 9.9999E-10 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 9.9999E-10 : cos Deviation Angle = 5200011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 9.9999E-10 : log10 Interaction Distance (cm) = 5200012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 9.9999E-10 : cos Deviation Angle = 5300011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 9.9999E-10 : log10 Interaction Distance (cm) = 5300012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 9.9999E-10 : cos Deviation Angle = 5400011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 9.9999E-10 : log10 Interaction Distance (cm) = 5400012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 9.9999E-10 : cos Deviation Angle = 5500011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 9.9999E-10 : log10 Interaction Distance (cm) = 5500012
+ %%% EVENT 310000 NTRACKS 1 TOTAL NTRACKS 310001
+ %%% EVENT 311000 NTRACKS 1 TOTAL NTRACKS 311001
+ %%% EVENT 312000 NTRACKS 1 TOTAL NTRACKS 312001
+ %%% EVENT 313000 NTRACKS 1 TOTAL NTRACKS 313001
+ %%% EVENT 314000 NTRACKS 1 TOTAL NTRACKS 314001
+ %%% EVENT 315000 NTRACKS 1 TOTAL NTRACKS 315001
+ %%% EVENT 316000 NTRACKS 1 TOTAL NTRACKS 316001
+ %%% EVENT 317000 NTRACKS 1 TOTAL NTRACKS 317001
+ %%% EVENT 318000 NTRACKS 1 TOTAL NTRACKS 318001
+ %%% EVENT 319000 NTRACKS 1 TOTAL NTRACKS 319001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-9 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 2.1544E-9 : cos Deviation Angle = 5201011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 2.1544E-9 : log10 Interaction Distance (cm) = 5201012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 2.1544E-9 : cos Deviation Angle = 5301011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 2.1544E-9 : log10 Interaction Distance (cm) = 5301012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 2.1544E-9 : cos Deviation Angle = 5401011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 2.1544E-9 : log10 Interaction Distance (cm) = 5401012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 2.1544E-9 : cos Deviation Angle = 5501011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 2.1544E-9 : log10 Interaction Distance (cm) = 5501012
+ %%% EVENT 320000 NTRACKS 1 TOTAL NTRACKS 320001
+ %%% EVENT 321000 NTRACKS 1 TOTAL NTRACKS 321001
+ %%% EVENT 322000 NTRACKS 1 TOTAL NTRACKS 322001
+ %%% EVENT 323000 NTRACKS 1 TOTAL NTRACKS 323001
+ %%% EVENT 324000 NTRACKS 1 TOTAL NTRACKS 324001
+ %%% EVENT 325000 NTRACKS 1 TOTAL NTRACKS 325001
+ %%% EVENT 326000 NTRACKS 1 TOTAL NTRACKS 326001
+ %%% EVENT 327000 NTRACKS 1 TOTAL NTRACKS 327001
+ %%% EVENT 328000 NTRACKS 1 TOTAL NTRACKS 328001
+ %%% EVENT 329000 NTRACKS 1 TOTAL NTRACKS 329001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6416E-9 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 4.6416E-9 : cos Deviation Angle = 5202011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 4.6416E-9 : log10 Interaction Distance (cm) = 5202012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 4.6416E-9 : cos Deviation Angle = 5302011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 4.6416E-9 : log10 Interaction Distance (cm) = 5302012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 4.6416E-9 : cos Deviation Angle = 5402011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 4.6416E-9 : log10 Interaction Distance (cm) = 5402012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 4.6416E-9 : cos Deviation Angle = 5502011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 4.6416E-9 : log10 Interaction Distance (cm) = 5502012
+ %%% EVENT 330000 NTRACKS 1 TOTAL NTRACKS 330001
+ %%% EVENT 331000 NTRACKS 1 TOTAL NTRACKS 331001
+ %%% EVENT 332000 NTRACKS 1 TOTAL NTRACKS 332001
+ %%% EVENT 333000 NTRACKS 1 TOTAL NTRACKS 333001
+ %%% EVENT 334000 NTRACKS 1 TOTAL NTRACKS 334001
+ %%% EVENT 335000 NTRACKS 1 TOTAL NTRACKS 335001
+ %%% EVENT 336000 NTRACKS 1 TOTAL NTRACKS 336001
+ %%% EVENT 337000 NTRACKS 1 TOTAL NTRACKS 337001
+ %%% EVENT 338000 NTRACKS 1 TOTAL NTRACKS 338001
+ %%% EVENT 339000 NTRACKS 1 TOTAL NTRACKS 339001
+ GmPDSCreateAngleTablesUA::BookHistos 1E-8 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 1E-8 : cos Deviation Angle = 5203011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 1E-8 : log10 Interaction Distance (cm) = 5203012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 1E-8 : cos Deviation Angle = 5303011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 1E-8 : log10 Interaction Distance (cm) = 5303012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 1E-8 : cos Deviation Angle = 5403011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 1E-8 : log10 Interaction Distance (cm) = 5403012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 1E-8 : cos Deviation Angle = 5503011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 1E-8 : log10 Interaction Distance (cm) = 5503012
+ %%% EVENT 340000 NTRACKS 1 TOTAL NTRACKS 340001
+ %%% EVENT 341000 NTRACKS 1 TOTAL NTRACKS 341001
+ %%% EVENT 342000 NTRACKS 1 TOTAL NTRACKS 342001
+ %%% EVENT 343000 NTRACKS 1 TOTAL NTRACKS 343001
+ %%% EVENT 344000 NTRACKS 1 TOTAL NTRACKS 344001
+ %%% EVENT 345000 NTRACKS 1 TOTAL NTRACKS 345001
+ %%% EVENT 346000 NTRACKS 1 TOTAL NTRACKS 346001
+ %%% EVENT 347000 NTRACKS 1 TOTAL NTRACKS 347001
+ %%% EVENT 348000 NTRACKS 1 TOTAL NTRACKS 348001
+ %%% EVENT 349000 NTRACKS 1 TOTAL NTRACKS 349001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-8 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 2.1544E-8 : cos Deviation Angle = 5204011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 2.1544E-8 : log10 Interaction Distance (cm) = 5204012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 2.1544E-8 : cos Deviation Angle = 5304011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 2.1544E-8 : log10 Interaction Distance (cm) = 5304012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 2.1544E-8 : cos Deviation Angle = 5404011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 2.1544E-8 : log10 Interaction Distance (cm) = 5404012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 2.1544E-8 : cos Deviation Angle = 5504011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 2.1544E-8 : log10 Interaction Distance (cm) = 5504012
+ %%% EVENT 350000 NTRACKS 1 TOTAL NTRACKS 350001
+ %%% EVENT 351000 NTRACKS 1 TOTAL NTRACKS 351001
+ %%% EVENT 352000 NTRACKS 1 TOTAL NTRACKS 352001
+ %%% EVENT 353000 NTRACKS 1 TOTAL NTRACKS 353001
+ %%% EVENT 354000 NTRACKS 1 TOTAL NTRACKS 354001
+ %%% EVENT 355000 NTRACKS 1 TOTAL NTRACKS 355001
+ %%% EVENT 356000 NTRACKS 1 TOTAL NTRACKS 356001
+ %%% EVENT 357000 NTRACKS 1 TOTAL NTRACKS 357001
+ %%% EVENT 358000 NTRACKS 1 TOTAL NTRACKS 358001
+ %%% EVENT 359000 NTRACKS 1 TOTAL NTRACKS 359001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E-8 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 4.6415E-8 : cos Deviation Angle = 5205011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 4.6415E-8 : log10 Interaction Distance (cm) = 5205012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 4.6415E-8 : cos Deviation Angle = 5305011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 4.6415E-8 : log10 Interaction Distance (cm) = 5305012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 4.6415E-8 : cos Deviation Angle = 5405011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 4.6415E-8 : log10 Interaction Distance (cm) = 5405012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 4.6415E-8 : cos Deviation Angle = 5505011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 4.6415E-8 : log10 Interaction Distance (cm) = 5505012
+ %%% EVENT 360000 NTRACKS 1 TOTAL NTRACKS 360001
+ %%% EVENT 361000 NTRACKS 1 TOTAL NTRACKS 361001
+ %%% EVENT 362000 NTRACKS 1 TOTAL NTRACKS 362001
+ %%% EVENT 363000 NTRACKS 1 TOTAL NTRACKS 363001
+ %%% EVENT 364000 NTRACKS 1 TOTAL NTRACKS 364001
+ %%% EVENT 365000 NTRACKS 1 TOTAL NTRACKS 365001
+ %%% EVENT 366000 NTRACKS 1 TOTAL NTRACKS 366001
+ %%% EVENT 367000 NTRACKS 1 TOTAL NTRACKS 367001
+ %%% EVENT 368000 NTRACKS 1 TOTAL NTRACKS 368001
+ %%% EVENT 369000 NTRACKS 1 TOTAL NTRACKS 369001
+ GmPDSCreateAngleTablesUA::BookHistos 1E-7 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 1E-7 : cos Deviation Angle = 5206011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 1E-7 : log10 Interaction Distance (cm) = 5206012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 1E-7 : cos Deviation Angle = 5306011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 1E-7 : log10 Interaction Distance (cm) = 5306012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 1E-7 : cos Deviation Angle = 5406011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 1E-7 : log10 Interaction Distance (cm) = 5406012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 1E-7 : cos Deviation Angle = 5506011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 1E-7 : log10 Interaction Distance (cm) = 5506012
+ %%% EVENT 370000 NTRACKS 1 TOTAL NTRACKS 370001
+ %%% EVENT 371000 NTRACKS 1 TOTAL NTRACKS 371001
+ %%% EVENT 372000 NTRACKS 1 TOTAL NTRACKS 372001
+ %%% EVENT 373000 NTRACKS 1 TOTAL NTRACKS 373001
+ %%% EVENT 374000 NTRACKS 1 TOTAL NTRACKS 374001
+ %%% EVENT 375000 NTRACKS 1 TOTAL NTRACKS 375001
+ %%% EVENT 376000 NTRACKS 1 TOTAL NTRACKS 376001
+ %%% EVENT 377000 NTRACKS 1 TOTAL NTRACKS 377001
+ %%% EVENT 378000 NTRACKS 1 TOTAL NTRACKS 378001
+ %%% EVENT 379000 NTRACKS 1 TOTAL NTRACKS 379001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-7 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 2.1544E-7 : cos Deviation Angle = 5207011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 2.1544E-7 : log10 Interaction Distance (cm) = 5207012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 2.1544E-7 : cos Deviation Angle = 5307011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 2.1544E-7 : log10 Interaction Distance (cm) = 5307012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 2.1544E-7 : cos Deviation Angle = 5407011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 2.1544E-7 : log10 Interaction Distance (cm) = 5407012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 2.1544E-7 : cos Deviation Angle = 5507011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 2.1544E-7 : log10 Interaction Distance (cm) = 5507012
+ %%% EVENT 380000 NTRACKS 1 TOTAL NTRACKS 380001
+ %%% EVENT 381000 NTRACKS 1 TOTAL NTRACKS 381001
+ %%% EVENT 382000 NTRACKS 1 TOTAL NTRACKS 382001
+ %%% EVENT 383000 NTRACKS 1 TOTAL NTRACKS 383001
+ %%% EVENT 384000 NTRACKS 1 TOTAL NTRACKS 384001
+ %%% EVENT 385000 NTRACKS 1 TOTAL NTRACKS 385001
+ %%% EVENT 386000 NTRACKS 1 TOTAL NTRACKS 386001
+ %%% EVENT 387000 NTRACKS 1 TOTAL NTRACKS 387001
+ %%% EVENT 388000 NTRACKS 1 TOTAL NTRACKS 388001
+ %%% EVENT 389000 NTRACKS 1 TOTAL NTRACKS 389001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E-7 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 4.6415E-7 : cos Deviation Angle = 5208011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 4.6415E-7 : log10 Interaction Distance (cm) = 5208012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 4.6415E-7 : cos Deviation Angle = 5308011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 4.6415E-7 : log10 Interaction Distance (cm) = 5308012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 4.6415E-7 : cos Deviation Angle = 5408011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 4.6415E-7 : log10 Interaction Distance (cm) = 5408012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 4.6415E-7 : cos Deviation Angle = 5508011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 4.6415E-7 : log10 Interaction Distance (cm) = 5508012
+ %%% EVENT 390000 NTRACKS 1 TOTAL NTRACKS 390001
+ %%% EVENT 391000 NTRACKS 1 TOTAL NTRACKS 391001
+ %%% EVENT 392000 NTRACKS 1 TOTAL NTRACKS 392001
+ %%% EVENT 393000 NTRACKS 1 TOTAL NTRACKS 393001
+ %%% EVENT 394000 NTRACKS 1 TOTAL NTRACKS 394001
+ %%% EVENT 395000 NTRACKS 1 TOTAL NTRACKS 395001
+ %%% EVENT 396000 NTRACKS 1 TOTAL NTRACKS 396001
+ %%% EVENT 397000 NTRACKS 1 TOTAL NTRACKS 397001
+ %%% EVENT 398000 NTRACKS 1 TOTAL NTRACKS 398001
+ %%% EVENT 399000 NTRACKS 1 TOTAL NTRACKS 399001
+ GmPDSCreateAngleTablesUA::BookHistos 1E-6 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 1E-6 : cos Deviation Angle = 5209011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 1E-6 : log10 Interaction Distance (cm) = 5209012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 1E-6 : cos Deviation Angle = 5309011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 1E-6 : log10 Interaction Distance (cm) = 5309012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 1E-6 : cos Deviation Angle = 5409011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 1E-6 : log10 Interaction Distance (cm) = 5409012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 1E-6 : cos Deviation Angle = 5509011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 1E-6 : log10 Interaction Distance (cm) = 5509012
+ %%% EVENT 400000 NTRACKS 1 TOTAL NTRACKS 400001
+ %%% EVENT 401000 NTRACKS 1 TOTAL NTRACKS 401001
+ %%% EVENT 402000 NTRACKS 1 TOTAL NTRACKS 402001
+ %%% EVENT 403000 NTRACKS 1 TOTAL NTRACKS 403001
+ %%% EVENT 404000 NTRACKS 1 TOTAL NTRACKS 404001
+ %%% EVENT 405000 NTRACKS 1 TOTAL NTRACKS 405001
+ %%% EVENT 406000 NTRACKS 1 TOTAL NTRACKS 406001
+ %%% EVENT 407000 NTRACKS 1 TOTAL NTRACKS 407001
+ %%% EVENT 408000 NTRACKS 1 TOTAL NTRACKS 408001
+ %%% EVENT 409000 NTRACKS 1 TOTAL NTRACKS 409001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-6 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 2.1544E-6 : cos Deviation Angle = 5210011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 2.1544E-6 : log10 Interaction Distance (cm) = 5210012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 2.1544E-6 : cos Deviation Angle = 5310011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 2.1544E-6 : log10 Interaction Distance (cm) = 5310012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 2.1544E-6 : cos Deviation Angle = 5410011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 2.1544E-6 : log10 Interaction Distance (cm) = 5410012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 2.1544E-6 : cos Deviation Angle = 5510011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 2.1544E-6 : log10 Interaction Distance (cm) = 5510012
+ %%% EVENT 410000 NTRACKS 1 TOTAL NTRACKS 410001
+ %%% EVENT 411000 NTRACKS 1 TOTAL NTRACKS 411001
+ %%% EVENT 412000 NTRACKS 1 TOTAL NTRACKS 412001
+ %%% EVENT 413000 NTRACKS 1 TOTAL NTRACKS 413001
+ %%% EVENT 414000 NTRACKS 1 TOTAL NTRACKS 414001
+ %%% EVENT 415000 NTRACKS 1 TOTAL NTRACKS 415001
+ %%% EVENT 416000 NTRACKS 1 TOTAL NTRACKS 416001
+ %%% EVENT 417000 NTRACKS 1 TOTAL NTRACKS 417001
+ %%% EVENT 418000 NTRACKS 1 TOTAL NTRACKS 418001
+ %%% EVENT 419000 NTRACKS 1 TOTAL NTRACKS 419001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E-6 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 4.6415E-6 : cos Deviation Angle = 5211011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 4.6415E-6 : log10 Interaction Distance (cm) = 5211012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 4.6415E-6 : cos Deviation Angle = 5311011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 4.6415E-6 : log10 Interaction Distance (cm) = 5311012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 4.6415E-6 : cos Deviation Angle = 5411011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 4.6415E-6 : log10 Interaction Distance (cm) = 5411012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 4.6415E-6 : cos Deviation Angle = 5511011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 4.6415E-6 : log10 Interaction Distance (cm) = 5511012
+ %%% EVENT 420000 NTRACKS 1 TOTAL NTRACKS 420001
+ %%% EVENT 421000 NTRACKS 1 TOTAL NTRACKS 421001
+ %%% EVENT 422000 NTRACKS 1 TOTAL NTRACKS 422001
+ %%% EVENT 423000 NTRACKS 1 TOTAL NTRACKS 423001
+ %%% EVENT 424000 NTRACKS 1 TOTAL NTRACKS 424001
+ %%% EVENT 425000 NTRACKS 1 TOTAL NTRACKS 425001
+ %%% EVENT 426000 NTRACKS 1 TOTAL NTRACKS 426001
+ %%% EVENT 427000 NTRACKS 1 TOTAL NTRACKS 427001
+ %%% EVENT 428000 NTRACKS 1 TOTAL NTRACKS 428001
+ %%% EVENT 429000 NTRACKS 1 TOTAL NTRACKS 429001
+ GmPDSCreateAngleTablesUA::BookHistos 1E-5 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 1E-5 : cos Deviation Angle = 5212011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 1E-5 : log10 Interaction Distance (cm) = 5212012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 1E-5 : cos Deviation Angle = 5312011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 1E-5 : log10 Interaction Distance (cm) = 5312012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 1E-5 : cos Deviation Angle = 5412011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 1E-5 : log10 Interaction Distance (cm) = 5412012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 1E-5 : cos Deviation Angle = 5512011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 1E-5 : log10 Interaction Distance (cm) = 5512012
+ %%% EVENT 430000 NTRACKS 1 TOTAL NTRACKS 430001
+ %%% EVENT 431000 NTRACKS 1 TOTAL NTRACKS 431001
+ %%% EVENT 432000 NTRACKS 1 TOTAL NTRACKS 432001
+ %%% EVENT 433000 NTRACKS 1 TOTAL NTRACKS 433001
+ %%% EVENT 434000 NTRACKS 1 TOTAL NTRACKS 434001
+ %%% EVENT 435000 NTRACKS 1 TOTAL NTRACKS 435001
+ %%% EVENT 436000 NTRACKS 1 TOTAL NTRACKS 436001
+ %%% EVENT 437000 NTRACKS 1 TOTAL NTRACKS 437001
+ %%% EVENT 438000 NTRACKS 1 TOTAL NTRACKS 438001
+ %%% EVENT 439000 NTRACKS 1 TOTAL NTRACKS 439001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-5 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 2.1544E-5 : cos Deviation Angle = 5213011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 2.1544E-5 : log10 Interaction Distance (cm) = 5213012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 2.1544E-5 : cos Deviation Angle = 5313011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 2.1544E-5 : log10 Interaction Distance (cm) = 5313012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 2.1544E-5 : cos Deviation Angle = 5413011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 2.1544E-5 : log10 Interaction Distance (cm) = 5413012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 2.1544E-5 : cos Deviation Angle = 5513011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 2.1544E-5 : log10 Interaction Distance (cm) = 5513012
+ %%% EVENT 440000 NTRACKS 1 TOTAL NTRACKS 440001
+ %%% EVENT 441000 NTRACKS 1 TOTAL NTRACKS 441001
+ %%% EVENT 442000 NTRACKS 1 TOTAL NTRACKS 442001
+ %%% EVENT 443000 NTRACKS 1 TOTAL NTRACKS 443001
+ %%% EVENT 444000 NTRACKS 1 TOTAL NTRACKS 444001
+ %%% EVENT 445000 NTRACKS 1 TOTAL NTRACKS 445001
+ %%% EVENT 446000 NTRACKS 1 TOTAL NTRACKS 446001
+ %%% EVENT 447000 NTRACKS 1 TOTAL NTRACKS 447001
+ %%% EVENT 448000 NTRACKS 1 TOTAL NTRACKS 448001
+ %%% EVENT 449000 NTRACKS 1 TOTAL NTRACKS 449001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E-5 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 4.6415E-5 : cos Deviation Angle = 5214011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 4.6415E-5 : log10 Interaction Distance (cm) = 5214012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 4.6415E-5 : cos Deviation Angle = 5314011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 4.6415E-5 : log10 Interaction Distance (cm) = 5314012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 4.6415E-5 : cos Deviation Angle = 5414011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 4.6415E-5 : log10 Interaction Distance (cm) = 5414012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 4.6415E-5 : cos Deviation Angle = 5514011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 4.6415E-5 : log10 Interaction Distance (cm) = 5514012
+ %%% EVENT 450000 NTRACKS 1 TOTAL NTRACKS 450001
+ %%% EVENT 451000 NTRACKS 1 TOTAL NTRACKS 451001
+ %%% EVENT 452000 NTRACKS 1 TOTAL NTRACKS 452001
+ %%% EVENT 453000 NTRACKS 1 TOTAL NTRACKS 453001
+ %%% EVENT 454000 NTRACKS 1 TOTAL NTRACKS 454001
+ %%% EVENT 455000 NTRACKS 1 TOTAL NTRACKS 455001
+ %%% EVENT 456000 NTRACKS 1 TOTAL NTRACKS 456001
+ %%% EVENT 457000 NTRACKS 1 TOTAL NTRACKS 457001
+ %%% EVENT 458000 NTRACKS 1 TOTAL NTRACKS 458001
+ %%% EVENT 459000 NTRACKS 1 TOTAL NTRACKS 459001
+ GmPDSCreateAngleTablesUA::BookHistos 1E-4 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 1E-4 : cos Deviation Angle = 5215011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 1E-4 : log10 Interaction Distance (cm) = 5215012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 1E-4 : cos Deviation Angle = 5315011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 1E-4 : log10 Interaction Distance (cm) = 5315012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 1E-4 : cos Deviation Angle = 5415011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 1E-4 : log10 Interaction Distance (cm) = 5415012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 1E-4 : cos Deviation Angle = 5515011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 1E-4 : log10 Interaction Distance (cm) = 5515012
+ %%% EVENT 460000 NTRACKS 1 TOTAL NTRACKS 460001
+ %%% EVENT 461000 NTRACKS 1 TOTAL NTRACKS 461001
+ %%% EVENT 462000 NTRACKS 1 TOTAL NTRACKS 462001
+ %%% EVENT 463000 NTRACKS 1 TOTAL NTRACKS 463001
+ %%% EVENT 464000 NTRACKS 1 TOTAL NTRACKS 464001
+ %%% EVENT 465000 NTRACKS 1 TOTAL NTRACKS 465001
+ %%% EVENT 466000 NTRACKS 1 TOTAL NTRACKS 466001
+ %%% EVENT 467000 NTRACKS 1 TOTAL NTRACKS 467001
+ %%% EVENT 468000 NTRACKS 1 TOTAL NTRACKS 468001
+ %%% EVENT 469000 NTRACKS 1 TOTAL NTRACKS 469001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-4 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 2.1544E-4 : cos Deviation Angle = 5216011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 2.1544E-4 : log10 Interaction Distance (cm) = 5216012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 2.1544E-4 : cos Deviation Angle = 5316011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 2.1544E-4 : log10 Interaction Distance (cm) = 5316012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 2.1544E-4 : cos Deviation Angle = 5416011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 2.1544E-4 : log10 Interaction Distance (cm) = 5416012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 2.1544E-4 : cos Deviation Angle = 5516011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 2.1544E-4 : log10 Interaction Distance (cm) = 5516012
+ %%% EVENT 470000 NTRACKS 1 TOTAL NTRACKS 470001
+ %%% EVENT 471000 NTRACKS 1 TOTAL NTRACKS 471001
+ %%% EVENT 472000 NTRACKS 1 TOTAL NTRACKS 472001
+ %%% EVENT 473000 NTRACKS 1 TOTAL NTRACKS 473001
+ %%% EVENT 474000 NTRACKS 1 TOTAL NTRACKS 474001
+ %%% EVENT 475000 NTRACKS 1 TOTAL NTRACKS 475001
+ %%% EVENT 476000 NTRACKS 1 TOTAL NTRACKS 476001
+ %%% EVENT 477000 NTRACKS 1 TOTAL NTRACKS 477001
+ %%% EVENT 478000 NTRACKS 1 TOTAL NTRACKS 478001
+ %%% EVENT 479000 NTRACKS 1 TOTAL NTRACKS 479001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E-4 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 4.6415E-4 : cos Deviation Angle = 5217011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 4.6415E-4 : log10 Interaction Distance (cm) = 5217012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 4.6415E-4 : cos Deviation Angle = 5317011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 4.6415E-4 : log10 Interaction Distance (cm) = 5317012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 4.6415E-4 : cos Deviation Angle = 5417011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 4.6415E-4 : log10 Interaction Distance (cm) = 5417012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 4.6415E-4 : cos Deviation Angle = 5517011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 4.6415E-4 : log10 Interaction Distance (cm) = 5517012
+ %%% EVENT 480000 NTRACKS 1 TOTAL NTRACKS 480001
+ %%% EVENT 481000 NTRACKS 1 TOTAL NTRACKS 481001
+ %%% EVENT 482000 NTRACKS 1 TOTAL NTRACKS 482001
+ %%% EVENT 483000 NTRACKS 1 TOTAL NTRACKS 483001
+ %%% EVENT 484000 NTRACKS 1 TOTAL NTRACKS 484001
+ %%% EVENT 485000 NTRACKS 1 TOTAL NTRACKS 485001
+ %%% EVENT 486000 NTRACKS 1 TOTAL NTRACKS 486001
+ %%% EVENT 487000 NTRACKS 1 TOTAL NTRACKS 487001
+ %%% EVENT 488000 NTRACKS 1 TOTAL NTRACKS 488001
+ %%% EVENT 489000 NTRACKS 1 TOTAL NTRACKS 489001
+ GmPDSCreateAngleTablesUA::BookHistos 1E-3 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 1E-3 : cos Deviation Angle = 5218011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 1E-3 : log10 Interaction Distance (cm) = 5218012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 1E-3 : cos Deviation Angle = 5318011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 1E-3 : log10 Interaction Distance (cm) = 5318012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 1E-3 : cos Deviation Angle = 5418011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 1E-3 : log10 Interaction Distance (cm) = 5418012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 1E-3 : cos Deviation Angle = 5518011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 1E-3 : log10 Interaction Distance (cm) = 5518012
+ %%% EVENT 490000 NTRACKS 1 TOTAL NTRACKS 490001
+ %%% EVENT 491000 NTRACKS 1 TOTAL NTRACKS 491001
+ %%% EVENT 492000 NTRACKS 1 TOTAL NTRACKS 492001
+ %%% EVENT 493000 NTRACKS 1 TOTAL NTRACKS 493001
+ %%% EVENT 494000 NTRACKS 1 TOTAL NTRACKS 494001
+ %%% EVENT 495000 NTRACKS 1 TOTAL NTRACKS 495001
+ %%% EVENT 496000 NTRACKS 1 TOTAL NTRACKS 496001
+ %%% EVENT 497000 NTRACKS 1 TOTAL NTRACKS 497001
+ %%% EVENT 498000 NTRACKS 1 TOTAL NTRACKS 498001
+ %%% EVENT 499000 NTRACKS 1 TOTAL NTRACKS 499001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-3 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 2.1544E-3 : cos Deviation Angle = 5219011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 2.1544E-3 : log10 Interaction Distance (cm) = 5219012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 2.1544E-3 : cos Deviation Angle = 5319011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 2.1544E-3 : log10 Interaction Distance (cm) = 5319012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 2.1544E-3 : cos Deviation Angle = 5419011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 2.1544E-3 : log10 Interaction Distance (cm) = 5419012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 2.1544E-3 : cos Deviation Angle = 5519011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 2.1544E-3 : log10 Interaction Distance (cm) = 5519012
+ %%% EVENT 500000 NTRACKS 1 TOTAL NTRACKS 500001
+ %%% EVENT 501000 NTRACKS 1 TOTAL NTRACKS 501001
+ %%% EVENT 502000 NTRACKS 1 TOTAL NTRACKS 502001
+ %%% EVENT 503000 NTRACKS 1 TOTAL NTRACKS 503001
+ %%% EVENT 504000 NTRACKS 1 TOTAL NTRACKS 504001
+ %%% EVENT 505000 NTRACKS 1 TOTAL NTRACKS 505001
+ %%% EVENT 506000 NTRACKS 1 TOTAL NTRACKS 506001
+ %%% EVENT 507000 NTRACKS 1 TOTAL NTRACKS 507001
+ %%% EVENT 508000 NTRACKS 1 TOTAL NTRACKS 508001
+ %%% EVENT 509000 NTRACKS 1 TOTAL NTRACKS 509001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E-3 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 4.6415E-3 : cos Deviation Angle = 5220011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 4.6415E-3 : log10 Interaction Distance (cm) = 5220012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 4.6415E-3 : cos Deviation Angle = 5320011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 4.6415E-3 : log10 Interaction Distance (cm) = 5320012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 4.6415E-3 : cos Deviation Angle = 5420011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 4.6415E-3 : log10 Interaction Distance (cm) = 5420012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 4.6415E-3 : cos Deviation Angle = 5520011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 4.6415E-3 : log10 Interaction Distance (cm) = 5520012
+ %%% EVENT 510000 NTRACKS 1 TOTAL NTRACKS 510001
+ %%% EVENT 511000 NTRACKS 1 TOTAL NTRACKS 511001
+ %%% EVENT 512000 NTRACKS 1 TOTAL NTRACKS 512001
+ %%% EVENT 513000 NTRACKS 1 TOTAL NTRACKS 513001
+ %%% EVENT 514000 NTRACKS 1 TOTAL NTRACKS 514001
+ %%% EVENT 515000 NTRACKS 1 TOTAL NTRACKS 515001
+ %%% EVENT 516000 NTRACKS 1 TOTAL NTRACKS 516001
+ %%% EVENT 517000 NTRACKS 1 TOTAL NTRACKS 517001
+ %%% EVENT 518000 NTRACKS 1 TOTAL NTRACKS 518001
+ %%% EVENT 519000 NTRACKS 1 TOTAL NTRACKS 519001
+ GmPDSCreateAngleTablesUA::BookHistos 1E-2 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 1E-2 : cos Deviation Angle = 5221011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 1E-2 : log10 Interaction Distance (cm) = 5221012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 1E-2 : cos Deviation Angle = 5321011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 1E-2 : log10 Interaction Distance (cm) = 5321012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 1E-2 : cos Deviation Angle = 5421011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 1E-2 : log10 Interaction Distance (cm) = 5421012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 1E-2 : cos Deviation Angle = 5521011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 1E-2 : log10 Interaction Distance (cm) = 5521012
+ %%% EVENT 520000 NTRACKS 1 TOTAL NTRACKS 520001
+ %%% EVENT 521000 NTRACKS 1 TOTAL NTRACKS 521001
+ %%% EVENT 522000 NTRACKS 1 TOTAL NTRACKS 522001
+ %%% EVENT 523000 NTRACKS 1 TOTAL NTRACKS 523001
+ %%% EVENT 524000 NTRACKS 1 TOTAL NTRACKS 524001
+ %%% EVENT 525000 NTRACKS 1 TOTAL NTRACKS 525001
+ %%% EVENT 526000 NTRACKS 1 TOTAL NTRACKS 526001
+ %%% EVENT 527000 NTRACKS 1 TOTAL NTRACKS 527001
+ %%% EVENT 528000 NTRACKS 1 TOTAL NTRACKS 528001
+ %%% EVENT 529000 NTRACKS 1 TOTAL NTRACKS 529001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-2 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 2.1544E-2 : cos Deviation Angle = 5222011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 2.1544E-2 : log10 Interaction Distance (cm) = 5222012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 2.1544E-2 : cos Deviation Angle = 5322011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 2.1544E-2 : log10 Interaction Distance (cm) = 5322012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 2.1544E-2 : cos Deviation Angle = 5422011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 2.1544E-2 : log10 Interaction Distance (cm) = 5422012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 2.1544E-2 : cos Deviation Angle = 5522011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 2.1544E-2 : log10 Interaction Distance (cm) = 5522012
+ %%% EVENT 530000 NTRACKS 1 TOTAL NTRACKS 530001
+ %%% EVENT 531000 NTRACKS 1 TOTAL NTRACKS 531001
+ %%% EVENT 532000 NTRACKS 1 TOTAL NTRACKS 532001
+ %%% EVENT 533000 NTRACKS 1 TOTAL NTRACKS 533001
+ %%% EVENT 534000 NTRACKS 1 TOTAL NTRACKS 534001
+ %%% EVENT 535000 NTRACKS 1 TOTAL NTRACKS 535001
+ %%% EVENT 536000 NTRACKS 1 TOTAL NTRACKS 536001
+ %%% EVENT 537000 NTRACKS 1 TOTAL NTRACKS 537001
+ %%% EVENT 538000 NTRACKS 1 TOTAL NTRACKS 538001
+ %%% EVENT 539000 NTRACKS 1 TOTAL NTRACKS 539001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E-2 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 4.6415E-2 : cos Deviation Angle = 5223011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 4.6415E-2 : log10 Interaction Distance (cm) = 5223012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 4.6415E-2 : cos Deviation Angle = 5323011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 4.6415E-2 : log10 Interaction Distance (cm) = 5323012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 4.6415E-2 : cos Deviation Angle = 5423011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 4.6415E-2 : log10 Interaction Distance (cm) = 5423012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 4.6415E-2 : cos Deviation Angle = 5523011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 4.6415E-2 : log10 Interaction Distance (cm) = 5523012
+ %%% EVENT 540000 NTRACKS 1 TOTAL NTRACKS 540001
+ %%% EVENT 541000 NTRACKS 1 TOTAL NTRACKS 541001
+ %%% EVENT 542000 NTRACKS 1 TOTAL NTRACKS 542001
+ %%% EVENT 543000 NTRACKS 1 TOTAL NTRACKS 543001
+ %%% EVENT 544000 NTRACKS 1 TOTAL NTRACKS 544001
+ %%% EVENT 545000 NTRACKS 1 TOTAL NTRACKS 545001
+ %%% EVENT 546000 NTRACKS 1 TOTAL NTRACKS 546001
+ %%% EVENT 547000 NTRACKS 1 TOTAL NTRACKS 547001
+ %%% EVENT 548000 NTRACKS 1 TOTAL NTRACKS 548001
+ %%% EVENT 549000 NTRACKS 1 TOTAL NTRACKS 549001
+ GmPDSCreateAngleTablesUA::BookHistos 0.1E0 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 0.1E0 : cos Deviation Angle = 5224011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 0.1E0 : log10 Interaction Distance (cm) = 5224012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 0.1E0 : cos Deviation Angle = 5324011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 0.1E0 : log10 Interaction Distance (cm) = 5324012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 0.1E0 : cos Deviation Angle = 5424011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 0.1E0 : log10 Interaction Distance (cm) = 5424012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 0.1E0 : cos Deviation Angle = 5524011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 0.1E0 : log10 Interaction Distance (cm) = 5524012
+ %%% EVENT 550000 NTRACKS 1 TOTAL NTRACKS 550001
+ %%% EVENT 551000 NTRACKS 1 TOTAL NTRACKS 551001
+ %%% EVENT 552000 NTRACKS 1 TOTAL NTRACKS 552001
+ %%% EVENT 553000 NTRACKS 1 TOTAL NTRACKS 553001
+ %%% EVENT 554000 NTRACKS 1 TOTAL NTRACKS 554001
+ %%% EVENT 555000 NTRACKS 1 TOTAL NTRACKS 555001
+ %%% EVENT 556000 NTRACKS 1 TOTAL NTRACKS 556001
+ %%% EVENT 557000 NTRACKS 1 TOTAL NTRACKS 557001
+ %%% EVENT 558000 NTRACKS 1 TOTAL NTRACKS 558001
+ %%% EVENT 559000 NTRACKS 1 TOTAL NTRACKS 559001
+ GmPDSCreateAngleTablesUA::BookHistos 0.2154E0 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 0.2154E0 : cos Deviation Angle = 5225011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 0.2154E0 : log10 Interaction Distance (cm) = 5225012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 0.2154E0 : cos Deviation Angle = 5325011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 0.2154E0 : log10 Interaction Distance (cm) = 5325012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 0.2154E0 : cos Deviation Angle = 5425011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 0.2154E0 : log10 Interaction Distance (cm) = 5425012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 0.2154E0 : cos Deviation Angle = 5525011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 0.2154E0 : log10 Interaction Distance (cm) = 5525012
+ %%% EVENT 560000 NTRACKS 1 TOTAL NTRACKS 560001
+ %%% EVENT 561000 NTRACKS 1 TOTAL NTRACKS 561001
+ %%% EVENT 562000 NTRACKS 1 TOTAL NTRACKS 562001
+ %%% EVENT 563000 NTRACKS 1 TOTAL NTRACKS 563001
+ %%% EVENT 564000 NTRACKS 1 TOTAL NTRACKS 564001
+ %%% EVENT 565000 NTRACKS 1 TOTAL NTRACKS 565001
+ %%% EVENT 566000 NTRACKS 1 TOTAL NTRACKS 566001
+ %%% EVENT 567000 NTRACKS 1 TOTAL NTRACKS 567001
+ %%% EVENT 568000 NTRACKS 1 TOTAL NTRACKS 568001
+ %%% EVENT 569000 NTRACKS 1 TOTAL NTRACKS 569001
+ GmPDSCreateAngleTablesUA::BookHistos 0.4641E0 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 0.4641E0 : cos Deviation Angle = 5226011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 0.4641E0 : log10 Interaction Distance (cm) = 5226012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 0.4641E0 : cos Deviation Angle = 5326011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 0.4641E0 : log10 Interaction Distance (cm) = 5326012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 0.4641E0 : cos Deviation Angle = 5426011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 0.4641E0 : log10 Interaction Distance (cm) = 5426012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 0.4641E0 : cos Deviation Angle = 5526011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 0.4641E0 : log10 Interaction Distance (cm) = 5526012
+ %%% EVENT 570000 NTRACKS 1 TOTAL NTRACKS 570001
+ %%% EVENT 571000 NTRACKS 1 TOTAL NTRACKS 571001
+ %%% EVENT 572000 NTRACKS 1 TOTAL NTRACKS 572001
+ %%% EVENT 573000 NTRACKS 1 TOTAL NTRACKS 573001
+ %%% EVENT 574000 NTRACKS 1 TOTAL NTRACKS 574001
+ %%% EVENT 575000 NTRACKS 1 TOTAL NTRACKS 575001
+ %%% EVENT 576000 NTRACKS 1 TOTAL NTRACKS 576001
+ %%% EVENT 577000 NTRACKS 1 TOTAL NTRACKS 577001
+ %%% EVENT 578000 NTRACKS 1 TOTAL NTRACKS 578001
+ %%% EVENT 579000 NTRACKS 1 TOTAL NTRACKS 579001
+ GmPDSCreateAngleTablesUA::BookHistos 1E0 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 1E0 : cos Deviation Angle = 5227011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 1E0 : log10 Interaction Distance (cm) = 5227012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 1E0 : cos Deviation Angle = 5327011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 1E0 : log10 Interaction Distance (cm) = 5327012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 1E0 : cos Deviation Angle = 5427011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 1E0 : log10 Interaction Distance (cm) = 5427012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 1E0 : cos Deviation Angle = 5527011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 1E0 : log10 Interaction Distance (cm) = 5527012
+ %%% EVENT 580000 NTRACKS 1 TOTAL NTRACKS 580001
+ %%% EVENT 581000 NTRACKS 1 TOTAL NTRACKS 581001
+ %%% EVENT 582000 NTRACKS 1 TOTAL NTRACKS 582001
+ %%% EVENT 583000 NTRACKS 1 TOTAL NTRACKS 583001
+ %%% EVENT 584000 NTRACKS 1 TOTAL NTRACKS 584001
+ %%% EVENT 585000 NTRACKS 1 TOTAL NTRACKS 585001
+ %%% EVENT 586000 NTRACKS 1 TOTAL NTRACKS 586001
+ %%% EVENT 587000 NTRACKS 1 TOTAL NTRACKS 587001
+ %%% EVENT 588000 NTRACKS 1 TOTAL NTRACKS 588001
+ %%% EVENT 589000 NTRACKS 1 TOTAL NTRACKS 589001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E0 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 2.1544E0 : cos Deviation Angle = 5228011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 2.1544E0 : log10 Interaction Distance (cm) = 5228012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 2.1544E0 : cos Deviation Angle = 5328011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 2.1544E0 : log10 Interaction Distance (cm) = 5328012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 2.1544E0 : cos Deviation Angle = 5428011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 2.1544E0 : log10 Interaction Distance (cm) = 5428012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 2.1544E0 : cos Deviation Angle = 5528011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 2.1544E0 : log10 Interaction Distance (cm) = 5528012
+ %%% EVENT 590000 NTRACKS 1 TOTAL NTRACKS 590001
+ %%% EVENT 591000 NTRACKS 1 TOTAL NTRACKS 591001
+ %%% EVENT 592000 NTRACKS 1 TOTAL NTRACKS 592001
+ %%% EVENT 593000 NTRACKS 1 TOTAL NTRACKS 593001
+ %%% EVENT 594000 NTRACKS 1 TOTAL NTRACKS 594001
+ %%% EVENT 595000 NTRACKS 1 TOTAL NTRACKS 595001
+ %%% EVENT 596000 NTRACKS 1 TOTAL NTRACKS 596001
+ %%% EVENT 597000 NTRACKS 1 TOTAL NTRACKS 597001
+ %%% EVENT 598000 NTRACKS 1 TOTAL NTRACKS 598001
+ %%% EVENT 599000 NTRACKS 1 TOTAL NTRACKS 599001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E0 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 4.6415E0 : cos Deviation Angle = 5229011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 4.6415E0 : log10 Interaction Distance (cm) = 5229012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 4.6415E0 : cos Deviation Angle = 5329011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 4.6415E0 : log10 Interaction Distance (cm) = 5329012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 4.6415E0 : cos Deviation Angle = 5429011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 4.6415E0 : log10 Interaction Distance (cm) = 5429012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 4.6415E0 : cos Deviation Angle = 5529011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 4.6415E0 : log10 Interaction Distance (cm) = 5529012
+ %%% EVENT 600000 NTRACKS 1 TOTAL NTRACKS 600001
+ %%% EVENT 601000 NTRACKS 1 TOTAL NTRACKS 601001
+ %%% EVENT 602000 NTRACKS 1 TOTAL NTRACKS 602001
+ %%% EVENT 603000 NTRACKS 1 TOTAL NTRACKS 603001
+ %%% EVENT 604000 NTRACKS 1 TOTAL NTRACKS 604001
+ %%% EVENT 605000 NTRACKS 1 TOTAL NTRACKS 605001
+ %%% EVENT 606000 NTRACKS 1 TOTAL NTRACKS 606001
+ %%% EVENT 607000 NTRACKS 1 TOTAL NTRACKS 607001
+ %%% EVENT 608000 NTRACKS 1 TOTAL NTRACKS 608001
+ %%% EVENT 609000 NTRACKS 1 TOTAL NTRACKS 609001
+ GmPDSCreateAngleTablesUA::BookHistos 1E1 CONCRETE
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 1E1 : cos Deviation Angle = 5230011
+ CreateHisto1D neutron - gamma : hadElastic : CONCRETE : 1E1 : log10 Interaction Distance (cm) = 5230012
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 1E1 : cos Deviation Angle = 5330011
+ CreateHisto1D neutron - gamma : NeutronInelastic : CONCRETE : 1E1 : log10 Interaction Distance (cm) = 5330012
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 1E1 : cos Deviation Angle = 5430011
+ CreateHisto1D neutron - gamma : nCapture : CONCRETE : 1E1 : log10 Interaction Distance (cm) = 5430012
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 1E1 : cos Deviation Angle = 5530011
+ CreateHisto1D neutron - gamma : nFission : CONCRETE : 1E1 : log10 Interaction Distance (cm) = 5530012
+ %%% EVENT 610000 NTRACKS 1 TOTAL NTRACKS 610001
+ %%% EVENT 611000 NTRACKS 1 TOTAL NTRACKS 611001
+ %%% EVENT 612000 NTRACKS 1 TOTAL NTRACKS 612001
+ %%% EVENT 613000 NTRACKS 1 TOTAL NTRACKS 613001
+ %%% EVENT 614000 NTRACKS 1 TOTAL NTRACKS 614001
+ %%% EVENT 615000 NTRACKS 1 TOTAL NTRACKS 615001
+ %%% EVENT 616000 NTRACKS 1 TOTAL NTRACKS 616001
+ %%% EVENT 617000 NTRACKS 1 TOTAL NTRACKS 617001
+ %%% EVENT 618000 NTRACKS 1 TOTAL NTRACKS 618001
+ %%% EVENT 619000 NTRACKS 1 TOTAL NTRACKS 619001
+G4GeometryManager::ReportVoxelStats -- Voxel Statistics
+
+    Total memory consumed for geometry optimisation:   0 kByte
+    Total CPU time elapsed for geometry optimisation: 0 seconds
+
+    Voxelisation: top CPU users:
+    Percent   Total CPU    System CPU       Memory  Volume
+    -------   ----------   ----------     --------  ----------
+       0.00         0.00         0.00            0k world
+
+    Voxelisation: top memory users:
+    Percent     Memory      Heads    Nodes   Pointers    Total CPU    Volume
+    -------   --------     ------   ------   --------   ----------    ----------
+     100.00          0k         1        2          4         0.00    world
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : No      recalculation needed : No 
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+
+Index : 1     used in the geometry : No      recalculation needed : No 
+ Material : CONCRETE
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  5.13646 keV    e-  427.59 keV    e+  413.461 keV proton 70 keV
+
+Index : 2     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_POLYETHYLENE
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  1.97806 keV    e-  276.265 keV    e+  272.577 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : No      recalculation needed : No 
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+
+Index : 1     used in the geometry : No      recalculation needed : No 
+ Material : CONCRETE
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  5.13646 keV    e-  427.59 keV    e+  413.461 keV proton 70 keV
+
+Index : 2     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_POLYETHYLENE
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  1.97806 keV    e-  276.265 keV    e+  272.577 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+ GmPDSCreateAngleTablesUA::BookHistos 9.9999E-10 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 9.9999E-10 : cos Deviation Angle = 5200021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 9.9999E-10 : log10 Interaction Distance (cm) = 5200022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 9.9999E-10 : cos Deviation Angle = 5300021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 9.9999E-10 : log10 Interaction Distance (cm) = 5300022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 9.9999E-10 : cos Deviation Angle = 5400021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 9.9999E-10 : log10 Interaction Distance (cm) = 5400022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 9.9999E-10 : cos Deviation Angle = 5500021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 9.9999E-10 : log10 Interaction Distance (cm) = 5500022
+ %%% EVENT 620000 NTRACKS 1 TOTAL NTRACKS 620001
+ %%% EVENT 621000 NTRACKS 1 TOTAL NTRACKS 621001
+ %%% EVENT 622000 NTRACKS 1 TOTAL NTRACKS 622001
+ %%% EVENT 623000 NTRACKS 1 TOTAL NTRACKS 623001
+ %%% EVENT 624000 NTRACKS 1 TOTAL NTRACKS 624001
+ %%% EVENT 625000 NTRACKS 1 TOTAL NTRACKS 625001
+ %%% EVENT 626000 NTRACKS 1 TOTAL NTRACKS 626001
+ %%% EVENT 627000 NTRACKS 1 TOTAL NTRACKS 627001
+ %%% EVENT 628000 NTRACKS 1 TOTAL NTRACKS 628001
+ %%% EVENT 629000 NTRACKS 1 TOTAL NTRACKS 629001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-9 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 2.1544E-9 : cos Deviation Angle = 5201021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 2.1544E-9 : log10 Interaction Distance (cm) = 5201022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 2.1544E-9 : cos Deviation Angle = 5301021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 2.1544E-9 : log10 Interaction Distance (cm) = 5301022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 2.1544E-9 : cos Deviation Angle = 5401021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 2.1544E-9 : log10 Interaction Distance (cm) = 5401022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 2.1544E-9 : cos Deviation Angle = 5501021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 2.1544E-9 : log10 Interaction Distance (cm) = 5501022
+ %%% EVENT 630000 NTRACKS 1 TOTAL NTRACKS 630001
+ %%% EVENT 631000 NTRACKS 1 TOTAL NTRACKS 631001
+ %%% EVENT 632000 NTRACKS 1 TOTAL NTRACKS 632001
+ %%% EVENT 633000 NTRACKS 1 TOTAL NTRACKS 633001
+ %%% EVENT 634000 NTRACKS 1 TOTAL NTRACKS 634001
+ %%% EVENT 635000 NTRACKS 1 TOTAL NTRACKS 635001
+ %%% EVENT 636000 NTRACKS 1 TOTAL NTRACKS 636001
+ %%% EVENT 637000 NTRACKS 1 TOTAL NTRACKS 637001
+ %%% EVENT 638000 NTRACKS 1 TOTAL NTRACKS 638001
+ %%% EVENT 639000 NTRACKS 1 TOTAL NTRACKS 639001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6416E-9 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 4.6416E-9 : cos Deviation Angle = 5202021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 4.6416E-9 : log10 Interaction Distance (cm) = 5202022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 4.6416E-9 : cos Deviation Angle = 5302021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 4.6416E-9 : log10 Interaction Distance (cm) = 5302022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 4.6416E-9 : cos Deviation Angle = 5402021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 4.6416E-9 : log10 Interaction Distance (cm) = 5402022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 4.6416E-9 : cos Deviation Angle = 5502021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 4.6416E-9 : log10 Interaction Distance (cm) = 5502022
+ %%% EVENT 640000 NTRACKS 1 TOTAL NTRACKS 640001
+ %%% EVENT 641000 NTRACKS 1 TOTAL NTRACKS 641001
+ %%% EVENT 642000 NTRACKS 1 TOTAL NTRACKS 642001
+ %%% EVENT 643000 NTRACKS 1 TOTAL NTRACKS 643001
+ %%% EVENT 644000 NTRACKS 1 TOTAL NTRACKS 644001
+ %%% EVENT 645000 NTRACKS 1 TOTAL NTRACKS 645001
+ %%% EVENT 646000 NTRACKS 1 TOTAL NTRACKS 646001
+ %%% EVENT 647000 NTRACKS 1 TOTAL NTRACKS 647001
+ %%% EVENT 648000 NTRACKS 1 TOTAL NTRACKS 648001
+ %%% EVENT 649000 NTRACKS 1 TOTAL NTRACKS 649001
+ GmPDSCreateAngleTablesUA::BookHistos 1E-8 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 1E-8 : cos Deviation Angle = 5203021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 1E-8 : log10 Interaction Distance (cm) = 5203022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 1E-8 : cos Deviation Angle = 5303021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 1E-8 : log10 Interaction Distance (cm) = 5303022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 1E-8 : cos Deviation Angle = 5403021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 1E-8 : log10 Interaction Distance (cm) = 5403022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 1E-8 : cos Deviation Angle = 5503021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 1E-8 : log10 Interaction Distance (cm) = 5503022
+ %%% EVENT 650000 NTRACKS 1 TOTAL NTRACKS 650001
+ %%% EVENT 651000 NTRACKS 1 TOTAL NTRACKS 651001
+ %%% EVENT 652000 NTRACKS 1 TOTAL NTRACKS 652001
+ %%% EVENT 653000 NTRACKS 1 TOTAL NTRACKS 653001
+ %%% EVENT 654000 NTRACKS 1 TOTAL NTRACKS 654001
+ %%% EVENT 655000 NTRACKS 1 TOTAL NTRACKS 655001
+ %%% EVENT 656000 NTRACKS 1 TOTAL NTRACKS 656001
+ %%% EVENT 657000 NTRACKS 1 TOTAL NTRACKS 657001
+ %%% EVENT 658000 NTRACKS 1 TOTAL NTRACKS 658001
+ %%% EVENT 659000 NTRACKS 1 TOTAL NTRACKS 659001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-8 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 2.1544E-8 : cos Deviation Angle = 5204021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 2.1544E-8 : log10 Interaction Distance (cm) = 5204022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 2.1544E-8 : cos Deviation Angle = 5304021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 2.1544E-8 : log10 Interaction Distance (cm) = 5304022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 2.1544E-8 : cos Deviation Angle = 5404021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 2.1544E-8 : log10 Interaction Distance (cm) = 5404022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 2.1544E-8 : cos Deviation Angle = 5504021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 2.1544E-8 : log10 Interaction Distance (cm) = 5504022
+ %%% EVENT 660000 NTRACKS 1 TOTAL NTRACKS 660001
+ %%% EVENT 661000 NTRACKS 1 TOTAL NTRACKS 661001
+ %%% EVENT 662000 NTRACKS 1 TOTAL NTRACKS 662001
+ %%% EVENT 663000 NTRACKS 1 TOTAL NTRACKS 663001
+ %%% EVENT 664000 NTRACKS 1 TOTAL NTRACKS 664001
+ %%% EVENT 665000 NTRACKS 1 TOTAL NTRACKS 665001
+ %%% EVENT 666000 NTRACKS 1 TOTAL NTRACKS 666001
+ %%% EVENT 667000 NTRACKS 1 TOTAL NTRACKS 667001
+ %%% EVENT 668000 NTRACKS 1 TOTAL NTRACKS 668001
+ %%% EVENT 669000 NTRACKS 1 TOTAL NTRACKS 669001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E-8 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 4.6415E-8 : cos Deviation Angle = 5205021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 4.6415E-8 : log10 Interaction Distance (cm) = 5205022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 4.6415E-8 : cos Deviation Angle = 5305021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 4.6415E-8 : log10 Interaction Distance (cm) = 5305022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 4.6415E-8 : cos Deviation Angle = 5405021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 4.6415E-8 : log10 Interaction Distance (cm) = 5405022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 4.6415E-8 : cos Deviation Angle = 5505021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 4.6415E-8 : log10 Interaction Distance (cm) = 5505022
+ %%% EVENT 670000 NTRACKS 1 TOTAL NTRACKS 670001
+ %%% EVENT 671000 NTRACKS 1 TOTAL NTRACKS 671001
+ %%% EVENT 672000 NTRACKS 1 TOTAL NTRACKS 672001
+ %%% EVENT 673000 NTRACKS 1 TOTAL NTRACKS 673001
+ %%% EVENT 674000 NTRACKS 1 TOTAL NTRACKS 674001
+ %%% EVENT 675000 NTRACKS 1 TOTAL NTRACKS 675001
+ %%% EVENT 676000 NTRACKS 1 TOTAL NTRACKS 676001
+ %%% EVENT 677000 NTRACKS 1 TOTAL NTRACKS 677001
+ %%% EVENT 678000 NTRACKS 1 TOTAL NTRACKS 678001
+ %%% EVENT 679000 NTRACKS 1 TOTAL NTRACKS 679001
+ GmPDSCreateAngleTablesUA::BookHistos 1E-7 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 1E-7 : cos Deviation Angle = 5206021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 1E-7 : log10 Interaction Distance (cm) = 5206022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 1E-7 : cos Deviation Angle = 5306021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 1E-7 : log10 Interaction Distance (cm) = 5306022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 1E-7 : cos Deviation Angle = 5406021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 1E-7 : log10 Interaction Distance (cm) = 5406022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 1E-7 : cos Deviation Angle = 5506021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 1E-7 : log10 Interaction Distance (cm) = 5506022
+ %%% EVENT 680000 NTRACKS 1 TOTAL NTRACKS 680001
+ %%% EVENT 681000 NTRACKS 1 TOTAL NTRACKS 681001
+ %%% EVENT 682000 NTRACKS 1 TOTAL NTRACKS 682001
+ %%% EVENT 683000 NTRACKS 1 TOTAL NTRACKS 683001
+ %%% EVENT 684000 NTRACKS 1 TOTAL NTRACKS 684001
+ %%% EVENT 685000 NTRACKS 1 TOTAL NTRACKS 685001
+ %%% EVENT 686000 NTRACKS 1 TOTAL NTRACKS 686001
+ %%% EVENT 687000 NTRACKS 1 TOTAL NTRACKS 687001
+ %%% EVENT 688000 NTRACKS 1 TOTAL NTRACKS 688001
+ %%% EVENT 689000 NTRACKS 1 TOTAL NTRACKS 689001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-7 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 2.1544E-7 : cos Deviation Angle = 5207021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 2.1544E-7 : log10 Interaction Distance (cm) = 5207022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 2.1544E-7 : cos Deviation Angle = 5307021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 2.1544E-7 : log10 Interaction Distance (cm) = 5307022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 2.1544E-7 : cos Deviation Angle = 5407021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 2.1544E-7 : log10 Interaction Distance (cm) = 5407022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 2.1544E-7 : cos Deviation Angle = 5507021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 2.1544E-7 : log10 Interaction Distance (cm) = 5507022
+ %%% EVENT 690000 NTRACKS 1 TOTAL NTRACKS 690001
+ %%% EVENT 691000 NTRACKS 1 TOTAL NTRACKS 691001
+ %%% EVENT 692000 NTRACKS 1 TOTAL NTRACKS 692001
+ %%% EVENT 693000 NTRACKS 1 TOTAL NTRACKS 693001
+ %%% EVENT 694000 NTRACKS 1 TOTAL NTRACKS 694001
+ %%% EVENT 695000 NTRACKS 1 TOTAL NTRACKS 695001
+ %%% EVENT 696000 NTRACKS 1 TOTAL NTRACKS 696001
+ %%% EVENT 697000 NTRACKS 1 TOTAL NTRACKS 697001
+ %%% EVENT 698000 NTRACKS 1 TOTAL NTRACKS 698001
+ %%% EVENT 699000 NTRACKS 1 TOTAL NTRACKS 699001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E-7 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 4.6415E-7 : cos Deviation Angle = 5208021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 4.6415E-7 : log10 Interaction Distance (cm) = 5208022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 4.6415E-7 : cos Deviation Angle = 5308021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 4.6415E-7 : log10 Interaction Distance (cm) = 5308022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 4.6415E-7 : cos Deviation Angle = 5408021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 4.6415E-7 : log10 Interaction Distance (cm) = 5408022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 4.6415E-7 : cos Deviation Angle = 5508021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 4.6415E-7 : log10 Interaction Distance (cm) = 5508022
+ %%% EVENT 700000 NTRACKS 1 TOTAL NTRACKS 700001
+ %%% EVENT 701000 NTRACKS 1 TOTAL NTRACKS 701001
+ %%% EVENT 702000 NTRACKS 1 TOTAL NTRACKS 702001
+ %%% EVENT 703000 NTRACKS 1 TOTAL NTRACKS 703001
+ %%% EVENT 704000 NTRACKS 1 TOTAL NTRACKS 704001
+ %%% EVENT 705000 NTRACKS 1 TOTAL NTRACKS 705001
+ %%% EVENT 706000 NTRACKS 1 TOTAL NTRACKS 706001
+ %%% EVENT 707000 NTRACKS 1 TOTAL NTRACKS 707001
+ %%% EVENT 708000 NTRACKS 1 TOTAL NTRACKS 708001
+ %%% EVENT 709000 NTRACKS 1 TOTAL NTRACKS 709001
+ GmPDSCreateAngleTablesUA::BookHistos 1E-6 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 1E-6 : cos Deviation Angle = 5209021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 1E-6 : log10 Interaction Distance (cm) = 5209022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 1E-6 : cos Deviation Angle = 5309021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 1E-6 : log10 Interaction Distance (cm) = 5309022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 1E-6 : cos Deviation Angle = 5409021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 1E-6 : log10 Interaction Distance (cm) = 5409022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 1E-6 : cos Deviation Angle = 5509021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 1E-6 : log10 Interaction Distance (cm) = 5509022
+ %%% EVENT 710000 NTRACKS 1 TOTAL NTRACKS 710001
+ %%% EVENT 711000 NTRACKS 1 TOTAL NTRACKS 711001
+ %%% EVENT 712000 NTRACKS 1 TOTAL NTRACKS 712001
+ %%% EVENT 713000 NTRACKS 1 TOTAL NTRACKS 713001
+ %%% EVENT 714000 NTRACKS 1 TOTAL NTRACKS 714001
+ %%% EVENT 715000 NTRACKS 1 TOTAL NTRACKS 715001
+ %%% EVENT 716000 NTRACKS 1 TOTAL NTRACKS 716001
+ %%% EVENT 717000 NTRACKS 1 TOTAL NTRACKS 717001
+ %%% EVENT 718000 NTRACKS 1 TOTAL NTRACKS 718001
+ %%% EVENT 719000 NTRACKS 1 TOTAL NTRACKS 719001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-6 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 2.1544E-6 : cos Deviation Angle = 5210021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 2.1544E-6 : log10 Interaction Distance (cm) = 5210022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 2.1544E-6 : cos Deviation Angle = 5310021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 2.1544E-6 : log10 Interaction Distance (cm) = 5310022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 2.1544E-6 : cos Deviation Angle = 5410021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 2.1544E-6 : log10 Interaction Distance (cm) = 5410022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 2.1544E-6 : cos Deviation Angle = 5510021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 2.1544E-6 : log10 Interaction Distance (cm) = 5510022
+ %%% EVENT 720000 NTRACKS 1 TOTAL NTRACKS 720001
+ %%% EVENT 721000 NTRACKS 1 TOTAL NTRACKS 721001
+ %%% EVENT 722000 NTRACKS 1 TOTAL NTRACKS 722001
+ %%% EVENT 723000 NTRACKS 1 TOTAL NTRACKS 723001
+ %%% EVENT 724000 NTRACKS 1 TOTAL NTRACKS 724001
+ %%% EVENT 725000 NTRACKS 1 TOTAL NTRACKS 725001
+ %%% EVENT 726000 NTRACKS 1 TOTAL NTRACKS 726001
+ %%% EVENT 727000 NTRACKS 1 TOTAL NTRACKS 727001
+ %%% EVENT 728000 NTRACKS 1 TOTAL NTRACKS 728001
+ %%% EVENT 729000 NTRACKS 1 TOTAL NTRACKS 729001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E-6 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 4.6415E-6 : cos Deviation Angle = 5211021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 4.6415E-6 : log10 Interaction Distance (cm) = 5211022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 4.6415E-6 : cos Deviation Angle = 5311021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 4.6415E-6 : log10 Interaction Distance (cm) = 5311022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 4.6415E-6 : cos Deviation Angle = 5411021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 4.6415E-6 : log10 Interaction Distance (cm) = 5411022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 4.6415E-6 : cos Deviation Angle = 5511021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 4.6415E-6 : log10 Interaction Distance (cm) = 5511022
+ %%% EVENT 730000 NTRACKS 1 TOTAL NTRACKS 730001
+ %%% EVENT 731000 NTRACKS 1 TOTAL NTRACKS 731001
+ %%% EVENT 732000 NTRACKS 1 TOTAL NTRACKS 732001
+ %%% EVENT 733000 NTRACKS 1 TOTAL NTRACKS 733001
+ %%% EVENT 734000 NTRACKS 1 TOTAL NTRACKS 734001
+ %%% EVENT 735000 NTRACKS 1 TOTAL NTRACKS 735001
+ %%% EVENT 736000 NTRACKS 1 TOTAL NTRACKS 736001
+ %%% EVENT 737000 NTRACKS 1 TOTAL NTRACKS 737001
+ %%% EVENT 738000 NTRACKS 1 TOTAL NTRACKS 738001
+ %%% EVENT 739000 NTRACKS 1 TOTAL NTRACKS 739001
+ GmPDSCreateAngleTablesUA::BookHistos 1E-5 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 1E-5 : cos Deviation Angle = 5212021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 1E-5 : log10 Interaction Distance (cm) = 5212022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 1E-5 : cos Deviation Angle = 5312021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 1E-5 : log10 Interaction Distance (cm) = 5312022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 1E-5 : cos Deviation Angle = 5412021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 1E-5 : log10 Interaction Distance (cm) = 5412022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 1E-5 : cos Deviation Angle = 5512021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 1E-5 : log10 Interaction Distance (cm) = 5512022
+ %%% EVENT 740000 NTRACKS 1 TOTAL NTRACKS 740001
+ %%% EVENT 741000 NTRACKS 1 TOTAL NTRACKS 741001
+ %%% EVENT 742000 NTRACKS 1 TOTAL NTRACKS 742001
+ %%% EVENT 743000 NTRACKS 1 TOTAL NTRACKS 743001
+ %%% EVENT 744000 NTRACKS 1 TOTAL NTRACKS 744001
+ %%% EVENT 745000 NTRACKS 1 TOTAL NTRACKS 745001
+ %%% EVENT 746000 NTRACKS 1 TOTAL NTRACKS 746001
+ %%% EVENT 747000 NTRACKS 1 TOTAL NTRACKS 747001
+ %%% EVENT 748000 NTRACKS 1 TOTAL NTRACKS 748001
+ %%% EVENT 749000 NTRACKS 1 TOTAL NTRACKS 749001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-5 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 2.1544E-5 : cos Deviation Angle = 5213021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 2.1544E-5 : log10 Interaction Distance (cm) = 5213022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 2.1544E-5 : cos Deviation Angle = 5313021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 2.1544E-5 : log10 Interaction Distance (cm) = 5313022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 2.1544E-5 : cos Deviation Angle = 5413021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 2.1544E-5 : log10 Interaction Distance (cm) = 5413022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 2.1544E-5 : cos Deviation Angle = 5513021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 2.1544E-5 : log10 Interaction Distance (cm) = 5513022
+ %%% EVENT 750000 NTRACKS 1 TOTAL NTRACKS 750001
+ %%% EVENT 751000 NTRACKS 1 TOTAL NTRACKS 751001
+ %%% EVENT 752000 NTRACKS 1 TOTAL NTRACKS 752001
+ %%% EVENT 753000 NTRACKS 1 TOTAL NTRACKS 753001
+ %%% EVENT 754000 NTRACKS 1 TOTAL NTRACKS 754001
+ %%% EVENT 755000 NTRACKS 1 TOTAL NTRACKS 755001
+ %%% EVENT 756000 NTRACKS 1 TOTAL NTRACKS 756001
+ %%% EVENT 757000 NTRACKS 1 TOTAL NTRACKS 757001
+ %%% EVENT 758000 NTRACKS 1 TOTAL NTRACKS 758001
+ %%% EVENT 759000 NTRACKS 1 TOTAL NTRACKS 759001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E-5 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 4.6415E-5 : cos Deviation Angle = 5214021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 4.6415E-5 : log10 Interaction Distance (cm) = 5214022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 4.6415E-5 : cos Deviation Angle = 5314021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 4.6415E-5 : log10 Interaction Distance (cm) = 5314022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 4.6415E-5 : cos Deviation Angle = 5414021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 4.6415E-5 : log10 Interaction Distance (cm) = 5414022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 4.6415E-5 : cos Deviation Angle = 5514021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 4.6415E-5 : log10 Interaction Distance (cm) = 5514022
+ %%% EVENT 760000 NTRACKS 1 TOTAL NTRACKS 760001
+ %%% EVENT 761000 NTRACKS 1 TOTAL NTRACKS 761001
+ %%% EVENT 762000 NTRACKS 1 TOTAL NTRACKS 762001
+ %%% EVENT 763000 NTRACKS 1 TOTAL NTRACKS 763001
+ %%% EVENT 764000 NTRACKS 1 TOTAL NTRACKS 764001
+ %%% EVENT 765000 NTRACKS 1 TOTAL NTRACKS 765001
+ %%% EVENT 766000 NTRACKS 1 TOTAL NTRACKS 766001
+ %%% EVENT 767000 NTRACKS 1 TOTAL NTRACKS 767001
+ %%% EVENT 768000 NTRACKS 1 TOTAL NTRACKS 768001
+ %%% EVENT 769000 NTRACKS 1 TOTAL NTRACKS 769001
+ GmPDSCreateAngleTablesUA::BookHistos 1E-4 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 1E-4 : cos Deviation Angle = 5215021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 1E-4 : log10 Interaction Distance (cm) = 5215022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 1E-4 : cos Deviation Angle = 5315021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 1E-4 : log10 Interaction Distance (cm) = 5315022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 1E-4 : cos Deviation Angle = 5415021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 1E-4 : log10 Interaction Distance (cm) = 5415022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 1E-4 : cos Deviation Angle = 5515021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 1E-4 : log10 Interaction Distance (cm) = 5515022
+ %%% EVENT 770000 NTRACKS 1 TOTAL NTRACKS 770001
+ %%% EVENT 771000 NTRACKS 1 TOTAL NTRACKS 771001
+ %%% EVENT 772000 NTRACKS 1 TOTAL NTRACKS 772001
+ %%% EVENT 773000 NTRACKS 1 TOTAL NTRACKS 773001
+ %%% EVENT 774000 NTRACKS 1 TOTAL NTRACKS 774001
+ %%% EVENT 775000 NTRACKS 1 TOTAL NTRACKS 775001
+ %%% EVENT 776000 NTRACKS 1 TOTAL NTRACKS 776001
+ %%% EVENT 777000 NTRACKS 1 TOTAL NTRACKS 777001
+ %%% EVENT 778000 NTRACKS 1 TOTAL NTRACKS 778001
+ %%% EVENT 779000 NTRACKS 1 TOTAL NTRACKS 779001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-4 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 2.1544E-4 : cos Deviation Angle = 5216021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 2.1544E-4 : log10 Interaction Distance (cm) = 5216022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 2.1544E-4 : cos Deviation Angle = 5316021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 2.1544E-4 : log10 Interaction Distance (cm) = 5316022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 2.1544E-4 : cos Deviation Angle = 5416021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 2.1544E-4 : log10 Interaction Distance (cm) = 5416022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 2.1544E-4 : cos Deviation Angle = 5516021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 2.1544E-4 : log10 Interaction Distance (cm) = 5516022
+ %%% EVENT 780000 NTRACKS 1 TOTAL NTRACKS 780001
+ %%% EVENT 781000 NTRACKS 1 TOTAL NTRACKS 781001
+ %%% EVENT 782000 NTRACKS 1 TOTAL NTRACKS 782001
+ %%% EVENT 783000 NTRACKS 1 TOTAL NTRACKS 783001
+ %%% EVENT 784000 NTRACKS 1 TOTAL NTRACKS 784001
+ %%% EVENT 785000 NTRACKS 1 TOTAL NTRACKS 785001
+ %%% EVENT 786000 NTRACKS 1 TOTAL NTRACKS 786001
+ %%% EVENT 787000 NTRACKS 1 TOTAL NTRACKS 787001
+ %%% EVENT 788000 NTRACKS 1 TOTAL NTRACKS 788001
+ %%% EVENT 789000 NTRACKS 1 TOTAL NTRACKS 789001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E-4 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 4.6415E-4 : cos Deviation Angle = 5217021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 4.6415E-4 : log10 Interaction Distance (cm) = 5217022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 4.6415E-4 : cos Deviation Angle = 5317021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 4.6415E-4 : log10 Interaction Distance (cm) = 5317022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 4.6415E-4 : cos Deviation Angle = 5417021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 4.6415E-4 : log10 Interaction Distance (cm) = 5417022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 4.6415E-4 : cos Deviation Angle = 5517021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 4.6415E-4 : log10 Interaction Distance (cm) = 5517022
+ %%% EVENT 790000 NTRACKS 1 TOTAL NTRACKS 790001
+ %%% EVENT 791000 NTRACKS 1 TOTAL NTRACKS 791001
+ %%% EVENT 792000 NTRACKS 1 TOTAL NTRACKS 792001
+ %%% EVENT 793000 NTRACKS 1 TOTAL NTRACKS 793001
+ %%% EVENT 794000 NTRACKS 1 TOTAL NTRACKS 794001
+ %%% EVENT 795000 NTRACKS 1 TOTAL NTRACKS 795001
+ %%% EVENT 796000 NTRACKS 1 TOTAL NTRACKS 796001
+ %%% EVENT 797000 NTRACKS 1 TOTAL NTRACKS 797001
+ %%% EVENT 798000 NTRACKS 1 TOTAL NTRACKS 798001
+ %%% EVENT 799000 NTRACKS 1 TOTAL NTRACKS 799001
+ GmPDSCreateAngleTablesUA::BookHistos 1E-3 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 1E-3 : cos Deviation Angle = 5218021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 1E-3 : log10 Interaction Distance (cm) = 5218022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 1E-3 : cos Deviation Angle = 5318021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 1E-3 : log10 Interaction Distance (cm) = 5318022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 1E-3 : cos Deviation Angle = 5418021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 1E-3 : log10 Interaction Distance (cm) = 5418022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 1E-3 : cos Deviation Angle = 5518021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 1E-3 : log10 Interaction Distance (cm) = 5518022
+ %%% EVENT 800000 NTRACKS 1 TOTAL NTRACKS 800001
+ %%% EVENT 801000 NTRACKS 1 TOTAL NTRACKS 801001
+ %%% EVENT 802000 NTRACKS 1 TOTAL NTRACKS 802001
+ %%% EVENT 803000 NTRACKS 1 TOTAL NTRACKS 803001
+ %%% EVENT 804000 NTRACKS 1 TOTAL NTRACKS 804001
+ %%% EVENT 805000 NTRACKS 1 TOTAL NTRACKS 805001
+ %%% EVENT 806000 NTRACKS 1 TOTAL NTRACKS 806001
+ %%% EVENT 807000 NTRACKS 1 TOTAL NTRACKS 807001
+ %%% EVENT 808000 NTRACKS 1 TOTAL NTRACKS 808001
+ %%% EVENT 809000 NTRACKS 1 TOTAL NTRACKS 809001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-3 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 2.1544E-3 : cos Deviation Angle = 5219021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 2.1544E-3 : log10 Interaction Distance (cm) = 5219022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 2.1544E-3 : cos Deviation Angle = 5319021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 2.1544E-3 : log10 Interaction Distance (cm) = 5319022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 2.1544E-3 : cos Deviation Angle = 5419021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 2.1544E-3 : log10 Interaction Distance (cm) = 5419022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 2.1544E-3 : cos Deviation Angle = 5519021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 2.1544E-3 : log10 Interaction Distance (cm) = 5519022
+ %%% EVENT 810000 NTRACKS 1 TOTAL NTRACKS 810001
+ %%% EVENT 811000 NTRACKS 1 TOTAL NTRACKS 811001
+ %%% EVENT 812000 NTRACKS 1 TOTAL NTRACKS 812001
+ %%% EVENT 813000 NTRACKS 1 TOTAL NTRACKS 813001
+ %%% EVENT 814000 NTRACKS 1 TOTAL NTRACKS 814001
+ %%% EVENT 815000 NTRACKS 1 TOTAL NTRACKS 815001
+ %%% EVENT 816000 NTRACKS 1 TOTAL NTRACKS 816001
+ %%% EVENT 817000 NTRACKS 1 TOTAL NTRACKS 817001
+ %%% EVENT 818000 NTRACKS 1 TOTAL NTRACKS 818001
+ %%% EVENT 819000 NTRACKS 1 TOTAL NTRACKS 819001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E-3 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 4.6415E-3 : cos Deviation Angle = 5220021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 4.6415E-3 : log10 Interaction Distance (cm) = 5220022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 4.6415E-3 : cos Deviation Angle = 5320021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 4.6415E-3 : log10 Interaction Distance (cm) = 5320022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 4.6415E-3 : cos Deviation Angle = 5420021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 4.6415E-3 : log10 Interaction Distance (cm) = 5420022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 4.6415E-3 : cos Deviation Angle = 5520021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 4.6415E-3 : log10 Interaction Distance (cm) = 5520022
+ %%% EVENT 820000 NTRACKS 1 TOTAL NTRACKS 820001
+ %%% EVENT 821000 NTRACKS 1 TOTAL NTRACKS 821001
+ %%% EVENT 822000 NTRACKS 1 TOTAL NTRACKS 822001
+ %%% EVENT 823000 NTRACKS 1 TOTAL NTRACKS 823001
+ %%% EVENT 824000 NTRACKS 1 TOTAL NTRACKS 824001
+ %%% EVENT 825000 NTRACKS 1 TOTAL NTRACKS 825001
+ %%% EVENT 826000 NTRACKS 1 TOTAL NTRACKS 826001
+ %%% EVENT 827000 NTRACKS 1 TOTAL NTRACKS 827001
+ %%% EVENT 828000 NTRACKS 1 TOTAL NTRACKS 828001
+ %%% EVENT 829000 NTRACKS 1 TOTAL NTRACKS 829001
+ GmPDSCreateAngleTablesUA::BookHistos 1E-2 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 1E-2 : cos Deviation Angle = 5221021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 1E-2 : log10 Interaction Distance (cm) = 5221022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 1E-2 : cos Deviation Angle = 5321021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 1E-2 : log10 Interaction Distance (cm) = 5321022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 1E-2 : cos Deviation Angle = 5421021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 1E-2 : log10 Interaction Distance (cm) = 5421022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 1E-2 : cos Deviation Angle = 5521021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 1E-2 : log10 Interaction Distance (cm) = 5521022
+ %%% EVENT 830000 NTRACKS 1 TOTAL NTRACKS 830001
+ %%% EVENT 831000 NTRACKS 1 TOTAL NTRACKS 831001
+ %%% EVENT 832000 NTRACKS 1 TOTAL NTRACKS 832001
+ %%% EVENT 833000 NTRACKS 1 TOTAL NTRACKS 833001
+ %%% EVENT 834000 NTRACKS 1 TOTAL NTRACKS 834001
+ %%% EVENT 835000 NTRACKS 1 TOTAL NTRACKS 835001
+ %%% EVENT 836000 NTRACKS 1 TOTAL NTRACKS 836001
+ %%% EVENT 837000 NTRACKS 1 TOTAL NTRACKS 837001
+ %%% EVENT 838000 NTRACKS 1 TOTAL NTRACKS 838001
+ %%% EVENT 839000 NTRACKS 1 TOTAL NTRACKS 839001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E-2 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 2.1544E-2 : cos Deviation Angle = 5222021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 2.1544E-2 : log10 Interaction Distance (cm) = 5222022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 2.1544E-2 : cos Deviation Angle = 5322021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 2.1544E-2 : log10 Interaction Distance (cm) = 5322022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 2.1544E-2 : cos Deviation Angle = 5422021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 2.1544E-2 : log10 Interaction Distance (cm) = 5422022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 2.1544E-2 : cos Deviation Angle = 5522021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 2.1544E-2 : log10 Interaction Distance (cm) = 5522022
+ %%% EVENT 840000 NTRACKS 1 TOTAL NTRACKS 840001
+ %%% EVENT 841000 NTRACKS 1 TOTAL NTRACKS 841001
+ %%% EVENT 842000 NTRACKS 1 TOTAL NTRACKS 842001
+ %%% EVENT 843000 NTRACKS 1 TOTAL NTRACKS 843001
+ %%% EVENT 844000 NTRACKS 1 TOTAL NTRACKS 844001
+ %%% EVENT 845000 NTRACKS 1 TOTAL NTRACKS 845001
+ %%% EVENT 846000 NTRACKS 1 TOTAL NTRACKS 846001
+ %%% EVENT 847000 NTRACKS 1 TOTAL NTRACKS 847001
+ %%% EVENT 848000 NTRACKS 1 TOTAL NTRACKS 848001
+ %%% EVENT 849000 NTRACKS 1 TOTAL NTRACKS 849001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E-2 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 4.6415E-2 : cos Deviation Angle = 5223021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 4.6415E-2 : log10 Interaction Distance (cm) = 5223022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 4.6415E-2 : cos Deviation Angle = 5323021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 4.6415E-2 : log10 Interaction Distance (cm) = 5323022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 4.6415E-2 : cos Deviation Angle = 5423021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 4.6415E-2 : log10 Interaction Distance (cm) = 5423022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 4.6415E-2 : cos Deviation Angle = 5523021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 4.6415E-2 : log10 Interaction Distance (cm) = 5523022
+ %%% EVENT 850000 NTRACKS 1 TOTAL NTRACKS 850001
+ %%% EVENT 851000 NTRACKS 1 TOTAL NTRACKS 851001
+ %%% EVENT 852000 NTRACKS 1 TOTAL NTRACKS 852001
+ %%% EVENT 853000 NTRACKS 1 TOTAL NTRACKS 853001
+ %%% EVENT 854000 NTRACKS 1 TOTAL NTRACKS 854001
+ %%% EVENT 855000 NTRACKS 1 TOTAL NTRACKS 855001
+ %%% EVENT 856000 NTRACKS 1 TOTAL NTRACKS 856001
+ %%% EVENT 857000 NTRACKS 1 TOTAL NTRACKS 857001
+ %%% EVENT 858000 NTRACKS 1 TOTAL NTRACKS 858001
+ %%% EVENT 859000 NTRACKS 1 TOTAL NTRACKS 859001
+ GmPDSCreateAngleTablesUA::BookHistos 0.1E0 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 0.1E0 : cos Deviation Angle = 5224021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 0.1E0 : log10 Interaction Distance (cm) = 5224022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 0.1E0 : cos Deviation Angle = 5324021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 0.1E0 : log10 Interaction Distance (cm) = 5324022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 0.1E0 : cos Deviation Angle = 5424021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 0.1E0 : log10 Interaction Distance (cm) = 5424022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 0.1E0 : cos Deviation Angle = 5524021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 0.1E0 : log10 Interaction Distance (cm) = 5524022
+ %%% EVENT 860000 NTRACKS 1 TOTAL NTRACKS 860001
+ %%% EVENT 861000 NTRACKS 1 TOTAL NTRACKS 861001
+ %%% EVENT 862000 NTRACKS 1 TOTAL NTRACKS 862001
+ %%% EVENT 863000 NTRACKS 1 TOTAL NTRACKS 863001
+ %%% EVENT 864000 NTRACKS 1 TOTAL NTRACKS 864001
+ %%% EVENT 865000 NTRACKS 1 TOTAL NTRACKS 865001
+ %%% EVENT 866000 NTRACKS 1 TOTAL NTRACKS 866001
+ %%% EVENT 867000 NTRACKS 1 TOTAL NTRACKS 867001
+ %%% EVENT 868000 NTRACKS 1 TOTAL NTRACKS 868001
+ %%% EVENT 869000 NTRACKS 1 TOTAL NTRACKS 869001
+ GmPDSCreateAngleTablesUA::BookHistos 0.2154E0 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 0.2154E0 : cos Deviation Angle = 5225021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 0.2154E0 : log10 Interaction Distance (cm) = 5225022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 0.2154E0 : cos Deviation Angle = 5325021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 0.2154E0 : log10 Interaction Distance (cm) = 5325022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 0.2154E0 : cos Deviation Angle = 5425021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 0.2154E0 : log10 Interaction Distance (cm) = 5425022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 0.2154E0 : cos Deviation Angle = 5525021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 0.2154E0 : log10 Interaction Distance (cm) = 5525022
+ %%% EVENT 870000 NTRACKS 1 TOTAL NTRACKS 870001
+ %%% EVENT 871000 NTRACKS 1 TOTAL NTRACKS 871001
+ %%% EVENT 872000 NTRACKS 1 TOTAL NTRACKS 872001
+ %%% EVENT 873000 NTRACKS 1 TOTAL NTRACKS 873001
+ %%% EVENT 874000 NTRACKS 1 TOTAL NTRACKS 874001
+ %%% EVENT 875000 NTRACKS 1 TOTAL NTRACKS 875001
+ %%% EVENT 876000 NTRACKS 1 TOTAL NTRACKS 876001
+ %%% EVENT 877000 NTRACKS 1 TOTAL NTRACKS 877001
+ %%% EVENT 878000 NTRACKS 1 TOTAL NTRACKS 878001
+ %%% EVENT 879000 NTRACKS 1 TOTAL NTRACKS 879001
+ GmPDSCreateAngleTablesUA::BookHistos 0.4641E0 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 0.4641E0 : cos Deviation Angle = 5226021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 0.4641E0 : log10 Interaction Distance (cm) = 5226022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 0.4641E0 : cos Deviation Angle = 5326021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 0.4641E0 : log10 Interaction Distance (cm) = 5326022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 0.4641E0 : cos Deviation Angle = 5426021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 0.4641E0 : log10 Interaction Distance (cm) = 5426022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 0.4641E0 : cos Deviation Angle = 5526021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 0.4641E0 : log10 Interaction Distance (cm) = 5526022
+ %%% EVENT 880000 NTRACKS 1 TOTAL NTRACKS 880001
+ %%% EVENT 881000 NTRACKS 1 TOTAL NTRACKS 881001
+ %%% EVENT 882000 NTRACKS 1 TOTAL NTRACKS 882001
+ %%% EVENT 883000 NTRACKS 1 TOTAL NTRACKS 883001
+ %%% EVENT 884000 NTRACKS 1 TOTAL NTRACKS 884001
+ %%% EVENT 885000 NTRACKS 1 TOTAL NTRACKS 885001
+ %%% EVENT 886000 NTRACKS 1 TOTAL NTRACKS 886001
+ %%% EVENT 887000 NTRACKS 1 TOTAL NTRACKS 887001
+ %%% EVENT 888000 NTRACKS 1 TOTAL NTRACKS 888001
+ %%% EVENT 889000 NTRACKS 1 TOTAL NTRACKS 889001
+ GmPDSCreateAngleTablesUA::BookHistos 1E0 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 1E0 : cos Deviation Angle = 5227021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 1E0 : log10 Interaction Distance (cm) = 5227022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 1E0 : cos Deviation Angle = 5327021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 1E0 : log10 Interaction Distance (cm) = 5327022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 1E0 : cos Deviation Angle = 5427021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 1E0 : log10 Interaction Distance (cm) = 5427022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 1E0 : cos Deviation Angle = 5527021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 1E0 : log10 Interaction Distance (cm) = 5527022
+ %%% EVENT 890000 NTRACKS 1 TOTAL NTRACKS 890001
+ %%% EVENT 891000 NTRACKS 1 TOTAL NTRACKS 891001
+ %%% EVENT 892000 NTRACKS 1 TOTAL NTRACKS 892001
+ %%% EVENT 893000 NTRACKS 1 TOTAL NTRACKS 893001
+ %%% EVENT 894000 NTRACKS 1 TOTAL NTRACKS 894001
+ %%% EVENT 895000 NTRACKS 1 TOTAL NTRACKS 895001
+ %%% EVENT 896000 NTRACKS 1 TOTAL NTRACKS 896001
+ %%% EVENT 897000 NTRACKS 1 TOTAL NTRACKS 897001
+ %%% EVENT 898000 NTRACKS 1 TOTAL NTRACKS 898001
+ %%% EVENT 899000 NTRACKS 1 TOTAL NTRACKS 899001
+ GmPDSCreateAngleTablesUA::BookHistos 2.1544E0 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 2.1544E0 : cos Deviation Angle = 5228021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 2.1544E0 : log10 Interaction Distance (cm) = 5228022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 2.1544E0 : cos Deviation Angle = 5328021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 2.1544E0 : log10 Interaction Distance (cm) = 5328022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 2.1544E0 : cos Deviation Angle = 5428021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 2.1544E0 : log10 Interaction Distance (cm) = 5428022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 2.1544E0 : cos Deviation Angle = 5528021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 2.1544E0 : log10 Interaction Distance (cm) = 5528022
+ %%% EVENT 900000 NTRACKS 1 TOTAL NTRACKS 900001
+ %%% EVENT 901000 NTRACKS 1 TOTAL NTRACKS 901001
+ %%% EVENT 902000 NTRACKS 1 TOTAL NTRACKS 902001
+ %%% EVENT 903000 NTRACKS 1 TOTAL NTRACKS 903001
+ %%% EVENT 904000 NTRACKS 1 TOTAL NTRACKS 904001
+ %%% EVENT 905000 NTRACKS 1 TOTAL NTRACKS 905001
+ %%% EVENT 906000 NTRACKS 1 TOTAL NTRACKS 906001
+ %%% EVENT 907000 NTRACKS 1 TOTAL NTRACKS 907001
+ %%% EVENT 908000 NTRACKS 1 TOTAL NTRACKS 908001
+ %%% EVENT 909000 NTRACKS 1 TOTAL NTRACKS 909001
+ GmPDSCreateAngleTablesUA::BookHistos 4.6415E0 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 4.6415E0 : cos Deviation Angle = 5229021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 4.6415E0 : log10 Interaction Distance (cm) = 5229022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 4.6415E0 : cos Deviation Angle = 5329021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 4.6415E0 : log10 Interaction Distance (cm) = 5329022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 4.6415E0 : cos Deviation Angle = 5429021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 4.6415E0 : log10 Interaction Distance (cm) = 5429022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 4.6415E0 : cos Deviation Angle = 5529021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 4.6415E0 : log10 Interaction Distance (cm) = 5529022
+ %%% EVENT 910000 NTRACKS 1 TOTAL NTRACKS 910001
+ %%% EVENT 911000 NTRACKS 1 TOTAL NTRACKS 911001
+ %%% EVENT 912000 NTRACKS 1 TOTAL NTRACKS 912001
+ %%% EVENT 913000 NTRACKS 1 TOTAL NTRACKS 913001
+ %%% EVENT 914000 NTRACKS 1 TOTAL NTRACKS 914001
+ %%% EVENT 915000 NTRACKS 1 TOTAL NTRACKS 915001
+ %%% EVENT 916000 NTRACKS 1 TOTAL NTRACKS 916001
+ %%% EVENT 917000 NTRACKS 1 TOTAL NTRACKS 917001
+ %%% EVENT 918000 NTRACKS 1 TOTAL NTRACKS 918001
+ %%% EVENT 919000 NTRACKS 1 TOTAL NTRACKS 919001
+ GmPDSCreateAngleTablesUA::BookHistos 1E1 G4_POLYETHYLENE
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 1E1 : cos Deviation Angle = 5230021
+ CreateHisto1D neutron - gamma : hadElastic : G4_POLYETHYLENE : 1E1 : log10 Interaction Distance (cm) = 5230022
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 1E1 : cos Deviation Angle = 5330021
+ CreateHisto1D neutron - gamma : NeutronInelastic : G4_POLYETHYLENE : 1E1 : log10 Interaction Distance (cm) = 5330022
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 1E1 : cos Deviation Angle = 5430021
+ CreateHisto1D neutron - gamma : nCapture : G4_POLYETHYLENE : 1E1 : log10 Interaction Distance (cm) = 5430022
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 1E1 : cos Deviation Angle = 5530021
+ CreateHisto1D neutron - gamma : nFission : G4_POLYETHYLENE : 1E1 : log10 Interaction Distance (cm) = 5530022
+ %%% EVENT 920000 NTRACKS 1 TOTAL NTRACKS 920001
+ %%% EVENT 921000 NTRACKS 1 TOTAL NTRACKS 921001
+ %%% EVENT 922000 NTRACKS 1 TOTAL NTRACKS 922001
+ %%% EVENT 923000 NTRACKS 1 TOTAL NTRACKS 923001
+ %%% EVENT 924000 NTRACKS 1 TOTAL NTRACKS 924001
+ %%% EVENT 925000 NTRACKS 1 TOTAL NTRACKS 925001
+ %%% EVENT 926000 NTRACKS 1 TOTAL NTRACKS 926001
+ %%% EVENT 927000 NTRACKS 1 TOTAL NTRACKS 927001
+ %%% EVENT 928000 NTRACKS 1 TOTAL NTRACKS 928001
+ %%% EVENT 929000 NTRACKS 1 TOTAL NTRACKS 929001
+Run terminated.
+Run Summary
+  Run Aborted after 930000 events processed.
+  User=492.8s Real=497s Sys=0.1s
+Graphics systems deleted.
+Visualization Manager deleting...
+=== saving histograms in file === angleDeviation.neutron.gamma.root

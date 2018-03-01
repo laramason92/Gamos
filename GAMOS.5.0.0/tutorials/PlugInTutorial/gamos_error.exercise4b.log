@@ -1,0 +1,10 @@
+
+-------- EEEE ------- G4Exception-START -------- EEEE -------
+*** G4Exception : Fatal error in argument
+      issued by : GmParticleSource::SetDistributionPosition
+ Distribution does not exist, check documentation 
+*** Fatal Error In Argument *** core dump ***
+-------- EEEE -------- G4Exception-END --------- EEEE -------
+
+
+*** G4Exception: Aborting execution ***

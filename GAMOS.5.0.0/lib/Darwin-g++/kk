@@ -1,0 +1,66 @@
+libDetector_Base.dylib
+libDetector_ComptonCamera.dylib
+libDetector_PET.dylib
+libDetector_SPECT.dylib
+libGamosCore_GamosAnalysis.dylib
+libGamosCore_GamosBase_Base.dylib
+libGamosCore_GamosBase_Classifiers.dylib
+libGamosCore_GamosBase_Filters.dylib
+libGamosCore_GamosData_Data.dylib
+libGamosCore_GamosData_Distributions.dylib
+libGamosCore_GamosData_Management.dylib
+libGamosCore_GamosData_Users.dylib
+libGamosCore_GamosGenerator.dylib
+libGamosCore_GamosGeometry.dylib
+libGamosCore_GamosMovement.dylib
+libGamosCore_GamosPhysics_Cuts.dylib
+libGamosCore_GamosPhysics_OtherPhysicsLists.dylib
+libGamosCore_GamosPhysics_PhysicsList.dylib
+libGamosCore_GamosPhysics_VarianceReduction.dylib
+libGamosCore_GamosReadDICOM.dylib
+libGamosCore_GamosRunManager.dylib
+libGamosCore_GamosSD.dylib
+libGamosCore_GamosScoring_Management.dylib
+libGamosCore_GamosScoring_PointDetector.dylib
+libGamosCore_GamosScoring_Printers.dylib
+libGamosCore_GamosScoring_Scorers.dylib
+libGamosCore_GamosUserActionMgr.dylib
+libGamosCore_GamosUtils.dylib
+libGamosCore_GamosUtilsUA.dylib
+libMagFieldManager.dylib
+libRadioTherapy.dylib
+libShielding.dylib
+libgamos.dylib
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libDetector_Base.dylib --output-file Detector_Base.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libDetector_ComptonCamera.dylib --output-file Detector_ComptonCamera.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libDetector_PET.dylib --output-file Detector_PET.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libDetector_SPECT.dylib --output-file Detector_SPECT.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosAnalysis.dylib --output-file GamosCore_GamosAnalysis.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosBase_Base.dylib --output-file GamosCore_GamosBase_Base.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosBase_Classifiers.dylib --output-file GamosCore_GamosBase_Classifiers.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosBase_Filters.dylib --output-file GamosCore_GamosBase_Filters.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosData_Data.dylib --output-file GamosCore_GamosData_Data.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosData_Distributions.dylib --output-file GamosCore_GamosData_Distributions.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosData_Management.dylib --output-file GamosCore_GamosData_Management.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosData_Users.dylib --output-file GamosCore_GamosData_Users.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosGenerator.dylib --output-file GamosCore_GamosGenerator.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosGeometry.dylib --output-file GamosCore_GamosGeometry.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosMovement.dylib --output-file GamosCore_GamosMovement.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosPhysics_Cuts.dylib --output-file GamosCore_GamosPhysics_Cuts.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosPhysics_OtherPhysicsLists.dylib --output-file GamosCore_GamosPhysics_OtherPhysicsLists.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosPhysics_PhysicsList.dylib --output-file GamosCore_GamosPhysics_PhysicsList.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosPhysics_VarianceReduction.dylib --output-file GamosCore_GamosPhysics_VarianceReduction.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosReadDICOM.dylib --output-file GamosCore_GamosReadDICOM.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosRunManager.dylib --output-file GamosCore_GamosRunManager.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosSD.dylib --output-file GamosCore_GamosSD.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosScoring_Management.dylib --output-file GamosCore_GamosScoring_Management.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosScoring_PointDetector.dylib --output-file GamosCore_GamosScoring_PointDetector.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosScoring_Printers.dylib --output-file GamosCore_GamosScoring_Printers.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosScoring_Scorers.dylib --output-file GamosCore_GamosScoring_Scorers.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosUserActionMgr.dylib --output-file GamosCore_GamosUserActionMgr.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosUtils.dylib --output-file GamosCore_GamosUtils.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libGamosCore_GamosUtilsUA.dylib --output-file GamosCore_GamosUtilsUA.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libMagFieldManager.dylib --output-file MagFieldManager.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libRadioTherapy.dylib --output-file RadioTherapy.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libShielding.dylib --output-file Shielding.rootmap
+/Users/cristinallorenteherranz/gamos/external/root/5.34.34/root/bin/genmap --input-libray libgamos.dylib --output-file gamos.rootmap

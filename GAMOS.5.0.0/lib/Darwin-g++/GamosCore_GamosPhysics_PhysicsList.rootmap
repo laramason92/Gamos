@@ -1,0 +1,8 @@
+# ROOT map file generated automatically by genmap on Fri Nov 13 13:11:21 2015
+
+Library.__pf__@@GmBaseVerbosity: libGamosCore_GamosPhysics_PhysicsList.dylib
+Library.__pf__@@GmEMPhysics: libGamosCore_GamosPhysics_PhysicsList.dylib
+Library.__pf__@@GmEMExtendedPhysics: libGamosCore_GamosPhysics_PhysicsList.dylib
+Library.__pf__@@HadrontherapyPhysics: libGamosCore_GamosPhysics_PhysicsList.dylib
+Library.__pf__@@GmEMStandardPhysics: libGamosCore_GamosPhysics_PhysicsList.dylib
+Library.__pf__@@GmPhysicsVerbosity: libGamosCore_GamosPhysics_PhysicsList.dylib

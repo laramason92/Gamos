@@ -1,0 +1,426 @@
+
+*************************************************************
+ Geant4 version Name: geant4-09-06-patch-02    (17-May-2013)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRep (HepRepXML)
+  G4HepRepFile (HepRepFile)
+  RayTracer (RayTracer)
+  VRML1FILE (VRML1FILE)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByCharge
+  drawByParticleID
+  drawByOriginVolume
+  drawByAttribute
+
+Registered filter factories:
+  chargeFilter
+  particleFilter
+  originVolumeFilter
+  attributeFilter
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+Available colours:
+  black, blue, brown, cyan, gray, green, grey, magenta, red, white, yellow
+
+/control/execute exercise1b.in
+/tracking/verbose 1
+/gamos/setParam GmGeometryFromText:FileName CCGeometryRingEx1Water.geom
+/gamos/geometry GmGeometryFromText
+/gamos/physicsList GmEMPhysics
+/gamos/generator GmGenerator
+/run/initialize
+GmEMPhysics PhysicsList:DEFAULT = gamma-lowener is registered
+GmEMPhysics PhysicsList: DEFAULT = electron-lowener is registered
+GmEMPhysics PhysicsList: DEFAULT = positron-standard is registered
+GmPhysicsGammaLowEner::ConstructProcess 
+/gamos/generator/addSingleParticleSource source gamma 141.*keV
+/gamos/generator/timeDist source GmGenerDistTimeDecay 1.e-3*curie
+ GmGenerator::SetDistribution time
+    theTimeDistribution->SetParticleSource( this ) 0B31C518 0B2E8960
+/gamos/generator/directionDist source GmGenerDistDirectionRandom
+ GmGenerator::SetDistribution direction
+/gamos/generator/positionDist source GmGenerDistPositionInG4Volumes "water sphere"
+ GmGenerator::SetDistribution position
+/control/execute ../../../examples/visVRML2FILE.in
+/vis/scene/create
+/vis/open VRML2FILE
+Issue /vis/viewer/refresh or flush to see effect.
+/vis/viewer/flush
+Your "world" has no vis attributes or is marked as visible.
+  For a better view of the contents, mark the world as invisible, e.g.,
+  myWorldLogicalVol -> SetVisAttributes (G4VisAttributes::Invisible);
+G4Scene::AddWorldIfEmpty: The scene was empty of run-duration models.
+  "world" has been added.
+/vis/viewer/set/viewpointThetaPhi 10 120 deg
+Issue /vis/viewer/refresh or flush to see effect.
+/vis/viewer/zoom 1
+Issue /vis/viewer/refresh or flush to see effect.
+/vis/scene/add/trajectories
+/tracking/storeTrajectory 1
+Attributes available for modeling and filtering with
+  "/vis/modeling/trajectories/create/drawByAttribute" and
+  "/vis/filtering/trajectories/create/attributeFilter" commands:
+G4TrajectoriesModel:
+  Event ID (EventID): G4int
+G4Trajectory:
+  Charge (Ch): unit: e+ (G4double)
+  Track ID (ID): G4int
+  Initial kinetic energy (IKE): G4BestUnit (G4double)
+  Initial momentum magnitude (IMag): G4BestUnit (G4double)
+  Initial momentum (IMom): G4BestUnit (G4ThreeVector)
+  No. of points (NTP): G4int
+  PDG Encoding (PDG): G4int
+  Parent ID (PID): G4int
+  Particle Name (PN): G4String
+G4TrajectoryPoint:
+  Position (Pos): G4BestUnit (G4ThreeVector)
+WARNING: Trajectory storing has been requested.  This action may be
+  reversed with "/tracking/storeTrajectory 0".
+/vis/scene/notifyHandlers
+/vis/scene/endOfEventAction accumulate
+WARNING: The vis manager will keep up to 100 events.
+  This may use a lot of memory.
+  It may be changed with, e.g., "/vis/scene/endOfEventAction accumulate 10".
+/vis/viewer/update
+/vis/viewer/flush
+===========================================
+Output VRML 2.0 file: g4_22.wrl
+Maximum number of files in the destination directory: 100
+  (Customizable with the environment variable: G4VRMLFILE_MAX_FILE_NUM) 
+===========================================
+*** VRML 2.0 File  g4_22.wrl  is generated.
+MESSAGE from VRML2FILE driver:
+    Set an environmental variable  G4VRMLFILE_VIEWER
+    if you want to visualize the generated VRML file
+    automatically.  For example, 
+    setenv  G4VRMLFILE_VIEWER  vrwave 
+/run/beamOn 10
+
+phot:   for  gamma    SubType= 12
+      LambdaPrime table from 200 keV to 10 TeV in 54 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermorePhElectric :  Emin=        0 eV    Emax=        1 GeV   AngularGenSauterGavrila  FluoActive
+       PhotoElectric :  Emin=        1 GeV   Emax=       10 TeV   AngularGenSauterGavrila  FluoActive
+
+compt:   for  gamma    SubType= 13
+      Lambda table from 100 eV  to 1 MeV in 28 bins, spline: 1
+      LambdaPrime table from 1 MeV to 10 TeV in 49 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+    LivermoreCompton :  Emin=        0 eV    Emax=        1 GeV  FluoActive
+       Klein-Nishina :  Emin=        1 GeV   Emax=       10 TeV
+
+conv:   for  gamma    SubType= 14
+      Lambda table from 1.022 MeV to 10 TeV in 49 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermoreConversion :  Emin=        0 eV    Emax=        1 GeV
+        BetheHeitler :  Emin=        1 GeV   Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=       10 TeV
+
+Rayl:   for  gamma    SubType= 11
+      Lambda table from 100 eV  to 100 keV in 21 bins, spline: 0
+      LambdaPrime table from 100 keV to 10 TeV in 56 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   LivermoreRayleigh :  Emin=        0 eV    Emax=        1 GeV   CullenGenerator
+   LivermoreRayleigh :  Emin=        1 GeV   Emax=       10 TeV   CullenGenerator
+
+msc:   for e-    SubType= 10
+      RangeFactor= 0.04, step limit type: 2, lateralDisplacement: 1, skin= 1, geomFactor= 2.5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 1 region:
+          DefaultRegionForTheWorld
+
+eIoni:   for  e-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       LowEnergyIoni :  Emin=        0 eV    Emax=        1 GeV
+        MollerBhabha :  Emin=        1 GeV   Emax=       10 TeV
+
+eBrem:   for  e-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           LowEnBrem :  Emin=        0 eV    Emax=        1 GeV   AngularGenUrban
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+msc:   for e+    SubType= 10
+      RangeFactor= 0.04, step limit type: 1, lateralDisplacement: 1, skin= 1, geomFactor= 2.5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+eIoni:   for  e+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+annihil:   for  e+    SubType= 5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg :  Emin=        0 eV    Emax=       10 TeV
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_AIR
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes     recalculation needed : No 
+ Material : CZT
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  9.72569 keV    e-  170.292 keV    e+  165.776 keV proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 2     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_Si
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  2.32425 keV    e-  121.694 keV    e+  120.07 keV proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 3     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_WATER
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  1.10981 keV    e-  84.6589 keV    e+  83.5287 keV proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+/vis/scene/notifyHandlers scene-0
+Start Run processing.
+
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0    -12.5    -9.39     -1.9     0.141        0        0         0 water sphere initStep
+    1      -16    -11.7     -2.6     0.141        0     4.24      4.24       world Transportation
+    2      -41    -28.6    -7.61     0.141        0     30.6      34.8    scatring Transportation
+    3    -49.3    -34.1    -9.28     0.141        0     10.1        45       world Transportation
+    4    -65.9    -45.3    -12.6     0.141        0     20.3      65.2     absring Transportation
+    5    -82.5    -56.5    -15.9     0.141        0     20.3      85.5       world Transportation
+    6     -242     -164    -47.9     0.141        0      195       280  OutOfWorld Transportation
+===========================================
+Output VRML 2.0 file: g4_23.wrl
+Maximum number of files in the destination directory: 100
+  (Customizable with the environment variable: G4VRMLFILE_MAX_FILE_NUM) 
+===========================================
+G4VisManager: Using G4TrajectoryDrawByCharge as default trajectory model.
+See commands in /vis/modeling/trajectories/ for other options.
+
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0    -4.16     10.7   -0.317     0.141        0        0         0 water sphere initStep
+    1      -16     11.1    -4.63     0.141        0     12.6      12.6       world Transportation
+    2    -48.4     12.4    -16.5     0.141        0     34.6      47.2    scatring Transportation
+    3    -58.6     12.8    -20.2     0.141        0     10.8        58       world Transportation
+    4    -78.8     13.5    -27.6     0.141        0     21.5      79.6     absring Transportation
+    5    -85.4     13.8      -30     0.141        0     7.03      86.6       world Transportation
+    6     -242     19.9    -87.2     0.141        0      167       253  OutOfWorld Transportation
+
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0    -8.21      3.6   -0.822     0.141        0        0         0 water sphere initStep
+    1    -15.2    -5.97    -11.6     0.141        0       16        16       world Transportation
+    2     -164     -210     -240     0.141        0      340       356  OutOfWorld Transportation
+
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     12.5    -6.47     7.72     0.141        0        0         0 water sphere initStep
+    1     19.6     4.15    0.689     0.141        0     14.5      14.5       world Transportation
+    2     38.2     32.3      -18     0.141        0     38.6      53.1    scatring Transportation
+    3     43.9     40.9    -23.7     0.141        0     11.8      64.9       world Transportation
+    4      177      242     -157     0.141        0      275       340  OutOfWorld Transportation
+
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0    -5.73     15.4    -11.3     0.141        0        0         0 water sphere initStep
+    1     -5.8     15.4    -11.4     0.141        0    0.158     0.158       world Transportation
+    2    -39.9     31.5    -85.4     0.104 2.31e-005     83.1      83.2       world compt
+    3      242     96.8    -98.2     0.104        0      290       373  OutOfWorld Transportation
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 2,   Parent ID = 1
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0    -39.9     31.5    -85.4    0.0369        0        0         0       world initStep
+    1    -41.2     31.6      -86    0.0366 0.000352     1.46      1.46       world msc
+    2    -45.7     33.3    -88.2    0.0312  0.00536     5.98      7.44       world eIoni
+    3    -46.4     33.7    -88.7    0.0282  0.00183    0.945      8.38       world eIoni
+    4      -48     34.7    -88.9    0.0266  0.00152     1.96      10.3       world eIoni
+    5    -51.2     35.3    -89.9    0.0244  0.00222     3.41      13.8       world eIoni
+    6      -52     35.9    -90.5    0.0218 0.000735     1.21        15       world eIoni
+    7    -52.9     37.5    -91.9     0.019  0.00279      2.4      17.4       world eIoni
+    8    -51.1       37    -91.6    0.0161  0.00286      1.9      19.3       world eIoni
+    9    -50.3     36.3    -90.7    0.0143  0.00179     1.45      20.7       world eIoni
+   10    -50.8     36.6      -90    0.0102  0.00151    0.907      21.6       world eIoni
+   11    -50.6     36.8    -89.3   0.00954   0.0007     0.72      22.3       world eIoni
+   12    -50.6     37.4    -89.3   0.00794   0.0016    0.651        23       world eIoni
+   13    -50.4     37.8    -89.3   0.00678  0.00116    0.508      23.5       world eIoni
+   14      -50     37.8    -89.3   0.00641 0.000376    0.418      23.9       world eIoni
+   15    -49.7     37.7    -89.3   0.00564 0.000763    0.391      24.3       world eIoni
+   16    -49.5     37.5    -89.2   0.00504   0.0006    0.341      24.6       world eIoni
+   17    -49.4     37.2    -89.2   0.00403  0.00101    0.304        25       world eIoni
+   18    -49.3       37    -89.3   0.00247  0.00157    0.249      25.2       world eIoni
+   19    -49.3     36.9    -89.2    0.0015 0.000962    0.168      25.4       world eIoni
+   20    -49.3     36.9    -89.2         0   0.0015   0.0995      25.5       world eIoni
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 5,   Parent ID = 2
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0    -50.8     36.6      -90    0.0026        0        0         0       world initStep
+    1    -50.8     36.7      -90   0.00226 0.000345   0.0753    0.0753       world msc
+    2    -50.8     36.7      -90   0.00111 7.78e-005   0.0202    0.0955       world eIoni
+    3    -50.8     36.7      -90         0  0.00111   0.0621     0.158       world eIoni
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 6,   Parent ID = 5
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0    -50.8     36.7      -90   0.00107        0        0         0       world initStep
+    1    -50.8     36.7      -90   0.00014 0.000932   0.0406    0.0406       world msc
+    2    -50.8     36.7      -90         0  0.00014  0.00658    0.0472       world eIoni
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 4,   Parent ID = 2
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      -52     35.9    -90.5    0.0019        0        0         0       world initStep
+    1      -52       36    -90.5   0.00107 0.000831   0.0599    0.0599       world msc
+    2      -52       36    -90.5         0  0.00107   0.0589     0.119       world eIoni
+
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 3,   Parent ID = 2
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0    -46.4     33.7    -88.7   0.00121        0        0         0       world initStep
+    1    -46.4     33.7    -88.7         0  0.00121   0.0441    0.0441       world msc
+
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0    -15.5    -5.68     1.16     0.141        0        0         0 water sphere initStep
+    1    -4.04    -5.67     18.7     0.141        0       21        21       world Transportation
+    2      141    -5.57      240     0.141        0      264       285  OutOfWorld Transportation
+
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0    -11.6    -5.04     10.8     0.141        0        0         0 water sphere initStep
+    1    -16.9    -3.44     10.2     0.141        0     5.61      5.61       world Transportation
+    2    -49.6     6.39      5.9     0.141        0     34.4        40    scatring Transportation
+    3    -59.3      9.3     4.64     0.141        0     10.2      50.2       world Transportation
+    4    -78.6     15.1     2.13     0.141        0     20.3      70.5     absring Transportation
+    5    -97.8     20.9    -0.37     0.141        0     20.2      90.7       world Transportation
+    6     -242     64.2    -19.1     0.141        0      152       242  OutOfWorld Transportation
+
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0    -4.22    -4.13    -3.42     0.141        0        0         0 water sphere initStep
+    1     18.7     6.95     1.83     0.141        0       26        26       world Transportation
+    2     45.8     20.1     8.05     0.141        0     30.8      56.7    scatring Transportation
+    3       50     22.1     9.02     0.141        0     4.77      61.5 scatcrystal Transportation
+    4     54.3     24.2       10     0.141        0     4.86      66.4 scatcrystal Transportation
+    5       56       25     10.4     0.141        0     1.91      68.3 scatcrystal Transportation
+    6       60     26.9     11.3     0.141        0     4.57      72.8       world Transportation
+    7     72.8     33.1     14.2     0.141        0     14.5      87.4     absring Transportation
+    8     90.8     41.9     18.4     0.141        0     20.4       108       world Transportation
+    9      242      115     53.1     0.141        0      172       279  OutOfWorld Transportation
+
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0     4.43    -5.49     14.2     0.141        0        0         0 water sphere initStep
+    1     4.82    -6.68     18.2     0.141        0     4.21      4.21       world Transportation
+    2     26.3    -72.2      240     0.141        0      232       236  OutOfWorld Transportation
+
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+    0      3.1     1.23    -16.5     0.141        0        0         0 water sphere initStep
+    1     4.69    0.366    -19.4     0.141        0     3.44      3.44       world Transportation
+    2      124    -64.7     -240     0.141        0      259       263  OutOfWorld Transportation
+Run terminated.
+Run Summary
+  Number of events processed : 10
+  User=0.125s Real=0s Sys=0s
+*** VRML 2.0 File  g4_23.wrl  is generated.
+MESSAGE from VRML2FILE driver:
+    Set an environmental variable  G4VRMLFILE_VIEWER
+    if you want to visualize the generated VRML file
+    automatically.  For example, 
+    setenv  G4VRMLFILE_VIEWER  vrwave 
+10 events have been kept for refreshing and/or reviewing.
+Graphics systems deleted.
+Visualization Manager deleting...

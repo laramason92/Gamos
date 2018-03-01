@@ -1,0 +1,15 @@
+Warning : Region <targetReg> does not have specific production cuts,
+even though it appears in the current tracking world.
+Default cuts are used for this region.
+Warning : Region <collimatorReg> does not have specific production cuts,
+even though it appears in the current tracking world.
+Default cuts are used for this region.
+Warning : Region <filterReg> does not have specific production cuts,
+even though it appears in the current tracking world.
+Default cuts are used for this region.
+Warning : Region <monitorReg> does not have specific production cuts,
+even though it appears in the current tracking world.
+Default cuts are used for this region.
+Warning : Region <jawsReg> does not have specific production cuts,
+even though it appears in the current tracking world.
+Default cuts are used for this region.

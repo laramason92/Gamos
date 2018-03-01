@@ -1,0 +1,207 @@
+//
+// ********************************************************************
+// * License and Disclaimer                                           *
+// *                                                                  *
+// * The  GAMOS software  is  copyright of the Copyright  Holders  of *
+// * the GAMOS Collaboration.  It is provided  under  the  terms  and *
+// * conditions of the GAMOS Software License,  included in the  file *
+// * LICENSE and available at  http://fismed.ciemat.es/GAMOS/license .*
+// * These include a list of copyright holders.                       *
+// *                                                                  *
+// * Neither the authors of this software system, nor their employing *
+// * institutes,nor the agencies providing financial support for this *
+// * work  make  any representation or  warranty, express or implied, *
+// * regarding  this  software system or assume any liability for its *
+// * use.  Please see the license in the file  LICENSE  and URL above *
+// * for the full disclaimer and the limitation of liability.         *
+// *                                                                  *
+// * This  code  implementation is the result of  the  scientific and *
+// * technical work of the GAMOS collaboration.                       *
+// * By using,  copying,  modifying or  distributing the software (or *
+// * any work based  on the software)  you  agree  to acknowledge its *
+// * use  in  resulting  scientific  publications,  and indicate your *
+// * acceptance of all terms of the GAMOS Software license.           *
+// ********************************************************************
+//
+//<<<<<< INCLUDES                                                       >>>>>>
+
+#include "SealBase/SubProcess.h"
+#include "SealBase/SubProcessError.h"
+#include "SealBase/Argz.h"
+#include "SealBase/DebugAids.h"
+#include "SealBase/Signal.h"
+#include "SealBase/IOChannel.h"
+#include "SealBase/IOError.h"
+#include "SealBase/sysapi/SubProcess.h"
+#ifdef _WIN32
+
+namespace seal {
+//<<<<<< PRIVATE DEFINES                                                >>>>>>
+//<<<<<< PRIVATE CONSTANTS                                              >>>>>>
+//<<<<<< PRIVATE TYPES                                                  >>>>>>
+//<<<<<< PRIVATE VARIABLE DEFINITIONS                                   >>>>>>
+//<<<<<< PUBLIC VARIABLE DEFINITIONS                                    >>>>>>
+//<<<<<< CLASS STRUCTURE INITIALIZATION                                 >>>>>>
+//<<<<<< PRIVATE FUNCTION DEFINITIONS                                   >>>>>>
+//<<<<<< PUBLIC FUNCTION DEFINITIONS                                    >>>>>>
+//<<<<<< MEMBER FUNCTION DEFINITIONS                                    >>>>>>
+
+pid_t
+SubProcess::sysrun (const char **argz, unsigned flags,
+		    IOChannel *input, IOChannel *output,
+		    IOChannel *cleanup)
+{
+    // Windows wants full command.  (FIXME: quoting?)
+    std::string command = Argz (argz).quote ();
+
+    // Save the current STDIN/STDOUT, to be restored later.
+    HANDLE oldstdin = GetStdHandle (STD_INPUT_HANDLE);
+    HANDLE oldstdout = GetStdHandle (STD_OUTPUT_HANDLE);
+
+    // If "input" is specified, use it, otherwise use my stdin.
+    HANDLE infd = input ? input->fd () : oldstdin;
+
+    // If "output" is specified, use it, otherwise use my stdout.
+    HANDLE outfd = output ? output->fd () : oldstdout;
+
+    // Create non-inheritable duplicates of our ends of the
+    // redirections; incopy and outcopy will be our file descriptors
+    // if all goes well.  (FIXME: This will turn inheritable handles
+    // uninheritable -- we are not checking if we need to redirect,
+    // we just always duplicate.  Is this what we want?)
+    HANDLE incopy;
+    HANDLE outcopy;
+
+    if (! DuplicateHandle (GetCurrentProcess (), infd,
+			   GetCurrentProcess (), &incopy,
+			   0, FALSE, DUPLICATE_SAME_ACCESS))
+	throw IOError ("DuplicateHandle()", GetLastError ());
+
+    if (! DuplicateHandle (GetCurrentProcess (), outfd,
+			   GetCurrentProcess (), &outcopy,
+			   0, FALSE, DUPLICATE_SAME_ACCESS))
+    {
+	int error = GetLastError ();
+	CloseHandle (incopy);
+	throw IOError ("DuplicateHandle()", error);
+    }
+
+    // Redirect my STDIN/STDOUT for the child to inherit them.
+    if (! SetStdHandle (STD_INPUT_HANDLE, infd)
+	|| ! SetStdHandle (STD_OUTPUT_HANDLE, outfd))
+    {
+	int error = GetLastError ();
+	SetStdHandle (STD_INPUT_HANDLE, oldstdin);
+	SetStdHandle (STD_OUTPUT_HANDLE, oldstdout);
+	CloseHandle (incopy);
+	CloseHandle (outcopy);
+	throw IOError ("SetStdHandle()", error);
+    }
+
+    // Close the inheritable handles.  If NoClose* flags are given,
+    // this will leave them open in the child as well, but that's just
+    // too bad; there's no way we can leave them open in only one, and
+    // the caller in the parent expects to find them open on return.
+    if (! (flags & NoCloseInput))
+	CloseHandle (infd);
+
+    if (! (flags & NoCloseOutput))
+	CloseHandle (outfd);
+
+    // Create the subprocess.
+    PROCESS_INFORMATION process;
+    STARTUPINFO		start;
+    memset (&start, 0, sizeof (start));
+    start.cb = sizeof (start);
+
+    if (! CreateProcess (NULL, (char *) command.c_str (), NULL, NULL,
+			 TRUE, 0, NULL, NULL, &start, &process))
+    {
+	int error = GetLastError ();
+	SetStdHandle (STD_INPUT_HANDLE, oldstdin);
+	SetStdHandle (STD_OUTPUT_HANDLE, oldstdout);
+	CloseHandle (incopy);
+	CloseHandle (outcopy);
+	CloseHandle (infd);
+	CloseHandle (outfd);
+	throw IOError ("CreateProcess()", error);
+    }
+
+    m_sub = process.hProcess;
+    m_pid = process.dwProcessId;
+
+    // Restore redirected handles
+    SetStdHandle (STD_INPUT_HANDLE, oldstdin);
+    SetStdHandle (STD_OUTPUT_HANDLE, oldstdout);
+
+    return m_pid;
+}
+
+pid_t
+SubProcess::pid (void) const
+{ return m_pid; }
+
+bool
+SubProcess::done (void)
+{
+    // If we've already waited and succeded, remember success.
+    // (FIXME: Would rather not check this, now we can't detect an
+    // inappropriate done()/wait() call!)
+    if (m_sub == 0)
+	return true;
+
+    // Wait for the child.  We don't need to worry about collecting
+    // the exit status as long as we have the process handle open.
+    return WaitForSingleObject (m_sub, 0) == WAIT_OBJECT_0;
+}
+
+int
+SubProcess::wait (void)
+{
+    // FIXME: Provide an interface to get wait4() resource info?
+    // FIXME: wait with timeout?
+
+    // If we've already been here, return the status we collected back then.
+    if (m_sub == 0)
+	return m_status;
+
+    // Wait for the child.
+    DWORD code = 0;
+    if (WaitForSingleObject (m_sub, INFINITE) != WAIT_OBJECT_0
+	|| ! GetExitCodeProcess (m_sub, &code))
+	throw IOError ("WaitForSingleObject()", GetLastError ());
+
+    m_status = code;
+
+    // Mark the child reaped and return the status.
+    CloseHandle (m_sub);
+    m_sub = 0;
+    return m_status;
+}
+
+void
+SubProcess::terminate (void)
+{ TerminateProcess (m_sub, ~0u); }
+
+void
+SubProcess::sysdetach (void)
+{ if (m_sub) CloseHandle (m_sub); m_sub = 0; }
+
+bool
+SubProcess::exitNormal (int /* waitcode */)
+{ return true; }
+
+bool
+SubProcess::exitBySignal (int /* waitcode */)
+{ return false; }
+
+int
+SubProcess::exitStatus (int waitcode)
+{ return waitcode; }
+
+int
+SubProcess::exitSignal (int /* waitcode */)
+{ return 0; }
+
+} // namespace seal
+#endif // _WIN32

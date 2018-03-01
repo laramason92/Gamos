@@ -1,0 +1,22 @@
+# ROOT map file generated automatically by genmap on Fri Nov 13 13:11:24 2015
+
+Library.__pf__@@GmBaseVerbosity: libGamosCore_GamosUtilsUA.dylib
+Library.__pf__@@GmUAVerbosity: libGamosCore_GamosUtilsUA.dylib
+Library.__pf__@@GmCountTracksUA: libGamosCore_GamosUtilsUA.dylib
+Library.__pf__@@GmTrackingVerboseUA: libGamosCore_GamosUtilsUA.dylib
+Library.__pf__@@GmCountProcessesUA: libGamosCore_GamosUtilsUA.dylib
+Library.__pf__@@GmCountTracksAndStepsUA: libGamosCore_GamosUtilsUA.dylib
+Library.__pf__@@GmGenerHistosUA: libGamosCore_GamosUtilsUA.dylib
+Library.__pf__@@GmKillAllUA: libGamosCore_GamosUtilsUA.dylib
+Library.__pf__@@GmKillAtStackingActionUA: libGamosCore_GamosUtilsUA.dylib
+Library.__pf__@@GmKillAtSteppingActionUA: libGamosCore_GamosUtilsUA.dylib
+Library.__pf__@@GmMaterialBudgetUA: libGamosCore_GamosUtilsUA.dylib
+Library.__pf__@@GmTimeStudyUA: libGamosCore_GamosUtilsUA.dylib
+Library.__pf__@@GmShowerShapeUA: libGamosCore_GamosUtilsUA.dylib
+Library.__pf__@@GmGamosVerboseByEventUA: libGamosCore_GamosUtilsUA.dylib
+Library.__pf__@@GmChangeWeightUA: libGamosCore_GamosUtilsUA.dylib
+Library.__pf__@@GmCopyWeightToSecondaryUA: libGamosCore_GamosUtilsUA.dylib
+Library.__pf__@@GmCopyWeightToRDSecondaryUA: libGamosCore_GamosUtilsUA.dylib
+Library.__pf__@@GmStopRunAfterTimeUA: libGamosCore_GamosUtilsUA.dylib
+Library.__pf__@@GmSaveHistosAfterNEvents: libGamosCore_GamosUtilsUA.dylib
+Library.__pf__@@GmUtilsUAVerbosity: libGamosCore_GamosUtilsUA.dylib

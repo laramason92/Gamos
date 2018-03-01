@@ -1,0 +1,8 @@
+# ROOT map file generated automatically by genmap on Fri Nov 13 13:11:21 2015
+
+Library.__pf__@@GmBaseVerbosity: libGamosCore_GamosGeometry.dylib
+Library.__pf__@@GmUAVerbosity: libGamosCore_GamosGeometry.dylib
+Library.__pf__@@GmGeometryFromText: libGamosCore_GamosGeometry.dylib
+Library.__pf__@@GmGeometryUseMaterials: libGamosCore_GamosGeometry.dylib
+Library.__pf__@@GmGeomTextDumperUA: libGamosCore_GamosGeometry.dylib
+Library.__pf__@@GmGeomVerbosity: libGamosCore_GamosGeometry.dylib

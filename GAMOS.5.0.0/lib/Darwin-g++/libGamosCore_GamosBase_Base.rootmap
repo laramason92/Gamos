@@ -1,0 +1,3 @@
+# ROOT map file generated automatically by genmap on Fri Nov 13 12:50:45 2015
+
+Library.__pf__@@GmBaseVerbosity: ../lib/Darwin-g++/libGamosCore_GamosBase_Base.dylib

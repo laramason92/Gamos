@@ -1,0 +1,16 @@
+ifndef GAMOS_NO_ROOT
+INCFLAGS += -I$(ROOT_BASE_DIR)/include \
+	 -I$(ROOT_BASE_DIR)/cint
+
+ifndef EXTRALIBS
+EXTRALIBS := -L$(ROOT_BASE_DIR)/lib
+else
+EXTRALIBS += -L$(ROOT_BASE_DIR)/lib
+endif
+
+# EXTRALIBS += -lHist -lGpad -lGraf -lMatrix -lPhysics -lPostscript -lCint -lTree -lCore  
+# root.5.18.00 EXTRALIBS += -lHist -lGpad -lGraf -lMatrix -lPhysics -lPostscript -lCint -lCore   -lTree -lNet -lRIO
+# root.5.24.00 
+EXTRALIBS += -lHist -lGpad -lGraf -lMatrix -lPhysics -lPostscript -lCint -lCore   -lTree -lNet -lRIO -lMathCore -lThread -lReflex
+
+endif

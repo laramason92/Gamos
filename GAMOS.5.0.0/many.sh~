@@ -1,0 +1,14 @@
+#!/bin/sh
+#!
+
+#rm lista.txt
+ls > lista.txt
+cat lista.txt |
+while read filename ; do
+    echo ${filename} 
+    gzip ${filename}
+
+done
+
+#rm lista.txt
+exit

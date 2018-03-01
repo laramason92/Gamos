@@ -1,0 +1,10 @@
+
+-------- EEEE ------- G4Exception-START -------- EEEE -------
+*** G4Exception : Wrong value for minimum energy behaviour
+      issued by : GmVRecHitBuilder
+Values can be AcceptIf1Big / DeleteIf1Small , it is
+*** Fatal Error In Argument *** core dump ***
+-------- EEEE -------- G4Exception-END --------- EEEE -------
+
+
+*** G4Exception: Aborting execution ***

@@ -1,0 +1,4 @@
+include $(GAMOSINSTALL)/config/gamos.gmk
+include $(GAMOSINSTALL)/config/geant4.gmk
+include $(GAMOSINSTALL)/config/root.gmk
+

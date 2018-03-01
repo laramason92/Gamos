@@ -1,0 +1,20 @@
+/tracking/verbose 1
+
+/gamos/setParam GmGeometryFromText:FileName exercise1.geom
+/gamos/geometry GmGeometryFromText
+/gamos/physicsList GmEMPhysics
+/gamos/GmPhysics/addPhysics gamma-standard
+/gamos/GmPhysics/addPhysics electron-standard
+#/gamos/GmPhysics/addPhysics gamma-penelope
+#/gamos/GmPhysics/addPhysics electron-penelope
+
+/gamos/generator GmGenerator
+
+/gamos/userAction GmCountProcessesUA
+
+/run/initialize
+
+/gamos/generator/addSingleParticleSource source gamma 10.*MeV
+
+/run/beamOn 10
+

@@ -1,0 +1,234 @@
+ GmGenUtils::FileInPath ./deprecatedCommands.lis in .
+ GmGenUtils::FileInPath /home/arce/gamosnew/GAMOS.5.0.0/data/deprecatedCommands.lis in /home/arce/gamosnew/GAMOS.5.0.0/data
+
+*************************************************************
+ Geant4 version Name: geant4-09-06-patch-02    (17-May-2013)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  FukuiRenderer (DAWN)
+  G4HepRep (HepRepXML)
+  G4HepRepFile (HepRepFile)
+  OpenGLImmediateX (OGLI, OGLIX)
+  OpenGLStoredX (OGL, OGLS, OGLSX)
+  RayTracer (RayTracer)
+  VRML1 (VRML1)
+  VRML1FILE (VRML1FILE)
+  VRML2 (VRML2)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByCharge
+  drawByParticleID
+  drawByOriginVolume
+  drawByAttribute
+
+Registered filter factories:
+  chargeFilter
+  particleFilter
+  originVolumeFilter
+  attributeFilter
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+Available colours:
+  black, blue, brown, cyan, gray, green, grey, magenta, red, white, yellow
+
+/control/execute exercise1b.in
+/gamos/setParam GmGeometryFromText:FileName exercise1b.geom
+/gamos/geometry GmGeometryFromText
+/gamos/physicsList GmEMPhysics
+/gamos/generator GmGenerator
+ GmGenUtils::FileInPath ./isotopes.dat in .
+ GmGenUtils::FileInPath /home/arce/gamosnew/GAMOS.5.0.0/data/isotopes.dat in /home/arce/gamosnew/GAMOS.5.0.0/data
+/run/initialize
+ GmGenUtils::FileInPath ./exercise1b.geom in .
+GmEMPhysics PhysicsList:DEFAULT = gamma-lowener is registered
+GmEMPhysics PhysicsList: DEFAULT = electron-lowener is registered
+GmEMPhysics PhysicsList: DEFAULT = positron-standard is registered
+GmPhysicsGammaLowEner::ConstructProcess 
+/gamos/generator/addSingleParticleSource source gamma 1*MeV
+/gamos/generator/directionDist source GmGenerDistDirectionConst 0. 0. 1.
+/gamos/generator/positionDist source GmGenerDistPositionPoint 0. 0. 0.
+/gamos/filter exitShieldF GmExitLogicalVolumeFilter shield
+/gamos/filter positiveFaceF GmNumericDataFilter FinalPosZ 36. 36.
+/gamos/setParam GmStepDataHistosUA_exitShieldF_positiveFaceF_GmClassifierByParticle:DataList FinalKineticEnergy
+/gamos/userAction GmStepDataHistosUA exitShieldF positiveFaceF GmClassifierByParticle
+PluginService: Could not find factory for GmClassifierByParticle with signature GmVFilter* (G4String)
+/gamos/setParam GmStepDataTextFileUA_exitShieldF_positiveFaceF:DataList EventID TrackID Particle FinalKineticEnergy FinalPosX FinalPosY FinalPosZ FinalDirTheta FinalDirPhi
+/gamos/setParam GmStepDataTextFileUA_exitShieldF_positiveFaceF:WriteHeaderData 1
+/gamos/userAction GmStepDataTextFileUA exitShieldF positiveFaceF
+/gamos/userAction GmStepDataTextFileUA exitShieldF positiveFaceF
+/gamos/setParam GmCountTracksUA:EachNEvent 1000
+/gamos/userAction GmCountTracksUA
+/gamos/userAction GmCountProcessesUA
+/gamos/setParam GmStepDataHistosUA_GmClassifierByParticle:DataList FinalPosX FinalPosY FinalPosZ
+/gamos/userAction GmStepDataHistosUA GmClassifierByParticle
+PluginService: Could not find factory for GmClassifierByParticle with signature GmVFilter* (G4String)
+/run/beamOn 10000
+
+phot:   for  gamma    SubType= 12
+      LambdaPrime table from 200 keV to 10 TeV in 54 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermorePhElectric :  Emin=        0 eV    Emax=        1 GeV   AngularGenSauterGavrila  FluoActive
+       PhotoElectric :  Emin=        1 GeV   Emax=       10 TeV   AngularGenSauterGavrila  FluoActive
+
+compt:   for  gamma    SubType= 13
+      Lambda table from 100 eV  to 1 MeV in 28 bins, spline: 1
+      LambdaPrime table from 1 MeV to 10 TeV in 49 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+    LivermoreCompton :  Emin=        0 eV    Emax=        1 GeV  FluoActive
+       Klein-Nishina :  Emin=        1 GeV   Emax=       10 TeV
+
+conv:   for  gamma    SubType= 14
+      Lambda table from 1.022 MeV to 10 TeV in 49 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermoreConversion :  Emin=        0 eV    Emax=        1 GeV
+        BetheHeitler :  Emin=        1 GeV   Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=       10 TeV
+
+Rayl:   for  gamma    SubType= 11
+      Lambda table from 100 eV  to 100 keV in 21 bins, spline: 0
+      LambdaPrime table from 100 keV to 10 TeV in 56 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   LivermoreRayleigh :  Emin=        0 eV    Emax=        1 GeV   CullenGenerator
+   LivermoreRayleigh :  Emin=        1 GeV   Emax=       10 TeV   CullenGenerator
+
+msc:   for e-    SubType= 10
+      RangeFactor= 0.04, step limit type: 2, lateralDisplacement: 1, skin= 1, geomFactor= 2.5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 1 region:
+          DefaultRegionForTheWorld
+
+eIoni:   for  e-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       LowEnergyIoni :  Emin=        0 eV    Emax=        1 GeV
+        MollerBhabha :  Emin=        1 GeV   Emax=       10 TeV
+
+eBrem:   for  e-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           LowEnBrem :  Emin=        0 eV    Emax=        1 GeV   AngularGenUrban
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+msc:   for e+    SubType= 10
+      RangeFactor= 0.04, step limit type: 1, lateralDisplacement: 1, skin= 1, geomFactor= 2.5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+eIoni:   for  e+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+annihil:   for  e+    SubType= 5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg :  Emin=        0 eV    Emax=       10 TeV
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_AIR
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_Pb
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  29.4761 keV    e-  241.522 keV    e+  231.977 keV proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+@@@@@ GmCountProcessesUA GmCountProcessesUA
+Start Run processing.
+ CreateHisto1D GmStepDataHistosUA_GmClassifierByParticle:gamma:FinalPosX = 366000101
+ CreateHisto1D GmStepDataHistosUA_GmClassifierByParticle:gamma:FinalPosY = 366000102
+ CreateHisto1D GmStepDataHistosUA_GmClassifierByParticle:gamma:FinalPosZ = 366000103
+ CreateHisto1D GmStepDataHistosUA_GmClassifierByParticle:e-:FinalPosX = 366000201
+ CreateHisto1D GmStepDataHistosUA_GmClassifierByParticle:e-:FinalPosY = 366000202
+ CreateHisto1D GmStepDataHistosUA_GmClassifierByParticle:e-:FinalPosZ = 366000203
+ %%% EVENT 0 NTRACKS 6 TOTAL NTRACKS 6
+ CreateHisto1D GmStepDataHistosUA_exitShieldF_positiveFaceF_GmClassifierByParticle:gamma:FinalKineticEnergy = 286000101
+ CreateHisto1D GmStepDataHistosUA_exitShieldF_positiveFaceF_GmClassifierByParticle:e-:FinalKineticEnergy = 286000201
+ %%% EVENT 1000 NTRACKS 8 TOTAL NTRACKS 5183
+ %%% EVENT 2000 NTRACKS 4 TOTAL NTRACKS 10498
+ %%% EVENT 3000 NTRACKS 6 TOTAL NTRACKS 15743
+ %%% EVENT 4000 NTRACKS 9 TOTAL NTRACKS 20919
+ %%% EVENT 5000 NTRACKS 7 TOTAL NTRACKS 26043
+ %%% EVENT 6000 NTRACKS 4 TOTAL NTRACKS 31160
+ %%% EVENT 7000 NTRACKS 4 TOTAL NTRACKS 36534
+ %%% EVENT 8000 NTRACKS 2 TOTAL NTRACKS 41729
+ %%% EVENT 9000 NTRACKS 7 TOTAL NTRACKS 47026
+Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=10.06s Real=10.21s Sys=0.03s
+@@@@@ GmCountProcessesUA 
+PART_COUNT: e- = 31341
+PART_COUNT: gamma = 21042
+PROC_COUNT e- : Transportation = 30
+PROC_COUNT e- : eBrem = 3077
+PROC_COUNT e- : eBrem_NoSeco = 237
+PROC_COUNT e- : eIoni = 585
+PROC_COUNT e- : eIoni_NoSeco = 51761
+PROC_COUNT e- : msc = 4633
+PROC_COUNT e- : ALL = 60323
+PROC_COUNT gamma : Rayl = 2334
+PROC_COUNT gamma : Transportation = 2707
+PROC_COUNT gamma : compt = 11067
+PROC_COUNT gamma : phot = 19689
+PROC_COUNT gamma : ALL = 35797
+PROC_CREATOR_COUNT e- : compt = 11067
+PROC_CREATOR_COUNT e- : eIoni = 585
+PROC_CREATOR_COUNT e- : phot = 19689
+PROC_CREATOR_COUNT gamma : Primary = 10000
+PROC_CREATOR_COUNT gamma : compt = 201
+PROC_CREATOR_COUNT gamma : eBrem = 3077
+PROC_CREATOR_COUNT gamma : phot = 7764
+Graphics systems deleted.
+Visualization Manager deleting...
+=== saving histograms in file === GmStepDataHistosUA_GmClassifierByParticle.root
+=== saving histograms in file === GmStepDataHistosUA_exitShieldF_positiveFaceF_GmClassifierByParticle.root
+%%%%% Table of indices for GmClassifierByParticle GmClassifierByParticle
+GmClassifierByParticle: gamma = 1
+GmClassifierByParticle: e- = 2

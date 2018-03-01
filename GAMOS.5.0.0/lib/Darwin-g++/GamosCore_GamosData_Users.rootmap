@@ -1,0 +1,35 @@
+# ROOT map file generated automatically by genmap on Fri Nov 13 13:11:20 2015
+
+Library.__pf__@@GmBaseVerbosity: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmUAVerbosity: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmDataVerbosity: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmStepDataHistosUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmTrackDataHistosUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmSecondaryTrackDataHistosUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmEventDataHistosUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmRunDataHistosUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmStackDataHistosUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmStepDataTextFileUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmTrackDataTextFileUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmSecondaryTrackDataTextFileUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmEventDataTextFileUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmRunDataTextFileUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmStackDataTextFileUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmStepDataBinFileUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmTrackDataBinFileUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmSecondaryTrackDataBinFileUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmEventDataBinFileUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmRunDataBinFileUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmStackDataBinFileUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmStepDataCoutUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmTrackDataCoutUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmSecondaryTrackDataCoutUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmEventDataCoutUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmRunDataCoutUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmStackDataCoutUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmDataTTreeUA: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmNumericDataFilter: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmStringDataFilter: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmClassifierByNumericData: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmClassifierByStringData: libGamosCore_GamosData_Users.dylib
+Library.__pf__@@GmClassifierByDistribution: libGamosCore_GamosData_Users.dylib

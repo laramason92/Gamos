@@ -1,0 +1,1522 @@
+
+*************************************************************
+ Geant4 version Name: geant4-09-04    (17-December-2010)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRep (HepRepXML)
+  G4HepRepFile (HepRepFile)
+  RayTracer (RayTracer)
+  VRML1FILE (VRML1FILE)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+  FukuiRenderer (DAWN)
+  OpenGLStoredX (OGL)
+  OpenGLImmediateX (OGLI)
+  OpenGLStoredX (OGLS)
+  OpenGLImmediateX (OGLIX)
+  OpenGLStoredX (OGLSX)
+  VRML1 (VRML1)
+  VRML2 (VRML2)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByCharge
+  drawByParticleID
+  drawByOriginVolume
+  drawByAttribute
+
+Registered filter factories:
+  chargeFilter
+  particleFilter
+  originVolumeFilter
+  attributeFilter
+
+/tracking/verbose 0
+/gamos/setParam GmGeometryFromText:FileName exercise2.geom
+/gamos/geometry GmGeometryFromText
+/gamos/physicsList QGSP_BIC_HP
+
+<<< Geant4 Physics List engine packaging library: PACK 5.5
+<<< Geant4 Physics List simulation engine: QGSP_BIC_HP 1.3
+
+/gamos/generator GmGenerator
+/run/initialize
+NeutronHP: /Elastic/ file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamos/external/geant4/geant4.9.4.gamos/../data/G4NDL3.13/Elastic///CrossSection/6_nat_Carbon
+NeutronHP: /Elastic/ file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamos/external/geant4/geant4.9.4.gamos/../data/G4NDL3.13/Elastic///CrossSection/8_17_Oxygen
+NeutronHP: /Capture file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamos/external/geant4/geant4.9.4.gamos/../data/G4NDL3.13/Capture//CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamos/external/geant4/geant4.9.4.gamos/../data/G4NDL3.13/Elastic//CrossSection/6_nat_Carbon
+NeutronHP: /Inelastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamos/external/geant4/geant4.9.4.gamos/../data/G4NDL3.13/Inelastic//CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamos/external/geant4/geant4.9.4.gamos/../data/G4NDL3.13/Capture//CrossSection/8_17_Oxygen
+NeutronHP: /Elastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamos/external/geant4/geant4.9.4.gamos/../data/G4NDL3.13/Elastic//CrossSection/8_17_Oxygen
+NeutronHP: /Inelastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamos/external/geant4/geant4.9.4.gamos/../data/G4NDL3.13/Inelastic//CrossSection/8_17_Oxygen
+/home/arce/gamos/external/geant4/geant4.9.4.gamos/../data/G4NDL3.13
+NeutronHP: /Capture/ file for Z = 6, A = 13 is not found and NeutronHP will use /home/arce/gamos/external/geant4/geant4.9.4.gamos/../data/G4NDL3.13/Capture///CrossSection/6_nat_Carbon
+NeutronHP: /Capture/ file for Z = 8, A = 18 is not found and NeutronHP will use /home/arce/gamos/external/geant4/geant4.9.4.gamos/../data/G4NDL3.13/Capture///CrossSection/8_17_Oxygen
+/gamos/generator/addSingleParticleSource source neutron 1.*MeV
+/gamos/generator/energyDist source GmGenerDistEnergyFromFile AmBe.energy.lis interpolate_log
+GmGenerDistEnergyFromFile::ReadEnergyDist probabilities do not sum up to 1., but to 1.0003 They will be normalized to 1. 
+/gamos/scoring/createMFDetector FluxDet AmBeShield
+/gamos/setParam FluxScorer:SolidType SPHERE
+/gamos/setParam FluxScorer:Surfaces OUTER
+/gamos/setParam FluxScorer:Direction InOut
+/gamos/scoring/addScorer2MFD FluxScorer GmPSSurfaceFlux FluxDet Out
+ GmVPrimitiveScorer::SetParameters: no parameters 
+/gamos/scoring/assignClassifier2Scorer GmClassifierByParticle FluxScorer
+/gamos/filter neutronF GmParticleFilter neutron
+/gamos/filter inShieldF GmInLogicalVolumeFilter AmBeShield
+/gamos/userAction GmCountProcessesUA neutronF inShieldF
+/run/beamOn 10000
+
+phot:   for  gamma    SubType= 12
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       PhotoElectric :   Emin=        0 eV       Emax=         10 TeV
+
+compt:   for  gamma    SubType= 13
+      Lambda tables from 100 eV  to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina :   Emin=        0 eV       Emax=         10 TeV
+
+conv:   for  gamma    SubType= 14
+      Lambda tables from 1.022 MeV to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        BetheHeitler :   Emin=        0 eV       Emax=         10 TeV
+
+msc:   for e-    SubType= 10
+      Lambda tables from 100 eV  to 10 TeV in 77 bins, spline: 1
+      RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc93 :   Emin=        0 eV       Emax=         10 TeV
+
+eIoni:   for  e-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :   Emin=        0 eV       Emax=         10 TeV
+
+eBrem:   for  e-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               eBrem :   Emin=        0 eV       Emax=          1 GeV  AngularGenUrban
+            eBremLPM :   Emin=        1 GeV      Emax=         10 TeV  AngularGenUrban
+
+eIoni:   for  e+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :   Emin=        0 eV       Emax=         10 TeV
+
+eBrem:   for  e+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               eBrem :   Emin=        0 eV       Emax=          1 GeV  AngularGenUrban
+            eBremLPM :   Emin=        1 GeV      Emax=         10 TeV  AngularGenUrban
+
+annihil:   for  e+    SubType= 5
+      Lambda tables from 100 eV  to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg :   Emin=        0 eV       Emax=         10 TeV
+
+msc:   for proton    SubType= 10
+      Lambda tables from 100 eV  to 10 TeV in 77 bins, spline: 1
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc90 :   Emin=        0 eV       Emax=         10 TeV
+
+hIoni:   for  proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :   Emin=        0 eV       Emax=          2 MeV
+          BetheBloch :   Emin=        2 MeV      Emax=         10 TeV
+
+hBrems:   for  proton    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :   Emin=        0 eV       Emax=         10 TeV
+
+hPairProd:   for  proton    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :   Emin=        0 eV       Emax=         10 TeV
+
+msc:   for GenericIon    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc90 :   Emin=        0 eV       Emax=         10 TeV
+
+ionIoni:   for  GenericIon    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.1, integral: 1, fluct: 1, linLossLimit= 0.02
+      Stopping Power data for 17 ion/material pairs 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon :   Emin=        0 eV       Emax=          2 MeV
+          BetheBloch :   Emin=        2 MeV      Emax=         10 TeV
+
+hIoni:   for  anti_proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :   Emin=        0 eV       Emax=          2 MeV
+          BetheBloch :   Emin=        2 MeV      Emax=         10 TeV
+
+msc:   for kaon+    SubType= 10
+      Lambda tables from 100 eV  to 10 TeV in 77 bins, spline: 1
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc90 :   Emin=        0 eV       Emax=         10 TeV
+
+hIoni:   for  kaon+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :   Emin=        0 eV       Emax=    1.05231 MeV
+          BetheBloch :   Emin=  1.05231 MeV      Emax=         10 TeV
+
+hBrems:   for  kaon+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :   Emin=        0 eV       Emax=         10 TeV
+
+hPairProd:   for  kaon+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :   Emin=        0 eV       Emax=         10 TeV
+
+hIoni:   for  kaon-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :   Emin=        0 eV       Emax=    1.05231 MeV
+          BetheBloch :   Emin=  1.05231 MeV      Emax=         10 TeV
+
+hBrems:   for  kaon-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :   Emin=        0 eV       Emax=         10 TeV
+
+hPairProd:   for  kaon-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :   Emin=        0 eV       Emax=         10 TeV
+
+muMsc:   for mu+    SubType= 10
+      Lambda tables from 100 eV  to 10 TeV in 77 bins, spline: 1
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 11.4592
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :   Emin=        0 eV       Emax=         10 TeV
+
+muIoni:   for  mu+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :   Emin=        0 eV       Emax=        200 keV
+          BetheBloch :   Emin=      200 keV      Emax=          1 GeV
+        MuBetheBloch :   Emin=        1 GeV      Emax=         10 TeV
+
+muBrems:   for  mu+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem :   Emin=        0 eV       Emax=         10 TeV
+
+muPairProd:   for  mu+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :   Emin=        0 eV       Emax=         10 TeV
+
+CoulombScat:   for  mu+    SubType= 1
+      Lambda tables from 100 eV  to 10 TeV in 77 bins, spline: 1
+      11.4592 < Theta(degree) < 180, Eth(MeV)= 10; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :   Emin=        0 eV       Emax=         10 TeV
+
+muIoni:   for  mu-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :   Emin=        0 eV       Emax=        200 keV
+          BetheBloch :   Emin=      200 keV      Emax=          1 GeV
+        MuBetheBloch :   Emin=        1 GeV      Emax=         10 TeV
+
+muBrems:   for  mu-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem :   Emin=        0 eV       Emax=         10 TeV
+
+muPairProd:   for  mu-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :   Emin=        0 eV       Emax=         10 TeV
+
+CoulombScat:   for  mu-    SubType= 1
+      Lambda tables from 100 eV  to 10 TeV in 77 bins, spline: 1
+      11.4592 < Theta(degree) < 180, Eth(MeV)= 10; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :   Emin=        0 eV       Emax=         10 TeV
+
+hIoni:   for  pi+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :   Emin=        0 eV       Emax=    297.505 keV
+          BetheBloch :   Emin=  297.505 keV      Emax=         10 TeV
+
+hBrems:   for  pi+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :   Emin=        0 eV       Emax=         10 TeV
+
+hPairProd:   for  pi+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :   Emin=        0 eV       Emax=         10 TeV
+
+msc:   for pi-    SubType= 10
+      Lambda tables from 100 eV  to 10 TeV in 77 bins, spline: 1
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc90 :   Emin=        0 eV       Emax=         10 TeV
+
+hIoni:   for  pi-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :   Emin=        0 eV       Emax=    297.505 keV
+          BetheBloch :   Emin=  297.505 keV      Emax=         10 TeV
+
+hBrems:   for  pi-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :   Emin=        0 eV       Emax=         10 TeV
+
+hPairProd:   for  pi-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :   Emin=        0 eV       Emax=         10 TeV
+============================================================================================
+             HADRONIC PROCESSES SUMMARY (verbose level 1)
+
+                     Hadronic Processes for <GenericIon>
+        ionInelastic  Models:            Binary Cascade: Emin(GeV)=     0  Emax(GeV)= 20
+
+                     Hadronic Processes for <anti_neutron>
+          hadElastic  Models:              hElasticLHEP: Emin(GeV)=     0  Emax(GeV)= 100000
+AntiNeutronInelastic  Models:  G4LEAntiNeutronInelastic: Emin(GeV)=     0  Emax(GeV)= 25
+                               G4HEAntiNeutronInelastic: Emin(GeV)=    20  Emax(GeV)= 100000
+
+                     Hadronic Processes for <anti_proton>
+          hadElastic  Models:              hElasticLHEP: Emin(GeV)=     0  Emax(GeV)= 100000
+ AntiProtonInelastic  Models:   G4LEAntiProtonInelastic: Emin(GeV)=     0  Emax(GeV)= 25
+                                G4HEAntiProtonInelastic: Emin(GeV)=    20  Emax(GeV)= 100000
+
+                     Hadronic Processes for <e->
+      ElectroNuclear  Models:                     CHIPS: Emin(GeV)=     0  Emax(GeV)= 30000
+
+                     Hadronic Processes for <gamma>
+     PhotonInelastic  Models:                     CHIPS: Emin(GeV)=     0  Emax(GeV)= 3.5
+                                        TheoFSGenerator: Emin(GeV)=     3  Emax(GeV)= 100000
+
+                     Hadronic Processes for <kaon+>
+          hadElastic  Models:              hElasticLHEP: Emin(GeV)=     0  Emax(GeV)= 100000
+   KaonPlusInelastic  Models:                      QGSP: Emin(GeV)=    12  Emax(GeV)= 100000
+                                  G4LEKaonPlusInelastic: Emin(GeV)=     0  Emax(GeV)= 25
+
+                     Hadronic Processes for <kaon->
+          hadElastic  Models:              hElasticLHEP: Emin(GeV)=     0  Emax(GeV)= 100000
+  KaonMinusInelastic  Models:                      QGSP: Emin(GeV)=    12  Emax(GeV)= 100000
+                                 G4LEKaonMinusInelastic: Emin(GeV)=     0  Emax(GeV)= 25
+
+                     Hadronic Processes for <lambda>
+          hadElastic  Models:              hElasticLHEP: Emin(GeV)=     0  Emax(GeV)= 100000
+     LambdaInelastic  Models:       G4LELambdaInelastic: Emin(GeV)=     0  Emax(GeV)= 25
+                                    G4HELambdaInelastic: Emin(GeV)=    20  Emax(GeV)= 100000
+
+                     Hadronic Processes for <mu->
+          muMinusCaptureAtRest
+
+                     Hadronic Processes for <neutron>
+          hadElastic  Models:             hElasticCHIPS: Emin(GeV)= 0.0195  Emax(GeV)= 100000
+                                       NeutronHPElastic: Emin(GeV)=     0  Emax(GeV)= 0.02
+    NeutronInelastic  Models:                      QGSP: Emin(GeV)=    12  Emax(GeV)= 100000
+                                   G4LENeutronInelastic: Emin(GeV)=   9.5  Emax(GeV)= 25
+                                         Binary Cascade: Emin(GeV)= 0.0199  Emax(GeV)= 9.9
+                                     NeutronHPInelastic: Emin(GeV)=     0  Emax(GeV)= 0.02
+            nCapture  Models:                G4LCapture: Emin(GeV)= 0.0199  Emax(GeV)= 20000
+                                       NeutronHPCapture: Emin(GeV)=     0  Emax(GeV)= 0.02
+            nFission  Models:                G4LFission: Emin(GeV)= 0.0199  Emax(GeV)= 20000
+                                       NeutronHPFission: Emin(GeV)=     0  Emax(GeV)= 0.02
+
+                     Hadronic Processes for <pi+>
+          hadElastic  Models:              hElasticLHEP: Emin(GeV)=     0  Emax(GeV)= 1
+                                        hElasticGlauber: Emin(GeV)=     1  Emax(GeV)= 100000
+   PionPlusInelastic  Models:                      QGSP: Emin(GeV)=    12  Emax(GeV)= 100000
+                                  G4LEPionPlusInelastic: Emin(GeV)=     0  Emax(GeV)= 25
+
+                     Hadronic Processes for <pi->
+          hadElastic  Models:              hElasticLHEP: Emin(GeV)=     0  Emax(GeV)= 1
+                                        hElasticGlauber: Emin(GeV)=     1  Emax(GeV)= 100000
+  PionMinusInelastic  Models:                      QGSP: Emin(GeV)=    12  Emax(GeV)= 100000
+                                 G4LEPionMinusInelastic: Emin(GeV)=     0  Emax(GeV)= 25
+
+                     Hadronic Processes for <proton>
+          hadElastic  Models:             hElasticCHIPS: Emin(GeV)=     0  Emax(GeV)= 100000
+     ProtonInelastic  Models:                      QGSP: Emin(GeV)=    12  Emax(GeV)= 100000
+                                    G4LEProtonInelastic: Emin(GeV)=   9.5  Emax(GeV)= 25
+                                         Binary Cascade: Emin(GeV)=     0  Emax(GeV)= 9.9
+============================================================================================
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_Pb
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  94.5861 keV    e-  1.00386 MeV    e+  951.321 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+@@@@@ GmCountProcessesUA neutronF_inShieldF
+PROC_LIST B+ : Decay
+PROC_LIST B+ : Transportation
+PROC_LIST B+ : hIoni
+PROC_LIST B+ : hIoni_NoSeco
+PROC_LIST B+ : msc
+PROC_LIST B- : Decay
+PROC_LIST B- : Transportation
+PROC_LIST B- : hIoni
+PROC_LIST B- : hIoni_NoSeco
+PROC_LIST B- : msc
+PROC_LIST B0 : Decay
+PROC_LIST B0 : Transportation
+PROC_LIST Bs0 : Decay
+PROC_LIST Bs0 : Transportation
+PROC_LIST D+ : Decay
+PROC_LIST D+ : Transportation
+PROC_LIST D+ : hIoni
+PROC_LIST D+ : hIoni_NoSeco
+PROC_LIST D+ : msc
+PROC_LIST D- : Decay
+PROC_LIST D- : Transportation
+PROC_LIST D- : hIoni
+PROC_LIST D- : hIoni_NoSeco
+PROC_LIST D- : msc
+PROC_LIST D0 : Decay
+PROC_LIST D0 : Transportation
+PROC_LIST Ds+ : Decay
+PROC_LIST Ds+ : Transportation
+PROC_LIST Ds+ : hIoni
+PROC_LIST Ds+ : hIoni_NoSeco
+PROC_LIST Ds+ : msc
+PROC_LIST Ds- : Decay
+PROC_LIST Ds- : Transportation
+PROC_LIST Ds- : hIoni
+PROC_LIST Ds- : hIoni_NoSeco
+PROC_LIST Ds- : msc
+PROC_LIST GenericIon : Transportation
+PROC_LIST GenericIon : ionInelastic
+PROC_LIST GenericIon : ionIoni
+PROC_LIST GenericIon : ionIoni_NoSeco
+PROC_LIST GenericIon : msc
+PROC_LIST He3 : He3Inelastic
+PROC_LIST He3 : Transportation
+PROC_LIST He3 : ionIoni
+PROC_LIST He3 : ionIoni_NoSeco
+PROC_LIST He3 : msc
+PROC_LIST J/psi : Decay
+PROC_LIST J/psi : Transportation
+PROC_LIST N(1440)+ : Decay
+PROC_LIST N(1440)+ : Transportation
+PROC_LIST N(1440)0 : Decay
+PROC_LIST N(1440)0 : Transportation
+PROC_LIST N(1520)+ : Decay
+PROC_LIST N(1520)+ : Transportation
+PROC_LIST N(1520)0 : Decay
+PROC_LIST N(1520)0 : Transportation
+PROC_LIST N(1535)+ : Decay
+PROC_LIST N(1535)+ : Transportation
+PROC_LIST N(1535)0 : Decay
+PROC_LIST N(1535)0 : Transportation
+PROC_LIST N(1650)+ : Decay
+PROC_LIST N(1650)+ : Transportation
+PROC_LIST N(1650)0 : Decay
+PROC_LIST N(1650)0 : Transportation
+PROC_LIST N(1675)+ : Decay
+PROC_LIST N(1675)+ : Transportation
+PROC_LIST N(1675)0 : Decay
+PROC_LIST N(1675)0 : Transportation
+PROC_LIST N(1680)+ : Decay
+PROC_LIST N(1680)+ : Transportation
+PROC_LIST N(1680)0 : Decay
+PROC_LIST N(1680)0 : Transportation
+PROC_LIST N(1700)+ : Decay
+PROC_LIST N(1700)+ : Transportation
+PROC_LIST N(1700)0 : Decay
+PROC_LIST N(1700)0 : Transportation
+PROC_LIST N(1710)+ : Decay
+PROC_LIST N(1710)+ : Transportation
+PROC_LIST N(1710)0 : Decay
+PROC_LIST N(1710)0 : Transportation
+PROC_LIST N(1720)+ : Decay
+PROC_LIST N(1720)+ : Transportation
+PROC_LIST N(1720)0 : Decay
+PROC_LIST N(1720)0 : Transportation
+PROC_LIST N(1900)+ : Decay
+PROC_LIST N(1900)+ : Transportation
+PROC_LIST N(1900)0 : Decay
+PROC_LIST N(1900)0 : Transportation
+PROC_LIST N(1990)+ : Decay
+PROC_LIST N(1990)+ : Transportation
+PROC_LIST N(1990)0 : Decay
+PROC_LIST N(1990)0 : Transportation
+PROC_LIST N(2090)+ : Decay
+PROC_LIST N(2090)+ : Transportation
+PROC_LIST N(2090)0 : Decay
+PROC_LIST N(2090)0 : Transportation
+PROC_LIST N(2190)+ : Decay
+PROC_LIST N(2190)+ : Transportation
+PROC_LIST N(2190)0 : Decay
+PROC_LIST N(2190)0 : Transportation
+PROC_LIST N(2220)+ : Decay
+PROC_LIST N(2220)+ : Transportation
+PROC_LIST N(2220)0 : Decay
+PROC_LIST N(2220)0 : Transportation
+PROC_LIST N(2250)+ : Decay
+PROC_LIST N(2250)+ : Transportation
+PROC_LIST N(2250)0 : Decay
+PROC_LIST N(2250)0 : Transportation
+PROC_LIST a0(1450)+ : Decay
+PROC_LIST a0(1450)+ : Transportation
+PROC_LIST a0(1450)- : Decay
+PROC_LIST a0(1450)- : Transportation
+PROC_LIST a0(1450)0 : Decay
+PROC_LIST a0(1450)0 : Transportation
+PROC_LIST a0(980)+ : Decay
+PROC_LIST a0(980)+ : Transportation
+PROC_LIST a0(980)- : Decay
+PROC_LIST a0(980)- : Transportation
+PROC_LIST a0(980)0 : Decay
+PROC_LIST a0(980)0 : Transportation
+PROC_LIST a1(1260)+ : Decay
+PROC_LIST a1(1260)+ : Transportation
+PROC_LIST a1(1260)- : Decay
+PROC_LIST a1(1260)- : Transportation
+PROC_LIST a1(1260)0 : Decay
+PROC_LIST a1(1260)0 : Transportation
+PROC_LIST a2(1320)+ : Decay
+PROC_LIST a2(1320)+ : Transportation
+PROC_LIST a2(1320)- : Decay
+PROC_LIST a2(1320)- : Transportation
+PROC_LIST a2(1320)0 : Decay
+PROC_LIST a2(1320)0 : Transportation
+PROC_LIST alpha : Transportation
+PROC_LIST alpha : alphaInelastic
+PROC_LIST alpha : hadElastic
+PROC_LIST alpha : ionIoni
+PROC_LIST alpha : ionIoni_NoSeco
+PROC_LIST alpha : msc
+PROC_LIST anti_B0 : Decay
+PROC_LIST anti_B0 : Transportation
+PROC_LIST anti_Bs0 : Decay
+PROC_LIST anti_Bs0 : Transportation
+PROC_LIST anti_D0 : Decay
+PROC_LIST anti_D0 : Transportation
+PROC_LIST anti_He3 : Transportation
+PROC_LIST anti_He3 : hIoni
+PROC_LIST anti_He3 : hIoni_NoSeco
+PROC_LIST anti_He3 : msc
+PROC_LIST anti_N(1440)+ : Decay
+PROC_LIST anti_N(1440)+ : Transportation
+PROC_LIST anti_N(1440)0 : Decay
+PROC_LIST anti_N(1440)0 : Transportation
+PROC_LIST anti_N(1520)+ : Decay
+PROC_LIST anti_N(1520)+ : Transportation
+PROC_LIST anti_N(1520)0 : Decay
+PROC_LIST anti_N(1520)0 : Transportation
+PROC_LIST anti_N(1535)+ : Decay
+PROC_LIST anti_N(1535)+ : Transportation
+PROC_LIST anti_N(1535)0 : Decay
+PROC_LIST anti_N(1535)0 : Transportation
+PROC_LIST anti_N(1650)+ : Decay
+PROC_LIST anti_N(1650)+ : Transportation
+PROC_LIST anti_N(1650)0 : Decay
+PROC_LIST anti_N(1650)0 : Transportation
+PROC_LIST anti_N(1675)+ : Decay
+PROC_LIST anti_N(1675)+ : Transportation
+PROC_LIST anti_N(1675)0 : Decay
+PROC_LIST anti_N(1675)0 : Transportation
+PROC_LIST anti_N(1680)+ : Decay
+PROC_LIST anti_N(1680)+ : Transportation
+PROC_LIST anti_N(1680)0 : Decay
+PROC_LIST anti_N(1680)0 : Transportation
+PROC_LIST anti_N(1700)+ : Decay
+PROC_LIST anti_N(1700)+ : Transportation
+PROC_LIST anti_N(1700)0 : Decay
+PROC_LIST anti_N(1700)0 : Transportation
+PROC_LIST anti_N(1710)+ : Decay
+PROC_LIST anti_N(1710)+ : Transportation
+PROC_LIST anti_N(1710)0 : Decay
+PROC_LIST anti_N(1710)0 : Transportation
+PROC_LIST anti_N(1720)+ : Decay
+PROC_LIST anti_N(1720)+ : Transportation
+PROC_LIST anti_N(1720)0 : Decay
+PROC_LIST anti_N(1720)0 : Transportation
+PROC_LIST anti_N(1900)+ : Decay
+PROC_LIST anti_N(1900)+ : Transportation
+PROC_LIST anti_N(1900)0 : Decay
+PROC_LIST anti_N(1900)0 : Transportation
+PROC_LIST anti_N(1990)+ : Decay
+PROC_LIST anti_N(1990)+ : Transportation
+PROC_LIST anti_N(1990)0 : Decay
+PROC_LIST anti_N(1990)0 : Transportation
+PROC_LIST anti_N(2090)+ : Decay
+PROC_LIST anti_N(2090)+ : Transportation
+PROC_LIST anti_N(2090)0 : Decay
+PROC_LIST anti_N(2090)0 : Transportation
+PROC_LIST anti_N(2190)+ : Decay
+PROC_LIST anti_N(2190)+ : Transportation
+PROC_LIST anti_N(2190)0 : Decay
+PROC_LIST anti_N(2190)0 : Transportation
+PROC_LIST anti_N(2220)+ : Decay
+PROC_LIST anti_N(2220)+ : Transportation
+PROC_LIST anti_N(2220)0 : Decay
+PROC_LIST anti_N(2220)0 : Transportation
+PROC_LIST anti_N(2250)+ : Decay
+PROC_LIST anti_N(2250)+ : Transportation
+PROC_LIST anti_N(2250)0 : Decay
+PROC_LIST anti_N(2250)0 : Transportation
+PROC_LIST anti_alpha : Transportation
+PROC_LIST anti_alpha : hIoni
+PROC_LIST anti_alpha : hIoni_NoSeco
+PROC_LIST anti_alpha : msc
+PROC_LIST anti_b_quark : Transportation
+PROC_LIST anti_c_quark : Transportation
+PROC_LIST anti_d_quark : Transportation
+PROC_LIST anti_dd1_diquark : Transportation
+PROC_LIST anti_delta(1600)+ : Decay
+PROC_LIST anti_delta(1600)+ : Transportation
+PROC_LIST anti_delta(1600)++ : Decay
+PROC_LIST anti_delta(1600)++ : Transportation
+PROC_LIST anti_delta(1600)- : Decay
+PROC_LIST anti_delta(1600)- : Transportation
+PROC_LIST anti_delta(1600)0 : Decay
+PROC_LIST anti_delta(1600)0 : Transportation
+PROC_LIST anti_delta(1620)+ : Decay
+PROC_LIST anti_delta(1620)+ : Transportation
+PROC_LIST anti_delta(1620)++ : Decay
+PROC_LIST anti_delta(1620)++ : Transportation
+PROC_LIST anti_delta(1620)- : Decay
+PROC_LIST anti_delta(1620)- : Transportation
+PROC_LIST anti_delta(1620)0 : Decay
+PROC_LIST anti_delta(1620)0 : Transportation
+PROC_LIST anti_delta(1700)+ : Decay
+PROC_LIST anti_delta(1700)+ : Transportation
+PROC_LIST anti_delta(1700)++ : Decay
+PROC_LIST anti_delta(1700)++ : Transportation
+PROC_LIST anti_delta(1700)- : Decay
+PROC_LIST anti_delta(1700)- : Transportation
+PROC_LIST anti_delta(1700)0 : Decay
+PROC_LIST anti_delta(1700)0 : Transportation
+PROC_LIST anti_delta(1900)+ : Decay
+PROC_LIST anti_delta(1900)+ : Transportation
+PROC_LIST anti_delta(1900)++ : Decay
+PROC_LIST anti_delta(1900)++ : Transportation
+PROC_LIST anti_delta(1900)- : Decay
+PROC_LIST anti_delta(1900)- : Transportation
+PROC_LIST anti_delta(1900)0 : Decay
+PROC_LIST anti_delta(1900)0 : Transportation
+PROC_LIST anti_delta(1905)+ : Decay
+PROC_LIST anti_delta(1905)+ : Transportation
+PROC_LIST anti_delta(1905)++ : Decay
+PROC_LIST anti_delta(1905)++ : Transportation
+PROC_LIST anti_delta(1905)- : Decay
+PROC_LIST anti_delta(1905)- : Transportation
+PROC_LIST anti_delta(1905)0 : Decay
+PROC_LIST anti_delta(1905)0 : Transportation
+PROC_LIST anti_delta(1910)+ : Decay
+PROC_LIST anti_delta(1910)+ : Transportation
+PROC_LIST anti_delta(1910)++ : Decay
+PROC_LIST anti_delta(1910)++ : Transportation
+PROC_LIST anti_delta(1910)- : Decay
+PROC_LIST anti_delta(1910)- : Transportation
+PROC_LIST anti_delta(1910)0 : Decay
+PROC_LIST anti_delta(1910)0 : Transportation
+PROC_LIST anti_delta(1920)+ : Decay
+PROC_LIST anti_delta(1920)+ : Transportation
+PROC_LIST anti_delta(1920)++ : Decay
+PROC_LIST anti_delta(1920)++ : Transportation
+PROC_LIST anti_delta(1920)- : Decay
+PROC_LIST anti_delta(1920)- : Transportation
+PROC_LIST anti_delta(1920)0 : Decay
+PROC_LIST anti_delta(1920)0 : Transportation
+PROC_LIST anti_delta(1930)+ : Decay
+PROC_LIST anti_delta(1930)+ : Transportation
+PROC_LIST anti_delta(1930)++ : Decay
+PROC_LIST anti_delta(1930)++ : Transportation
+PROC_LIST anti_delta(1930)- : Decay
+PROC_LIST anti_delta(1930)- : Transportation
+PROC_LIST anti_delta(1930)0 : Decay
+PROC_LIST anti_delta(1930)0 : Transportation
+PROC_LIST anti_delta(1950)+ : Decay
+PROC_LIST anti_delta(1950)+ : Transportation
+PROC_LIST anti_delta(1950)++ : Decay
+PROC_LIST anti_delta(1950)++ : Transportation
+PROC_LIST anti_delta(1950)- : Decay
+PROC_LIST anti_delta(1950)- : Transportation
+PROC_LIST anti_delta(1950)0 : Decay
+PROC_LIST anti_delta(1950)0 : Transportation
+PROC_LIST anti_delta+ : Decay
+PROC_LIST anti_delta+ : Transportation
+PROC_LIST anti_delta++ : Decay
+PROC_LIST anti_delta++ : Transportation
+PROC_LIST anti_delta- : Decay
+PROC_LIST anti_delta- : Transportation
+PROC_LIST anti_delta0 : Decay
+PROC_LIST anti_delta0 : Transportation
+PROC_LIST anti_deuteron : Transportation
+PROC_LIST anti_deuteron : hIoni
+PROC_LIST anti_deuteron : hIoni_NoSeco
+PROC_LIST anti_deuteron : msc
+PROC_LIST anti_k(1460)0 : Decay
+PROC_LIST anti_k(1460)0 : Transportation
+PROC_LIST anti_k0_star(1430)0 : Decay
+PROC_LIST anti_k0_star(1430)0 : Transportation
+PROC_LIST anti_k1(1270)0 : Decay
+PROC_LIST anti_k1(1270)0 : Transportation
+PROC_LIST anti_k1(1400)0 : Decay
+PROC_LIST anti_k1(1400)0 : Transportation
+PROC_LIST anti_k2(1770)0 : Decay
+PROC_LIST anti_k2(1770)0 : Transportation
+PROC_LIST anti_k2_star(1430)0 : Decay
+PROC_LIST anti_k2_star(1430)0 : Transportation
+PROC_LIST anti_k2_star(1980)0 : Decay
+PROC_LIST anti_k2_star(1980)0 : Transportation
+PROC_LIST anti_k3_star(1780)0 : Decay
+PROC_LIST anti_k3_star(1780)0 : Transportation
+PROC_LIST anti_k_star(1410)0 : Decay
+PROC_LIST anti_k_star(1410)0 : Transportation
+PROC_LIST anti_k_star(1680)0 : Decay
+PROC_LIST anti_k_star(1680)0 : Transportation
+PROC_LIST anti_k_star0 : Decay
+PROC_LIST anti_k_star0 : Transportation
+PROC_LIST anti_kaon0 : Decay
+PROC_LIST anti_kaon0 : Transportation
+PROC_LIST anti_lambda : AntiLambdaInelastic
+PROC_LIST anti_lambda : Decay
+PROC_LIST anti_lambda : Transportation
+PROC_LIST anti_lambda : hadElastic
+PROC_LIST anti_lambda(1405) : Decay
+PROC_LIST anti_lambda(1405) : Transportation
+PROC_LIST anti_lambda(1520) : Decay
+PROC_LIST anti_lambda(1520) : Transportation
+PROC_LIST anti_lambda(1600) : Decay
+PROC_LIST anti_lambda(1600) : Transportation
+PROC_LIST anti_lambda(1670) : Decay
+PROC_LIST anti_lambda(1670) : Transportation
+PROC_LIST anti_lambda(1690) : Decay
+PROC_LIST anti_lambda(1690) : Transportation
+PROC_LIST anti_lambda(1800) : Decay
+PROC_LIST anti_lambda(1800) : Transportation
+PROC_LIST anti_lambda(1810) : Decay
+PROC_LIST anti_lambda(1810) : Transportation
+PROC_LIST anti_lambda(1820) : Decay
+PROC_LIST anti_lambda(1820) : Transportation
+PROC_LIST anti_lambda(1830) : Decay
+PROC_LIST anti_lambda(1830) : Transportation
+PROC_LIST anti_lambda(1890) : Decay
+PROC_LIST anti_lambda(1890) : Transportation
+PROC_LIST anti_lambda(2100) : Decay
+PROC_LIST anti_lambda(2100) : Transportation
+PROC_LIST anti_lambda(2110) : Decay
+PROC_LIST anti_lambda(2110) : Transportation
+PROC_LIST anti_lambda_c+ : Decay
+PROC_LIST anti_lambda_c+ : Transportation
+PROC_LIST anti_lambda_c+ : hIoni
+PROC_LIST anti_lambda_c+ : hIoni_NoSeco
+PROC_LIST anti_lambda_c+ : msc
+PROC_LIST anti_neutron : AntiNeutronInelastic
+PROC_LIST anti_neutron : Transportation
+PROC_LIST anti_neutron : hadElastic
+PROC_LIST anti_nu_e : Transportation
+PROC_LIST anti_nu_mu : Transportation
+PROC_LIST anti_nu_tau : Transportation
+PROC_LIST anti_omega- : AntiOmegaMinusInelastic
+PROC_LIST anti_omega- : Decay
+PROC_LIST anti_omega- : Transportation
+PROC_LIST anti_omega- : hIoni
+PROC_LIST anti_omega- : hIoni_NoSeco
+PROC_LIST anti_omega- : hadElastic
+PROC_LIST anti_omega- : msc
+PROC_LIST anti_omega_c0 : Decay
+PROC_LIST anti_omega_c0 : Transportation
+PROC_LIST anti_proton : AntiProtonInelastic
+PROC_LIST anti_proton : CHIPSNuclearCaptureAtRest
+PROC_LIST anti_proton : Transportation
+PROC_LIST anti_proton : hIoni
+PROC_LIST anti_proton : hIoni_NoSeco
+PROC_LIST anti_proton : hadElastic
+PROC_LIST anti_proton : msc
+PROC_LIST anti_s_quark : Transportation
+PROC_LIST anti_sd0_diquark : Transportation
+PROC_LIST anti_sd1_diquark : Transportation
+PROC_LIST anti_sigma(1385)+ : Decay
+PROC_LIST anti_sigma(1385)+ : Transportation
+PROC_LIST anti_sigma(1385)- : Decay
+PROC_LIST anti_sigma(1385)- : Transportation
+PROC_LIST anti_sigma(1385)0 : Decay
+PROC_LIST anti_sigma(1385)0 : Transportation
+PROC_LIST anti_sigma(1660)+ : Decay
+PROC_LIST anti_sigma(1660)+ : Transportation
+PROC_LIST anti_sigma(1660)- : Decay
+PROC_LIST anti_sigma(1660)- : Transportation
+PROC_LIST anti_sigma(1660)0 : Decay
+PROC_LIST anti_sigma(1660)0 : Transportation
+PROC_LIST anti_sigma(1670)+ : Decay
+PROC_LIST anti_sigma(1670)+ : Transportation
+PROC_LIST anti_sigma(1670)- : Decay
+PROC_LIST anti_sigma(1670)- : Transportation
+PROC_LIST anti_sigma(1670)0 : Decay
+PROC_LIST anti_sigma(1670)0 : Transportation
+PROC_LIST anti_sigma(1750)+ : Decay
+PROC_LIST anti_sigma(1750)+ : Transportation
+PROC_LIST anti_sigma(1750)- : Decay
+PROC_LIST anti_sigma(1750)- : Transportation
+PROC_LIST anti_sigma(1750)0 : Decay
+PROC_LIST anti_sigma(1750)0 : Transportation
+PROC_LIST anti_sigma(1775)+ : Decay
+PROC_LIST anti_sigma(1775)+ : Transportation
+PROC_LIST anti_sigma(1775)- : Decay
+PROC_LIST anti_sigma(1775)- : Transportation
+PROC_LIST anti_sigma(1775)0 : Decay
+PROC_LIST anti_sigma(1775)0 : Transportation
+PROC_LIST anti_sigma(1915)+ : Decay
+PROC_LIST anti_sigma(1915)+ : Transportation
+PROC_LIST anti_sigma(1915)- : Decay
+PROC_LIST anti_sigma(1915)- : Transportation
+PROC_LIST anti_sigma(1915)0 : Decay
+PROC_LIST anti_sigma(1915)0 : Transportation
+PROC_LIST anti_sigma(1940)+ : Decay
+PROC_LIST anti_sigma(1940)+ : Transportation
+PROC_LIST anti_sigma(1940)- : Decay
+PROC_LIST anti_sigma(1940)- : Transportation
+PROC_LIST anti_sigma(1940)0 : Decay
+PROC_LIST anti_sigma(1940)0 : Transportation
+PROC_LIST anti_sigma(2030)+ : Decay
+PROC_LIST anti_sigma(2030)+ : Transportation
+PROC_LIST anti_sigma(2030)- : Decay
+PROC_LIST anti_sigma(2030)- : Transportation
+PROC_LIST anti_sigma(2030)0 : Decay
+PROC_LIST anti_sigma(2030)0 : Transportation
+PROC_LIST anti_sigma+ : AntiSigmaPlusInelastic
+PROC_LIST anti_sigma+ : CHIPSNuclearCaptureAtRest
+PROC_LIST anti_sigma+ : Decay
+PROC_LIST anti_sigma+ : Transportation
+PROC_LIST anti_sigma+ : hIoni
+PROC_LIST anti_sigma+ : hIoni_NoSeco
+PROC_LIST anti_sigma+ : hadElastic
+PROC_LIST anti_sigma+ : msc
+PROC_LIST anti_sigma- : AntiSigmaMinusInelastic
+PROC_LIST anti_sigma- : Decay
+PROC_LIST anti_sigma- : Transportation
+PROC_LIST anti_sigma- : hIoni
+PROC_LIST anti_sigma- : hIoni_NoSeco
+PROC_LIST anti_sigma- : hadElastic
+PROC_LIST anti_sigma- : msc
+PROC_LIST anti_sigma0 : Decay
+PROC_LIST anti_sigma0 : Transportation
+PROC_LIST anti_sigma_c+ : Decay
+PROC_LIST anti_sigma_c+ : Transportation
+PROC_LIST anti_sigma_c+ : hIoni
+PROC_LIST anti_sigma_c+ : hIoni_NoSeco
+PROC_LIST anti_sigma_c+ : msc
+PROC_LIST anti_sigma_c++ : Decay
+PROC_LIST anti_sigma_c++ : Transportation
+PROC_LIST anti_sigma_c++ : hIoni
+PROC_LIST anti_sigma_c++ : hIoni_NoSeco
+PROC_LIST anti_sigma_c++ : msc
+PROC_LIST anti_sigma_c0 : Decay
+PROC_LIST anti_sigma_c0 : Transportation
+PROC_LIST anti_ss1_diquark : Transportation
+PROC_LIST anti_su0_diquark : Transportation
+PROC_LIST anti_su1_diquark : Transportation
+PROC_LIST anti_t_quark : Transportation
+PROC_LIST anti_triton : Transportation
+PROC_LIST anti_triton : hIoni
+PROC_LIST anti_triton : hIoni_NoSeco
+PROC_LIST anti_triton : msc
+PROC_LIST anti_u_quark : Transportation
+PROC_LIST anti_ud0_diquark : Transportation
+PROC_LIST anti_ud1_diquark : Transportation
+PROC_LIST anti_uu1_diquark : Transportation
+PROC_LIST anti_xi(1530)- : Decay
+PROC_LIST anti_xi(1530)- : Transportation
+PROC_LIST anti_xi(1530)0 : Decay
+PROC_LIST anti_xi(1530)0 : Transportation
+PROC_LIST anti_xi(1690)- : Decay
+PROC_LIST anti_xi(1690)- : Transportation
+PROC_LIST anti_xi(1690)0 : Decay
+PROC_LIST anti_xi(1690)0 : Transportation
+PROC_LIST anti_xi(1820)- : Decay
+PROC_LIST anti_xi(1820)- : Transportation
+PROC_LIST anti_xi(1820)0 : Decay
+PROC_LIST anti_xi(1820)0 : Transportation
+PROC_LIST anti_xi(1950)- : Decay
+PROC_LIST anti_xi(1950)- : Transportation
+PROC_LIST anti_xi(1950)0 : Decay
+PROC_LIST anti_xi(1950)0 : Transportation
+PROC_LIST anti_xi(2030)- : Decay
+PROC_LIST anti_xi(2030)- : Transportation
+PROC_LIST anti_xi(2030)0 : Decay
+PROC_LIST anti_xi(2030)0 : Transportation
+PROC_LIST anti_xi- : AntiXiMinusInelastic
+PROC_LIST anti_xi- : Decay
+PROC_LIST anti_xi- : Transportation
+PROC_LIST anti_xi- : hIoni
+PROC_LIST anti_xi- : hIoni_NoSeco
+PROC_LIST anti_xi- : hadElastic
+PROC_LIST anti_xi- : msc
+PROC_LIST anti_xi0 : AntiXiZeroInelastic
+PROC_LIST anti_xi0 : Decay
+PROC_LIST anti_xi0 : Transportation
+PROC_LIST anti_xi0 : hadElastic
+PROC_LIST anti_xi_c+ : Decay
+PROC_LIST anti_xi_c+ : Transportation
+PROC_LIST anti_xi_c+ : hIoni
+PROC_LIST anti_xi_c+ : hIoni_NoSeco
+PROC_LIST anti_xi_c+ : msc
+PROC_LIST anti_xi_c0 : Decay
+PROC_LIST anti_xi_c0 : Transportation
+PROC_LIST b1(1235)+ : Decay
+PROC_LIST b1(1235)+ : Transportation
+PROC_LIST b1(1235)- : Decay
+PROC_LIST b1(1235)- : Transportation
+PROC_LIST b1(1235)0 : Decay
+PROC_LIST b1(1235)0 : Transportation
+PROC_LIST b_quark : Transportation
+PROC_LIST c_quark : Transportation
+PROC_LIST chargedgeantino : Transportation
+PROC_LIST d_quark : Transportation
+PROC_LIST dd1_diquark : Transportation
+PROC_LIST delta(1600)+ : Decay
+PROC_LIST delta(1600)+ : Transportation
+PROC_LIST delta(1600)++ : Decay
+PROC_LIST delta(1600)++ : Transportation
+PROC_LIST delta(1600)- : Decay
+PROC_LIST delta(1600)- : Transportation
+PROC_LIST delta(1600)0 : Decay
+PROC_LIST delta(1600)0 : Transportation
+PROC_LIST delta(1620)+ : Decay
+PROC_LIST delta(1620)+ : Transportation
+PROC_LIST delta(1620)++ : Decay
+PROC_LIST delta(1620)++ : Transportation
+PROC_LIST delta(1620)- : Decay
+PROC_LIST delta(1620)- : Transportation
+PROC_LIST delta(1620)0 : Decay
+PROC_LIST delta(1620)0 : Transportation
+PROC_LIST delta(1700)+ : Decay
+PROC_LIST delta(1700)+ : Transportation
+PROC_LIST delta(1700)++ : Decay
+PROC_LIST delta(1700)++ : Transportation
+PROC_LIST delta(1700)- : Decay
+PROC_LIST delta(1700)- : Transportation
+PROC_LIST delta(1700)0 : Decay
+PROC_LIST delta(1700)0 : Transportation
+PROC_LIST delta(1900)+ : Decay
+PROC_LIST delta(1900)+ : Transportation
+PROC_LIST delta(1900)++ : Decay
+PROC_LIST delta(1900)++ : Transportation
+PROC_LIST delta(1900)- : Decay
+PROC_LIST delta(1900)- : Transportation
+PROC_LIST delta(1900)0 : Decay
+PROC_LIST delta(1900)0 : Transportation
+PROC_LIST delta(1905)+ : Decay
+PROC_LIST delta(1905)+ : Transportation
+PROC_LIST delta(1905)++ : Decay
+PROC_LIST delta(1905)++ : Transportation
+PROC_LIST delta(1905)- : Decay
+PROC_LIST delta(1905)- : Transportation
+PROC_LIST delta(1905)0 : Decay
+PROC_LIST delta(1905)0 : Transportation
+PROC_LIST delta(1910)+ : Decay
+PROC_LIST delta(1910)+ : Transportation
+PROC_LIST delta(1910)++ : Decay
+PROC_LIST delta(1910)++ : Transportation
+PROC_LIST delta(1910)- : Decay
+PROC_LIST delta(1910)- : Transportation
+PROC_LIST delta(1910)0 : Decay
+PROC_LIST delta(1910)0 : Transportation
+PROC_LIST delta(1920)+ : Decay
+PROC_LIST delta(1920)+ : Transportation
+PROC_LIST delta(1920)++ : Decay
+PROC_LIST delta(1920)++ : Transportation
+PROC_LIST delta(1920)- : Decay
+PROC_LIST delta(1920)- : Transportation
+PROC_LIST delta(1920)0 : Decay
+PROC_LIST delta(1920)0 : Transportation
+PROC_LIST delta(1930)+ : Decay
+PROC_LIST delta(1930)+ : Transportation
+PROC_LIST delta(1930)++ : Decay
+PROC_LIST delta(1930)++ : Transportation
+PROC_LIST delta(1930)- : Decay
+PROC_LIST delta(1930)- : Transportation
+PROC_LIST delta(1930)0 : Decay
+PROC_LIST delta(1930)0 : Transportation
+PROC_LIST delta(1950)+ : Decay
+PROC_LIST delta(1950)+ : Transportation
+PROC_LIST delta(1950)++ : Decay
+PROC_LIST delta(1950)++ : Transportation
+PROC_LIST delta(1950)- : Decay
+PROC_LIST delta(1950)- : Transportation
+PROC_LIST delta(1950)0 : Decay
+PROC_LIST delta(1950)0 : Transportation
+PROC_LIST delta+ : Decay
+PROC_LIST delta+ : Transportation
+PROC_LIST delta++ : Decay
+PROC_LIST delta++ : Transportation
+PROC_LIST delta- : Decay
+PROC_LIST delta- : Transportation
+PROC_LIST delta0 : Decay
+PROC_LIST delta0 : Transportation
+PROC_LIST deuteron : Transportation
+PROC_LIST deuteron : dInelastic
+PROC_LIST deuteron : hIoni
+PROC_LIST deuteron : hIoni_NoSeco
+PROC_LIST deuteron : hadElastic
+PROC_LIST deuteron : msc
+PROC_LIST e+ : PositronNuclear
+PROC_LIST e+ : Transportation
+PROC_LIST e+ : annihil
+PROC_LIST e+ : eBrem
+PROC_LIST e+ : eBrem_NoSeco
+PROC_LIST e+ : eIoni
+PROC_LIST e+ : eIoni_NoSeco
+PROC_LIST e+ : msc
+PROC_LIST e- : ElectroNuclear
+PROC_LIST e- : Transportation
+PROC_LIST e- : eBrem
+PROC_LIST e- : eBrem_NoSeco
+PROC_LIST e- : eIoni
+PROC_LIST e- : eIoni_NoSeco
+PROC_LIST e- : msc
+PROC_LIST eta : Decay
+PROC_LIST eta : Transportation
+PROC_LIST eta(1295) : Decay
+PROC_LIST eta(1295) : Transportation
+PROC_LIST eta(1405) : Decay
+PROC_LIST eta(1405) : Transportation
+PROC_LIST eta(1475) : Decay
+PROC_LIST eta(1475) : Transportation
+PROC_LIST eta2(1645) : Decay
+PROC_LIST eta2(1645) : Transportation
+PROC_LIST eta2(1870) : Decay
+PROC_LIST eta2(1870) : Transportation
+PROC_LIST eta_prime : Decay
+PROC_LIST eta_prime : Transportation
+PROC_LIST f0(1370) : Decay
+PROC_LIST f0(1370) : Transportation
+PROC_LIST f0(1500) : Decay
+PROC_LIST f0(1500) : Transportation
+PROC_LIST f0(1710) : Decay
+PROC_LIST f0(1710) : Transportation
+PROC_LIST f0(600) : Decay
+PROC_LIST f0(600) : Transportation
+PROC_LIST f0(980) : Decay
+PROC_LIST f0(980) : Transportation
+PROC_LIST f1(1285) : Decay
+PROC_LIST f1(1285) : Transportation
+PROC_LIST f1(1420) : Decay
+PROC_LIST f1(1420) : Transportation
+PROC_LIST f2(1270) : Decay
+PROC_LIST f2(1270) : Transportation
+PROC_LIST f2(1810) : Decay
+PROC_LIST f2(1810) : Transportation
+PROC_LIST f2(2010) : Decay
+PROC_LIST f2(2010) : Transportation
+PROC_LIST f2_prime(1525) : Decay
+PROC_LIST f2_prime(1525) : Transportation
+PROC_LIST gamma : PhotonInelastic
+PROC_LIST gamma : Transportation
+PROC_LIST gamma : compt
+PROC_LIST gamma : conv
+PROC_LIST gamma : phot
+PROC_LIST geantino : Transportation
+PROC_LIST gluon : Transportation
+PROC_LIST h1(1170) : Decay
+PROC_LIST h1(1170) : Transportation
+PROC_LIST h1(1380) : Decay
+PROC_LIST h1(1380) : Transportation
+PROC_LIST k(1460)+ : Decay
+PROC_LIST k(1460)+ : Transportation
+PROC_LIST k(1460)- : Decay
+PROC_LIST k(1460)- : Transportation
+PROC_LIST k(1460)0 : Decay
+PROC_LIST k(1460)0 : Transportation
+PROC_LIST k0_star(1430)+ : Decay
+PROC_LIST k0_star(1430)+ : Transportation
+PROC_LIST k0_star(1430)- : Decay
+PROC_LIST k0_star(1430)- : Transportation
+PROC_LIST k0_star(1430)0 : Decay
+PROC_LIST k0_star(1430)0 : Transportation
+PROC_LIST k1(1270)+ : Decay
+PROC_LIST k1(1270)+ : Transportation
+PROC_LIST k1(1270)- : Decay
+PROC_LIST k1(1270)- : Transportation
+PROC_LIST k1(1270)0 : Decay
+PROC_LIST k1(1270)0 : Transportation
+PROC_LIST k1(1400)+ : Decay
+PROC_LIST k1(1400)+ : Transportation
+PROC_LIST k1(1400)- : Decay
+PROC_LIST k1(1400)- : Transportation
+PROC_LIST k1(1400)0 : Decay
+PROC_LIST k1(1400)0 : Transportation
+PROC_LIST k2(1770)+ : Decay
+PROC_LIST k2(1770)+ : Transportation
+PROC_LIST k2(1770)- : Decay
+PROC_LIST k2(1770)- : Transportation
+PROC_LIST k2(1770)0 : Decay
+PROC_LIST k2(1770)0 : Transportation
+PROC_LIST k2_star(1430)+ : Decay
+PROC_LIST k2_star(1430)+ : Transportation
+PROC_LIST k2_star(1430)- : Decay
+PROC_LIST k2_star(1430)- : Transportation
+PROC_LIST k2_star(1430)0 : Decay
+PROC_LIST k2_star(1430)0 : Transportation
+PROC_LIST k2_star(1980)+ : Decay
+PROC_LIST k2_star(1980)+ : Transportation
+PROC_LIST k2_star(1980)- : Decay
+PROC_LIST k2_star(1980)- : Transportation
+PROC_LIST k2_star(1980)0 : Decay
+PROC_LIST k2_star(1980)0 : Transportation
+PROC_LIST k3_star(1780)+ : Decay
+PROC_LIST k3_star(1780)+ : Transportation
+PROC_LIST k3_star(1780)- : Decay
+PROC_LIST k3_star(1780)- : Transportation
+PROC_LIST k3_star(1780)0 : Decay
+PROC_LIST k3_star(1780)0 : Transportation
+PROC_LIST k_star(1410)+ : Decay
+PROC_LIST k_star(1410)+ : Transportation
+PROC_LIST k_star(1410)- : Decay
+PROC_LIST k_star(1410)- : Transportation
+PROC_LIST k_star(1410)0 : Decay
+PROC_LIST k_star(1410)0 : Transportation
+PROC_LIST k_star(1680)+ : Decay
+PROC_LIST k_star(1680)+ : Transportation
+PROC_LIST k_star(1680)- : Decay
+PROC_LIST k_star(1680)- : Transportation
+PROC_LIST k_star(1680)0 : Decay
+PROC_LIST k_star(1680)0 : Transportation
+PROC_LIST k_star+ : Decay
+PROC_LIST k_star+ : Transportation
+PROC_LIST k_star- : Decay
+PROC_LIST k_star- : Transportation
+PROC_LIST k_star0 : Decay
+PROC_LIST k_star0 : Transportation
+PROC_LIST kaon+ : Decay
+PROC_LIST kaon+ : KaonPlusInelastic
+PROC_LIST kaon+ : Transportation
+PROC_LIST kaon+ : hBrems
+PROC_LIST kaon+ : hBrems_NoSeco
+PROC_LIST kaon+ : hIoni
+PROC_LIST kaon+ : hIoni_NoSeco
+PROC_LIST kaon+ : hPairProd
+PROC_LIST kaon+ : hadElastic
+PROC_LIST kaon+ : msc
+PROC_LIST kaon- : CHIPSNuclearCaptureAtRest
+PROC_LIST kaon- : Decay
+PROC_LIST kaon- : KaonMinusInelastic
+PROC_LIST kaon- : Transportation
+PROC_LIST kaon- : hBrems
+PROC_LIST kaon- : hBrems_NoSeco
+PROC_LIST kaon- : hIoni
+PROC_LIST kaon- : hIoni_NoSeco
+PROC_LIST kaon- : hPairProd
+PROC_LIST kaon- : hadElastic
+PROC_LIST kaon- : msc
+PROC_LIST kaon0 : Decay
+PROC_LIST kaon0 : Transportation
+PROC_LIST kaon0L : Decay
+PROC_LIST kaon0L : KaonZeroLInelastic
+PROC_LIST kaon0L : Transportation
+PROC_LIST kaon0L : hadElastic
+PROC_LIST kaon0S : Decay
+PROC_LIST kaon0S : KaonZeroSInelastic
+PROC_LIST kaon0S : Transportation
+PROC_LIST kaon0S : hadElastic
+PROC_LIST lambda : Decay
+PROC_LIST lambda : LambdaInelastic
+PROC_LIST lambda : Transportation
+PROC_LIST lambda : hadElastic
+PROC_LIST lambda(1405) : Decay
+PROC_LIST lambda(1405) : Transportation
+PROC_LIST lambda(1520) : Decay
+PROC_LIST lambda(1520) : Transportation
+PROC_LIST lambda(1600) : Decay
+PROC_LIST lambda(1600) : Transportation
+PROC_LIST lambda(1670) : Decay
+PROC_LIST lambda(1670) : Transportation
+PROC_LIST lambda(1690) : Decay
+PROC_LIST lambda(1690) : Transportation
+PROC_LIST lambda(1800) : Decay
+PROC_LIST lambda(1800) : Transportation
+PROC_LIST lambda(1810) : Decay
+PROC_LIST lambda(1810) : Transportation
+PROC_LIST lambda(1820) : Decay
+PROC_LIST lambda(1820) : Transportation
+PROC_LIST lambda(1830) : Decay
+PROC_LIST lambda(1830) : Transportation
+PROC_LIST lambda(1890) : Decay
+PROC_LIST lambda(1890) : Transportation
+PROC_LIST lambda(2100) : Decay
+PROC_LIST lambda(2100) : Transportation
+PROC_LIST lambda(2110) : Decay
+PROC_LIST lambda(2110) : Transportation
+PROC_LIST lambda_c+ : Decay
+PROC_LIST lambda_c+ : Transportation
+PROC_LIST lambda_c+ : hIoni
+PROC_LIST lambda_c+ : hIoni_NoSeco
+PROC_LIST lambda_c+ : msc
+PROC_LIST mu+ : CoulombScat
+PROC_LIST mu+ : Decay
+PROC_LIST mu+ : Transportation
+PROC_LIST mu+ : muBrems
+PROC_LIST mu+ : muBrems_NoSeco
+PROC_LIST mu+ : muIoni
+PROC_LIST mu+ : muIoni_NoSeco
+PROC_LIST mu+ : muMsc
+PROC_LIST mu+ : muPairProd
+PROC_LIST mu- : CoulombScat
+PROC_LIST mu- : Decay
+PROC_LIST mu- : Transportation
+PROC_LIST mu- : muBrems
+PROC_LIST mu- : muBrems_NoSeco
+PROC_LIST mu- : muIoni
+PROC_LIST mu- : muIoni_NoSeco
+PROC_LIST mu- : muMinusCaptureAtRest
+PROC_LIST mu- : muMsc
+PROC_LIST mu- : muPairProd
+PROC_LIST neutron : Decay
+PROC_LIST neutron : NeutronInelastic
+PROC_LIST neutron : Transportation
+PROC_LIST neutron : hadElastic
+PROC_LIST neutron : nCapture
+PROC_LIST neutron : nFission
+PROC_LIST nu_e : Transportation
+PROC_LIST nu_mu : Transportation
+PROC_LIST nu_tau : Transportation
+PROC_LIST omega : Decay
+PROC_LIST omega : Transportation
+PROC_LIST omega(1420) : Decay
+PROC_LIST omega(1420) : Transportation
+PROC_LIST omega(1650) : Decay
+PROC_LIST omega(1650) : Transportation
+PROC_LIST omega- : CHIPSNuclearCaptureAtRest
+PROC_LIST omega- : Decay
+PROC_LIST omega- : OmegaMinusInelastic
+PROC_LIST omega- : Transportation
+PROC_LIST omega- : hIoni
+PROC_LIST omega- : hIoni_NoSeco
+PROC_LIST omega- : hadElastic
+PROC_LIST omega- : msc
+PROC_LIST omega3(1670) : Decay
+PROC_LIST omega3(1670) : Transportation
+PROC_LIST omega_c0 : Decay
+PROC_LIST omega_c0 : Transportation
+PROC_LIST opticalphoton : Transportation
+PROC_LIST phi : Decay
+PROC_LIST phi : Transportation
+PROC_LIST phi(1680) : Decay
+PROC_LIST phi(1680) : Transportation
+PROC_LIST phi3(1850) : Decay
+PROC_LIST phi3(1850) : Transportation
+PROC_LIST pi(1300)+ : Decay
+PROC_LIST pi(1300)+ : Transportation
+PROC_LIST pi(1300)- : Decay
+PROC_LIST pi(1300)- : Transportation
+PROC_LIST pi(1300)0 : Decay
+PROC_LIST pi(1300)0 : Transportation
+PROC_LIST pi+ : Decay
+PROC_LIST pi+ : PionPlusInelastic
+PROC_LIST pi+ : Transportation
+PROC_LIST pi+ : hBrems
+PROC_LIST pi+ : hBrems_NoSeco
+PROC_LIST pi+ : hIoni
+PROC_LIST pi+ : hIoni_NoSeco
+PROC_LIST pi+ : hPairProd
+PROC_LIST pi+ : hadElastic
+PROC_LIST pi+ : msc
+PROC_LIST pi- : CHIPSNuclearCaptureAtRest
+PROC_LIST pi- : Decay
+PROC_LIST pi- : PionMinusInelastic
+PROC_LIST pi- : Transportation
+PROC_LIST pi- : hBrems
+PROC_LIST pi- : hBrems_NoSeco
+PROC_LIST pi- : hIoni
+PROC_LIST pi- : hIoni_NoSeco
+PROC_LIST pi- : hPairProd
+PROC_LIST pi- : hadElastic
+PROC_LIST pi- : msc
+PROC_LIST pi0 : Decay
+PROC_LIST pi0 : Transportation
+PROC_LIST pi2(1670)+ : Decay
+PROC_LIST pi2(1670)+ : Transportation
+PROC_LIST pi2(1670)- : Decay
+PROC_LIST pi2(1670)- : Transportation
+PROC_LIST pi2(1670)0 : Decay
+PROC_LIST pi2(1670)0 : Transportation
+PROC_LIST proton : ProtonInelastic
+PROC_LIST proton : Transportation
+PROC_LIST proton : hBrems
+PROC_LIST proton : hBrems_NoSeco
+PROC_LIST proton : hIoni
+PROC_LIST proton : hIoni_NoSeco
+PROC_LIST proton : hPairProd
+PROC_LIST proton : hadElastic
+PROC_LIST proton : msc
+PROC_LIST rho(1450)+ : Decay
+PROC_LIST rho(1450)+ : Transportation
+PROC_LIST rho(1450)- : Decay
+PROC_LIST rho(1450)- : Transportation
+PROC_LIST rho(1450)0 : Decay
+PROC_LIST rho(1450)0 : Transportation
+PROC_LIST rho(1700)+ : Decay
+PROC_LIST rho(1700)+ : Transportation
+PROC_LIST rho(1700)- : Decay
+PROC_LIST rho(1700)- : Transportation
+PROC_LIST rho(1700)0 : Decay
+PROC_LIST rho(1700)0 : Transportation
+PROC_LIST rho+ : Decay
+PROC_LIST rho+ : Transportation
+PROC_LIST rho- : Decay
+PROC_LIST rho- : Transportation
+PROC_LIST rho0 : Decay
+PROC_LIST rho0 : Transportation
+PROC_LIST rho3(1690)+ : Decay
+PROC_LIST rho3(1690)+ : Transportation
+PROC_LIST rho3(1690)- : Decay
+PROC_LIST rho3(1690)- : Transportation
+PROC_LIST rho3(1690)0 : Decay
+PROC_LIST rho3(1690)0 : Transportation
+PROC_LIST s_quark : Transportation
+PROC_LIST sd0_diquark : Transportation
+PROC_LIST sd1_diquark : Transportation
+PROC_LIST sigma(1385)+ : Decay
+PROC_LIST sigma(1385)+ : Transportation
+PROC_LIST sigma(1385)- : Decay
+PROC_LIST sigma(1385)- : Transportation
+PROC_LIST sigma(1385)0 : Decay
+PROC_LIST sigma(1385)0 : Transportation
+PROC_LIST sigma(1660)+ : Decay
+PROC_LIST sigma(1660)+ : Transportation
+PROC_LIST sigma(1660)- : Decay
+PROC_LIST sigma(1660)- : Transportation
+PROC_LIST sigma(1660)0 : Decay
+PROC_LIST sigma(1660)0 : Transportation
+PROC_LIST sigma(1670)+ : Decay
+PROC_LIST sigma(1670)+ : Transportation
+PROC_LIST sigma(1670)- : Decay
+PROC_LIST sigma(1670)- : Transportation
+PROC_LIST sigma(1670)0 : Decay
+PROC_LIST sigma(1670)0 : Transportation
+PROC_LIST sigma(1750)+ : Decay
+PROC_LIST sigma(1750)+ : Transportation
+PROC_LIST sigma(1750)- : Decay
+PROC_LIST sigma(1750)- : Transportation
+PROC_LIST sigma(1750)0 : Decay
+PROC_LIST sigma(1750)0 : Transportation
+PROC_LIST sigma(1775)+ : Decay
+PROC_LIST sigma(1775)+ : Transportation
+PROC_LIST sigma(1775)- : Decay
+PROC_LIST sigma(1775)- : Transportation
+PROC_LIST sigma(1775)0 : Decay
+PROC_LIST sigma(1775)0 : Transportation
+PROC_LIST sigma(1915)+ : Decay
+PROC_LIST sigma(1915)+ : Transportation
+PROC_LIST sigma(1915)- : Decay
+PROC_LIST sigma(1915)- : Transportation
+PROC_LIST sigma(1915)0 : Decay
+PROC_LIST sigma(1915)0 : Transportation
+PROC_LIST sigma(1940)+ : Decay
+PROC_LIST sigma(1940)+ : Transportation
+PROC_LIST sigma(1940)- : Decay
+PROC_LIST sigma(1940)- : Transportation
+PROC_LIST sigma(1940)0 : Decay
+PROC_LIST sigma(1940)0 : Transportation
+PROC_LIST sigma(2030)+ : Decay
+PROC_LIST sigma(2030)+ : Transportation
+PROC_LIST sigma(2030)- : Decay
+PROC_LIST sigma(2030)- : Transportation
+PROC_LIST sigma(2030)0 : Decay
+PROC_LIST sigma(2030)0 : Transportation
+PROC_LIST sigma+ : Decay
+PROC_LIST sigma+ : SigmaPlusInelastic
+PROC_LIST sigma+ : Transportation
+PROC_LIST sigma+ : hIoni
+PROC_LIST sigma+ : hIoni_NoSeco
+PROC_LIST sigma+ : hadElastic
+PROC_LIST sigma+ : msc
+PROC_LIST sigma- : CHIPSNuclearCaptureAtRest
+PROC_LIST sigma- : Decay
+PROC_LIST sigma- : SigmaMinusInelastic
+PROC_LIST sigma- : Transportation
+PROC_LIST sigma- : hIoni
+PROC_LIST sigma- : hIoni_NoSeco
+PROC_LIST sigma- : hadElastic
+PROC_LIST sigma- : msc
+PROC_LIST sigma0 : Decay
+PROC_LIST sigma0 : Transportation
+PROC_LIST sigma_c+ : Decay
+PROC_LIST sigma_c+ : Transportation
+PROC_LIST sigma_c+ : hIoni
+PROC_LIST sigma_c+ : hIoni_NoSeco
+PROC_LIST sigma_c+ : msc
+PROC_LIST sigma_c++ : Decay
+PROC_LIST sigma_c++ : Transportation
+PROC_LIST sigma_c++ : hIoni
+PROC_LIST sigma_c++ : hIoni_NoSeco
+PROC_LIST sigma_c++ : msc
+PROC_LIST sigma_c0 : Decay
+PROC_LIST sigma_c0 : Transportation
+PROC_LIST ss1_diquark : Transportation
+PROC_LIST su0_diquark : Transportation
+PROC_LIST su1_diquark : Transportation
+PROC_LIST t_quark : Transportation
+PROC_LIST tau+ : Decay
+PROC_LIST tau+ : Transportation
+PROC_LIST tau+ : hIoni
+PROC_LIST tau+ : hIoni_NoSeco
+PROC_LIST tau+ : msc
+PROC_LIST tau- : CHIPSNuclearCaptureAtRest
+PROC_LIST tau- : Decay
+PROC_LIST tau- : Transportation
+PROC_LIST tau- : hIoni
+PROC_LIST tau- : hIoni_NoSeco
+PROC_LIST tau- : msc
+PROC_LIST triton : Transportation
+PROC_LIST triton : hIoni
+PROC_LIST triton : hIoni_NoSeco
+PROC_LIST triton : hadElastic
+PROC_LIST triton : msc
+PROC_LIST triton : tInelastic
+PROC_LIST u_quark : Transportation
+PROC_LIST ud0_diquark : Transportation
+PROC_LIST ud1_diquark : Transportation
+PROC_LIST uu1_diquark : Transportation
+PROC_LIST xi(1530)- : Decay
+PROC_LIST xi(1530)- : Transportation
+PROC_LIST xi(1530)0 : Decay
+PROC_LIST xi(1530)0 : Transportation
+PROC_LIST xi(1690)- : Decay
+PROC_LIST xi(1690)- : Transportation
+PROC_LIST xi(1690)0 : Decay
+PROC_LIST xi(1690)0 : Transportation
+PROC_LIST xi(1820)- : Decay
+PROC_LIST xi(1820)- : Transportation
+PROC_LIST xi(1820)0 : Decay
+PROC_LIST xi(1820)0 : Transportation
+PROC_LIST xi(1950)- : Decay
+PROC_LIST xi(1950)- : Transportation
+PROC_LIST xi(1950)0 : Decay
+PROC_LIST xi(1950)0 : Transportation
+PROC_LIST xi(2030)- : Decay
+PROC_LIST xi(2030)- : Transportation
+PROC_LIST xi(2030)0 : Decay
+PROC_LIST xi(2030)0 : Transportation
+PROC_LIST xi- : CHIPSNuclearCaptureAtRest
+PROC_LIST xi- : Decay
+PROC_LIST xi- : Transportation
+PROC_LIST xi- : XiMinusInelastic
+PROC_LIST xi- : hIoni
+PROC_LIST xi- : hIoni_NoSeco
+PROC_LIST xi- : hadElastic
+PROC_LIST xi- : msc
+PROC_LIST xi0 : Decay
+PROC_LIST xi0 : Transportation
+PROC_LIST xi0 : XiZeroInelastic
+PROC_LIST xi_c+ : Decay
+PROC_LIST xi_c+ : Transportation
+PROC_LIST xi_c+ : hIoni
+PROC_LIST xi_c+ : hIoni_NoSeco
+PROC_LIST xi_c+ : msc
+PROC_LIST xi_c0 : Decay
+PROC_LIST xi_c0 : Transportation
+Start Run processing.
+Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=14.77s Real=15.16s Sys=0.01s
+
+ MultiFunctionalDet: FluxDet
+ PrimitiveScorer: FluxScorer
+ Number of entries= 4
+  index: neutron  = 0.00245976 +-(REL) 0.00428955 cm-2
+  index: gamma  = 0.000260899 +-(REL) 0.0667861 cm-2
+  index: e-  = 3.40651e-06 +-(REL) 0.425108 cm-2
+  index: e+  = 6.95654e-07 +-(REL) 0.712181 cm-2
+FluxScorer SUM ALL: 0.00272476 +/- 2.04275e-05 cm-2
+@@@@@ GmCountProcessesUA neutronF_inShieldF
+PROC_COUNT neutron : NeutronInelastic = 537
+PROC_COUNT neutron : Transportation = 10484
+PROC_COUNT neutron : hadElastic = 2147
+PROC_COUNT neutron : nCapture = 1
+PROC_COUNT neutron : ALL = 13169
+PROC_CREATOR_COUNT neutron : NeutronInelastic = 554
+PART_LIST: neutron = 554
+Graphics systems deleted.
+Visualization Manager deleting...
+%%%%% PARAMETERS NOT USED (DEFINED IN SCRIPT BUT NOT USED BY C++ CODE) 
+%%%    MAYBE YOU HAVE MISSPELLED THEM? 
+PARAMETER: FluxScorer:SolidType
+%%%%% Table of indices for GmClassifierByParticle GmClassifierByParticle
+GmClassifierByParticle: e- = 2
+GmClassifierByParticle: gamma = 1
+GmClassifierByParticle: e+ = 3
+GmClassifierByParticle: neutron = 0

@@ -1,0 +1,28 @@
+# ROOT map file generated automatically by genmap on Fri Nov 13 13:11:22 2015
+
+Library.__pf__@@GmBaseVerbosity: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmUAVerbosity: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmGeometryFromText: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmGeometryUseMaterials: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmGeomTextDumperUA: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmGeomVerbosity: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmCheckOriginalGamma: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmAnalysisVerbosity: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmSDSimple: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmSDSimpleExactPos: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmSDVirtSegmentedSphereRThetaPhi: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmSDVirtSegmentedSphereThetaPhi: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmSDVirtSegmBox: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmSDOpticalPhoton: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmSDSeparateByTime: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmSDWithFilter: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmRecHitBuilderByDistance: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmRecHitBuilderByBlock: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmRecHitBuilder1to1: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmHitsHistosUA: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmRecHitsHistosUA: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmHitsWriteUA: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmHitsReadUA: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmRecHitsWriteUA: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmHistosGammaAtSD: libGamosCore_GamosSD.dylib
+Library.__pf__@@GmSDVerbosity: libGamosCore_GamosSD.dylib

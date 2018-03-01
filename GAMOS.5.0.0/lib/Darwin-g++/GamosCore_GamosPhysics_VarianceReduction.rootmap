@@ -1,0 +1,16 @@
+# ROOT map file generated automatically by genmap on Fri Nov 13 13:11:22 2015
+
+Library.__pf__@@GmBaseVerbosity: libGamosCore_GamosPhysics_VarianceReduction.dylib
+Library.__pf__@@GmUAVerbosity: libGamosCore_GamosPhysics_VarianceReduction.dylib
+Library.__pf__@@GmGeometryFromText: libGamosCore_GamosPhysics_VarianceReduction.dylib
+Library.__pf__@@GmGeometryUseMaterials: libGamosCore_GamosPhysics_VarianceReduction.dylib
+Library.__pf__@@GmGeomTextDumperUA: libGamosCore_GamosPhysics_VarianceReduction.dylib
+Library.__pf__@@GmGeomVerbosity: libGamosCore_GamosPhysics_VarianceReduction.dylib
+Library.__pf__@@GmEMPhysics: libGamosCore_GamosPhysics_VarianceReduction.dylib
+Library.__pf__@@GmEMExtendedPhysics: libGamosCore_GamosPhysics_VarianceReduction.dylib
+Library.__pf__@@HadrontherapyPhysics: libGamosCore_GamosPhysics_VarianceReduction.dylib
+Library.__pf__@@GmEMStandardPhysics: libGamosCore_GamosPhysics_VarianceReduction.dylib
+Library.__pf__@@GmPhysicsVerbosity: libGamosCore_GamosPhysics_VarianceReduction.dylib
+Library.__pf__@@GmBSScanWeightsUA: libGamosCore_GamosPhysics_VarianceReduction.dylib
+Library.__pf__@@GmBSControlHistosUA: libGamosCore_GamosPhysics_VarianceReduction.dylib
+Library.__pf__@@GmPSEMPhysics: libGamosCore_GamosPhysics_VarianceReduction.dylib

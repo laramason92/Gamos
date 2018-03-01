@@ -1,0 +1,10 @@
+
+-------- EEEE ------- G4Exception-START -------- EEEE -------
+*** G4Exception : UI0001
+      issued by : G4UIterminal::SignalHandler()
+KeyboardInterrput with Ctrl-C
+*** Fatal Exception *** core dump ***
+-------- EEEE -------- G4Exception-END --------- EEEE -------
+
+
+*** G4Exception: Aborting execution ***

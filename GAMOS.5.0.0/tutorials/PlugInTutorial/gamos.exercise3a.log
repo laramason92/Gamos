@@ -1,0 +1,17 @@
+/control/execute exercise3a.in
+/tracking/verbose 1
+/gamos/setParam GmGeometryFromText:FileName exercise3.geom
+/gamos/geometry GmGeometryFromText
+/gamos/physicsList GmEMPhysics
+/gamos/generator GmGenerator
+ GmGenUtils::FileInPath ./isotopes.dat in .
+ GmGenUtils::FileInPath /home/arce/gamosnew/GAMOS.5.0.0/data/isotopes.dat in /home/arce/gamosnew/GAMOS.5.0.0/data
+/gamos/userAction GmCountProcessesUA
+/run/initialize
+ GmGenUtils::FileInPath ./exercise3.geom in .
+GmEMPhysics PhysicsList:DEFAULT = gamma-lowener is registered
+GmEMPhysics PhysicsList: DEFAULT = electron-lowener is registered
+GmEMPhysics PhysicsList: DEFAULT = positron-standard is registered
+GmPhysicsGammaLowEner::ConstructProcess 
+/gamos/generator/addSingleParticleSource source gamma 10.*MeV
+/gamos/generator/positionDist source Exer2GenerDistPosition 1.*cm

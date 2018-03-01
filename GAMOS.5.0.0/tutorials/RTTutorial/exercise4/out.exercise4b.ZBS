@@ -1,0 +1,438 @@
+ GmGenUtils::FileInPath ./deprecatedCommands.lis in .
+ GmGenUtils::FileInPath /home/arce/gamosnew/GAMOS.5.0.0/data/deprecatedCommands.lis in /home/arce/gamosnew/GAMOS.5.0.0/data
+
+*************************************************************
+ Geant4 version Name: geant4-09-06-patch-02    (17-May-2013)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  FukuiRenderer (DAWN)
+  G4HepRep (HepRepXML)
+  G4HepRepFile (HepRepFile)
+  OpenGLImmediateX (OGLI, OGLIX)
+  OpenGLStoredX (OGL, OGLS, OGLSX)
+  RayTracer (RayTracer)
+  VRML1 (VRML1)
+  VRML1FILE (VRML1FILE)
+  VRML2 (VRML2)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByCharge
+  drawByParticleID
+  drawByOriginVolume
+  drawByAttribute
+
+Registered filter factories:
+  chargeFilter
+  particleFilter
+  originVolumeFilter
+  attributeFilter
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+Available colours:
+  black, blue, brown, cyan, gray, green, grey, magenta, red, white, yellow
+
+/control/execute exercise4b.ZBS.in
+/gamos/setParam GmReadPhantomGeometry:FileName ../exercise2/linac.geom
+/gamos/setParam GmSimplePhantomGeometry:MaterialNames G4_WATER G4_LUNG_ICRP G4_BONE_COMPACT_ICRU
+/gamos/setParam GmSimplePhantomGeometry:MaterialZVoxels 10 10 80
+/gamos/setParam GmSimplePhantomGeometry:MaterialDensities 1. 0.3 1.85
+/gamos/setParam GmSimplePhantomGeometry:NVoxels 10 10 100
+/gamos/setParam GmSimplePhantomGeometry:PhantomDims -500 500 -500 500 -500 500
+/gamos/setParam GmReadPhantomGeometry:InitialDisplacement 0. 0. 1400.
+/gamos/setParam GmReadPhantomGeometry:InitialRotAngles 0*deg 0. 0.
+/gamos/geometry GmSimplePhantomGeometry
+/gamos/physicsList GmPSEMPhysics
+/gamos/setParam GmParticleSplittingProcess:NSplit 10
+/gamos/setParam GmPSZPlaneDirChecker:XDim 15.*cm
+/gamos/setParam GmPSZPlaneDirChecker:YDim 15.*cm
+/gamos/setParam GmPSZPlaneDirChecker:ZPos 90.*cm
+/gamos/GmPhysics/addPhysics electron-lowener-ZBS
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : WARNING
+      issued by : GmPhysicsMessenger::SetNewValue
+You are using a deprecated command /gamos/GmPhysics/addPhysics , please use /gamos/GmPhysics/replacePhysics
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+GmEMPhysics::Replaceing PhysicsList component electron-lowener-ZBS
+GmpSEMPhysics::Replacing PhysicsList component electron-lowener-ZBS
+GmPSEMPhysics::ReplacePhysicsList: electron-lowener-ZBS is registered
+/gamos/GmPhysics/addPhysics positron-standard-ZBS
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : WARNING
+      issued by : GmPhysicsMessenger::SetNewValue
+You are using a deprecated command /gamos/GmPhysics/addPhysics , please use /gamos/GmPhysics/replacePhysics
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+GmEMPhysics::Replaceing PhysicsList component positron-standard-ZBS
+GmpSEMPhysics::Replacing PhysicsList component positron-standard-ZBS
+GmPSEMPhysics::ReplacePhysicsList: positron-standard-ZBS is registered
+/gamos/GmPhysics/addPhysics gamma-standard
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : WARNING
+      issued by : GmPhysicsMessenger::SetNewValue
+You are using a deprecated command /gamos/GmPhysics/addPhysics , please use /gamos/GmPhysics/replacePhysics
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+GmEMPhysics::Replaceing PhysicsList component gamma-standard
+GmEMPhysics::ReplacePhysicsList: gamma-standard is registered
+/gamos/generator GmGenerator
+ GmGenUtils::FileInPath ./isotopes.dat in .
+ GmGenUtils::FileInPath /home/arce/gamosnew/GAMOS.5.0.0/data/isotopes.dat in /home/arce/gamosnew/GAMOS.5.0.0/data
+/gamos/setParam GmAnalysisMgr:FileNameSuffix ZBS
+/gamos/setParam RTPhaseSpaceUA:FileName testZBS
+/gamos/setParam RTPhaseSpaceUA:ZStops 899
+/gamos/setParam RTPhaseSpaceUA:KillAfterLastZStop 1
+/gamos/userAction RTPhaseSpaceUA
+PluginService: Declared factory for class RTPhaseSpaceUA with signature GmUserAction* (void)
+PluginService: Declared factory for class RTGeneratorPhaseSpace with signature G4VUserPrimaryGeneratorAction* (void)
+PluginService: Declared factory for class RTVerbosity with signature GmVVerbosity* (void)
+PluginService: Declared factory for class RTZRLimitsAutoUA with signature GmUserAction* (void)
+PluginService: Declared factory for class RTZRLimitsUA with signature GmUserAction* (void)
+PluginService: Declared factory for class RTPSPDoseHistos with signature GmVPSPrinter* (G4String)
+PluginService: Declared factory for class RTReuseAtZPlaneUA with signature GmUserAction* (void)
+PluginService: Declared factory for class RTProdCutsStudyUA with signature GmUserAction* (void)
+PluginService: Declared factory for class RTMinRangeLimitsStudyUA with signature GmUserAction* (void)
+PluginService: Declared factory for class RTCutsStudyFilter with signature GmVFilter* (G4String)
+PluginService: Declared factory for class RTExtraInfoProviderOrigin with signature GmUserAction* (void)
+PluginService: Declared factory for class RTExtraInfoProviderInteractions with signature GmUserAction* (void)
+PluginService: Declared factory for class RTExtraInfoProviderCrossings with signature GmUserAction* (void)
+PluginService: Declared factory for class RTExtraInfoProviderZLast with signature GmUserAction* (void)
+PluginService: Declared factory for class RTExtraInfoProviderZOrigin with signature GmUserAction* (void)
+PluginService: Declared factory for class RTClassifierByEILong with signature GmVClassifier* (G4String)
+PluginService: Declared factory for class RTFilterByEILong with signature GmVFilter* (G4String)
+PluginService: Loaded library  /home/arce/gamosnew/GAMOS.5.0.0/lib/Linux-g++/libsumSqdose.so
+/gamos/userAction GmCountTracksUA
+/run/initialize
+ GmGenUtils::FileInPath ./../exercise2/linac.geom in .
+ CreateHisto1D ENERGY LOST BY e- = 98229
+ CreateHisto1D DIR THETA  = 98230
+ CreateHisto1D ENERGY BREMS ALL = 98231
+ CreateHisto1D ENERGY BREMS ACCEPTED = 98232
+ CreateHisto1D ENERGY BREMS NOT ACCEPTED = 98233
+ CreateHisto1D ENERGY BREMS NOT ACCEPTED PASSED RR = 98234
+ CreateHisto1D ENERGY BREMS NOT ACCEPTED NOT PASSED RR = 98235
+/gamos/generator/addSingleParticleSource source e- 6.*MeV
+/gamos/generator/directionDist source GmGenerDistDirectionConst 0. 0. 1.
+/run/beamOn 100000
+
+phot:   for  gamma    SubType= 12
+      LambdaPrime table from 200 keV to 10 TeV in 54 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       PhotoElectric :  Emin=        0 eV    Emax=       10 TeV   AngularGenSauterGavrila  FluoActive
+
+compt:   for  gamma    SubType= 13
+      Lambda table from 100 eV  to 1 MeV in 28 bins, spline: 1
+      LambdaPrime table from 1 MeV to 10 TeV in 49 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina :  Emin=        0 eV    Emax=       10 TeV
+
+conv:   for  gamma    SubType= 14
+      Lambda table from 1.022 MeV to 10 TeV in 49 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        BetheHeitler :  Emin=        0 eV    Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=       10 TeV
+
+msc:   for e-    SubType= 10
+      RangeFactor= 0.04, step limit type: 2, lateralDisplacement: 1, skin= 1, geomFactor= 2.5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 1 region:
+          DefaultRegionForTheWorld
+
+eIoni:   for  e-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       LowEnergyIoni :  Emin=        0 eV    Emax=       10 TeV
+
+GmZBSBrems:   for  e-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 10000 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+     GmEWPSLowEnBrem :  Emin=        0 eV    Emax=      100 GeV   AngularGenUrban
+
+msc:   for e+    SubType= 10
+      RangeFactor= 0.04, step limit type: 1, lateralDisplacement: 1, skin= 1, geomFactor= 2.5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+eIoni:   for  e+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+GmZBSBrems:   for  e+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 10000 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               eBrem :  Emin=        0 eV    Emax=       10 TeV   AngularGenUrban
+
+annihil:   for  e+    SubType= 5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg :  Emin=        0 eV    Emax=       10 TeV
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_AIR
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_Cu
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  7.33405 keV    e-  249.775 keV    e+  243.15 keV proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 2     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_W
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  36.0599 keV    e-  351.877 keV    e+  337.972 keV proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 3     used in the geometry : Yes     recalculation needed : No 
+ Material : SiFeMn
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  5.56783 keV    e-  244.79 keV    e+  239.904 keV proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 4     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_WATER1
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  1.10981 keV    e-  84.6589 keV    e+  83.5287 keV proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 5     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_LUNG_ICRP0.3
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  990 eV     e-  42.371 keV    e+  42.0872 keV proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 6     used in the geometry : Yes     recalculation needed : No 
+ Material : G4_BONE_COMPACT_ICRU1.85
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  1.63878 keV    e-  116.885 keV    e+  115.325 keV proton -1 MeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+G4RunManagerKernel -- G4ScoreSplittingProcess is appended to all particles.
+Start Run processing.
+ %%% EVENT 0 NTRACKS 23 TOTAL NTRACKS 23
+ CreateHisto1D PhaseSpace: 899: :ALL: X at Zstop = 760001
+ CreateHisto1D PhaseSpace: 899: :ALL: Y at Zstop = 760002
+ CreateHisto2D PhaseSpace: 899: :ALL: XY at Zstop = 760009
+ CreateHisto1D PhaseSpace: 899: :ALL: R at Zstop = 760003
+ CreateHisto1D PhaseSpace: 899: :ALL: Direction Theta at Zstop = 760004
+ CreateHisto1D PhaseSpace: 899: :ALL: Direction Phi at Zstop = 760005
+ CreateHisto1D PhaseSpace: 899: :ALL: Energy at Zstop = 760006
+ CreateHisto1D PhaseSpace: 899: :ALL: Vx at Zstop = 760007
+ CreateHisto1D PhaseSpace: 899: :ALL: Vy at Zstop = 760008
+ CreateHisto1D PhaseSpace: 899: :ALL: Vz at Zstop = 760009
+ CreateHisto2D PhaseSpace: 899: :ALL: R vs Direction Theta at Zstop = 760011
+ CreateHisto2D PhaseSpace: 899: :ALL: R vs Energy at Zstop = 760012
+ CreateHisto2D PhaseSpace: 899: :ALL: Direction Theta vs Energy at Zstop = 760013
+ CreateHisto1D PhaseSpace: 899: :ALL: Weight at Zstop = 760014
+ CreateHisto2D PhaseSpace: 899: :ALL: X vs Energy at Zstop = 760021
+ CreateHisto2D PhaseSpace: 899: :ALL: X vs Vx at Zstop = 760022
+ CreateHistoProfile1D PhaseSpace: 899: :ALL: X prof weight = 760030
+ CreateHisto1D PhaseSpace: 899: :gamma: X at Zstop = 761001
+ CreateHisto1D PhaseSpace: 899: :gamma: Y at Zstop = 761002
+ CreateHisto2D PhaseSpace: 899: :gamma: XY at Zstop = 761009
+ CreateHisto1D PhaseSpace: 899: :gamma: R at Zstop = 761003
+ CreateHisto1D PhaseSpace: 899: :gamma: Direction Theta at Zstop = 761004
+ CreateHisto1D PhaseSpace: 899: :gamma: Direction Phi at Zstop = 761005
+ CreateHisto1D PhaseSpace: 899: :gamma: Energy at Zstop = 761006
+ CreateHisto1D PhaseSpace: 899: :gamma: Vx at Zstop = 761007
+ CreateHisto1D PhaseSpace: 899: :gamma: Vy at Zstop = 761008
+ CreateHisto1D PhaseSpace: 899: :gamma: Vz at Zstop = 761009
+ CreateHisto2D PhaseSpace: 899: :gamma: R vs Direction Theta at Zstop = 761011
+ CreateHisto2D PhaseSpace: 899: :gamma: R vs Energy at Zstop = 761012
+ CreateHisto2D PhaseSpace: 899: :gamma: Direction Theta vs Energy at Zstop = 761013
+ CreateHisto1D PhaseSpace: 899: :gamma: Weight at Zstop = 761014
+ CreateHisto2D PhaseSpace: 899: :gamma: X vs Energy at Zstop = 761021
+ CreateHisto2D PhaseSpace: 899: :gamma: X vs Vx at Zstop = 761022
+ CreateHistoProfile1D PhaseSpace: 899: :gamma: X prof weight = 761030
+ CreateHisto1D PhaseSpace: 899: :e-: X at Zstop = 762001
+ CreateHisto1D PhaseSpace: 899: :e-: Y at Zstop = 762002
+ CreateHisto2D PhaseSpace: 899: :e-: XY at Zstop = 762009
+ CreateHisto1D PhaseSpace: 899: :e-: R at Zstop = 762003
+ CreateHisto1D PhaseSpace: 899: :e-: Direction Theta at Zstop = 762004
+ CreateHisto1D PhaseSpace: 899: :e-: Direction Phi at Zstop = 762005
+ CreateHisto1D PhaseSpace: 899: :e-: Energy at Zstop = 762006
+ CreateHisto1D PhaseSpace: 899: :e-: Vx at Zstop = 762007
+ CreateHisto1D PhaseSpace: 899: :e-: Vy at Zstop = 762008
+ CreateHisto1D PhaseSpace: 899: :e-: Vz at Zstop = 762009
+ CreateHisto2D PhaseSpace: 899: :e-: R vs Direction Theta at Zstop = 762011
+ CreateHisto2D PhaseSpace: 899: :e-: R vs Energy at Zstop = 762012
+ CreateHisto2D PhaseSpace: 899: :e-: Direction Theta vs Energy at Zstop = 762013
+ CreateHisto1D PhaseSpace: 899: :e-: Weight at Zstop = 762014
+ CreateHisto2D PhaseSpace: 899: :e-: X vs Energy at Zstop = 762021
+ CreateHisto2D PhaseSpace: 899: :e-: X vs Vx at Zstop = 762022
+ CreateHistoProfile1D PhaseSpace: 899: :e-: X prof weight = 762030
+ CreateHisto1D PhaseSpace: 899: :e+: X at Zstop = 763001
+ CreateHisto1D PhaseSpace: 899: :e+: Y at Zstop = 763002
+ CreateHisto2D PhaseSpace: 899: :e+: XY at Zstop = 763009
+ CreateHisto1D PhaseSpace: 899: :e+: R at Zstop = 763003
+ CreateHisto1D PhaseSpace: 899: :e+: Direction Theta at Zstop = 763004
+ CreateHisto1D PhaseSpace: 899: :e+: Direction Phi at Zstop = 763005
+ CreateHisto1D PhaseSpace: 899: :e+: Energy at Zstop = 763006
+ CreateHisto1D PhaseSpace: 899: :e+: Vx at Zstop = 763007
+ CreateHisto1D PhaseSpace: 899: :e+: Vy at Zstop = 763008
+ CreateHisto1D PhaseSpace: 899: :e+: Vz at Zstop = 763009
+ CreateHisto2D PhaseSpace: 899: :e+: R vs Direction Theta at Zstop = 763011
+ CreateHisto2D PhaseSpace: 899: :e+: R vs Energy at Zstop = 763012
+ CreateHisto2D PhaseSpace: 899: :e+: Direction Theta vs Energy at Zstop = 763013
+ CreateHisto1D PhaseSpace: 899: :e+: Weight at Zstop = 763014
+ CreateHisto2D PhaseSpace: 899: :e+: X vs Energy at Zstop = 763021
+ CreateHisto2D PhaseSpace: 899: :e+: X vs Vx at Zstop = 763022
+ CreateHistoProfile1D PhaseSpace: 899: :e+: X prof weight = 763030
+ %%% EVENT 1000 NTRACKS 11 TOTAL NTRACKS 13877
+ %%% EVENT 2000 NTRACKS 17 TOTAL NTRACKS 26882
+ %%% EVENT 3000 NTRACKS 11 TOTAL NTRACKS 40905
+ %%% EVENT 4000 NTRACKS 12 TOTAL NTRACKS 54073
+ %%% EVENT 5000 NTRACKS 11 TOTAL NTRACKS 68166
+ %%% EVENT 6000 NTRACKS 15 TOTAL NTRACKS 81407
+ %%% EVENT 7000 NTRACKS 4 TOTAL NTRACKS 94559
+ %%% EVENT 8000 NTRACKS 3 TOTAL NTRACKS 108058
+ %%% EVENT 9000 NTRACKS 3 TOTAL NTRACKS 121053
+ %%% EVENT 10000 NTRACKS 2 TOTAL NTRACKS 134731
+ %%% EVENT 11000 NTRACKS 35 TOTAL NTRACKS 147493
+ %%% EVENT 12000 NTRACKS 9 TOTAL NTRACKS 160487
+ %%% EVENT 13000 NTRACKS 21 TOTAL NTRACKS 174244
+ %%% EVENT 14000 NTRACKS 25 TOTAL NTRACKS 188299
+ %%% EVENT 15000 NTRACKS 4 TOTAL NTRACKS 201904
+ %%% EVENT 16000 NTRACKS 24 TOTAL NTRACKS 215364
+ %%% EVENT 17000 NTRACKS 20 TOTAL NTRACKS 228562
+ %%% EVENT 18000 NTRACKS 31 TOTAL NTRACKS 241711
+ %%% EVENT 19000 NTRACKS 7 TOTAL NTRACKS 255453
+ %%% EVENT 20000 NTRACKS 48 TOTAL NTRACKS 269391
+ %%% EVENT 21000 NTRACKS 8 TOTAL NTRACKS 283257
+ %%% EVENT 22000 NTRACKS 12 TOTAL NTRACKS 297178
+ %%% EVENT 23000 NTRACKS 16 TOTAL NTRACKS 310163
+ %%% EVENT 24000 NTRACKS 6 TOTAL NTRACKS 323879
+ %%% EVENT 25000 NTRACKS 23 TOTAL NTRACKS 338349
+ %%% EVENT 26000 NTRACKS 9 TOTAL NTRACKS 352062
+ %%% EVENT 27000 NTRACKS 20 TOTAL NTRACKS 365797
+ %%% EVENT 28000 NTRACKS 5 TOTAL NTRACKS 378765
+ %%% EVENT 29000 NTRACKS 20 TOTAL NTRACKS 392185
+ %%% EVENT 30000 NTRACKS 26 TOTAL NTRACKS 405947
+ %%% EVENT 31000 NTRACKS 22 TOTAL NTRACKS 419100
+ %%% EVENT 32000 NTRACKS 12 TOTAL NTRACKS 432809
+ %%% EVENT 33000 NTRACKS 15 TOTAL NTRACKS 446067
+ %%% EVENT 34000 NTRACKS 2 TOTAL NTRACKS 459057
+ %%% EVENT 35000 NTRACKS 8 TOTAL NTRACKS 472627
+ %%% EVENT 36000 NTRACKS 53 TOTAL NTRACKS 486196
+ %%% EVENT 37000 NTRACKS 4 TOTAL NTRACKS 499463
+ %%% EVENT 38000 NTRACKS 9 TOTAL NTRACKS 513649
+ %%% EVENT 39000 NTRACKS 36 TOTAL NTRACKS 526988
+ %%% EVENT 40000 NTRACKS 5 TOTAL NTRACKS 540845
+ %%% EVENT 41000 NTRACKS 26 TOTAL NTRACKS 553911
+ %%% EVENT 42000 NTRACKS 10 TOTAL NTRACKS 567019
+ %%% EVENT 43000 NTRACKS 6 TOTAL NTRACKS 581224
+ %%% EVENT 44000 NTRACKS 19 TOTAL NTRACKS 594929
+ %%% EVENT 45000 NTRACKS 11 TOTAL NTRACKS 608285
+ %%% EVENT 46000 NTRACKS 14 TOTAL NTRACKS 621550
+ %%% EVENT 47000 NTRACKS 5 TOTAL NTRACKS 634774
+ %%% EVENT 48000 NTRACKS 49 TOTAL NTRACKS 648273
+ %%% EVENT 49000 NTRACKS 11 TOTAL NTRACKS 661820
+ %%% EVENT 50000 NTRACKS 12 TOTAL NTRACKS 674958
+ %%% EVENT 51000 NTRACKS 24 TOTAL NTRACKS 688309
+ %%% EVENT 52000 NTRACKS 5 TOTAL NTRACKS 701398
+ %%% EVENT 53000 NTRACKS 22 TOTAL NTRACKS 715644
+ %%% EVENT 54000 NTRACKS 15 TOTAL NTRACKS 728985
+ %%% EVENT 55000 NTRACKS 55 TOTAL NTRACKS 742081
+ %%% EVENT 56000 NTRACKS 8 TOTAL NTRACKS 755448
+ %%% EVENT 57000 NTRACKS 1 TOTAL NTRACKS 769701
+ %%% EVENT 58000 NTRACKS 4 TOTAL NTRACKS 783307
+ %%% EVENT 59000 NTRACKS 28 TOTAL NTRACKS 796730
+ %%% EVENT 60000 NTRACKS 9 TOTAL NTRACKS 809911
+ %%% EVENT 61000 NTRACKS 8 TOTAL NTRACKS 823612
+ %%% EVENT 62000 NTRACKS 2 TOTAL NTRACKS 837333
+ %%% EVENT 63000 NTRACKS 2 TOTAL NTRACKS 850691
+ %%% EVENT 64000 NTRACKS 13 TOTAL NTRACKS 864376
+ %%% EVENT 65000 NTRACKS 38 TOTAL NTRACKS 877757
+ %%% EVENT 66000 NTRACKS 24 TOTAL NTRACKS 890874
+ %%% EVENT 67000 NTRACKS 13 TOTAL NTRACKS 904384
+ %%% EVENT 68000 NTRACKS 6 TOTAL NTRACKS 917875
+ %%% EVENT 69000 NTRACKS 2 TOTAL NTRACKS 931887
+ %%% EVENT 70000 NTRACKS 8 TOTAL NTRACKS 944396
+ %%% EVENT 71000 NTRACKS 7 TOTAL NTRACKS 957596
+ %%% EVENT 72000 NTRACKS 35 TOTAL NTRACKS 971198
+ %%% EVENT 73000 NTRACKS 8 TOTAL NTRACKS 984917
+ %%% EVENT 74000 NTRACKS 16 TOTAL NTRACKS 998469
+ %%% EVENT 75000 NTRACKS 32 TOTAL NTRACKS 1012005
+ %%% EVENT 76000 NTRACKS 2 TOTAL NTRACKS 1025031
+ %%% EVENT 77000 NTRACKS 23 TOTAL NTRACKS 1037603
+ %%% EVENT 78000 NTRACKS 15 TOTAL NTRACKS 1050972
+ %%% EVENT 79000 NTRACKS 21 TOTAL NTRACKS 1064186
+ %%% EVENT 80000 NTRACKS 2 TOTAL NTRACKS 1077983
+ %%% EVENT 81000 NTRACKS 19 TOTAL NTRACKS 1092093
+ %%% EVENT 82000 NTRACKS 3 TOTAL NTRACKS 1105095
+ %%% EVENT 83000 NTRACKS 5 TOTAL NTRACKS 1117311
+ %%% EVENT 84000 NTRACKS 6 TOTAL NTRACKS 1130963
+ %%% EVENT 85000 NTRACKS 34 TOTAL NTRACKS 1144170
+ %%% EVENT 86000 NTRACKS 7 TOTAL NTRACKS 1157767
+ %%% EVENT 87000 NTRACKS 1 TOTAL NTRACKS 1170888
+ %%% EVENT 88000 NTRACKS 27 TOTAL NTRACKS 1185168
+ %%% EVENT 89000 NTRACKS 27 TOTAL NTRACKS 1198331
+ %%% EVENT 90000 NTRACKS 25 TOTAL NTRACKS 1211884
+ %%% EVENT 91000 NTRACKS 2 TOTAL NTRACKS 1225446
+ %%% EVENT 92000 NTRACKS 8 TOTAL NTRACKS 1238599
+ %%% EVENT 93000 NTRACKS 30 TOTAL NTRACKS 1252352
+ %%% EVENT 94000 NTRACKS 16 TOTAL NTRACKS 1266391
+ %%% EVENT 95000 NTRACKS 1 TOTAL NTRACKS 1280186
+ %%% EVENT 96000 NTRACKS 8 TOTAL NTRACKS 1293281
+ %%% EVENT 97000 NTRACKS 5 TOTAL NTRACKS 1307144
+ %%% EVENT 98000 NTRACKS 8 TOTAL NTRACKS 1320609
+ %%% EVENT 99000 NTRACKS 2 TOTAL NTRACKS 1333698
+Run terminated.
+Run Summary
+  Number of events processed : 100000
+  User=471.36s Real=475.02s Sys=0.03s
+Graphics systems deleted.
+Visualization Manager deleting...
+=== saving histograms in file === phaseSpaceZBS.root
+=== saving histograms in file === testBremsZBS.root
